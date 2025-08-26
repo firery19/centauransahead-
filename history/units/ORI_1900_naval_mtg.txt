@@ -1,0 +1,28 @@
+﻿units = {
+
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "1st Fleet"
+		naval_base = 4768
+		task_force = {				
+			name = "Canis Detachment"
+			location = 4768
+			ship = { name = "ORS Pollux" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ORI version_name = "Pollux Class" } } }
+			ship = { name = "ORS Castor" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ORI version_name = "Pollux Class" } } }
+			ship = { name = "ORS Atlas" definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = ORI version_name = "Atlas Class" } } }
+			ship = { name = "ORS Alpha" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ORI version_name = "Alpha Class"  } } }
+			ship = { name = "ORS Gamma" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ORI version_name = "Gamma Class"  } } }
+			ship = { name = "ORS Europa" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ORI version_name = "Europa Class" } } }
+			ship = { name = "ORS Io" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ORI version_name = "Io Class" } } }
+			ship = { name = "ORS Beta" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ORI version_name = "Beta Class" } } }
+			ship = { name = "ORS Alkafzah" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ORI version_name = "Beta Class" } } }
+			ship = { name = "ORS Borealis" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ORI version_name = "Beta Class" } } }
+			ship = { name = "ORS Carlina" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ORI version_name = "Beta Class" } } }
+			ship = { name = "ORS Carolina" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ORI version_name = "Beta Class" } } }
+			ship = { name = "ORS Delta" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ORI version_name = "Delta Class" } } }
+			ship = { name = "ORS Elephant" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ORI version_name = "Delta Class" } } }
+			ship = { name = "ORS Gelatine" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ORI version_name = "Delta Class" } } }
+			ship = { name = "ORS Hank" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ORI version_name = "Delta Class" } } }
+			ship = { name = "ORS Indefinite" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ORI version_name = "Delta Class" } } }
+			}
+		}

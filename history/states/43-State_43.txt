@@ -1,0 +1,32 @@
+
+state={
+	id=43
+	name="STATE_43"
+	history = {
+		owner = CET
+		add_core_of = CET
+		buildings = {
+			arms_factory = 1
+
+			infrastructure = 2
+		}
+		victory_points = {
+			2690 12
+		}
+		victory_points = {
+			5161 25
+		}
+#	}
+		1944.1.1.12 = {
+			owner = ANT
+			controller = ANT
+}
+}
+	provinces={
+		309 519 541 867 980 1220 1539 1540 1738 2059 2121 2498 2690 2731 2802 3102 3208 3236 3282 5128 5129 5161 5177 5213 5214 5248 5249 5269 5270 5287 5304 5324 5340 5350 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=6152932
+        state_category = town
+}

@@ -1,0 +1,37 @@
+
+state={
+	id=119
+	name="STATE_119"
+	resources={
+		steel=18.000
+	}
+
+	history={
+		owner = URS
+		add_core_of = CNS
+		buildings = {
+			infrastructure = 1
+
+		}
+		victory_points = {
+			111 4 
+		}
+		start_resistance = yes
+		set_resistance = 40
+		set_compliance = 35
+		1944.1.1.12 = {
+			owner = HYS
+			controller = HYS
+			add_core_of = HYS
+
+}
+	}
+
+	provinces={
+		111 586 1006 1224 1304 1472 1626 1662 1967 2388 2434 2544 2554 2606 2679 2832 3040 3148 3165 3272 4071 4109 4120 4153 4156 4166 4189 4190 4192 4207 4222 4233 4261 4306 4361 4366 4392 4409 4419 4495 4504 4526 4547 4553 4633 4634 4666 4673 
+	}
+	manpower=4139617
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

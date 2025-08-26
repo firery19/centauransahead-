@@ -1,0 +1,30 @@
+
+state={
+	id=68
+	name="STATE_68"
+	resources={
+		rubber=8
+	}
+	history={
+		owner = RIA
+		add_core_of = RIA
+		buildings = {
+			arms_factory = 1
+			industrial_complex = 2
+			infrastructure = 3
+
+		}
+		victory_points = {
+			2762 6 
+		}
+
+	}
+
+	provinces={
+		7 8 11 110 313 348 513 542 564 573 591 599 759 812 896 921 960 975 1012 1131 1213 1342 1378 1458 1505 1525 1602 1645 1733 1875 1937 1996 2092 2241 2292 2517 2523 2585 2621 2744 2762 2774 2831 2845 2932 3011 3137 3216 3290 3478 3515 3535 3536 3538 3541 3543 3546 3561 3568 3571 3573 3575 3580 3583 3587 3588 3590 3596 3597 3608 3609 3613 3619 3623 
+	}
+	manpower=70977897
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

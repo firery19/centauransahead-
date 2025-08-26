@@ -1,0 +1,36 @@
+state={
+	id=110
+	name="STATE_110"
+	resources = {
+		oil = 19
+	}
+	history = {
+		owner = ANT
+		add_core_of = ANT
+		add_core_of = SKO
+		buildings = {
+
+			arms_factory = 1 #
+
+			industrial_complex = 2
+			dockyard = 1
+			infrastructure = 3
+			5971 = {
+			naval_base = 4
+			}
+		}
+		victory_points = {
+			5971 30
+		}
+		victory_points = {
+			6143 10 
+		}
+	}
+	provinces={
+		158 267 527 629 893 899 976 986 1030 1207 1221 1675 1857 2017 2284 2503 2651 2846 3074 5870 5897 5928 5945 5946 5971 5995 5996 6009 6030 6047 6048 6066 6095 6098 6139 6143 6151 6188 
+	}
+	manpower=28897209
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

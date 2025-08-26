@@ -1,0 +1,32 @@
+state={
+	id=106
+	name="STATE_106"
+	resources = {
+		tungsten = 13
+	}
+	history = {
+		owner = ANT
+		add_core_of = ANT
+		add_core_of = SKO
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 2
+		}
+		victory_points = {
+			1772 7
+		}
+		victory_points = {
+			5027 4
+		}
+		victory_points = {
+			2653 5
+		}
+	}
+	provinces={
+		160 181 554 678 687 947 1144 1280 1456 1571 1654 1720 1772 2209 2279 2551 2564 2653 2858 2887 2937 2944 4952 4955 4968 4995 5002 5027 5055 5056 5066 5067 5074 5097 5115 5133 5138 5144 5148 5156 5171 5184 5194 5215 5230 5233 5234 
+	}
+	manpower=12632767
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

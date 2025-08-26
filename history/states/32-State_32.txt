@@ -1,0 +1,35 @@
+state={
+	id=32
+	name="STATE_32"
+	resources = {
+		aluminium = 14
+		steel = 25
+		tungsten = 17
+		chromium = 13
+		oil = 5
+	}
+	history = {
+		owner = AQU
+		add_core_of = AQU
+		add_claim_by = VEG
+		add_claim_by = GRS
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			1713 15
+		}
+		1944.1.1.12 = {
+			owner = ANT
+			controller = ANT
+
+}
+	}
+	provinces={
+		265 476 1489 1686 1713 1782 1910 1949 3033 3106 3110 4194 4297 4333 4354 4386 4408 4444 4464 4501 4556 4588 4643 4703 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=3231930
+        state_category = rural
+}

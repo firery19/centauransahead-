@@ -1,0 +1,627 @@
+ideas = {
+	country = {
+	
+
+			ORS_RallyPeopleIdea = {
+				picture = generic_manpower_bonus
+		
+				available = {}
+		
+				removal_cost = -1
+
+				modifier = {
+					recruitable_population = 0.25
+				}		
+
+				duration = 180
+			}
+	
+			ORS_PrepareMilitaryIdea = {
+				picture = generic_reserve_divisions 
+		
+				available = {}
+		
+				removal_cost = -1
+
+				modifier = {
+					army_attack_factor  = 0.05
+					army_defense_factor = 0.05
+				}
+
+				duration = 180
+			}
+		
+			ORS_PromiseBusinessesIdea = {
+				picture = generic_war_preparation
+		
+				available = {}
+		
+				removal_cost = -1
+
+				modifier = {
+					industrial_capacity_factory = 0.1
+					min_export = 0.2
+				}
+
+				duration = 180
+			}
+		
+			ORS_LessonsOfWar = {
+				picture = german_advisors
+				available = {}
+				removal_cost = -1
+
+				modifier = {
+					experience_gain_army_factor  = 0.2
+				}
+
+				duration = 180
+			}
+
+			ORS_RampantGovernmentCorruption = {
+				picture = ORI_Corruption
+	
+				allowed = {
+					tag = ORI
+				}
+	
+				available = {}
+	
+				removal_cost = -1
+
+				modifier = {
+					consumer_goods_factor = -0.40
+					stability_factor = -0.40
+					political_power_factor = -0.20
+				}
+			}
+
+			ORS_PrioritizedMilitary = {
+				picture = ORI_PrioritizedMilitary
+	
+				allowed = {
+					tag = ORI
+				}
+	
+				available = {}
+		
+				removal_cost = -1
+
+				modifier = {
+					production_speed_arms_factory_factor = 0.3
+					production_speed_industrial_complex_factor = -0.3
+					stability_factor = -0.2
+					industrial_capacity_factory = 0.1
+					production_factory_max_efficiency_factor = 0.1
+				}
+			}	
+
+			ORS_GovernmentSubisidies = {
+				picture = ORI_GovernmentSubsidies
+		
+				allowed = {
+					tag = ORI
+				}
+	
+			available = {}
+		
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.20
+				stability_factor = 0.2
+				political_power_factor = 0.1
+				monthly_population = 0.2
+			}
+		}
+		
+			ORS_EconomicBoom = {
+				picture = ORI_Economic_Boom
+		
+				allowed = {
+					tag = ORI
+				}	
+			
+				allowed = {
+					always = no
+				}
+			
+				available = {}
+		
+				removal_cost = -1
+
+				modifier = {
+					consumer_goods_factor = -0.05
+					stability_factor = 0.1
+					industrial_capacity_factory = 0.05
+					industrial_capacity_dockyard = 0.05
+					production_factory_max_efficiency_factor = 0.05
+				}
+			
+				duration = 360
+			}
+		
+			ORS_EconomicBoom2 = {
+				picture = ORI_Economic_Boom
+		
+				allowed = {
+					tag = ORI
+				}
+			
+				allowed = {
+					always = no
+				}
+			
+				available = {}
+		
+				removal_cost = -1
+
+				modifier = {
+					consumer_goods_factor = -0.1
+					stability_factor = 0.15
+					industrial_capacity_factory = 0.1
+					industrial_capacity_dockyard = 0.1
+					production_factory_max_efficiency_factor = 0.05
+				}
+			}
+	
+
+			ORS_RapidIndustrialization = {
+				picture = ORI_RapidIndustrialization
+		
+				allowed = {
+					tag = ORI
+				}
+			
+				allowed = {
+					always = no
+				}
+			
+				available = {}
+		
+				removal_cost = -1
+
+				modifier = {
+					consumer_goods_factor = -0.05
+					stability_factor = 0.15
+					industrial_capacity_factory = 0.15
+					industrial_capacity_dockyard = 0.15
+					production_factory_max_efficiency_factor = 0.1
+				}
+			}
+
+		ORS_RampantGovernmentCorruption1 = {
+			picture = ORI_Corruption
+	
+			allowed = {
+				tag = ORI
+			}
+	
+			available = {}
+	
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.30
+				stability_factor = -0.30
+				political_power_factor = -0.15
+			}
+		}
+		
+		ORS_PrioritizedMilitary1 = {
+				picture = ORI_PrioritizedMilitary
+	
+				allowed = {
+					tag = ORI
+				}
+	
+			available = {}
+		
+			removal_cost = -1
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.40
+				production_speed_industrial_complex_factor = -0.40
+				stability_factor = -0.30
+				industrial_capacity_factory = 0.20
+				industrial_capacity_factory = 0.20
+				production_factory_max_efficiency_factor = 0.20
+			}
+		}
+		
+		ORS_BorrowedLoans = {
+				picture = GFX_focus_SWE_rations
+	
+				allowed = {
+					tag = ORI
+				}
+	
+			available = {}
+		
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.2
+			}
+		}
+		
+		ORS_RampantGovernmentCorruption2 = {
+			picture = ORI_Corruption
+	
+			allowed = {
+				tag = ORI
+			}
+	
+			available = {}
+	
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.20
+				stability_factor = -0.20
+				political_power_factor = -0.10
+			}
+		}
+		
+		ORS_GovernmentSubisidies1 = {
+			picture = ORI_GovernmentSubsidies
+		
+			allowed = {
+				tag = ORI
+			}
+	
+			available = {}
+		
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.25
+				stability_factor = 0.25
+				political_power_factor = 0.15
+				monthly_population = 0.25
+			}
+		}
+		
+		ORS_HartCampaigning = {
+			picture = GFX_goal_generic_propaganda
+			
+			allowed = {
+				tag = ORI
+			}
+			
+			available = {}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = 0.005
+				political_power_factor = 0.1
+			}
+		}
+		
+		ORS_BuildingSpeed = {
+			picture = GFX_goal_generic_propaganda
+			
+			allowed = {
+				tag = ORI
+			}
+			
+			available = {}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.2
+				consumer_goods_factor = 0.1
+			}
+		}
+	
+		ORS_NationalistRheotic = {
+			picture = can_send_in_the_zombies
+			
+			allowed = {
+				tag = ORI
+			}
+			
+			available = {}
+			
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.2
+				offensive_war_stability_factor = 0.2
+				justify_war_goal_time = -0.3
+			}
+		}
+	
+		ORS_OMAC = {
+			picture = can_send_in_the_zombies
+			
+			allowed = {
+				tag = ORI
+			}
+			
+			available = {}
+			
+			removal_cost = -1
+			
+			modifier = {
+				special_forces_cap = 0.2
+				extra_marine_supply_grace = 48
+				special_forces_out_of_supply_factor = -0.20
+			}
+		}
+		
+		ORS_TheMasterOfCentaura = {
+			picture = vittoria_mutilata
+			
+			allowed = {
+				tag = ORI
+			}
+			
+			available = {}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.2
+				stability_factor = 0.2
+				stability_weekly = 0.005
+			}
+		}
+		
+		ORS_TheEasternTitan = {
+			picture = can_send_in_the_zombies
+			
+			allowed = {
+				tag = ORI
+			}
+			
+			available = {}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor  = 0.15
+				army_defense_factor = 0.15
+				breakthrough_factor = 0.1
+				army_org_factor = 0.15
+			}
+		}
+		
+		ORS_IsolatedEconomy = {
+			picture = can_send_in_the_zombies
+			
+			allowed = {
+				tag = AUR
+			}
+			
+			available = {}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.2
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = -0.1
+				production_factory_max_efficiency_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.1
+				industrial_capacity_factory = -0.1
+			}
+		}
+		
+		ORS_AntiAntareanPropaganda = {
+			picture = can_send_in_the_zombies
+			
+			allowed = {
+				tag = ORI
+			}
+			
+			available = {}
+			
+			removal_cost = -1
+			
+			targeted_modifier = {
+				tag = ANT
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+				breakthrough_bonus_against = 0.1
+			}
+		}
+		
+		ORS_WarPlanRiaa = {
+			picture = can_send_in_the_zombies
+			
+			allowed = {
+				tag = ORI
+			}
+			
+			available = {}
+			
+			removal_cost = -1
+			
+			targeted_modifier = {
+				tag = RIA
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.15
+				breakthrough_bonus_against = 0.1
+			}
+		}
+		
+		ORS_MasterOfForma = {
+			picture = can_send_in_the_zombies
+			
+			allowed = {
+				tag = ORI
+			}
+			
+			available = {}
+			
+			removal_cost = -1
+				modifier = {
+					army_attack_factor  = 0.15
+					army_defense_factor = 0.15
+					breakthrough_factor = 0.15
+					army_org_factor = 0.15
+					political_power_factor = 0.2
+					stability_factor = 0.05
+				}
+			}
+		
+			ORS_TheHard1900s = {
+				picture = idea_ORI_TheHard1900s
+			
+				allowed = {
+					tag = ORI
+				}
+			
+				available = {}
+			
+				removal_cost = -1
+				modifier = {
+					consumer_goods_factor = 0.4
+					industrial_capacity_factory = -0.3
+					production_speed_buildings_factor  = -0.3
+					stability_weekly = -0.01
+					production_factory_max_efficiency_factor = -0.3
+					production_factory_efficiency_gain_factor = -0.3
+				
+				}
+			}
+		
+			ORS_TheHard1900s1T = {
+				picture = idea_ORI_TheHard1900s
+			
+				allowed = {
+					tag = ORI
+				}
+			
+				available = {}
+			
+				removal_cost = -1
+				modifier = {
+					consumer_goods_factor = 0.2
+					industrial_capacity_factory = -0.15
+					production_speed_buildings_factor  = -0.2
+					stability_weekly = -0.005
+					production_factory_max_efficiency_factor = -0.25
+					production_factory_efficiency_gain_factor = -0.25
+				
+				}
+			}
+			
+			ORS_TheHard1900s1C = {
+				picture = idea_ORI_TheHard1900s
+			
+				allowed = {
+					tag = ORI
+				}
+			
+				available = {}
+			
+				removal_cost = -1
+				
+				modifier = {
+					consumer_goods_factor = 0.3
+					industrial_capacity_factory = -0.2
+					production_speed_buildings_factor  = -0.15
+					stability_weekly = -0.005
+					production_factory_max_efficiency_factor = -0.15
+					production_factory_efficiency_gain_factor = -0.15
+				
+				}
+			}
+			
+			ORS_TheHard1900s2C = {
+				picture = idea_ORI_TheHard1900s
+			
+				allowed = {
+					tag = ORI
+				}
+			
+				available = {}
+			
+				removal_cost = -1
+				
+				modifier = {
+					consumer_goods_factor = 0.15
+					industrial_capacity_factory = -0.15
+					production_speed_buildings_factor  = -0.1
+					production_factory_max_efficiency_factor = -0.05
+					production_factory_efficiency_gain_factor = -0.05
+				
+				}
+			}
+			ORS_SeizedCompanyAssets = {
+				picture = can_send_in_the_zombies
+			
+				allowed = {
+					tag = ORI
+				}
+			
+				available = {}
+			
+				removal_cost = -1
+				
+				modifier = {
+					consumer_goods_factor = -0.25
+				}
+			}
+			
+			ORS_WorkerStrikes = {
+				picture = can_send_in_the_zombies
+			
+				allowed = {
+					tag = ORI
+				}
+			
+				available = {}
+			
+				removal_cost = -1
+				
+				modifier = {
+					consumer_goods_factor = 0.25
+					production_speed_buildings_factor = -0.2
+					stability_factor = -0.15
+				}
+			}
+			
+			ORS_WorkerStrikes1 = {
+				picture = can_send_in_the_zombies
+			
+				allowed = {
+					tag = ORI
+				}
+			
+				available = {}
+			
+				removal_cost = -1
+				
+				modifier = {
+					consumer_goods_factor = 0.15
+					production_speed_buildings_factor = -0.15
+					stability_factor = -0.10
+				}
+			} 
+
+			ORS_ExpandedEducationSector = {
+				picture = can_send_in_the_zombies
+			
+				allowed = {
+					tag = ORI
+				}
+			
+				available = {}
+			
+				removal_cost = -1
+				
+				modifier = {
+					consumer_goods_factor = 0.1
+					research_speed_factor = 0.15
+				}
+			}  				
+
+			
+		}	
+	}
+}

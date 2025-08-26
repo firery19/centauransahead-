@@ -1,0 +1,14 @@
+
+sc_resistance_integration = {
+    icon = GFX_idea_CET_SC_question_idea
+
+    resistance_target = 0.6
+    local_resources_factor = -0.6
+    local_factories = -0.8
+    
+    enable = {
+        THIS = {
+            owner = CET
+        }
+    }
+}

@@ -1,0 +1,24 @@
+state={
+	id=184
+	name="STATE_184"
+	history={
+		owner = LBR
+		add_core_of = LBR
+		buildings = {
+			infrastructure = 1
+			5522 = {
+				naval_base = 1
+				}
+			}
+			victory_points = {
+			5522 1 
+			}
+		}
+	provinces={
+		1984 5522 5529 6806 6815 6821 
+	}
+	manpower=16326
+	state_category = tiny_island
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

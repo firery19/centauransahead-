@@ -1,0 +1,30 @@
+state={
+	id=39
+	name="STATE_39"
+	resources={
+		oil=8.000
+		steel=5.000
+	}
+	history = {
+		owner = CET
+		add_core_of = CET
+		buildings = {
+			arms_factory = 0
+			infrastructure = 1
+		}
+		1944.1.1.12 = {
+			owner = ANT
+			controller = ANT
+}
+		victory_points = {
+			1561 5
+		}
+	}
+	provinces={
+		4 102 353 401 610 643 675 861 866 1034 1192 1519 1561 1583 2330 2379 2675 2853 2886 2938 3052 3085 3109 3307 4181 4211 4228 4244 4268 4282 4295 4322 4323 4339 4340 4352 4369 4370 4371 4405 4412 4423 4462 4477 4491 4499 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=2378094
+        state_category = large_city
+}

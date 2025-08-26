@@ -1,0 +1,31 @@
+
+state={
+	id=71
+	name="STATE_71"
+	resources={
+		steel=6.000
+	}
+
+	history={
+		owner = RIA
+		add_core_of = RIA
+		buildings = {
+			arms_factory = 0
+			industrial_complex = 1
+			infrastructure = 1
+
+		}
+		victory_points = {
+			1223 13 
+		}
+
+	}
+
+	provinces={
+		55 104 172 434 593 618 671 1155 1163 1181 1223 1291 1671 1684 2031 3159 3361 3373 3384 3388 3396 
+	}
+	manpower=12889498
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

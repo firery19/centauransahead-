@@ -1,0 +1,37 @@
+state={
+	id=100
+	name="STATE_100"
+	
+	history={
+		owner = ANT
+		add_core_of = ANT
+		add_core_of = LUP
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 1
+			5486 = {
+			naval_base = 4
+			}
+		}
+		victory_points = {
+			5486 5 
+		}
+		victory_points = {
+			2339 8 
+		}
+		victory_points = {
+			2051 4 
+		}
+		victory_points = {
+			1361 6
+		}
+	}
+	
+	provinces={
+		242 247 721 804 1078 1171 1361 1509 1864 1883 2051 2125 2202 2256 2286 2303 2339 2345 2398 2406 2419 2471 2490 2504 2515 2571 2669 3081 4976 5013 5020 5024 5151 5157 5174 5178 5192 5193 5197 5208 5224 5236 5244 5265 5274 5279 5283 5295 5305 5317 5321 5327 5332 5356 5361 5366 5367 5376 5401 5411 5420 5421 5443 5463 5464 5486 5489 5509 
+	}
+	manpower=11787644
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

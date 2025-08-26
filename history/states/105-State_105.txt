@@ -1,0 +1,40 @@
+state={
+	id=105
+	name="STATE_105"
+	resources = {
+		aluminium = 8
+		rubber=15
+	}
+	history = {
+		owner = ANT
+		add_core_of = ANT
+		add_core_of = ARA
+		buildings = {
+			industrial_complex = 1
+			dockyard = 1
+			infrastructure = 3
+			6308 = {
+			naval_base = 3
+			}
+		}
+		victory_points = {
+			6308 10
+		}
+		victory_points = {
+			767 13
+		}
+		victory_points = {
+			6055 9
+		}
+		victory_points = {
+			257 11
+		}
+	}
+	provinces={
+		22 67 78 97 257 347 577 641 724 767 1086 1108 1117 1225 1487 1542 1593 1697 1762 1803 1902 1956 2065 2112 2246 2442 2549 2579 2611 2668 2740 2921 2957 3024 3069 3247 3323 5876 5917 5918 5929 5947 5972 5984 5985 5990 6003 6010 6018 6025 6031 6038 6055 6078 6079 6084 6085 6099 6119 6120 6121 6129 6153 6155 6156 6163 6165 6182 6193 6194 6195 6201 6212 6215 6217 6219 6224 6225 6230 6233 6238 6244 6245 6253 6263 6268 6299 6308 6332 
+	}
+	manpower=13172793
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

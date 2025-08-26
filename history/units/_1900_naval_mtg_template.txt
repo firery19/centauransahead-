@@ -1,0 +1,69 @@
+﻿units = {
+
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "firery Fleet"
+		naval_base = 
+		task_force = {				
+			name = "1 Command"
+			location =  
+			ship = { name = "AA Prima" definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = AAA version_name = "BB2 Class" } } }
+			ship = { name = "AA Rubigo" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AAA version_name = "CLA Class" } } }
+			ship = { name = "AA DD2" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = AAA version_name = "DD2 Class" } } }
+		}
+		task_force = {				
+			name = "2 Command"
+			location = 
+			ship = { name = "AA Baten" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = AAA version_name = "BB1 Class" } } }
+		}
+		task_force = {				
+			name = "3 Command"
+			location = 
+			ship = { name = "AA Quintus" definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = AAA version_name = "BB2 Class" } } }
+			ship = { name = "AA Kulshalm" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AAA version_name = "DD1 Class" } } }
+		}
+	}
+	
+	fleet = {
+		name = "handsndeck FLeet"
+		naval_base = 
+		task_force = {				
+			name = "4 Command"
+			location = 
+			ship = { name = "AA Axol" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = AAA version_name = "BB1 Class" } } }
+			ship = { name = "AA DD1" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AAA version_name = "DD1 Class" } } }
+		}
+	}
+	
+	fleet = {
+		name = "sl12223 Fleet"
+		naval_base = 
+		task_force = {				
+			name = "5 Command"
+			location = 
+			ship = { name = "AA Rada" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = AAA version_name = "BB1 Class" } } }
+			ship = { name = "AA Rhesus" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = AAA version_name = "DD2 Class" } } }
+		}
+		task_force = {				
+			name = "6 Command"
+			location = 
+			ship = { name = "AA Nyodymium" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AAA version_name = "CAL Class" } } }
+			ship = { name = "AA Nestos" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = AAA version_name = "DD2 Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+### Under Construction Notes ###
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_heavy_2
+			creator = "AAA" 
+			version_name = "BB2 Class"
+		}
+		name = "AA BB2a"
+		requested_factories = 2
+		progress = 0.79
+		amount = 1
+	}
+}

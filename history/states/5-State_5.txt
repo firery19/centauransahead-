@@ -1,0 +1,33 @@
+
+state={
+	id=5
+	name="STATE_5"
+	resources={
+		steel=21.000
+		chromium=11.000
+		rubber=15
+	}
+
+	history={
+		owner = URS
+		add_core_of = URS
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+			dockyard = 1
+		}
+		victory_points = {
+			3381 10 
+		}
+
+	}
+
+	provinces={
+		128 227 291 556 765 987 1004 1024 1060 1064 1229 1277 1650 1867 1955 2100 2145 2708 3196 3376 3379 3381 3389 3398 3404 3410 3411 8207 
+	}
+	manpower=22093276
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

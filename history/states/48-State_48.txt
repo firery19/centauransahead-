@@ -1,0 +1,41 @@
+
+state={
+	id=48
+	name="STATE_48"
+	resources={
+		oil=33.000
+		steel=18.000
+		tungsten=12.000
+		chromium=10.000
+	}
+
+	history={
+		owner = CET
+		add_claim_by = CET
+		add_core_of = COV
+		buildings = {
+			arms_factory = 1
+			industrial_complex = 2
+			infrastructure = 3
+		
+		}
+		1944.1.1.12 = {
+		owner = COV
+		controller = COV
+		}
+		victory_points = {
+			2749 6 
+		}
+		victory_points = {
+			1827 20
+		}
+	}
+
+	provinces={
+		145 156 276 492 649 688 792 898 1311 1464 1546 1712 1827 2056 2746 2749 2754 2837 2870 2920 4235 4308 4383 4403 4415 4441 4485 4510 4535 4550 4560 4569 4593 4599 4611 4639 4640 4667 4677 
+	}
+	manpower=8306352
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

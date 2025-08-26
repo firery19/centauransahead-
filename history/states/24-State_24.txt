@@ -1,0 +1,31 @@
+
+state={
+	id=24
+	name="STATE_24"
+
+	history={
+		owner = LBR
+		add_core_of = LBR
+		buildings = {
+			infrastructure = 2
+			5717 = {
+				supply_node = 1
+				naval_base = 1
+
+			}
+
+		}
+		victory_points = {
+			5717 1 
+		}
+
+	}
+
+	provinces={
+		48 2476 2597 2658 5558 5589 5714 5717 5805 6811 6823 6826 6831 6833 6835 6837 
+	}
+	manpower=1494424
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+}

@@ -1,0 +1,25 @@
+
+state={
+	id=151
+	name="STATE_151"
+
+	history={
+		owner = AUR
+		add_core_of = AUR
+		victory_points = {
+			2187 20 
+		}
+		victory_points = {
+			1896 15
+		}
+
+	}
+
+	provinces={
+		406 834 943 1002 1217 1295 1364 1474 1508 1557 1575 1617 1728 1766 1798 1807 1821 1832 1836 1896 1897 2187 2543 2598 2855 2933 3044 3056 6243 6251 6270 6275 6276 6295 6297 6304 6307 6310 6325 6330 6331 6342 6347 6357 6370 6374 6379 
+	}
+	manpower=14613638
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

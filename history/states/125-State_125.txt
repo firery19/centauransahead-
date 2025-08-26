@@ -1,0 +1,21 @@
+state={
+	id=125
+	name="STATE_125"
+	history = {
+		owner = HYS
+		add_core_of = HYS
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			6691 16
+		}
+	}
+	provinces={
+		6685 6691 6699 6701 6705 6706 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=23105
+        state_category = tiny_island
+}

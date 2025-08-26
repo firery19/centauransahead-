@@ -1,0 +1,24 @@
+
+state={
+	id=30
+	name="STATE_30"
+	history = {
+		owner = GRS
+		add_core_of = GRS
+		add_claim_by = VEG
+		buildings = {
+            infrastructure = 3
+            industrial_complex = 2
+        }
+		victory_points = {
+			4310 2
+		}
+	}
+	provinces={
+		50 292 355 410 652 905 1020 1081 1127 1531 1640 1779 1790 2048 2095 2183 2459 2670 2764 3134 4034 4059 4069 4096 4124 4132 4138 4200 4225 4229 4231 4245 4264 4276 4309 4310 4325 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=11502786
+        state_category = megalopolis
+}

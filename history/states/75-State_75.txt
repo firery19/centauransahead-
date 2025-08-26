@@ -1,0 +1,45 @@
+
+state={
+	id=75
+	name="STATE_75"
+	resources = {
+		aluminium = 0
+		steel = 35
+		tungsten = 17
+		chromium = 37
+	}
+	history={
+		owner = TUC
+		add_core_of = TUC
+		buildings = {
+			
+			industrial_complex = 1
+			infrastructure = 3
+			3358 = {
+				naval_base = 2
+
+			}
+			2534 = {
+				naval_base = 3
+
+			}
+
+		}
+		victory_points = {
+			305 5 
+		}
+		1944.1.1.12 = {
+			owner = RIA
+			controller = RIA
+
+}
+	}
+
+	provinces={
+		305 417 497 769 988 1007 1017 1071 1394 1514 2005 2215 2358 2383 2534 2671 3358 3380 3391 3402 3407 3443 3445 3452 
+	}
+	manpower=2191151
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

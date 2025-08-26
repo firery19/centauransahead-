@@ -1,0 +1,16 @@
+characters = {
+	URS_kastus_magor = { 
+		name = "Kastus Magor"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_URS_kastus_magor
+				small = GFX_portrait_URS_kastus_magor_small
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { hawk } #stalins_puppet
+			expire = "1913.1.1.1"
+			id = -1
+		}
+	}

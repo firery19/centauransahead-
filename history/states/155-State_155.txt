@@ -1,0 +1,34 @@
+
+state={
+	id=155
+	name="STATE_155"
+	resources={
+		tungsten=8.000
+	}
+	history={
+		owner = URS
+		add_core_of = URS
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 1
+			dockyard = 2
+			2454 = {
+				naval_base = 4
+				}
+			}
+			victory_points = {
+			3415 50
+			}
+			victory_points = {
+			2454 13 
+			}
+		}
+	provinces={
+		65 299 338 521 587 601 692 859 1015 1276 1313 1386 1466 1610 1685 1871 1882 2041 2204 2280 2370 2454 2461 2509 2612 2666 3122 3415 3425 3429 3431 3444 3455 3456 3460 3461 3476 3483 3499 3507 3522 3534 
+	}
+	manpower=49193831
+	buildings_max_level_factor=1.000
+	state_category=industrial_heartland
+	local_supplies=0.000
+}

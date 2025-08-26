@@ -1,0 +1,78 @@
+on_actions = { 
+	on_startup = {
+		effect = {
+			115 = {
+				add_dynamic_modifier = {
+					modifier = URS_colonial_resistance
+				}
+			}
+			113 = {
+				add_dynamic_modifier = {
+					modifier = URS_colonial_resistance
+				}
+			}
+			116 = {
+				add_dynamic_modifier = {
+					modifier = URS_colonial_resistance
+				}
+			}
+			117 = {
+				add_dynamic_modifier = {
+					modifier = URS_colonial_resistance
+				}
+			}
+			114 = {
+				add_dynamic_modifier = {
+					modifier = URS_colonial_resistance
+				}
+			}
+			119 = {
+				add_dynamic_modifier = {
+					modifier = URS_colonial_resistance
+				}
+			}
+			118 = {
+				add_dynamic_modifier = {
+					modifier = URS_colonial_resistance
+				}
+			}
+			112 = {
+				add_dynamic_modifier = {
+					modifier = URS_colonial_resistance
+				}
+			}
+			130 = {
+				add_dynamic_modifier = {
+					modifier = URS_colonial_resistance
+				}
+			}
+			133 = {
+				add_dynamic_modifier = {
+					modifier = URS_colonial_resistance
+				}
+			}
+			131 = {
+				add_dynamic_modifier = {
+					modifier = URS_colonial_resistance
+				}
+			}
+			132 = {
+				add_dynamic_modifier = {
+					modifier = URS_colonial_resistance
+				}
+			}
+			134 = {
+				add_dynamic_modifier = {
+					modifier = URS_colonial_resistance
+				}
+			}
+			182 = {
+				add_dynamic_modifier = {
+					modifier = URS_colonial_resistance
+				}
+			}
+
+
+		}
+	}
+}

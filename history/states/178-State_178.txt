@@ -1,0 +1,25 @@
+state={
+	id=178
+	name="STATE_178"
+	history={
+		owner = CLB
+		add_core_of = CLB
+		add_core_of = PHA
+		buildings = {
+			infrastructure = 1
+			}
+		victory_points = {
+			1441 30
+			}
+			victory_points = {
+			3702 5
+			}
+		}
+	provinces={
+		18 484 614 711 789 820 890 924 1058 1133 1203 1341 1441 2007 2568 2624 2803 3101 3633 3636 3649 3656 3667 3670 3684 3701 3702 3711 
+	}
+	manpower=16005362
+	state_category = metropolis
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

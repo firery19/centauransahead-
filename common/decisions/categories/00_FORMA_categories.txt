@@ -1,0 +1,12 @@
+south_corvus_decisions = {
+    icon =
+
+    picture = 
+
+    allowed = {
+        original_tag = CET
+    }
+    priority = {
+        base = 100
+    }
+}

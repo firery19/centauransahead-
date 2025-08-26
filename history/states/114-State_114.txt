@@ -1,0 +1,36 @@
+state={
+	id=114
+	name="STATE_114"
+	history={
+		owner = URS
+		add_core_of = CNS
+		add_claim_by = ORI
+		buildings = {
+			infrastructure = 1
+			4345 = {
+				naval_base = 3
+			}
+		}
+		victory_points = {
+			451 6 
+		}
+		start_resistance = yes
+		set_resistance = 30
+		set_compliance = 60
+		1944.1.1.12 = {
+			owner = ORI
+			controller = ORI
+			add_core_of = ORI
+}
+	}
+	resources={
+		oil=122.000
+	}
+	provinces={
+		140 283 290 451 474 572 580 679 773 978 1023 1079 1085 1438 1486 1493 1512 1741 1765 1804 1908 2001 2029 2101 2135 2193 2227 2329 2347 2366 2511 2526 2644 2674 2720 2721 2734 2737 2761 2770 2797 2928 2948 2951 2986 2992 3017 3043 3048 3051 3071 3092 3120 4232 4255 4260 4265 4269 4277 4291 4298 4299 4316 4326 4335 4345 4349 4350 4365 4379 4390 4391 4394 4399 4400 4417 4418 4429 4445 4449 4450 4455 4456 4468 4483 4494 4500 4502 4503 4525 4539 4546 4558 4565 4584 4595 4596 4600 4602 4617 4626 4644 4660 4681 4682 4719 4720 4740 4749 
+	}
+	manpower=2641701
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

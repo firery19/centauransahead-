@@ -1,0 +1,56 @@
+
+state={
+	id=2
+	name="STATE_2"
+	resources={
+		oil=22.000
+		steel=21.000
+		tungsten=12.000
+	}
+
+	history={
+		owner = HYS
+		add_core_of = HYS
+		buildings = {
+			industrial_complex = 1
+			arms_factory = 1
+			
+			infrastructure = 3
+			3843 = {
+				naval_base = 3
+
+			}
+			3820 = {
+				naval_base = 3
+
+			}
+			3691 = {
+			naval_base = 2
+			}
+
+		}
+		victory_points = {
+			3706 50 
+		}
+		victory_points = {
+		3843 15
+		}
+		victory_points = {
+		3820 5
+		}
+		victory_points = {
+		3648 5
+		}
+		victory_points = {
+		3691 5
+		}
+	}
+
+	provinces={
+		5 72 77 214 342 383 385 485 562 635 646 707 739 904 910 930 949 1275 1287 1288 1380 1382 1405 1492 1633 1635 1637 1707 1755 1801 1806 1890 1951 2178 2231 2297 2386 2489 2492 2576 2634 2814 2973 3014 3026 3281 3302 3315 3640 3644 3648 3658 3659 3663 3664 3668 3673 3682 3683 3690 3691 3692 3699 3703 3706 3710 3720 3721 3729 3730 3736 3741 3742 3753 3757 3787 3806 3807 3808 3810 3820 3831 3840 3843 3849 3870 3889 3895 3898 3920 3952 3968 3983 8211 
+	}
+	manpower=26112553
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+	local_supplies=0.000
+}

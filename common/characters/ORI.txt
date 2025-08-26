@@ -1,0 +1,40 @@
+characters = {
+	ORI_Kevin_Hart = {
+		name = "Kevin Hart"
+		
+		portraits = {
+			civilian = {
+			large = GFX_portrait_ORI_Kevin_Hart
+			small = GFX_portrait_ORI_Kevin_Hart_small
+			}
+		}
+		
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			id = -1
+		}
+	}
+	
+	ORI_Simon_Cromwell = {
+		name = "Simon Cromwell"
+		
+		portraits = {
+			civilian = {
+			large = GFX_portrait_ORI_Simon_Cromwell
+			small = GFX_portrait_ORI_Simon_Cromwell_small
+			}
+		}
+		
+		country_leader = {
+			ideology = liberalism
+			traits = {}
+			id = -1
+		}
+	}
+
+
+
+
+
+}

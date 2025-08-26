@@ -1,0 +1,36 @@
+l_english:
+ # political #
+ 
+ ##########
+ # industry
+ ##########
+ 
+ ######
+ # army
+ ######
+ 
+ ######
+ # navy
+ ######
+ 
+ ##########
+ # research
+ ##########
+ 
+ ########
+ # events
+ ########
+ 
+ ###########
+ # decisions
+ ###########
+ 
+ #########
+ # spirits
+ #########
+ CTA_democratic_bastion_idea:0 "The Northern Democracy"
+ CTA_democratic_bastion_idea_desc:0 "Centauri is not motivated by imperialism. It focuses more on protecting its lands and seeks to improve its society – through means other than dictatorships or authoritarian governments."
+ ######
+ # misc
+ ######
+ 

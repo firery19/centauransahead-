@@ -1,0 +1,29 @@
+state={
+	id=88
+	name="STATE_88"
+	resources={
+		steel=15.000
+	}
+	history={
+		owner = URS
+		add_core_of = URS
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 0
+			dockyard = 0
+
+		}
+		victory_points = {
+			3338 1 
+		}
+
+	}
+	provinces={
+		28 150 215 223 245 250 258 412 424 453 495 503 518 583 640 673 738 793 888 958 1062 1153 1297 1331 1643 1648 1721 1726 1963 2141 2180 2182 2228 2483 2640 2747 3334 3338 3340 3342 3346 3348 3349 3352 3354 3356 3364 3365 3366 3374 6543 
+	}
+	manpower=19251308
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

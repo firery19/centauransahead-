@@ -1,0 +1,28 @@
+﻿units = {
+
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Coastal Defence Fleet"
+		naval_base = 1329
+		task_force = {				
+			name = "First Flotilla"
+			location = 1329
+			ship = { name = "Altair" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = AQU } } }
+			ship = { name = "Talona" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AQU } } }
+			ship = { name = "Alshain" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AQU } } }
+			ship = { name = "Denebokab" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AQU } } }
+			ship = { name = "Tarazed" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AQU } } }
+			ship = { name = "Okab" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AQU } } }
+		}
+		task_force = {				
+			name = "Second Flotilla"
+			location = 1329
+			ship = { name = "Valegny" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AQU } } }
+			ship = { name = "Almery" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AQU } } }
+			ship = { name = "Valenmur" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AQU } } }
+			ship = { name = "Villeurmeirs" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AQU } } }
+			ship = { name = "Marinesse" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AQU } } }
+		}
+	}
+}
+

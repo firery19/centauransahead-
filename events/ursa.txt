@@ -1,0 +1,515 @@
+add_namespace = urs
+
+country_event = {
+	id = urs.1
+	title = urs.1.t
+	desc = urs.1.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = urs.1.a
+		custom_effect_tooltip = ursa_lepus_tooltip
+		LPS = {
+				set_state_owner = 133
+				set_state_owner = 130
+				set_state_owner = 131
+				set_state_owner = 132
+				set_state_owner = 134
+				set_state_owner = 182
+		hidden_effect = {
+			LPS = {
+				set_state_controller = 133
+				set_state_controller = 130
+				set_state_controller = 131
+				set_state_controller = 132
+				set_state_controller = 134
+				set_state_controller = 182
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = urs.2
+	title = urs.2.t
+	desc = urs.2.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = urs.2.a
+		trigger = { TAG = HYS }
+		add_opinion_modifier = {
+			target = URS
+			modifier = embargoed_us 
+		}
+		add_timed_idea = {
+			idea = URS_hydrus_trade_destruction
+			days = 270
+		}
+	}
+	option = {
+		name = urs.2.b
+		trigger = { TAG = ORI }
+		add_opinion_modifier = {
+			target = URS
+			modifier = condemn_aggression 
+		}
+	}
+}
+country_event = {
+	id = urs.3
+	title = urs.3.t
+	desc = urs.3.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = urs.3.a
+		add_war_support = -0.15
+	}
+}
+country_event = {
+	id = urs.4
+	title = urs.4.t
+	desc = urs.4.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = urs.4.a
+		add_doctrine_cost_reduction = {
+			cost_reduction = 1
+			uses = 1
+			category = cat_superior_firepower
+		}
+	}
+	option = {
+		name = urs.4.b
+		add_doctrine_cost_reduction = {
+			cost_reduction = 1
+			uses = 1
+			category = cat_grand_battle_plan
+		}
+	}
+	option = {
+		name = urs.4.c
+		add_doctrine_cost_reduction = {
+			cost_reduction = 1
+			uses = 1
+			category = cat_mass_assault
+		}
+	}
+}
+country_event = {
+	id = urs.5
+	title = urs.5.t
+	desc = urs.5.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = urs.5.a
+		army_experience = -20
+	}
+}
+country_event = {
+	id = urs.6
+	title = urs.6.t
+	desc = urs.6.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = urs.6.a
+		add_stability = -0.05
+		add_popularity = {
+			ideology = ROOT
+			popularity = -0.05
+		}
+	}
+}
+country_event = {
+	id = urs.7
+	title = urs.7.t
+	desc = urs.7.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = urs.7.a
+		random_owned_state = {
+			limit = {
+				has_resistance = yes
+				is_owned_by = ROOT
+			}
+			add_resistance = 10
+		}
+		random_owned_state = {
+			limit = {
+				has_resistance = yes
+				is_owned_by = ROOT
+			}
+			add_resistance = 10
+		}
+		random_owned_state = {
+			limit = {
+				has_resistance = yes
+				is_owned_by = ROOT
+			}
+			add_resistance = 10
+		}
+		random_owned_state = {
+			limit = {
+				has_resistance = yes
+				is_owned_by = ROOT
+			}
+			add_resistance = 10
+		}
+	}
+}
+country_event = {
+	id = urs.8
+	title = urs.8.t
+	desc = urs.8.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = urs.8.a
+		random_owned_state = {
+			limit = {
+				has_resistance = yes
+				is_owned_by = ROOT
+			}
+			add_compliance = -7.5
+		}
+		random_owned_state = {
+			limit = {
+				has_resistance = yes
+				is_owned_by = ROOT
+			}
+			add_compliance = -7.5
+		}
+		random_owned_state = {
+			limit = {
+				has_resistance = yes
+				is_owned_by = ROOT
+			}
+			add_compliance = -7.5
+		}
+		random_owned_state = {
+			limit = {
+				has_resistance = yes
+				is_owned_by = ROOT
+			}
+			add_compliance = -7.5
+		}
+	}
+}
+country_event = {
+	id = urs.9
+	title = urs.9.t
+	desc = urs.9.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = urs.9.a
+		add_war_support = -0.05
+		add_manpower = -2500
+		send_equipment = {
+			equipment = infantry_equipment
+			amount = 200
+			target = LPS
+		}
+	}
+}
+country_event = { #East Lepus Falls
+	id = urs.10
+	title = urs.10.t
+	desc = urs.10.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			182 = {
+				set_demilitarized_zone = yes
+			}
+			134 = {
+				set_demilitarized_zone = yes
+			}
+			132 = {
+				set_demilitarized_zone = yes
+			}
+			131 = {
+				set_demilitarized_zone = yes
+			}
+			133 = {
+				set_demilitarized_zone = yes
+			}
+		}
+	}
+
+	option = {
+		name = urs.10.a
+		add_war_support = 0.15
+		hidden_effect = {
+			country_event = { id = urs.12 days = 30 }
+			ORI = {
+				country_event = { id = urs.11 }
+			}
+			HYS = {
+				country_event = { id = urs.11 }
+			}
+		}
+	}
+}
+country_event = {
+	id = urs.11
+	title = urs.11.t
+	desc = urs.11.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+
+	option = {
+		name = urs.11.a
+	}
+}
+country_event = { #Lepus spawns
+	id = urs.12
+	title = urs.12.t
+	desc = urs.12.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+		load_oob = LPS_1900
+			#130 = {
+			#	set_demilitarized_zone = yes
+			#}
+			182 = {
+				set_demilitarized_zone = no
+				transfer_state_to = LPS
+			}
+			134 = {
+				set_demilitarized_zone = no
+				transfer_state_to = LPS
+			}
+			132 = {
+				set_demilitarized_zone = no
+				transfer_state_to = LPS
+			}
+			131 = {
+				set_demilitarized_zone = no
+				transfer_state_to = LPS
+			}
+			133 = {
+				set_demilitarized_zone = no
+				transfer_state_to = LPS
+			}
+
+		}
+	}
+	option = {
+		name = urs.12.a
+		IF = {
+			limit = {
+				has_country_flag = URS_lepus_got_fucked
+			}
+			LPS = {
+				add_timed_idea = {
+					idea = URS_lepus_trolling
+					days = 250
+				}
+			}
+		}
+		130 = {
+			set_demilitarized_zone = yes
+		}
+		hidden_effect = {
+			country_event = { id = urs.13 days = 30 }
+			every_country = {
+				news_event = { id = news.414 }
+			}
+			clear_country_flag = grease_wars_not_started
+			custom_effect_tooltip = grease_wars_prelude_tooltip
+			complete_national_focus = URS_prelude_grease_war
+		}
+	}
+	option = {
+		name = urs.12.b
+		add_political_power = -100
+		add_stability = -0.1
+		IF = {
+			limit = {
+				has_country_flag = URS_lepus_got_fucked
+			}
+			LPS = {
+				add_timed_idea = {
+					idea = URS_lepus_trolling
+					days = 250
+				}
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				news_event = { id = news.414 }
+			}
+		}
+	}
+}
+country_event = { #West Lepus falls
+	id = urs.13
+	title = urs.13.t
+	desc = urs.13.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			130 = {
+				set_demilitarized_zone = no
+				transfer_state_to = LPS
+			}
+		}
+	}
+	option = {
+		name = urs.13.a
+		trigger = {
+			TAG = URS
+		}
+		clear_country_flag = grease_wars_not_started
+		custom_effect_tooltip = grease_wars_prelude_tooltip
+		complete_national_focus = URS_prelude_grease_war
+	}
+}
+country_event = { #Canis Rebellion
+	id = urs.14
+	title = urs.14.t
+	desc = urs.14.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+
+	option = {
+		name = urs.14.a
+		123 = {
+			transfer_state_to = CNS
+		}
+		declare_war_on = {
+			target = CNS
+			type = annex_everything
+		}
+		hidden_effect = {
+		CNS = { country_event = { id = cns.1 days = 0 } }
+		set_country_flag = grease_wars_start
+			CNS = {
+				set_province_controller = 3242
+				set_province_controller = 3732
+				set_province_controller = 3756
+				set_province_controller = 136
+				set_province_controller = 3654
+				set_province_controller = 3643
+				set_province_controller = 628
+				set_province_controller = 1164
+				set_province_controller = 3672
+				set_province_controller = 3689
+				set_province_controller = 667
+				set_province_controller = 1891
+				set_province_controller = 3709
+				set_province_controller = 3705
+				set_province_controller = 256
+				set_province_controller = 1842
+				set_province_controller = 3765
+				set_province_controller = 911
+				set_province_controller = 1107
+				set_province_controller = 3782
+				set_province_controller = 2336
+				set_province_controller = 1932
+				set_province_controller = 3796
+				set_province_controller = 752
+				set_province_controller = 3945
+				set_province_controller = 2732
+				set_province_controller = 3278
+			}
+		}
+		IF = {
+			limit = {
+				NOT = {
+					has_completed_focus = URS_prevent_economic_collapse
+				}
+			}
+			hidden_effect = {
+				country_event = { id = urs.15 days = 10 }
+				country_event = { id = urs.16 days = 25 }
+			}
+		}
+		else = {
+			add_political_power = 50
+		}
+	}
+}
+country_event = { #bye bye economy
+	id = urs.15
+	title = urs.15.t
+	desc = urs.15.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+
+	option = {
+		name = urs.15.a
+		swap_ideas = {
+			remove_idea = URS_sluggish_economy
+			add_idea = URS_sluggish_economy_obliterated
+		}
+		complete_national_focus = URS_economy_fixing
+	}
+}
+country_event = { #bye bye stability
+	id = urs.16
+	title = urs.16.t
+	desc = urs.16.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+
+	option = {
+		name = urs.16.a
+		IF = {
+			limit = {
+				has_idea = URS_domestic_unrest
+			}
+			swap_ideas = {
+				remove_idea = URS_domestic_unrest
+				add_idea = URS_domestic_unrest_grease_wars
+			}
+		}
+		IF = {
+			limit = {
+				has_idea = URS_domestic_unrest1
+			}
+			swap_ideas = {
+				remove_idea = URS_domestic_unrest1
+				add_idea = URS_domestic_unrest_grease_wars
+			}
+		}
+	}
+}

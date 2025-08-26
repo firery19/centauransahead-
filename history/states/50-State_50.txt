@@ -1,0 +1,27 @@
+
+state={
+	id=50
+	name="STATE_50"
+	history = {
+		owner = CET
+		add_core_of = CET
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			4049 2
+		}
+		1944.1.1.12 = {
+			owner = ANT
+			controller = ANT
+
+}
+	}
+	provinces={
+		4049 6751 6755 6762 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=82100
+        state_category = tiny_island
+}

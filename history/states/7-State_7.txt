@@ -1,0 +1,46 @@
+
+state={
+	id=7
+	name="STATE_7"
+	resources={
+		steel=11.000
+		oil=5.000
+	}
+
+	history={
+		owner = CET
+		add_core_of = CET
+		buildings = {
+			arms_factory = 2
+			industrial_complex = 3
+			dockyard = 3
+			infrastructure = 4
+			2919 = {
+				naval_base = 10
+
+			}
+
+		}
+		1944.1.1.12 = {
+			owner = ANT
+			controller = ANT
+#			add_core_of = ANT
+
+		}
+		victory_points = {
+			2919 50 
+		}
+		victory_points = {
+			5749 15 
+		}
+
+	}
+
+	provinces={
+		9 200 1401 1941 2157 2254 2446 2465 2919 2999 3149 3153 3199 3312 5122 5206 5207 5262 5286 5320 5365 5386 
+	}
+	manpower=14801778
+	buildings_max_level_factor=1.000
+	state_category=industrialized_metropolis
+	local_supplies=0.000
+}

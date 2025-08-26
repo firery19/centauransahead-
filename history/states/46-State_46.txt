@@ -1,0 +1,49 @@
+
+state={
+	id=46
+	name="STATE_46"
+	resources={
+		aluminium=5.000
+		oil=4.000
+	}
+
+	history={
+		owner = CET
+		add_core_of = CET
+		buildings = {
+			industrial_complex = 2
+			dockyard = 3
+			infrastructure = 3
+			5032 = {
+				naval_base = 4
+
+			}
+			5136 = {
+				naval_base = 4
+
+			}
+
+		}
+		1944.1.1.12 = {
+			owner = ANT
+			controller = ANT
+#			add_core_of = ANT
+
+		}
+		victory_points = {
+			5032 35 
+		}
+		victory_points = {
+			5136 35
+		}
+
+	}
+
+	provinces={
+		27 345 1346 1673 1793 2495 2530 2712 2788 2843 3260 4868 4869 4903 4938 4951 4979 5008 5032 5043 5114 5136 5137 
+	}
+	manpower=11783131
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+	local_supplies=0.000
+}

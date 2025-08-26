@@ -1,0 +1,14 @@
+ideas = {
+    country = {
+        CNS_defend_everything = {
+            
+            picture = idea_COV_revanchism
+            allowed = { original_tag = CNS }
+            removal_cost = -1
+
+            modifier = {
+				army_core_defence_factor = 3
+            }
+        }
+    }
+}

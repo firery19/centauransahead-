@@ -1,0 +1,39 @@
+
+state={
+	id=154
+	name="STATE_154"
+	resources={
+		oil=3
+		steel=2.000
+		tungsten=3.000
+		chromium=2.000
+		}
+		history= {
+		owner = CET
+		add_claim_by = CET
+		add_core_of = COV
+		buildings = {
+			arms_factory = 1
+			industrial_complex = 1
+			dockyard = 1
+			infrastructure = 3
+			21 = {
+				naval_base = 3
+				}
+			}
+			1944.1.1.12 = {
+				owner = COV
+				controller = COV
+				}
+			victory_points = {
+			21 11 
+			}
+		}
+	provinces={
+		21 262 324 627 808 844 1228 1325 1761 1870 2079 2663 2676 2859 2883 4711 4727 4760 4762 4779 4809 4820 4837 4843 4937 4984 
+	}
+	manpower=3285921
+	state_category=large_city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

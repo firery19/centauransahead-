@@ -1,0 +1,91 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_portrait_BCH_hitori_gotoh"
+		texturefile = "gfx/leaders/BCH/portrait_BCH_hitori_gotoh.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_BCH_hitori_gotoh_small"
+		texturefile = "gfx/leaders/BCH/portrait_BCH_hitori_gotoh_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_BCH_kita_ikuyo"
+		texturefile = "gfx/leaders/BCH/portrait_BCH_kita_ikuyo.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_BCH_ryo_yamada"
+		texturefile = "gfx/leaders/BCH/portrait_BCH_ryo_yamada.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_BCH_nijika_ijichi"
+		texturefile = "gfx/leaders/BCH/portrait_BCH_nijika_ijichi.dds"
+	}
+	
+	### orion
+
+	spriteType = {
+		name = "GFX_portrait_ORI_Kevin_Hart_small"
+		texturefile = "gfx/leaders/ORI/portrait_ORI_Kevin_Hart_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_ORI_Kevin_Hart"
+		texturefile = "gfx/leaders/ORI/portrait_ORI_Kevin_Hart.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_ORI_Simon_Cromwell"
+		texturefile = "gfx/leaders/ORI/portrait_ORI_Simon_Cromwell.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_ORI_Simon_Cromwell_small"
+		texturefile = "gfx/leaders/ORI/portrait_ORI_Simon_Cromwell_small.dds"
+	}
+
+	# hydrus
+	
+
+
+	# antares
+
+	spriteType = {
+		name = "GFX_portrait_ANT_kalvin_tau"
+		texturefile = "gfx/leaders/ANT/portrait_ANT_kalvin_tau.dds"
+	}
+
+	# ursa
+
+	spriteType = {
+		name = "GFX_portrait_URS_kastus_magor"
+		texturefile = "gfx/leaders/URS/portrait_URS_kastus_magor.dds"
+	}
+
+	# cetus
+
+	spriteType = {
+		name = "GFX_portrait_CET_frederick_scapha"
+		texturefile = "gfx/leaders/CET/portrait_CET_Frederick_Scapha.dds"
+	}
+	
+	# corvus
+
+	spriteType = {
+		name = "GFX_portrait_COV_oliver_khorin"
+		texturefile = "gfx/leaders/COV/portrait_COV_oliver_khorin.dds"
+	}
+
+	# aquila
+
+	spriteType = {
+		name = "GFX_portrait_AQU_ewan_fouwler"
+		texturefile = "gfx/leaders/AQU/portrait_AQU_ewan_fouwler.dds"
+	}
+	
+	# vega
+	
+	spriteType = {
+		name = "GFX_portrait_VEG_alina_verda"
+		texturefile = "gfx/leaders/VEG/portrait_VEG_alina_verda.dds"
+	}
+
+}

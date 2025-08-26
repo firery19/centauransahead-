@@ -1,0 +1,46 @@
+ideas = {
+    country = {
+        RIA_rural_countryside = {
+            
+            picture = generic_agrarian_society
+            allowed = { original_tag = RIA }
+            removal_cost = -1
+
+            modifier = {
+                conscription_factor = -0.666 #removing 75% makes their recruitable less than antares (i still think its lower with 66)
+                training_time_army_factor = 0.5
+		research_speed_factor = -0.2
+		consumer_goods_expected_value = 0.05
+            }
+        }
+        RIA_industrialisation = {
+            
+            picture = man_five_year_plan_industry
+            allowed = { original_tag = RIA }
+            removal_cost = -1
+
+            modifier = {
+				min_export = 0.1
+				industrial_capacity_factory = -0.10
+				industrial_capacity_dockyard = -0.10
+				production_speed_buildings_factor = 0.10
+		consumer_goods_expected_value = 0.05
+
+            }
+        }
+        RIA_mass_mob = {
+            #if ria is X amount close to capitulating
+            picture = idea_COV_revanchism
+            allowed = { original_tag = RIA }
+            removal_cost = -1
+
+            modifier = {
+                conscription_factor = 0.25
+                training_time_army_factor = -0.5
+		consumer_goods_expected_value = 0.05
+		industrial_capacity_factory = 0.10
+
+            }
+        }
+    }
+}

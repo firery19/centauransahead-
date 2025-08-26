@@ -1,0 +1,20 @@
+﻿units = {
+
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Southern Fleet"
+		naval_base = 2454
+		task_force = {				
+			name = "1st Command"
+			location = 2454
+			ship = { name = "FUS Gomeisa" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_1 = { amount = 1 owner = URS version_name = "Gomeisa Class" } } }
+			ship = { name = "FUS Alcor" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_1 = { amount = 1 owner = URS version_name = "Gomeisa Class" } } }
+			ship = { name = "FUS Furud" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_1 = { amount = 1 owner = URS version_name = "Gomeisa Class" } } }
+			ship = { name = "FUS Tania" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = URS version_name = "Tania Class" } } }
+			ship = { name = "FUS Alkafzah" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = URS version_name = "Tania Class" } } }
+			ship = { name = "FUS Borealis" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = URS version_name = "Tania Class" } } }
+			ship = { name = "FUS Carlina" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = URS version_name = "Tania Class" } } }
+		}
+	}
+			
+# add obb to ursa country file, add ship classes

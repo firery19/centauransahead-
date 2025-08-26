@@ -1,0 +1,133 @@
+### REGULAR DESTROYER NAMES###
+CET_DD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+
+	for_countries = { CET }
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }		
+
+	can_use = { always = yes }
+
+	prefix = "CIS "								
+	fallback_name = "Destroyer %s"					
+
+	unique = {
+		"Aurae" "Asteriae" "Hesperides" "Aegle" "Arethusa" "Erytheia" "Eratheis" "Hyades" "Pleiades" "Maia" "Electra" "Taygete" "Alcyone" "Celaeno" "Asterope" "Merope" "Nephele" "Alseides" "Auloniades" "Leimonides" "Napaeae" "Oreads" 
+	}
+}
+
+### LIGHT CRUISER NAMES###
+CET_CL_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CL
+
+	for_countries = { CET }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+	
+	can_use = { always = yes }
+	
+	prefix = "CIS "							
+	fallback_name = "Light Cruiser %s"
+
+	unique = {
+		"Anthousai" "Dryades" "Hamadryades" "Daphnaeae" "Epimeliades" "Kissiae" "Meliae" "Hyleoroi" "Haliae" "Crinaeae" "Eleionomae" "Limnades" "Limnatides" "Pegaeae"
+	}
+}
+
+### HEAVY CRUISER NAMES###
+CET_CA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CA
+
+	for_countries = { CET }
+
+	type = ship
+	ship_types = { ship_hull_cruiser heavy_cruiser }
+	
+	can_use = { always = yes }
+	
+	prefix = "CIS "								
+	fallback_name = "Heavy Cruiser %s"
+
+	unique = {
+		"Kappa"
+	}
+}
+
+### BATTLESHIP NAMES ###
+CET_BB_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BB
+
+	for_countries = { CET }
+	
+	can_use = { always = yes }
+
+	type = ship
+	ship_types = { ship_hull_heavy battleship }
+	
+	prefix = "CIS "								
+	fallback_name = "Battleship %s"		
+
+	unique = {
+        "Zephyrus" "Skiron" "Notus" "Eurus" "Boreas" "Aura" "Nitham"
+	}
+}
+
+### BATTLECRUISER NAMES ###
+CET_BC_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BC
+
+	for_countries = { CET }
+	
+	can_use = { always = yes }
+
+	type = ship
+	ship_types = { ship_hull_heavy battle_cruiser }
+	
+	prefix = "CIS "								
+	fallback_name = "Battlecruiser %s"		
+
+	unique = {
+           "Keitos" "Didphda" "Barb"
+ 	}
+}
+
+### AIRCRAFT CARRIER NAMES ###
+CET_CV_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CARRIERS
+
+	for_countries = { CET }
+	
+	can_use = { always = yes }
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+	
+	prefix = "CIS "							
+	fallback_name = "Carrier %s"		
+
+	unique = {
+		"Unity" "Gloria"
+	}
+}
+
+### SUBMARINES ###
+CET_SS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+
+	for_countries = { CET }
+	
+	can_use = { always = yes }
+	
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	
+	prefix = "CIS "							
+	fallback_name = "S-%s"
+	
+	unique = {
+		# Starting with K-class ships 
+		"S-I"
+	}
+}

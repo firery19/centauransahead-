@@ -1,0 +1,350 @@
+CET_army_work_budgets = {
+	CET_south_corvus_north = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			has_completed_focus = CET_increase_army_works_engineering_section_budget
+			has_full_control_of_state = 48
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 48 }
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2 
+		}
+
+		visible = {
+			has_completed_focus = CET_increase_army_works_engineering_section_budget
+		}
+		
+		fire_only_once = no
+		
+		cost = 100
+		
+		days_remove = 60
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		48 = {
+			add_dynamic_modifier = { 
+				modifier = CET_sector_funded 
+				}
+			}
+		}
+
+		remove_effect = {
+			48 = {
+				remove_dynamic_modifier = {
+					modifier = CET_sector_funded
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	CET_south_corvus_south = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			has_completed_focus = CET_increase_army_works_engineering_section_budget
+			has_full_control_of_state = 154
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 154 }
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2 
+		}
+
+		visible = {
+			has_completed_focus = CET_increase_army_works_engineering_section_budget
+		}
+		
+		fire_only_once = no
+		
+		cost = 50
+		
+		days_remove = 60
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		154 = {
+			add_dynamic_modifier = { 
+				modifier = CET_sector_funded 
+				}
+			}
+		}
+
+		remove_effect = {
+			154 = {
+				remove_dynamic_modifier = {
+					modifier = CET_sector_funded
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CET_nauta_region = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			has_completed_focus = CET_increase_army_works_engineering_section_budget
+			has_full_control_of_state = 7
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 7 }
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2 
+		}
+
+		visible = {
+			has_completed_focus = CET_increase_army_works_engineering_section_budget
+		}
+		
+		fire_only_once = no
+		
+		cost = 100
+		
+		days_remove = 60
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		7 = {
+			add_dynamic_modifier = { 
+				modifier = CET_sector_funded 
+				}
+			}
+		}
+
+		remove_effect = {
+			7 = {
+				remove_dynamic_modifier = {
+					modifier = CET_sector_funded
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CET_cetus_south = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			has_completed_focus = CET_increase_army_works_engineering_section_budget
+			has_full_control_of_state = 43
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 43 }
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2 
+		}
+
+		visible = {
+			has_completed_focus = CET_increase_army_works_engineering_section_budget
+		}
+		
+		fire_only_once = no
+		
+		cost = 50
+		
+		days_remove = 60
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		43 = {
+			add_dynamic_modifier = { 
+				modifier = CET_sector_funded 
+				}
+			}
+		}
+
+		remove_effect = {
+			43 = {
+				remove_dynamic_modifier = {
+					modifier = CET_sector_funded
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CET_cetus_southeast = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			has_completed_focus = CET_increase_army_works_engineering_section_budget
+			has_full_control_of_state = 44
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 44 }
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2 
+		}
+
+		visible = {
+			has_completed_focus = CET_increase_army_works_engineering_section_budget
+		}
+		
+		fire_only_once = no
+		
+		cost = 50
+		
+		days_remove = 60
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		44 = {
+			add_dynamic_modifier = { 
+				modifier = CET_sector_funded 
+				}
+			}
+		}
+
+		remove_effect = {
+			44 = {
+				remove_dynamic_modifier = {
+					modifier = CET_sector_funded
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CET_aquila_border_south = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			has_completed_focus = CET_increase_army_works_engineering_section_budget
+			has_full_control_of_state = 41
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 41 }
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2 
+		}
+
+		visible = {
+			has_completed_focus = CET_increase_army_works_engineering_section_budget
+		}
+		
+		fire_only_once = no
+		
+		cost = 50
+		
+		days_remove = 60
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		41 = {
+			add_dynamic_modifier = { 
+				modifier = CET_sector_funded 
+				}
+			}
+		}
+
+		remove_effect = {
+			41 = {
+				remove_dynamic_modifier = {
+					modifier = CET_sector_funded
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CET_aquila_border_north = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			has_completed_focus = CET_increase_army_works_engineering_section_budget
+			has_full_control_of_state = 39
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 39 }
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2 
+		}
+
+		visible = {
+			has_completed_focus = CET_increase_army_works_engineering_section_budget
+		}
+		
+		fire_only_once = no
+		
+		cost = 50
+		
+		days_remove = 60
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		39 = {
+			add_dynamic_modifier = { 
+				modifier = CET_sector_funded 
+				}
+			}
+		}
+
+		remove_effect = {
+			39 = {
+				remove_dynamic_modifier = {
+					modifier = CET_sector_funded
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}

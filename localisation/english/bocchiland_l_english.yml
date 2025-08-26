@@ -1,0 +1,1140 @@
+﻿focus_tree = {
+	id = bocchiland_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = BCH
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 1200 y = 700 }
+
+#	focus = {
+#		id = COV_
+#		icon = GFX_
+#		prerequisite = { focus = }
+#		mutually_exclusive = { focus =  }
+#		x = -1
+#		y = 0
+#		relative_position_id = 
+#
+#		cost = 10
+#		
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available = {
+#
+#		}
+#		
+#		bypass = {
+#
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#
+#		complete_tooltip = {
+#
+#		}
+#
+#		completion_reward = {
+#
+#		}
+#	}
+
+	focus = {
+		id = COV_prepare_to_take_SC
+		icon = GFX_goal_demand_sudetenland
+		mutually_exclusive = { focus = COV_reapproachment }
+		x = 25
+		y = 0
+		cost = 5
+
+		completion_reward = {
+				add_political_power = 100
+			}
+		}
+		############################################################################################
+		#####SOUTH CORVUS PATH: FACTORY ############################################################
+		############################################################################################
+		focus = { 
+		id = COV_mil_1
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = COV_prepare_to_take_SC }
+		relative_position_id = COV_prepare_to_take_SC
+		x = -2
+		y = 1
+		cost = 10
+		
+		completion_reward = {
+				random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_mil_2
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = COV_mil_1 }
+		relative_position_id = COV_mil_1
+		x = 0
+		y = 1
+		cost = 10
+		
+		completion_reward = {
+				random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_mil_3
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = COV_mil_2 }
+		relative_position_id = COV_mil_2
+		x = 0
+		y = 1
+		cost = 10
+		
+		completion_reward = {
+				random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+					}
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_mil_4
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = COV_mil_3 }
+		relative_position_id = COV_mil_3
+		x = 0
+		y = 1
+		cost = 10
+		
+		completion_reward = {
+				random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+					}
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_civ_1
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = COV_mil_1 }
+		relative_position_id = COV_mil_1
+		x = -2
+		y = 1
+		cost = 10
+		
+		completion_reward = {
+				random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+					}
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_civ_2
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = COV_civ_1 }
+		relative_position_id = COV_civ_1
+		x = 0
+		y = 1
+		cost = 10
+		
+		completion_reward = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_civ_3
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = COV_civ_2 }
+		relative_position_id = COV_civ_2
+		x = 0
+		y = 1
+		cost = 10
+		
+		completion_reward = {
+				random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+					}
+				}
+			}
+		}
+		################################################################################
+		####DIPLOMATIC PATH##################################DIPLOMATIC PATH############
+		################################################################################
+		focus = { 
+		id = COV_reapproachment
+		icon = GFX_goal_generic_improve_relations
+		mutually_exclusive = { focus = COV_prepare_to_take_SC }
+		x = 5
+		y = 0
+		cost = 5
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+	id = COV_reapp2
+	icon = GFX_focus_generic_treaty
+	prerequisite = { focus = COV_reapproachment }
+	relative_position_id = COV_reapproachment
+	x = 0
+	y = 1
+	cost = 10
+		
+	completion_reward = {
+				add_manpower = 100000
+			}
+		}
+		
+		focus = {
+	id = COV_reapp3
+	icon = GFX_focus_generic_steel
+	prerequisite = { focus = COV_reapp2 }
+	relative_position_id = COV_reapp2
+	x = 0
+	y = 1
+	cost = 10
+		
+	completion_reward = {
+				add_manpower = 100000
+			}
+		}
+		
+	focus = {
+	id = COV_reapp4
+	icon = GFX_goal_generic_positive_trade_relations
+	prerequisite = { focus = COV_reapp3 }
+	relative_position_id = COV_reapp3
+	x = 0
+	y = 1
+	cost = 10
+		
+	completion_reward = {
+				add_manpower = 100000
+			}
+		}
+		
+		focus = {
+	id = COV_reapp5
+	icon = GFX_goal_generic_forceful_treaty
+	prerequisite = { focus = COV_reapp4 }
+	relative_position_id = COV_reapp4
+	x = 0
+	y = 1
+	cost = 10
+		
+	completion_reward = {
+				add_manpower = 100000
+			}
+		}
+		
+		focus = { 
+		id = COV_civ_1_rep
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = COV_reapproachment }
+		relative_position_id = COV_reapproachment
+		x = -2
+		y = 1
+		cost = 10
+		
+		completion_reward = {
+				random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+					}
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_civ_2_rep
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = COV_civ_1_rep }
+		relative_position_id = COV_civ_1_rep
+		x = 0
+		y = 1
+		cost = 10
+		
+		completion_reward = {
+				random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+					}
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_civ_3_rep
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = COV_civ_2_rep }
+		relative_position_id = COV_civ_2_rep
+		x = 0
+		y = 1
+		cost = 10
+		
+		completion_reward = {
+				random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+					}
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_civ_4_rep
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = COV_civ_3_rep }
+		relative_position_id = COV_civ_3_rep
+		x = 0
+		y = 1
+		cost = 10
+		
+		completion_reward = {
+				random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+					}
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_mil_1_rep
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = COV_civ_1_rep }
+		relative_position_id = COV_civ_1_rep
+		x = -2
+		y = 1
+		cost = 10
+		
+		completion_reward = {
+				random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_mil_2_rep
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = COV_mil_1_rep }
+		relative_position_id = COV_mil_1_rep
+		x = 0
+		y = 1
+		cost = 10
+		
+		completion_reward = {
+				random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_mil_3_rep
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = COV_mil_2_rep }
+		relative_position_id = COV_mil_2_rep
+		x = 0
+		y = 1
+		cost = 10
+		
+		completion_reward = {
+				random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+					}
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_negotiation_fail
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		x = 0
+		y = 1
+		prerequisite = { focus = COV_reapp5 }
+		relative_position_id = COV_civ_3
+		cost = 18
+		
+		completion_reward = {
+				create_wargoal = {
+					type = take_core_state
+					generator = {57 58}
+					target = CET
+					expire = 0
+			}
+		}
+	}
+		#### RESEARCH #####
+	focus = {
+	id = COV_research
+	icon = GFX_goal_generic_scientific_exchange
+	prerequisite = { focus = COV_prepare_to_take_SC focus = COV_reapproachment }
+	relative_position_id = COV_reapproachment
+	x = 11
+	y = 1
+	cost = 5
+		
+	completion_reward = {
+			army_xp = 1
+			}
+		}
+
+		focus = {
+		id = COV_T05
+		icon = GFX_goal_generic_build_tank
+		x = 0
+		y = 1
+		prerequisite = { focus = COV_research }
+		relative_position_id = COV_research
+		cost = 15
+		
+		completion_reward = {
+				add_manpower = 100000
+			}
+		}
+		
+		focus = {
+		id = COV_artillery_1
+		icon = GFX_goal_generic_army_artillery2
+		x = -2
+		y = 1
+		prerequisite = { focus = COV_research }
+		relative_position_id = COV_research
+		cost = 15
+		
+		completion_reward = {
+				add_manpower = 100000
+			}
+		}
+		
+		focus = {
+		id = COV_artillery_2
+		icon = GFX_goal_generic_army_artillery2
+		x = 0
+		y = 1
+		prerequisite = { focus = COV_artillery_1}
+		relative_position_id = COV_artillery_1
+		cost = 15
+		
+		completion_reward = {
+				add_manpower = 100000
+			}
+		}
+		
+		focus = {
+		id = COV_armor_car
+		icon = GFX_goal_generic_production
+		x = 2
+		y = 1
+		prerequisite = { focus = COV_research}
+		relative_position_id = COV_research
+		cost = 15
+		
+		completion_reward = {
+				add_manpower = 100000
+			}
+		}
+		
+		focus = {
+		id = COV_tank
+		icon = GFX_goal_generic_production
+		x = 0
+		y = 1
+		prerequisite = { focus = COV_armor_car}
+		relative_position_id = COV_armor_car
+		cost = 15
+		
+		completion_reward = {
+				add_manpower = 100000
+			}
+		}
+		#####NAVY##################################################################################################
+		focus = {
+		id = COV_navy
+		icon = GFX_goal_generic_navy_cruiser
+		x = -15
+		y = 1
+		prerequisite = { focus = COV_prepare_to_take_SC focus = COV_reapproachment }
+		relative_position_id = COV_prepare_to_take_SC
+		cost = 15
+		
+		completion_reward = {
+				add_manpower = 100000
+			}
+		}
+		
+		focus = {
+		id = COV_dockyard_1
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 0
+		y = 1
+		prerequisite = { focus = COV_navy }
+		relative_position_id = COV_navy
+		cost = 15
+		
+		completion_reward = {
+				random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+					}
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_dockyard_2
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 0
+		y = 1
+		prerequisite = { focus = COV_dockyard_1 }
+		relative_position_id = COV_dockyard_1
+		cost = 15
+		
+		completion_reward = {
+				random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+					}
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_dockyard_3
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 0
+		y = 1
+		prerequisite = { focus = COV_dockyard_2 }
+		relative_position_id = COV_dockyard_2
+		cost = 15
+		
+		completion_reward = {
+				random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+					}
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_torpedo_boats
+		icon = GFX_focus_generic_naval_discipline
+		x = -2
+		y = 1
+		prerequisite = { focus = COV_navy }
+		relative_position_id = COV_navy
+		cost = 15
+		
+		completion_reward = {
+				add_manpower = 100000
+			}
+		}
+		
+		focus = {
+		id = COV_destroyer
+		icon = GFX_focus_generic_destroyer
+		x = 0
+		y = 1
+		prerequisite = { focus = COV_torpedo_boats }
+		relative_position_id = COV_torpedo_boats
+		cost = 15
+		
+		completion_reward = {
+				add_manpower = 100000
+			}
+		}
+		
+		focus = {
+		id = COV_light_cruiser
+		icon = GFX_focus_generic_cruiser2
+		x = 0
+		y = 1
+		prerequisite = { focus = COV_destroyer }
+		relative_position_id = COV_destroyer
+		cost = 15
+		
+		completion_reward = {
+				add_manpower = 100000
+			}
+		}
+		
+		focus = {
+		id = COV_heavy_cruiser
+		icon = GFX_goal_generic_navy_battleship
+		x = 2
+		y = 1
+		prerequisite = { focus = COV_navy }
+		relative_position_id = COV_navy
+		cost = 15
+		
+		completion_reward = {
+				add_manpower = 100000
+			}
+		}
+		
+		focus = {
+		id = COV_battleships
+		icon = GFX_focus_generic_navy_battleship2
+		x = 0
+		y = 1
+		prerequisite = { focus = COV_heavy_cruiser }
+		relative_position_id = COV_heavy_cruiser
+		cost = 15
+		
+		completion_reward = {
+				add_manpower = 100000
+			}
+		}
+		######## COV_RETAKE_CETUS_PATH ##########
+	focus = {
+		id = COV_conscripting
+		icon = GFX_focus_generic_full_social_mobilization
+		x = 0
+		y = 1
+		prerequisite = { focus = COV_prepare_to_take_SC }
+		relative_position_id = COV_prepare_to_take_SC
+		cost = 15
+		
+		completion_reward = {
+				add_manpower = 100000
+				add_ideas = limited_conscription
+			}
+		}
+		
+		focus = {
+		id = COV_ask_ant_support
+		icon = GFX_goal_generic_production
+		x = 2
+		y = 1
+		prerequisite = { focus = COV_conscripting }
+		relative_position_id = COV_conscripting
+		cost = 10
+		
+		completion_reward = {
+				add_timed_idea = { idea = COV_tax_the_rich days = 365 } # MAKE IT AN EVENT TRIGGER
+			}
+		}
+		
+		focus = {
+		id = COV_antarean_support
+		icon = GFX_goal_generic_production
+		x = 0
+		y = 1
+		prerequisite = { focus = COV_ask_ant_support }
+		relative_position_id = COV_ask_ant_support
+		cost = 15
+		
+		completion_reward = {
+				add_offsite_building = { type = industrial_complex level = 1 }
+				add_offsite_building = { type = arms_factory level = 2 }
+			}
+		}
+		
+		focus = {
+		id = COV_increase_production
+		icon = GFX_goal_generic_production
+		x = 0
+		y = 1
+		prerequisite = { focus = COV_conscripting }
+		relative_position_id = COV_conscripting
+		cost = 15
+		
+		completion_reward = {
+				add_manpower = 100000 # INFANTRY EQUIPMENT -20% COST ADDDDD!!!!!!
+			}
+		}
+		
+		focus = {
+		id = COV_coastal_fort
+		icon = GFX_focus_FIN_coastal_defense
+		x = 0
+		y = 1
+		prerequisite = { focus = COV_increase_production }
+		relative_position_id = COV_increase_production
+		cost = 15
+		
+		available = {
+				has_full_control_of_state = 8
+				has_full_control_of_state = 54
+			}
+		}
+		
+		search_filters = {}
+
+		completion_reward = {
+			custom_effect_tooltip = COV_coastal_fortifi
+
+			# FIX PLS
+			if = { #If Memel is controlled, then add forts in Memel, if not, then go to Zemaitija
+				limit = {
+					188 = { is_fully_controlled_by = COV }
+				}
+				custom_effect_tooltip = COV_coastal_fort_1
+				hidden_effect = {
+					8 = {
+						add_building_construction = {
+							type = coastal_bunker
+							level = 3
+							province = {
+								id = 3288
+							}
+							instant_build = yes
+						}
+					}
+				}
+			}
+			814 = { #Suduva
+				if = {
+					limit = { is_fully_controlled_by = COV }
+					custom_effect_tooltip = COV_coastal_fort_2
+					hidden_effect = {
+						add_building_construction = {
+							type = coastal_bunker
+							level = 3
+							province = {
+								id = 6407
+								id = 11312
+							}
+							instant_build = yes
+						}
+					}
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_intelligence
+		icon = GFX_focus_generic_secret_service_agency
+		x = 0
+		y = 1
+		prerequisite = { focus = COV_coastal_fort }
+		relative_position_id = COV_coastal_fort
+		cost = 15
+		
+		completion_reward = {
+				add_manpower = 100000 # GAIN INTEL ON CETUS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+			}
+		}
+		
+		focus = {
+		id = COV_take_sc
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		x = 0
+		y = 1
+		prerequisite = { focus = COV_intelligence }
+		prerequisite = { focus = COV_mil_4 }
+		relative_position_id = COV_intelligence
+		cost = 15
+		
+		completion_reward = {
+				create_wargoal = {
+					type = take_core_state
+					generator = {57 58}
+					target = CET
+					expire = 0
+				}
+			}
+		}
+		#SouthCorvusAttack######################################################################################
+		focus = {
+		id = COV_offensive_sc
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		x = 0
+		y = 1
+		prerequisite = { focus = COV_take_sc focus = COV_negotiation_fail }
+		relative_position_id = COV_take_sc
+		cost = 17
+		
+		completion_reward = {
+				add_manpower = 100000
+			}
+		}
+		
+		focus = {
+		id = COV_offensive_sc_1
+		icon = GFX_focus_GRE_a_land_of_mountains
+		x = 0
+		y = 1
+		prerequisite = { focus = COV_offensive_sc }
+		relative_position_id = COV_offensive_sc
+		cost = 17
+		
+		completion_reward = {
+				add_manpower = 100000
+			}
+		}
+		
+		focus = {
+		id = COV_offensive_sc_2
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		x = 0
+		y = 1
+		prerequisite = { focus = COV_offensive_sc_1 }
+		relative_position_id = COV_offensive_sc_1
+		cost = 17
+		
+		completion_reward = {
+				add_manpower = 100000
+			}
+		}
+		
+		focus = {
+		id = COV_antarean_guns
+		icon = GFX_focus_secret_rearmament
+		x = 2
+		y = 1
+		prerequisite = { focus = COV_offensive_sc }
+		prerequisite = { focus = COV_antarean_support }
+		relative_position_id = COV_offensive_sc
+		cost = 17
+		
+		completion_reward = {
+				add_manpower = 100000
+			}
+		}
+		
+		focus = {
+		id = COV_antarean_artillery
+		icon = GFX_goal_generic_army_artillery2
+		x = 0
+		y = 1
+		prerequisite = { focus = COV_antarean_guns }
+		relative_position_id = COV_antarean_guns
+		cost = 17
+		
+		completion_reward = {
+				add_manpower = 100000
+			}
+		}
+		
+		focus = {
+		id = COV_telegram_antares
+		icon = GFX_focus_POL_beck_ribbentrop
+		x = 0
+		y = 1
+		prerequisite = { focus = COV_antarean_artillery }
+		relative_position_id = COV_antarean_artillery
+		cost = 17
+		
+		completion_reward = {
+				add_manpower = 100000
+			}
+		}
+		
+		focus = {
+		id = COV_negotiation_success
+		icon = GFX_focus_POL_beck_ribbentrop
+		x = 0
+		y = 1
+		prerequisite = { focus = COV_reapp5 }
+		relative_position_id = COV_reapp5
+		cost = 17
+		
+		completion_reward = {
+				add_manpower = 100000
+			}
+		}
+		
+		focus = {
+		id = COV_cetan_nap
+		icon = GFX_focus_POL_beck_ribbentrop
+		x = 0
+		y = 1
+		prerequisite = { focus = COV_negotiation_success }
+		relative_position_id = COV_negotiation_success
+		cost = 17
+		
+		completion_reward = {
+				add_manpower = 100000
+			}
+		}
+		
+		focus = {
+		id = COV_towards_a_diplomatic_future
+		icon = GFX_focus_POL_beck_ribbentrop
+		x = 0
+		y = 1
+		prerequisite = { focus = COV_cetan_nap }
+		relative_position_id = COV_cetan_nap
+		cost = 17
+		
+		completion_reward = {
+				add_manpower = 100000
+			}
+		}
+		
+		focus = {
+		id = COV_south_centauran_alliance
+		icon = GFX_focus_POL_beck_ribbentrop
+		x = 0
+		y = 1
+		prerequisite = { focus = COV_towards_a_diplomatic_future }
+		relative_position_id = COV_towards_a_diplomatic_future
+		cost = 17
+		
+		completion_reward = {
+				add_manpower = 100000
+			}
+		}
+		
+		focus = {
+		id = COV_invite_cetus
+		icon = GFX_focus_POL_beck_ribbentrop
+		x = 0
+		y = 1
+		prerequisite = { focus = COV_south_centauran_alliance }
+		relative_position_id = COV_south_centauran_alliance
+		cost = 17
+		
+		completion_reward = {
+				add_manpower = 100000
+			}
+		}
+		
+		focus = {
+		id = COV_invite_aquila
+		icon = GFX_focus_POL_beck_ribbentrop
+		x = 0
+		y = 1
+		prerequisite = { focus = COV_invite_cetus }
+		relative_position_id = COV_invite_cetus
+		cost = 17
+		
+		completion_reward = {
+				add_manpower = 100000
+			}
+		}
+}

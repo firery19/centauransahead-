@@ -1,0 +1,21 @@
+state={
+	id=144
+	name="STATE_144"
+	history = {
+		owner = ORI
+		add_core_of = ORI
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			6825 9
+		}
+	}
+	provinces={
+		2 130 448 1106 1813 3045 3310 5468 5493 5514 5630 5754 5794 5802 5847 6817 6822 6825 6827 6828 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=4477741
+        state_category = rural
+}

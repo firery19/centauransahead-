@@ -1,0 +1,79 @@
+
+state={
+	id=77
+	name="STATE_77"
+	resources={
+		tungsten=3.000
+		aluminium=36
+	}
+
+	history={
+		owner = CTA
+		add_core_of = CTA
+		add_dynamic_modifier = { 
+		modifier = CTA_battery_line_dynamic_modifier
+		}
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 3
+			dockyard = 1
+
+			845 = {
+				coastal_bunker = 10
+
+			}
+			1013 = {
+				coastal_bunker = 10
+
+			}
+			3280 = {
+				coastal_bunker = 10
+
+			}
+			3626 = {
+				coastal_bunker = 10
+
+			}
+			3629 = {
+				coastal_bunker = 10
+
+			}
+			3642 = {
+				coastal_bunker = 10
+
+			}
+			3650 = {
+				coastal_bunker = 10
+
+			}
+			3652 = {
+				coastal_bunker = 10
+
+			}
+			3660 = {
+				coastal_bunker = 10
+
+			}
+			3662 = {
+				coastal_bunker = 10
+
+			}
+
+		}
+		victory_points = {
+		3642 10
+		}
+		victory_points = {
+		3280 10
+		}
+
+	}
+
+	provinces={
+		845 1013 1105 1450 1810 2139 2244 3245 3280 3626 3629 3642 3650 3652 3660 3662 
+	}
+	manpower=9304022
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

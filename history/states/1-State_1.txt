@@ -1,0 +1,48 @@
+
+state={
+	id=1
+	name="STATE_1"
+	resources={
+		oil=31.000
+		steel=11.000
+		tungsten=7.000
+	}
+
+	history={
+		owner = LBR
+		add_core_of = LBR
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 4
+			dockyard = 1
+			1261 = {
+				naval_base = 1
+
+			}
+			6036 = {
+				naval_base = 1
+
+			}
+			2087 = {
+				naval_base = 1
+
+			}
+
+		}
+		victory_points = {
+			6036 15 
+		}
+		victory_points = {
+			2725 15 
+		}
+
+	}
+
+	provinces={
+		132 169 203 253 271 380 415 740 776 791 833 894 1180 1261 1455 1532 1535 1587 1689 1731 1957 1969 2027 2044 2087 2136 2176 2418 2431 2513 2570 2575 2582 2694 2725 2735 2779 2966 3089 3112 3127 3152 3330 5658 5667 5703 5793 5833 5839 5872 5956 5979 5992 6005 6006 6013 6036 6039 6045 6057 6060 6062 6080 6081 6110 6116 6132 6145 6157 6184 6190 6218 6239 6249 6254 6265 6266 6273 6283 6284 6292 6293 6313 6819 
+	}
+	manpower=67969073
+	buildings_max_level_factor=1.000
+	state_category=expanded_industrial_sector
+	local_supplies=0.000
+}

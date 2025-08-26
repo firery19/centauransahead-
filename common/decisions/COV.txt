@@ -1,0 +1,787 @@
+COV_corvus_sabotage_operations = {
+	corvus_contact_rebels = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			has_completed_focus = COV_contact_southern_rebels
+		}
+
+		visible = {
+			has_completed_focus = COV_contact_southern_rebels
+			NOT = { has_country_flag = COV_rebel_contacted }
+		}
+		
+		fire_only_once = yes
+		
+		cost = 25
+		
+		complete_effect = {
+			set_country_flag = COV_rebel_contacted
+			#add_resistance_target
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	corvus_infrastructure_attack = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			has_completed_focus = COV_rebel_sabotage
+			custom_trigger_tooltip = {
+				tooltip = COV_pp_50_cp_10_tooltip
+				}
+			}
+			NOT = {
+				COV = {
+					has_war_with = CET
+					}
+				}
+		
+		custom_cost_text = COV_pp_50_cp_10
+		custom_cost_trigger = {
+			command_power > 9.99
+		}
+		custom_cost_trigger = {
+			has_political_power > 49
+		}
+		
+		visible = {
+			#has_completed_focus = COV_rebel_sabotage
+			has_country_flag = COV_rebel_contacted
+		}
+		
+		fire_only_once = no
+	#	days_re_enable = 1
+		days_re_enable = 28
+		
+		cost = 50
+		
+		complete_effect = {
+			every_state = {
+				limit = {
+					is_core_of = COV
+					is_controlled_by = CET
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 1
+				}
+			}
+			hidden_effect = {
+			add_command_power = -10
+			add_political_power = -50
+			}
+		}
+		ai_will_do = {
+		factor = 1
+		}
+	}
+	
+	corvus_railway_attack = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+		has_completed_focus = COV_sabotage_railway
+		custom_trigger_tooltip = {
+				tooltip = COV_pp_50_cp_10_tooltip
+				}
+			}
+		NOT = {
+				COV = {
+					has_war_with = CET
+					}
+				}
+		
+		custom_cost_text = COV_pp_50_cp_10
+		custom_cost_trigger = {
+			command_power > 9.99
+		}
+		custom_cost_trigger = {
+			has_political_power > 49
+		}
+
+		visible = {
+			#has_completed_focus = COV_rebel_sabotage
+			has_country_flag = COV_rebel_contacted
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 28
+		
+		cost = 50
+		
+		complete_effect = {
+			every_state = {
+				limit = {
+					is_core_of = COV
+					is_controlled_by = CET
+				}
+				damage_building = {
+					type = rail_way
+					damage = 1
+				}
+			}
+			hidden_effect = {
+			add_command_power = -10
+			add_political_power = -50
+			}
+		}
+		ai_will_do = {
+		factor = 0
+		}
+	}
+	
+	corvus_supply_attack = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+		has_completed_focus = COV_sabotage_supply
+		custom_trigger_tooltip = {
+				tooltip = COV_pp_50_cp_10_tooltip
+				}
+			}
+		NOT = {
+				COV = {
+					has_war_with = CET
+					}
+				}
+		
+		custom_cost_text = COV_pp_50_cp_10
+		custom_cost_trigger = {
+			command_power > 9.99
+		}
+		custom_cost_trigger = {
+			has_political_power > 49
+		}
+		
+		visible = {
+			#has_completed_focus = COV_rebel_sabotage
+			has_country_flag = COV_rebel_contacted
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 28
+		
+		cost = 50
+		
+		complete_effect = {
+			every_state = {
+				limit = {
+					is_core_of = COV
+					is_controlled_by = CET
+				}
+				damage_building = {
+					type = supply_node
+					damage = 1
+				}
+			}
+			hidden_effect = {
+			add_command_power = -10
+			add_political_power = -50
+			}
+		}
+		ai_will_do = {
+		factor = 0
+		}
+	}
+	
+	corvus_arms_factory_attack = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+		has_completed_focus = COV_sabotage_factory
+		custom_trigger_tooltip = {
+				tooltip = COV_pp_50_cp_10_tooltip
+				}
+			}
+		NOT = {
+				COV = {
+					has_war_with = CET
+					}
+				}
+		
+		custom_cost_text = COV_pp_50_cp_10
+		custom_cost_trigger = {
+			command_power > 9.99
+		}
+		custom_cost_trigger = {
+			has_political_power > 49
+		}
+		
+		visible = {
+			#has_completed_focus = COV_rebel_sabotage
+			has_country_flag = COV_rebel_contacted
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 28
+		
+		cost = 50
+		
+		complete_effect = {
+			every_state = {
+				limit = {
+					is_core_of = COV
+					is_controlled_by = CET
+				}
+				damage_building = {
+					type = arms_factory
+					damage = 1
+				}
+			}
+			hidden_effect = {
+			add_command_power = -10
+			add_political_power = -50
+			}
+		}
+		ai_will_do = {
+		factor = 0
+		}
+	}
+	
+	corvus_cetus_arms_factory_attack = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			has_completed_focus = COV_sabotage_factory_2
+			custom_trigger_tooltip = {
+				tooltip = COV_pp_50_cp_10_tooltip
+				}
+			}
+			NOT = {
+				COV = {
+					has_war_with = CET
+					}
+				}
+		
+		custom_cost_text = COV_pp_50_cp_10
+		custom_cost_trigger = {
+			command_power > 9.99
+		}
+		custom_cost_trigger = {
+			has_political_power > 49
+		}
+		
+		visible = {
+			#has_completed_focus = COV_rebel_sabotage
+			has_country_flag = COV_rebel_contacted
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 28
+		
+		cost = 50
+		
+		complete_effect = {
+			random_state = {
+				limit = {
+					OR = {
+					state = 7
+					state = 40
+					state = 41
+					state = 42
+					state = 43
+					state = 44
+					state = 45
+					state = 46
+					state = 47
+					}
+				}
+				prioritize = { 46 47 40 } 
+				}
+				damage_building = {
+					type = arms_factory
+					damage = 1
+				}
+				hidden_effect = {
+				add_command_power = -10
+				add_political_power = -50
+				}	
+			}
+		ai_will_do = {
+		factor = 0
+		}
+	}
+}
+# economy!!
+
+COV_dysfunctional_economy_idk = {
+	corvus_failing_economy_d = {
+		icon = GFX_decision_revolt
+		visible = {
+			tag = COV
+			has_war = yes
+		}
+		available = {
+			custom_trigger_tooltip = {
+			tooltip = corvus_own_the_state
+			}
+			OR = {
+			AND = {
+				owns_state = 48
+				owns_state = 154
+				controls_state = 48
+				controls_state = 154
+				has_war = no
+			}
+			AND = {
+				is_puppet = yes
+				has_war = no
+				}
+			}
+		}
+		selectable_mission = no
+		is_good = no
+		days_mission_timeout = 180
+		fire_only_once = yes
+
+		ai_will_do = { factor = 100 }
+
+		timeout_effect = {
+			swap_ideas = {
+			remove_idea = COV_dysfunctional_economy_idea
+			add_idea = COV_failed_economy_1_idea
+			}
+		}
+
+		complete_effect = {
+		remove_ideas = COV_dysfunctional_economy_idea
+		}
+
+		remove_effect = {
+			
+		}
+	}
+}
+
+#war war war!
+
+debug_corvus = {
+	debug_autocomplete_toggle = {
+
+		icon = generic_decision
+
+		available = {
+		always = yes
+			}
+		
+		visible = {
+			is_debug = yes
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 0
+		
+		cost = 0
+		
+		complete_effect = {
+			complete_national_focus = COV_war_with_cetus
+			complete_national_focus = COV_wartime_administration
+			complete_national_focus = COV_increase_coal_production
+			complete_national_focus = COV_warbonds
+			complete_national_focus = COV_subsidise_industries
+			complete_national_focus = COV_address_the_dysfunctional_economy
+			complete_national_focus = COV_implement_rationing_policy
+			complete_national_focus = COV_suppress_the_street_families
+			complete_national_focus = COV_impose_control
+			complete_national_focus = COV_shut_down_black_market
+			complete_national_focus = COV_cooperate_the_street_families
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	debug_autocomplete_toggle_cooperate = {
+
+		icon = generic_decision
+
+		available = {
+		always = yes
+			}
+		
+		visible = {
+			is_debug = yes
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 0
+		
+		cost = 0
+		
+		complete_effect = {
+			complete_national_focus = COV_regulate_underground_markets
+			complete_national_focus = COV_food_distribution
+			complete_national_focus = COV_peaceful_dissolution
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+		
+}
+	
+COV_wartime_administration_war = {
+	debug_rationing_toggle = {
+
+		icon = generic_decision
+
+		available = {
+		always = yes
+			}
+		
+		visible = {
+			is_debug = yes
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 0
+		
+		cost = 0
+		
+		complete_effect = {
+			clr_country_flag = rationed_on
+			clr_country_flag = rationed_off
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	corvus_rationing_on = {
+
+		icon = faction_bul_bzns
+
+		available = {
+		has_completed_focus = COV_implement_rationing_policy
+		NOT = { has_country_flag = rationed_on }
+		has_war = yes
+			}
+		
+		visible = {
+			has_completed_focus = COV_wartime_administration
+			NOT = { has_country_flag = rationed_on }
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 1
+		
+		cost = 50
+		
+		complete_effect = {
+		add_days_mission_timeout = {
+			mission = corvus_failing_economy_d
+			days = 90
+			}
+		set_country_flag = rationed_on
+		clr_country_flag = rationed_off
+		if = {
+			limit = {
+			NOT = { has_country_flag = corvus_mafia_food_cooperation }
+			}
+			add_ideas = COV_active_rationing_idea
+			}
+			else_if = {
+			limit = {
+			has_country_flag = corvus_mafia_food_cooperation
+			}
+			add_ideas = COV_active_rationing_2_idea
+			}
+		}
+		ai_will_do = {
+		factor = 1
+		}
+	}
+	
+	# 
+	
+	corvus_rationing_off = {
+
+		icon = faction_bul_bzns
+
+		available = {
+		has_country_flag = rationed_on
+		}
+		
+		visible = {
+			has_country_flag = rationed_on
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 0
+		
+		cost = 10
+		
+		complete_effect = {
+		add_days_mission_timeout = {
+			mission = corvus_failing_economy_d
+			days = -90
+			}
+		clr_country_flag = rationed_on
+		set_country_flag = rationed_off
+		if = {
+			limit = {
+			has_idea = COV_active_rationing_idea
+			}
+			remove_ideas = COV_active_rationing_idea
+			}
+			else_if = {
+			limit = {
+			has_idea = COV_active_rationing_2_idea
+			}
+			remove_ideas = COV_active_rationing_2_idea
+			}
+		}
+		ai_will_do = {
+		factor = 0
+		}
+	}
+	
+	#
+	
+	corvus_coal_production = {
+
+		icon = oil
+
+		available = {
+		has_completed_focus = COV_increase_coal_production
+			}
+		
+		visible = {
+			has_completed_focus = COV_wartime_administration
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 7
+		
+		days_remove = 90
+		
+		cost = 50
+		
+		complete_effect = {
+		add_days_mission_timeout = {
+			mission = corvus_failing_economy_d
+			days = 70
+			}
+			add_ideas = COV_heightened_coal_production_idea
+		}
+		
+		remove_effect = {
+		remove_ideas = COV_heightened_coal_production_idea
+		}
+		
+		ai_will_do = {
+		factor = 1
+		}
+	}
+	corvus_warbonds = {
+
+		icon = generic_consumer_goods
+
+		available = {
+		has_completed_focus = COV_warbonds
+		has_war = yes
+			}
+		
+		visible = {
+			has_completed_focus = COV_wartime_administration
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 28
+		
+		cost = 100
+		
+		
+		fire_only_once = no
+		
+		days_re_enable = 60
+		
+		days_remove = 30
+		
+		cost = 100
+		
+		complete_effect = {
+		add_days_mission_timeout = {
+			mission = corvus_failing_economy_d
+			days = 60
+			}
+			add_ideas = COV_issued_warbonds_idea
+		}
+		
+		remove_effect = {
+		remove_ideas = COV_issued_warbonds_idea
+		}
+		
+		ai_will_do = {
+		factor = 1
+		}
+	}
+	
+	corvus_subsidies = {
+
+		icon = gre_investment_decisions
+
+		available = {
+		has_completed_focus = COV_subsidise_industries
+			}
+		
+		visible = {
+			has_completed_focus = COV_wartime_administration
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 28
+		
+		cost = 100
+		
+		
+		fire_only_once = no
+		
+		days_re_enable = 90
+		
+		days_remove = 60
+		
+		cost = 100
+		
+		complete_effect = {
+		add_days_mission_timeout = {
+			mission = corvus_failing_economy_d
+			days = 60
+			}
+			add_ideas = COV_subsidised_industries_idea
+		}
+		
+		remove_effect = {
+		remove_ideas = COV_subsidised_industries_idea
+		}
+		
+		ai_will_do = {
+		factor = 1
+		}
+	}
+	
+	corvus_martial_law_on = {
+
+		icon = oppression
+
+		available = {
+		has_completed_focus = COV_impose_control
+		NOT = { has_country_flag = martial_law_on }
+		}
+		
+		visible = {
+			NOT = { has_country_flag = martial_law_on }
+			has_completed_focus = COV_suppress_the_street_families
+			#always = yes
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 1
+		
+		cost = 200
+		
+		complete_effect = {
+		add_days_mission_timeout = {
+			mission = corvus_failing_economy_d
+			days = 180
+			}
+		set_country_flag = martial_law_on
+		clr_country_flag = martial_law_off
+		add_ideas = COV_martial_law_imposed_idea
+		}
+		ai_will_do = {
+		factor = 1
+		}
+	}
+	
+	# 
+	
+	corvus_martial_law_off = {
+
+		icon = oppression
+
+		available = {
+		has_country_flag = martial_law_on
+		}
+		
+		visible = {
+			has_country_flag = martial_law_on
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 0
+		
+		cost = 100
+		
+		complete_effect = {
+		add_days_mission_timeout = {
+			mission = corvus_failing_economy_d
+			days = -210
+			}
+		clr_country_flag = martial_law_on
+		set_country_flag = martial_law_off
+		remove_ideas = COV_martial_law_imposed_idea
+		}
+		ai_will_do = {
+		factor = 0
+		}
+	}
+	
+	corvus_shut_down_market = {
+
+		icon = oppression
+
+		available = {
+		has_completed_focus = COV_shut_down_black_market
+		}
+		
+		visible = {
+			has_completed_focus = COV_suppress_the_street_families
+		}
+		
+		fire_only_once = yes
+		
+		days_re_enable = 0
+		
+		cost = 100
+		
+		complete_effect = {
+		add_days_mission_timeout = {
+			mission = corvus_failing_economy_d
+			days = -30
+			}
+			add_ideas = COV_shut_down_markets_idea
+		}
+		ai_will_do = {
+		factor = 0
+		}
+	}
+}
+	

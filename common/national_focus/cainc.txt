@@ -1,0 +1,100 @@
+focus_tree = {
+	id = cainc_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = CAI
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 0 y = 2000 }
+
+	focus = {
+		id = CAI_forma_under_ca
+		icon = GFX_goal_demand_sudetenland
+		x = 10
+		y = 0
+		cost = 5
+
+		completion_reward = {
+				add_political_power = 1000
+			}
+		}
+	
+	focus = {
+		id = CAI_mass_clones
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = { focus = CAI_forma_under_ca }
+		relative_position_id = CAI_forma_under_ca
+		x = 0
+		y = 1
+		cost = 5
+
+		completion_reward = {
+				add_manpower = 2147483
+				add_manpower = 2147483
+				add_manpower = 2147483
+				add_manpower = 2147483
+			}
+		}
+		
+		focus = {
+		id = CAI_pick_a_leader
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = { focus = CAI_mass_clones}
+		relative_position_id = CAI_mass_clones
+		x = 0
+		y = 1
+		cost = 5
+
+		completion_reward = {
+				add_political_power = 1100
+			}
+		}
+		
+		focus = {
+		id = CAI_choice_1
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = { focus = CAI_pick_a_leader}
+		relative_position_id = CAI_pick_a_leader
+		x = 2
+		y = 1
+		cost = 5
+
+		completion_reward = {
+				add_political_power = 1
+			}
+		}
+		
+		focus = {
+		id = CAI_choice_2
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = { focus = CAI_pick_a_leader}
+		relative_position_id = CAI_pick_a_leader
+		x = 0
+		y = 1
+		cost = 5
+
+		completion_reward = {
+				add_political_power = 1
+			}
+		}
+		
+		focus = {
+		id = CAI_choice_3
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = { focus = CAI_pick_a_leader}
+		relative_position_id = CAI_pick_a_leader
+		x = -2
+		y = 1
+		cost = 5
+
+		completion_reward = {
+				add_political_power = 1
+			}
+		}

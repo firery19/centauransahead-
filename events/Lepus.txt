@@ -1,0 +1,107 @@
+add_namespace = lps
+
+country_event = {
+	id = lps.1
+	title = lps.1.t #Lepus joins d.g
+	desc = lps.1.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = lps.1.a # Yes
+		ai_chance = {factor = 100}
+		ORI = {
+			add_to_faction = LPS
+			add_ai_strategy = {
+				type = alliance
+				id = "LPS"
+				value = 200
+			}
+		}
+	}
+	
+	option = {
+		name = lps.1.b # NO 
+		ai_chance = {factor = 0}
+		}
+	}
+	
+country_event = {
+	id = lps.2
+	title = lps.2.t
+	desc = lps.2.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lps.2.a
+		hidden_effect = {
+		load_oob = LPS_1900
+		}
+		131 = {
+				create_unit = {
+					division = "name = \"Minutemen Militia\" division_template = \"Militia Division\" start_experience_factor = 0 start_equipment_factor = 0.5"
+					owner = LPS
+				}
+				create_unit = {
+					division = "name = \"Minutemen Militia\" division_template = \"Militia Division\" start_experience_factor = 0 start_equipment_factor = 0.5"
+					owner = LPS
+				}
+				create_unit = {
+					division = "name = \"Minutemen Militia\" division_template = \"Militia Division\" start_experience_factor = 0 start_equipment_factor = 0.5"
+					owner = LPS
+				}
+				create_unit = {
+					division = "name = \"Minutemen Militia\" division_template = \"Militia Division\" start_experience_factor = 0 start_equipment_factor = 0.5"
+					owner = LPS
+				}
+			}
+			
+			132 = {
+				create_unit = {
+					division = "name = \"Minutemen Militia\" division_template = \"Militia Division\" start_experience_factor = 0 start_equipment_factor = 0.5"
+					owner = LPS
+				}
+				create_unit = {
+					division = "name = \"Minutemen Militia\" division_template = \"Militia Division\" start_experience_factor = 0 start_equipment_factor = 0.5"
+					owner = LPS
+				}
+				create_unit = {
+					division = "name = \"Minutemen Militia\" division_template = \"Militia Division\" start_experience_factor = 0 start_equipment_factor = 0.5"
+					owner = LPS
+				}
+				create_unit = {
+					division = "name = \"Minutemen Militia\" division_template = \"Militia Division\" start_experience_factor = 0 start_equipment_factor = 0.5"
+					owner = LPS
+				}
+			}
+			133 = {
+				create_unit = {
+					division = "name = \"Minutemen Militia\" division_template = \"Militia Division\" start_experience_factor = 0 start_equipment_factor = 0.5"
+					owner = LPS
+				}
+				create_unit = {
+					division = "name = \"Minutemen Militia\" division_template = \"Militia Division\" start_experience_factor = 0 start_equipment_factor = 0.5"
+					owner = LPS
+				}
+			}
+			if = {
+				limit = {
+				LPS = { owns_state = 130 }
+				}
+				130 = {
+				create_unit = {
+					division = "name = \"Minutemen Militia\" division_template = \"Militia Division\" start_experience_factor = 0 start_equipment_factor = 0.5"
+					owner = LPS
+				}
+				create_unit = {
+					division = "name = \"Minutemen Militia\" division_template = \"Militia Division\" start_experience_factor = 0 start_equipment_factor = 0.5"
+					owner = LPS
+				}
+			}
+		}
+	}
+}
+	

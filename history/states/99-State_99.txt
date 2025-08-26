@@ -1,0 +1,26 @@
+state={
+	id=99
+	name="STATE_99"
+	history = {
+		owner = ANT
+		add_core_of = ANT
+		add_core_of = NRM
+		buildings = {
+
+			infrastructure = 1
+			2008 = {
+			naval_base = 1
+			}
+		}
+		victory_points = {
+			2008 5
+		}
+	}
+	provinces={
+		1037 2008 5627 6813 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=309214
+        state_category = small_island
+}

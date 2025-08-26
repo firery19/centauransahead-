@@ -1,0 +1,27 @@
+
+state={
+	id=86
+	name="STATE_86"
+
+	history={
+		owner = URS
+		add_core_of = URS
+		buildings = {
+			dockyard = 1
+			infrastructure = 2
+
+		}
+		victory_points = {
+			6623 3 
+		}
+
+	}
+
+	provinces={
+		3423 6593 6594 6601 6602 6605 6606 6607 6613 6615 6617 6618 6619 6622 6623 6654 6655 6656 6665 6669 
+	}
+	manpower=1504601
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+}

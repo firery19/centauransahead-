@@ -1,0 +1,38 @@
+state={
+	id=42
+	name="STATE_42"
+	resources = {
+		steel = 7
+		chromium = 9
+		tungsten = 3
+		rubber=9
+	}
+	history = {
+		owner = CET
+		add_core_of = CET
+		buildings = {
+
+			infrastructure = 1
+		}
+		1944.1.1.12 = {
+			owner = ANT
+			controller = ANT
+}
+		victory_points = {
+			1860 14
+		}
+		victory_points = {
+			94 17
+		}
+		victory_points = {
+			1919 6
+		}
+	}
+	provinces={
+		45 62 85 94 533 535 693 1027 1047 1063 1069 1088 1451 1598 1620 1715 1860 1919 1921 1938 2148 2507 2580 4351 4404 4426 4433 4443 4461 4472 4476 4482 4490 4508 4523 4529 4543 4571 4573 4578 4582 4586 4594 4641 4649 4671 4690 4694 4699 4738 4739 4773 4781 4782 4789 4839 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=4273592
+        state_category = megalopolis
+}

@@ -1,0 +1,94 @@
+focus_tree = {
+    id = CNS_focus
+    default = no
+    country = {
+        factor = 0
+        modifier = {
+            add = 50
+            tag = CNS
+        }
+    }
+    continuous_focus_position = { x = 25 y = 1000 }
+	
+	shared_focus = army_effort
+	shared_focus = naval_effort
+	shared_focus = aviation_effort
+	shared_focus = industrial_effort
+	shared_focus = political_effort
+	
+	focus = {
+        id = CNS_cooperation
+        icon = GFX_goal_generic_territory_or_war
+        x = 30
+        y = 0
+        cost = 5
+        available = {
+		ORI = { is_in_faction = yes }
+        has_war = yes
+        }
+        completion_reward = {
+			ORI = { country_event = cns.1 }
+		}
+		ai_will_do = {
+		factor = 1000
+		}
+    }
+	
+	focus = {
+        id = CNS_giving_up_claims
+        icon = GFX_goal_generic_territory_or_war
+        x = -1
+        y = 1
+        cost = 5
+		prerequisite = { focus = CNS_cooperation }
+		relative_position_id = CNS_cooperation
+        available = {
+		ORI = { is_in_faction = yes }
+        }
+        completion_reward = {
+			remove_state_core = 112
+			remove_state_core = 113
+			remove_state_core = 114
+			remove_state_core = 117
+			remove_state_core = 122
+		}
+		ai_will_do = {
+		factor = 1
+		}
+    }
+	
+	focus = {
+        id = CNS_canisian_units_in_hydrus
+        icon = GFX_goal_generic_territory_or_war
+        x = 1
+        y = 1
+        cost = 5
+		prerequisite = { focus = CNS_cooperation }
+		relative_position_id = CNS_cooperation
+        available = {
+		HYS = { is_in_faction = yes }
+        }
+        completion_reward = {
+		country_event = cns.3
+		}
+		ai_will_do = {
+		factor = 1
+		}
+    }
+	
+    focus = {
+        id = CNS_recovery_from_war
+        icon = GFX_goal_generic_territory_or_war
+        x = 36
+        y = 0
+        cost = 5
+        available = {
+		has_war = no
+        }
+        completion_reward = {
+            add_ideas = URS_lepus_trolling
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }

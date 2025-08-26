@@ -1,0 +1,34 @@
+state={
+	id=44
+	name="STATE_44"
+	resources = {
+		steel = 11
+		rubber=7
+	}
+	history = {
+		owner = CET
+		add_core_of = CET
+		buildings = {
+
+			industrial_complex = 1
+			infrastructure = 1
+		}
+		1944.1.1.12 = {
+			owner = ANT
+			controller = ANT
+}
+		victory_points = {
+			120 3
+		}
+		victory_points = {
+			4926 10
+		}
+	}
+	provinces={
+		64 120 405 561 1026 1118 1434 1554 1753 2163 2581 2595 3306 4848 4911 4926 4927 4939 4945 4973 4985 4986 5001 5037 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=5714352
+        state_category = city
+}

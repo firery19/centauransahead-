@@ -1,0 +1,32 @@
+
+state={
+	id=56
+	name="STATE_56"
+
+	history={
+		owner = CLB
+		add_core_of = CLB
+		add_core_of = EUR
+		buildings = {
+			industrial_complex = 0
+			infrastructure = 2
+
+		}
+		victory_points = {
+			3897 13 
+		}
+		1944.1.1.12 = {
+			owner = ANT
+			controller = ANT
+
+}
+	}
+
+	provinces={
+		538 872 1095 1310 1521 1769 2170 2344 2387 2473 2569 2590 2660 2785 3308 3838 3853 3863 3871 3886 3897 3935 3937 3954 3998 4053 
+	}
+	manpower=9103658
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

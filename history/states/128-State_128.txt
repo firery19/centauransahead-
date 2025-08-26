@@ -1,0 +1,39 @@
+state={
+	id=128
+	name="STATE_128"
+	resources = {
+		oil = 21
+		steel = 13
+		chromium = 13
+	}
+	history = {
+		owner = HYS
+		add_core_of = HYS
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 2
+			3554 = {
+			naval_base = 3
+			}
+			1888 = {
+			naval_base = 1
+			}
+		}
+		victory_points = {
+			3554 15
+		}
+		victory_points = {
+		1888 5
+		}
+		victory_points = {
+		3591 5
+		}
+	}
+	provinces={
+		6 237 413 479 536 570 691 794 915 1324 1334 1403 1506 1510 1759 1795 1888 1982 2018 2110 2641 2661 3088 3105 3287 3309 3544 3554 3557 3559 3577 3589 3591 3593 3601 3610 3620 3624 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=19410592
+        state_category = large_city
+}

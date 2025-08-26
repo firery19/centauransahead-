@@ -1,0 +1,11 @@
+URS_preGreaseWars_Decisions = {
+	priority = 100
+	visible_when_empty = no
+	icon =  GFX_decision_category_border_conflicts
+	picture = GFX_decision_cat_picture_FIN_karelian_forest_guerillas
+	allowed = {
+		tag = URS
+		#has_country_flag = grease_wars_not_started_prelude
+		has_country_flag = grease_wars_not_started
+	}
+}

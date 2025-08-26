@@ -1,0 +1,167 @@
+URS_preGreaseWars_Decisions = {
+	URS_lepus_spawns_timer = {
+		icon = GFX_decision_revolt
+		visible = {
+			tag = URS
+			has_country_flag = grease_wars_not_started
+		}
+		available = {
+			always = no
+		}
+		selectable_mission = no
+		is_good = no
+		days_mission_timeout = 450
+		fire_only_once = yes
+
+		ai_will_do = { factor = 100 }
+
+		timeout_effect = {
+			country_event = { id = urs.10}
+		}
+
+		complete_effect = {
+			 
+		}
+
+		remove_effect = {
+			activate_mission = URS_randomterrorism_timer_lps
+		}
+	}
+	URS_randomterrorism_timer_lps = {
+		icon = GFX_decision_revolt
+		visible = {
+			tag = URS
+			has_country_flag = grease_wars_not_started
+		}
+
+		cancel_trigger = {
+			NOT = {
+				owns_state = 131
+			}
+		}
+		selectable_mission = yes
+		custom_cost_text = cp_10_cost
+		custom_cost_trigger = {
+			command_power > 9.99
+		}
+		is_good = no
+		days_mission_timeout = 30
+		days_remove = URS_randomterrorism_timer_lps_days?0
+		#fire_only_once = no
+
+		ai_will_do = { factor = 100 }
+
+		timeout_effect = {
+			activate_mission = URS_randomterrorism_timer_lps
+			random_list = {
+				15 = {
+					country_event = urs.5
+				}
+				15 = {
+					country_event = urs.8
+				}
+				20 = {
+					country_event = urs.9
+				}
+				25 = {
+					country_event = urs.6
+				}
+				25 = {
+					country_event = urs.7
+				}
+			}
+		}
+
+		complete_effect = {
+			add_command_power = -10
+			hidden_effect = {
+				set_variable = { URS_randomterrorism_timer_lps_days = days_mission_timeout@URS_randomterrorism_timer_lps }
+			}
+		}
+
+		remove_effect = {
+			activate_mission = URS_randomterrorism_timer_lps
+		}
+	}
+	URS_randomterrorism_timer_cns = {
+		icon = GFX_decision_revolt
+		visible = {
+			tag = URS
+			has_country_flag = grease_wars_not_started
+		}
+
+		cancel_trigger = {
+			NOT = {
+				owns_state = 117
+			}
+		}
+		selectable_mission = yes
+		custom_cost_text = cp_10_cost
+		custom_cost_trigger = {
+			command_power > 9.99
+		}
+		is_good = no
+		days_mission_timeout = 60
+		days_remove = URS_randomterrorism_timer_cns_days?0
+		#fire_only_once = no
+
+		ai_will_do = { factor = 100 }
+
+		timeout_effect = {
+			activate_mission = URS_randomterrorism_timer_cns
+			random_list = {
+				15 = {
+					country_event = urs.5
+				}
+				15 = {
+					country_event = urs.8
+				}
+				20 = {
+					country_event = urs.9
+				}
+				25 = {
+					country_event = urs.6
+				}
+				25 = {
+					country_event = urs.7
+				}
+			}
+		}
+
+		complete_effect = {
+			add_command_power = -10
+			hidden_effect = {
+				set_variable = { URS_randomterrorism_timer_cns_days = days_mission_timeout@URS_randomterrorism_timer_cns }
+			}
+		}
+
+		remove_effect = {
+			activate_mission = URS_randomterrorism_timer_cns
+		}
+	}
+	URS_exchangeppforcp = {
+		icon = GFX_decision_generic_army_support
+		#allowed = { always = no }
+		fire_only_once = no
+		cost = 30
+		ai_will_do = { factor = 50 }
+		#days_remove = 30
+		complete_effect = {
+			add_command_power = 15
+		}
+	}
+	URS_extend_lepus_timer = {
+		icon = GFX_decision_infiltrate_state
+		#allowed = { always = no }
+		fire_only_once = no
+		cost = 50
+		ai_will_do = { factor = 0 }
+		#days_remove = 30
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = URS_lepus_spawns_timer
+				days = 30
+			}
+		}
+	}
+}

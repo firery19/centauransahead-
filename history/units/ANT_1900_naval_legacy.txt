@@ -1,0 +1,273 @@
+units = {
+
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Inanis Fleet"
+		naval_base = 3226
+		task_force = {				
+			name = "Western Battlesquadron"
+			location = 3226
+
+			ship = { name = "AIS Mercury" definition = battleship equipment = { battleship_2 = { amount = 1 owner = ANT } } }
+			ship = { name = "AIS Forma" definition = battleship equipment = { battleship_2 = { amount = 1 owner = ANT } } }
+			ship = { name = "AIS Mars" definition = battleship equipment = { battleship_2 = { amount = 1 owner = ANT } } }
+
+
+			ship = { name = "AIS Roseus" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = ANT } } }
+			ship = { name = "AIS Rubesco" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = ANT } } }
+			ship = { name = "AIS Rubefacio" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = ANT } } }
+			ship = { name = "AIS Lux Lubra" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = ANT } } }
+			ship = { name = "AIS Lux Rosea" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = ANT } } }
+			ship = { name = "AIS Tenebris Rubrum" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = ANT } } }
+			ship = { name = "AIS Tenebris Rosea" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = ANT } } }
+		}
+		task_force = {				
+			name = "Cruiser Squadron"
+			location = 5971
+
+			ship = { name = "AIS Calcis" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ANT } } }
+			ship = { name = "AIS Natrium" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ANT } } }
+
+			ship = { name = "AIS Ferrum" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ANT } } }
+			ship = { name = "AIS Wolfram" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ANT } } }
+
+
+
+
+
+		}
+		task_force = {
+			name = "I. Torpedoboat Flotilla"
+			location = 3226
+			ship = { name = "AIS Y01" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT } } }
+			ship = { name = "AIS Y02" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT } } }
+			ship = { name = "AIS Y03" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT } } }
+			ship = { name = "AIS Y04" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT } } }
+			ship = { name = "AIS Y05" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT } } }
+			ship = { name = "AIS Y06" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT } } }
+			ship = { name = "AIS Y07" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT } } }
+			ship = { name = "AIS Y08" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT } } }
+			ship = { name = "AIS Y09" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT } } }
+			ship = { name = "AIS Y10" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT } } }
+			ship = { name = "AIS Y11" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT } } }
+			ship = { name = "AIS Y12" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT  } } }
+			ship = { name = "AIS Y13" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT  } } }
+			ship = { name = "AIS Y14" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT  } } }
+			ship = { name = "AIS Y15" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT  } } }
+			ship = { name = "AIS Y16" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT  } } }
+			ship = { name = "AIS Y17" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT  } } }
+			ship = { name = "AIS Y18" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT  } } }
+			ship = { name = "AIS Y19" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT  } } }
+			ship = { name = "AIS Y20" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT  } } }
+			ship = { name = "AIS Y21" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT  } } }
+			ship = { name = "AIS Y22" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT  } } }
+			ship = { name = "AIS Y23" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT  } } }
+			ship = { name = "AIS Y24" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT  } } }
+			ship = { name = "AIS Y25" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT  } } }
+	}
+}
+	
+	fleet = {
+		name = "Libran Fleet"
+		naval_base = 5486
+		task_force = {				
+			name = "II. Battlesquadron"
+			location = 5486
+			ship = { name = "AIS Maia" definition = battleship equipment = { battleship_2 = { amount = 1 owner = ANT } } }
+			ship = { name = "AIS Flavus" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT } } }
+			ship = { name = "AIS Aeterna Flavus" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT } } }
+			ship = { name = "AIS Symmetrus" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT } } }
+			ship = { name = "AIS Inflexibilis" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT } } }
+			ship = { name = "AIS Argentum" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ANT } } }
+			ship = { name = "AIS Argenteus" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ANT } } }
+			ship = { name = "AIS Pallidus" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ANT } } }
+			ship = { name = "AIS Nummus" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ANT } } }
+
+		}
+	}
+	
+	fleet = {
+		name = "Southern Fleet"
+		naval_base = 2166
+		task_force = {				
+			name = "Ananteria Reserve Detachment"
+			location = 2166
+			ship = { name = "AIS Venus" definition = battleship equipment = { battleship_2 = { amount = 1 owner = ANT } } }
+			ship = { name = "AIS Theia" definition = battleship equipment = { battleship_2 = { amount = 1 owner = ANT } } }
+			ship = { name = "AIS Nitor" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ANT  } } }
+			ship = { name = "AIS Resistentia" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT } } }
+			ship = { name = "AIS Obduratus" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT } } }
+			ship = { name = "AIS Forctis" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT } } }
+			ship = { name = "AIS Robustus" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT } } }
+			}
+		task_force = {				
+			name = "Persephone Patrol Group"
+			location =6501
+
+			ship = { name = "AIS Peremos" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ANT  } } }
+			ship = { name = "AIS Nargos" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ANT  } } }
+
+			}
+		task_force = {				
+			name = " II. Torpedoboat Flotilla"
+			location =2166
+
+
+			ship = { name = "AIS Y26" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT  } } }
+			ship = { name = "AIS Y27" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT  } } }
+			ship = { name = "AIS Y28" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT  } } }
+			ship = { name = "AIS Y29" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT  } } }
+			ship = { name = "AIS Y30" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT  } } }
+			ship = { name = "AIS Y31" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT  } } }
+			ship = { name = "AIS Y32" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT  } } }
+			ship = { name = "AIS Y33" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT  } } }
+			ship = { name = "AIS Y34" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT  } } }
+			ship = { name = "AIS Y35" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT  } } }
+			ship = { name = "AIS Y36" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT  } } }
+			ship = { name = "AIS Y37" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT  } } }
+			ship = { name = "AIS Y38" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT  } } }
+			ship = { name = "AIS Y39" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT  } } }
+			ship = { name = "AIS Y40" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT  } } }
+			ship = { name = "AIS Y41" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT  } } }
+			ship = { name = "AIS Y42" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT  } } }
+			ship = { name = "AIS Y43" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT  } } }
+			ship = { name = "AIS Y44" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT  } } }
+			ship = { name = "AIS Y45" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT  } } }
+			ship = { name = "AIS Y46" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT  } } }
+			ship = { name = "AIS Y47" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT  } } }
+			ship = { name = "AIS Y48" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT  } } }
+			ship = { name = "AIS Y49" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT  } } }
+			ship = { name = "AIS Y50" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ANT  } } }
+			}
+		}
+
+#############################
+	}
+
+instant_effect = {
+### Under Construction Notes ###
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "Antares Armada Ship Design Commission" 
+			version_name = "Y1895 Class Torpedo Boat"
+		}
+		name = "AIS Y51"
+		requested_factories = 5
+		progress = 0.26784527896787430565
+		amount = 50
+	}
+}
+instant_effect = {
+### Under Construction Notes ###
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_2
+			creator = "Antares Armada Ship Design Commission" 
+			version_name = "Ferrum Class"
+		}
+		name = "AIS Bella Tempore"
+		requested_factories = 3
+		progress = 0.4
+		amount = 1
+	}
+}
+instant_effect = {
+### Under Construction Notes ###
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_2
+			creator = "Antares Armada Ship Design Commission" 
+			version_name = "Ferrum Class"
+		}
+		name = "AIS Senator"
+		requested_factories = 3
+		progress = 0.3
+		amount = 1
+	}
+}
+instant_effect = {
+### Under Construction Notes ###
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_2
+			creator = "Antares Armada Ship Design Commission" 
+			version_name = "Ferrum Class"
+		}
+		name = "AIS Rear Admiral Ole Bob Persen"
+		requested_factories = 3
+		progress = 0.2
+		amount = 1
+	}
+}
+#######################
+instant_effect = {
+### Under Construction Notes ###
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_2
+			creator = "Antares Armada Ship Design Commission" 
+			version_name = "Terra Class"
+		}
+		name = "AIS Terra"
+		requested_factories = 2
+		progress = 0.5
+		amount = 1
+	}
+}
+instant_effect = {
+### Under Construction Notes ###
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_2
+			creator = "Antares Armada Ship Design Commission" 
+			version_name = "Terra Class"
+		}
+		name = "AIS Croniumiate"
+		requested_factories = 2
+		progress = 0.4
+		amount = 1
+	}
+}
+instant_effect = {
+### Under Construction Notes ###
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_2
+			creator = "Antares Armada Ship Design Commission" 
+			version_name = "Terra Class"
+		}
+		name = "AIS Steelium"
+		requested_factories = 2
+		progress = 0.3
+		amount = 1
+	}
+}
+instant_effect = {
+### Under Construction Notes ###
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_2
+			creator = "Antares Armada Ship Design Commission" 
+			version_name = "Terra Class"
+		}
+		name = "AIS Thermite"
+		requested_factories = 2
+		progress = 0.2
+		amount = 1
+	}
+}
+instant_effect = {
+### Under Construction Notes ###
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_2
+			creator = "Antares Armada Ship Design Commission" 
+			version_name = "Terra Class"
+		}
+		name = "AIS Librae"
+		requested_factories = 2
+		progress = 0.1
+		amount = 1
+	}
+}

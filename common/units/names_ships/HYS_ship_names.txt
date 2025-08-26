@@ -1,0 +1,172 @@
+### REGULAR DESTROYER NAMES###
+HYS_DD_HISTHYSCAL = {
+	name = NAME_THEME_HISTHYSCAL_DESTROYERS
+
+	for_countries = { HYS }
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }		
+
+	can_use = { always = yes }
+
+	prefix = "HS"								
+	fallback_name = "Destroyer %s"					
+
+	unique = {
+		"Thistler"
+	}
+}
+
+### LIGHT CRUISER NAMES###
+HYS_CL_HISTHYSCAL = {
+	name = NAME_THEME_HISTHYSCAL_CL
+
+	for_countries = { HYS }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+	
+	can_use = { always = yes }
+	
+	prefix = "HS"							
+	fallback_name = "Light Cruiser %s"
+
+	unique = {
+		"Unknown123456"
+	}
+}
+
+### A-A LIGHT CRUISER NAMES###
+HYS_CLAA_HISTHYSCAL = {
+	name = NAME_THEME_HISTHYSCAL_CLAA
+
+	for_countries = { HYS }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+	
+	can_use = { always = yes }
+	
+	prefix = "HS"								
+	fallback_name = "Light Cruiser (AA) %s"
+
+	unique = {
+		"Galatea" "Despina"
+	}
+}
+
+### HEAVY CRUISER NAMES###
+HYS_CA_HISTHYSCAL = {
+	name = NAME_THEME_HISTHYSCAL_CA
+
+	for_countries = { HYS }
+
+	type = ship
+	ship_types = { ship_hull_cruiser heavy_cruiser }
+	
+	can_use = { always = yes }
+	
+	prefix = "HS"								
+	fallback_name = "Heavy Cruiser %s"
+
+	unique = {
+		"Kappa"
+	}
+}
+
+### BATTLESHIP NAMES ###
+HYS_BB_HISTHYSCAL = {
+	name = NAME_THEME_HISTHYSCAL_BB
+
+	for_countries = { HYS }
+	
+	can_use = { always = yes }
+
+	type = ship
+	ship_types = { ship_hull_heavy battleship }
+	
+	prefix = "HS"								
+	fallback_name = "Battleship %s"		
+
+	unique = {
+        "Draco"
+	}
+}
+
+### BATTLECRUISER NAMES ###
+HYS_BC_HISTHYSCAL = {
+	name = NAME_THEME_HISTHYSCAL_BC
+
+	for_countries = { HYS }
+	
+	can_use = { always = yes }
+
+	type = ship
+	ship_types = { ship_hull_heavy battle_cruiser }
+	
+	prefix = "HS"								
+	fallback_name = "Battlecruiser %s"		
+
+	unique = {
+           "Sirius"
+ 	}
+}
+
+### AIRCRAFT CARRIER NAMES ###
+HYS_CV_HISTHYSCAL = {
+	name = NAME_THEME_HISTHYSCAL_CARRIERS
+
+	for_countries = { HYS }
+	
+	can_use = { always = yes }
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+	
+	prefix = "HS"							
+	fallback_name = "Carrier %s"		
+
+	unique = {
+		"Yorktown"
+	}
+}
+
+### LIGHT CARRIER NAMES ###
+HYS_CVL_HISTHYSCAL = {
+	name = NAME_THEME_HISTHYSCAL_CVL
+
+	for_countries = { HYS }
+	
+	can_use = { always = yes }
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+	
+	prefix = "HS"							
+	fallback_name = "Carrier %s"	
+
+	unique = {
+		# CVL Names
+		"fireryheart0190"
+	}
+}
+
+### SUBMARINES ###
+HYS_SS_HISTHYSCAL = {
+	name = NAME_THEME_HISTHYSCAL_SUBMARINES
+
+	for_countries = { HYS }
+	
+	can_use = { always = yes }
+	
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	
+	prefix = "HS"							
+	fallback_name = "S-%s"
+	
+	unique = {
+		# Starting with K-class ships 
+		"S-I"
+	}
+}

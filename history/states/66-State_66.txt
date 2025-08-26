@@ -1,0 +1,32 @@
+
+state={
+	id=66
+	name="STATE_66"
+	resources={
+		steel=13.000
+		rubber=19
+	}
+
+	history={
+		owner = RIA
+		add_core_of = RIA
+		buildings = {
+			arms_factory = 0
+			industrial_complex = 2
+			infrastructure = 2
+
+		}
+		victory_points = {
+			3564 5 
+		}
+
+	}
+
+	provinces={
+		229 259 395 464 609 663 702 795 806 809 1049 1120 1152 1524 1552 1625 1913 2103 2104 2224 2354 2623 3005 3063 3079 3305 3446 3453 3480 3492 3497 3498 3511 3517 3521 3549 3556 3564 3581 3602 
+	}
+	manpower=38025161
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

@@ -1,0 +1,29 @@
+state={
+	id=162
+	name="STATE_162"
+	history={
+		owner = TUC
+		add_core_of = TUC
+		buildings = {
+			infrastructure = 2
+			6676 = {
+				naval_base = 1
+				}
+			}
+			victory_points = {
+			6676 1 
+			}
+		1944.1.1.12 = {
+			owner = URS
+			controller = URS
+
+}
+		}
+	provinces={
+		2353 6671 6676 6680 6682 6690 
+	}
+	manpower=642557
+	state_category = small_island
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,119 @@
+ANT_bocchiland = {
+	debug_bocchi = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			NOT = { country_exists = BCH }
+		}
+		
+		visible = {
+			is_debug = yes
+		}
+		
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			}
+
+		complete_effect = {
+			hidden_effect = {
+					every_state = {
+						limit = {
+							OR = {
+								state = 111
+							}
+							is_owned_by = ANT
+						}
+						BCH = {
+							transfer_state = PREV
+						}
+					}
+					111 = { add_core_of = BCH }
+			}
+			release_on_controlled = BCH
+			BCH = {
+				set_state_controller = 111
+				ANT = {
+					puppet = PREV
+					if = {
+						limit = {
+							NOT = { has_dlc = "Death or Dishonor" }
+							has_government = neutrality
+						}
+						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet end_wars = no end_civil_wars = no }
+					}
+					else = {
+						set_autonomy = { target = PREV autonomy_state = autonomy_reichskommissariat  end_wars = no end_civil_wars = no }
+					}
+				}
+
+			#	set_cosmetic_tag = BCH
+		#		create_country_leader = {
+			#		name = "Hitori Gotoh"
+		#			desc = "POLITICS_HITORI_GOTOH_DESC"
+			#		picture = GFX_portrait_Hitori_Gotoh
+				#	expire = "1999.1.1"
+		#			ideology = conservatism
+				#	traits = {
+				#	}
+			#	}
+			}
+		}
+	}
+}
+ANT_south_centauran_conquest = {
+
+		ANT_unity_speech = { 
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			IF = {
+				limit = {
+					tag = ANT
+				}
+				OR = {
+				has_wargoal_against = CET
+				has_wargoal_against = AQU
+				}
+			}
+		}
+
+		visible = {
+			if = {
+				limit = {
+					tag = SPR
+					has_dlc = "La Resistance"
+				}
+				NOT = {
+					has_idea = SPR_political_violence
+				}
+			}
+			if = {
+				limit = {
+					original_tag = SPR
+					has_dlc = "La Resistance"
+				}
+				has_global_flag = scw_over
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 75
+
+		complete_effect = {
+			add_war_support = 0.05
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 201
+				has_war_support < 0.6
+			}
+		}
+	}
+}

@@ -1,0 +1,37 @@
+﻿units = {
+
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Northern Fleet"
+		naval_base = 3088
+		task_force = {				
+			name = "1st Command"
+			location = 3088
+			ship = { name = "HS Thistle" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = HYS version_name = "Thistle Class" } } }
+			ship = { name = "HS Arctium" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = HYS version_name = "Thistle Class" } } }
+			ship = { name = "HS Carduus" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = HYS version_name = "Thistle Class" } } }
+			ship = { name = "HS Carlina" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = HYS version_name = "Thistle Class" } } }
+			}
+		}
+			
+
+#Genera in the Asteraceae with the word thistle often used in their common names include:
+
+#Arctium – burdock
+#Carduus – musk thistle and others
+#Carlina – carline thistle
+#Carthamus – distaff thistle
+#Centaurea – star thistle
+#Cicerbita – sow thistle
+#Cirsium – melancholy thistle, creeping thistle, spear thistle, and others
+#Cnicus – blessed thistle
+#Cynara – artichoke, cardoon
+#Echinops – globe thistle
+#Galactites - milk thistle
+#Notobasis – Syrian thistle
+#Onopordum – cotton thistle, also known as Scots thistle
+#Scolymus – golden thistle or oyster thistle
+#Silybum – milk or St. Mary's thistle
+#Sonchus – sow thistle
+
+# add obb to hydrus country file, add ship classes

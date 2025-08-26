@@ -1,0 +1,25 @@
+state={
+	id=158
+	name="STATE_158"
+	history={
+		owner = GRS
+		add_core_of = GRS
+		add_claim_by = VEG
+		buildings = {
+			infrastructure = 1
+			1876 = {
+				naval_base = 1
+				}
+			}
+			victory_points = {
+			1876 1 
+			}
+		}
+	provinces={
+		1876 6724 6729 
+	}
+	manpower=11131
+	state_category = small_island
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

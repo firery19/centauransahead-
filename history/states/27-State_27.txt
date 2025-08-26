@@ -1,0 +1,40 @@
+state={
+	id=27
+	name="STATE_27"
+	history = {
+		owner = VEG
+		add_core_of = VEG
+		add_claim_by = GRS
+		buildings = {
+			infrastructure = 2
+			6781 = {
+				naval_base = 1
+			}
+			4813 = {
+				naval_base = 1
+			}
+			4524 = {
+				naval_base = 1
+			}
+			449 = {
+				naval_base = 1
+			}
+		
+		}
+		victory_points = {
+			449 5
+		}
+		1944.1.1.12 = {
+			owner = GRS
+			controller = GRS
+
+}
+	}
+	provinces={
+		449 2755 4475 4479 4524 4557 4621 4695 4708 4813 6775 6776 6777 6778 6780 6781 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=1884973
+        state_category = small_island
+}

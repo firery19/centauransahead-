@@ -1,0 +1,1888 @@
+focus_tree = {
+    id = ORS_focus
+    default = no
+    country = {
+        factor = 0
+        modifier = {
+            add = 50
+            tag = ORI
+        }
+    }
+	shared_focus = dc_focus_start
+    continuous_focus_position = { x = 25 y = 680 }
+
+    focus = {
+        id = ORS_CanisCrisis
+        icon = GFX_goal_generic_territory_or_war
+        x = 10
+        y = 0
+        cost = 5
+        available = {
+            
+        }
+        completion_reward = {
+            add_stability = 0.05
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+    
+    focus = {
+        id = ORS_Intervene
+        icon = GFX_focus_generic_manpower
+        x = 10
+        y = 1
+        cost = 5
+        prerequisite = {
+            focus = ORS_CanisCrisis
+        }
+        completion_reward = {
+            add_war_support = 0.05
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+    
+    focus = {
+        id = ORS_RallyPeople
+        icon = "GFX_focus_generic_infiltration"
+        x = 11    
+        y = 2
+        cost = 5
+        prerequisite = {
+            focus = ORS_Intervene
+        }
+        completion_reward = {
+            add_ideas = ORS_RallyPeopleIdea
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+    
+    focus = {
+        id = ORS_ContactHydrus
+        icon = GFX_focus_NOR_approach_kretsen
+        x = 9    
+        y = 2
+        cost = 5
+        prerequisite = {
+            focus = ORS_Intervene
+        }
+        completion_reward = {
+			set_rule = { can_create_factions = yes }
+			create_faction = AntiUrsCoal 
+			hidden_effect = {
+				HYS = {
+					country_event = { 
+						id = orion.1  days = 1 }
+				}
+			}
+        }
+        ai_will_do = {
+            factor = 5
+        }
+	}
+
+    
+
+    focus = {
+        id = ORS_PromiseBusinesses
+        icon = GFX_focus_NORDIC_com_capstone_civilian
+        x = 13
+        y = 3
+        cost = 5
+        prerequisite = {
+            focus = ORS_RallyPeople
+        }
+        completion_reward = {
+            add_ideas=ORS_PromiseBusinessesIdea
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = ORS_PrepareMilitary
+        icon = GFX_focus_generic_limited_social_mobilization
+        x = 11
+        y = 3
+        cost = 5
+        prerequisite = {
+            focus = ORS_RallyPeople
+        }
+        completion_reward = {
+           add_ideas=ORS_PrepareMilitaryIdea
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = ORS_BattleExperience
+        icon = GFX_focus_generic_full_employment
+        x = 11
+        y = 4
+        cost = 5
+        prerequisite = {
+            focus = ORS_PrepareMilitary
+        }
+        completion_reward = {
+           add_ideas=ORS_LessonsOfWar
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+		id = ORS_TrainHydrusites
+		icon = GFX_focus_ITA_blackshirts
+		x = 9
+		y = 3
+		cost = 5
+		prerequisite = {
+			focus = ORS_ContactHydrus
+		}
+		completion_reward = {
+			HYS = {
+				add_ideas=ORS_PrepareMilitaryIdea
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+	}
+	
+	focus = {
+		id = ORS_InvestInHydrusiteMilitaryIndustry
+		icon = GFX_focus_DEN_no_regulations
+		x = 9
+		y = 4
+		cost = 5
+		prerequisite = {
+			focus = ORS_TrainHydrusites
+		}
+		completion_reward = {
+			HYS = {
+				add_ideas = ORS_PromiseBusinessesIdea
+			}
+		}
+			ai_will_do = {
+				factor = 5
+			}
+		
+	}
+		focus = {
+			id = ORS_InvadeCanis
+			icon = GFX_goal_generic_attack_allies
+			x = 10
+			y = 5
+			cost = 5
+			prerequisite = {focus = ORS_InvestInHydrusiteMilitaryIndustry}
+			prerequisite = {focus = ORS_BattleExperience}
+			completion_reward = {
+				declare_war_on = {
+					target = URS 
+					type = annex_everything
+				}
+			}
+			ai_will_do = {
+				factor = 5 
+			}
+		}	
+	
+	focus = {
+        id = ORS_EndOfWar
+        icon = GFX_focus_generic_treaty
+        x = 10
+        y = 6
+        cost = 5
+		available = {
+			URS = {
+				AND = {
+						NOT = { has_full_control_of_state = 117 } 
+						NOT = { has_full_control_of_state = 119 } 
+						NOT = { has_full_control_of_state = 114 } 
+						NOT = { has_full_control_of_state = 116 } 
+						NOT = { has_full_control_of_state = 115 }
+						NOT = { has_full_control_of_state = 118 } 					
+					}
+				}
+			}
+
+		
+        prerequisite = {
+            focus = ORS_InvadeCanis
+        }
+        completion_reward = {
+			URS = {
+				country_event = {id = orion.2 days = 1}
+			}
+		}
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	
+	focus = {
+        id = ORS_TheUrsanQuestion
+        icon = GFX_goal_unknown
+        x = 10
+        y = 7
+        cost = 5
+		available = {			
+			}
+		
+        prerequisite = {
+            focus = ORS_EndOfWar
+        }
+        completion_reward = {
+		remove_ideas = {ORS_PrepareMilitaryIdea ORS_RallyPeopleIdea ORS_LessonsOfWar ORS_PromiseBusinessesIdea }
+		}
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = ORS_SpoilsOfWar
+        icon = GFX_focus_generic_resource_extraction
+        x = 9
+        y = 8
+        cost = 5
+		available = {	
+				ORI = {
+					AND = {
+						has_full_control_of_state = 117
+						has_full_control_of_state = 114 
+						has_full_control_of_state = 113
+						NOT = { has_war_with = URS }
+					}
+				}
+			}
+		
+        prerequisite = {
+            focus = ORS_TheUrsanQuestion
+        }
+        completion_reward = {
+		117 = {required_garrison_factor = 0.5}
+		117 = {add_resource = {
+		type = oil 
+		amount = 10}
+		}
+		}
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = ORS_InvestInOilRigs
+        icon = GFX_goal_generic_oil_refinery
+        x = 3
+        y = 9
+        cost = 5
+		available = {			
+			}
+		
+        prerequisite = {
+            focus = ORS_SpoilsOfWar
+        }
+        completion_reward = {
+		114 = {required_garrison_factor = 0.5}
+		114 = {add_resource = {
+		type = oil 
+		amount = 32}
+		}
+		}
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = ORS_InvestInRubberFactories
+        icon = GFX_focus_generic_rubber
+        x = 3
+        y = 10
+        cost = 5
+		available = {			
+			}
+		
+        prerequisite = {
+            focus = ORS_InvestInOilRigs
+        }
+		completion_reward = {
+			117 = {
+				add_resource = {
+					type = rubber 
+					amount = 12
+				}
+			}
+			}
+			ai_will_do = {
+				factor = 5
+			}
+    }
+	
+	focus = {
+			id = ORS_ClampDownOnResistence
+			icon = GFX_focus_BRA_end_the_state_of_emergency
+			x = 9
+			y = 9
+			cost = 5
+			available = {			
+			}
+		
+			prerequisite = {
+				focus = ORS_SpoilsOfWar
+			}
+			completion_reward = {
+
+			add_manpower  = -50000
+		
+			add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -5000
+				}
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_ConfiscateLand
+			icon = GFX_focus_LAT_suspend_constitution_of_latvia
+			x = 9
+			y = 10
+			cost = 5
+			available = {}
+		
+			prerequisite = {
+				focus = ORS_ClampDownOnResistence
+			}
+			completion_reward = {
+			114 = {add_extra_state_shared_building_slots = 3}
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_DeportUrsans
+			icon = GFX_focus_FIN_parmis_devils
+			x = 6
+			y = 9
+			cost = 5
+			available = {			
+				}
+		
+			prerequisite = {
+				focus = ORS_SpoilsOfWar
+			}
+			completion_reward = {
+		
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_ImproveInfrastructure
+			icon = GFX_goal_generic_construct_infrastructure
+			x = 6
+			y = 11
+			cost = 5
+			available = {			
+			}
+		
+			prerequisite = {focus = ORS_InvestInRubberFactories}
+			prerequisite = {focus = ORS_ConfiscateLand}
+			completion_reward = {
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+	focus = {
+        id = ORI_returning_canis
+        icon = GFX_goal_unknown
+        x = 1
+        y = 3
+        cost = 10
+		relative_position_id = ORS_TheUrsanQuestion
+		available = {			
+			}
+		
+        prerequisite = {
+            focus = ORS_TheUrsanQuestion
+        }
+		prerequisite = { focus = ORS_ClampDownOnResistence }
+        completion_reward = {
+		add_state_core = 114
+		add_state_core = 117
+		}
+        ai_will_do = {
+            factor = 5
+        }
+    }
+		
+		
+		focus = {
+			id = ORS_ExpandTheCivilianSector
+			icon = GFX_goal_generic_construct_civ_factory
+			x = 18
+			y = 1
+			cost = 10
+			available = {
+				ORI_Kevin_Hart = {is_country_leader = yes}
+				date < 1900.12.09
+			}
+			
+			prerequisite = {
+				focus = ORS_EndHartTerm
+			}
+			
+			completion_reward = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+						}
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_ExpandBuildingSlots
+			icon = GFX_focus_POL_develop_polish_shipbuilding
+			x = 19
+			y = 2
+			cost = 10
+			available = {
+				ORI_Kevin_Hart = {is_country_leader = yes}
+				date < 1900.12.09
+			}
+			
+			prerequisite = {
+				focus = ORS_ExpandTheCivilianSector
+			}
+			
+			completion_reward = {
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_Elections
+			icon = GFX_focus_ORI_Hart_Term
+			x = 20
+			y = 4
+			cost = 0.1
+			available = {
+				always = false
+			
+			}
+			
+			prerequisite = {focus = ORS_ExpandBuildingSlots}
+			prerequisite = {focus = ORS_KeepUpTheBoom}
+			
+			completion_reward = {
+				add_political_power = 100
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+
+		focus = {
+			id = ORS_KeepUpTheBoom
+			icon = GFX_focus_ORI_KeepUpTheBoom
+			x = 21
+			y = 2
+			cost = 10
+			available = {
+				ORI_Kevin_Hart = {is_country_leader = yes}
+				date < 1900.12.09
+			
+			}
+			
+			prerequisite = {
+				focus = ORS_EconomicBoom
+			}
+			
+			completion_reward = {
+				swap_ideas = {
+					remove_idea = ORS_EconomicBoom
+					add_idea = ORS_EconomicBoom2
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+
+		focus = {
+			id = ORS_EconomicBoom
+			icon = GFX_focus_ORI_OrioniteEconomicBoom
+			x = 22
+			y = 1
+			cost = 10
+			available = {
+				ORI_Kevin_Hart = {is_country_leader = yes}
+				date < 1902.12.09
+			
+			}
+			
+			prerequisite = {
+				focus = ORS_EndHartTerm
+			}
+			
+			completion_reward = {
+				add_ideas = ORS_EconomicBoom
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+
+		focus = {
+			id = ORS_EndHartTerm
+			icon = GFX_focus_ORI_EndOfHartTerm
+			x = 20
+			y = 0
+			cost = 5
+			available = {
+				ORI_Kevin_Hart = {is_country_leader = yes}
+				date < 1902.12.09
+			
+			}
+			
+			prerequisite = {
+				
+			}
+			
+			completion_reward = {
+				add_political_power = 100
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+
+		focus = {
+			id = ORS_HartSecondTerm
+			icon = GFX_focus_ORI_HartsSecondTerm
+			x = 22
+			y = 5
+			cost = 5
+			available = {
+				always = false
+			}
+			
+			prerequisite = {
+				focus = ORS_Elections
+			}
+			
+			completion_reward = {
+				add_political_power = 100
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+
+		focus = {
+			id = ORS_ExtinguishCorruption
+			icon = GFX_focus_ORI_ExtinguishCorruption
+			x = 24
+			y = 6
+			cost = 5
+			available = {
+				ORI_Kevin_Hart = {is_country_leader = yes}
+			}
+			
+			prerequisite = {
+				focus = ORS_HartSecondTerm
+			}
+			
+			completion_reward = {
+				add_stability = 0.05
+				swap_ideas = {
+					remove_idea = ORS_RampantGovernmentCorruption
+					add_idea = ORS_RampantGovernmentCorruption1
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		
+		focus = {
+			id = ORS_SlightlyIncreaseMilitaryBudget
+			icon = GFX_focus_ORI_IncreaseMilitaryBudget
+			x = 24
+			y = 7
+			cost = 5
+			available = {
+				ORI_Kevin_Hart = {is_country_leader = yes}
+			}
+			
+			prerequisite = {
+				focus = ORS_ExtinguishCorruption
+			}
+			
+			completion_reward = {
+				swap_ideas = {
+					remove_idea = ORS_PrioritizedMilitary
+					add_idea = ORS_PrioritizedMilitary1
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_InviteTheOpposition
+			icon = GFX_goal_generic_intelligence_exchange
+			x = 26
+			y = 7
+			cost = 5
+			available = {
+				ORI_Kevin_Hart = {is_country_leader = yes}
+			}
+			
+			prerequisite = {
+				focus = ORS_ExtinguishCorruption
+			}
+			
+			completion_reward = {
+				swap_ideas = {
+					remove_idea = ORS_PrioritizedMilitary
+					add_idea = ORS_PrioritizedMilitary1
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+	focus = {
+			id = ORS_InvestInGeminiIndustry
+			icon = GFX_focus_generic_low_cost_housing
+			x = 22
+			y = 6
+			cost = 5
+			available = {
+				ORI_Kevin_Hart = {is_country_leader = yes}
+			}
+			
+			prerequisite = {
+				focus = ORS_HartSecondTerm
+			}
+			
+			completion_reward = {
+			add_timed_idea = {
+				idea = ORS_BorrowedLoans
+				days = 180
+			}
+			
+			137 = {
+				limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_ExpandLemmingSteelMills
+			icon = GFX_focus_generic_steel
+			x = 22
+			y = 7
+			cost = 5
+			available = {
+				ORI_Kevin_Hart = {is_country_leader = yes}
+			}
+			
+			prerequisite = {
+				focus = ORS_InvestInGeminiIndustry
+			}
+			
+			completion_reward = {
+				143 = {
+					add_resource = {
+						type = steel
+						amount = 12
+					}
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_RestrictCompanies
+			icon = GFX_focus_ORI_RestrictBusinesses
+			x = 22
+			y = 8
+			cost = 5
+			available = {
+				ORI_Kevin_Hart = {is_country_leader = yes}
+			}
+			
+			prerequisite = {
+				focus = ORS_ExpandLemmingSteelMills
+			}
+			
+			completion_reward = {
+				swap_ideas = {
+					remove_idea = ORS_RampantGovernmentCorruption1
+					add_idea = ORS_RampantGovernmentCorruption2
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_CareForTheElderlyAct
+			icon = GFX_focus_ORI_CareForTheElderlyAct
+			x = 24
+			y = 8
+			cost = 5
+			available = {
+				ORI_Kevin_Hart = {is_country_leader = yes}
+			}
+			
+			prerequisite = {
+				focus = ORS_SlightlyIncreaseMilitaryBudget
+			}
+			
+			completion_reward = {
+				swap_ideas = {
+					remove_idea = ORS_GovernmentSubisidies
+					add_idea = ORS_GovernmentSubisidies1
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_ExpandTheVenetaiaBureauOfResearch
+			icon = GFX_focus_research2
+			x = 20
+			y = 6
+			cost = 5
+			available = {
+				ORI_Kevin_Hart = {is_country_leader = yes}
+			}
+			
+			prerequisite = {
+				focus = ORS_HartSecondTerm
+			}
+			
+			completion_reward = {
+				add_research_slot = 1
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		
+		focus = {
+			id = ORS_HartPropaganda
+			icon = GFX_goal_generic_propaganda
+			x = 20
+			y = 7
+			cost = 5
+			available = {
+				ORI_Kevin_Hart = {is_country_leader = yes}
+			}
+			
+			prerequisite = {
+				focus = ORS_ExpandTheVenetaiaBureauOfResearch
+			}
+			
+			completion_reward = {
+				add_timed_idea = {
+					idea = ORS_HartCampaigning
+					days = 140
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_IncreaseBuildingSpeed
+			icon = GFX_focus_POL_warsaw_main_station
+			x = 20
+			y = 8
+			cost = 5
+			available = {
+				ORI_Kevin_Hart = {is_country_leader = yes}
+			}
+			
+			prerequisite = {
+				focus = ORS_HartPropaganda
+			}
+			
+			completion_reward = {
+				add_timed_idea = {
+					idea = ORS_BuildingSpeed
+					days = 365
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_VictoryForHart
+			icon = GFX_focus_spr_torchbearers_of_tomorrow
+			x = 22
+			y = 9
+			cost = 5
+			available = {
+				ORI_Kevin_Hart = {is_country_leader = yes}
+			}
+			
+			prerequisite = {
+				focus = ORS_IncreaseBuildingSpeed
+			}
+			
+			prerequisite = {
+				focus = ORS_RestrictCompanies
+			}
+			prerequisite = {
+				focus = ORS_CareForTheElderlyAct
+			}
+			completion_reward = {
+				add_timed_idea = {
+					idea = ORS_HartCampaigning
+					days = 140
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_QuestionOfForeignPolicy
+			icon = GFX_focus_ORI_QuestionOfForeignPolicy
+			x = 40
+			y = 0
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+			}
+			
+			completion_reward = {
+				add_stability = 0.05
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_OrioniteImperialism
+			icon = GFX_focus_ORI_OrioniteImperialism
+			x = 46
+			y = 1
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = ORS_QuestionOfForeignPolicy
+			}
+			
+			mutually_exclusive = { focus = ORS_OrioniteInterventionism}
+			mutually_exclusive = { focus = ORS_OrioniteIsolationism }
+			
+			completion_reward = {
+				add_war_support = -0.05 #realistically people would oppose going on offensive wars
+			}
+			
+			ai_will_do = {
+				factor = 5 #ruins historical games; should only be playable path for the player or non hist AI
+			}
+		}
+		
+		focus = {
+			id = ORS_OrioniteInterventionism
+			icon = GFX_focus_ORI_OrioniteInterventionism
+			x = 40
+			y = 1
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = ORS_QuestionOfForeignPolicy
+			}
+			
+			mutually_exclusive = { focus = ORS_OrioniteImperialism }
+			mutually_exclusive = { focus = ORS_OrioniteIsolationism }
+			
+			completion_reward = {
+				add_war_support = 0.05 #people want to contain antares
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_OrioniteIsolationism
+			icon = GFX_focus_ORI_OrioniteIsolationism
+			x = 34
+			y = 1
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = ORS_QuestionOfForeignPolicy
+			}
+			
+			mutually_exclusive = { focus = ORS_OrioniteImperialism }
+			mutually_exclusive = { focus = ORS_OrioniteInterventionism }
+			
+			completion_reward = {
+				add_stability = 0.05
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_LookDownSouth
+			icon = GFX_focus_generic_black_sea_focus
+			x = 46
+			y = 2
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = ORS_OrioniteImperialism
+			}
+			
+			completion_reward = {
+				add_stability = 0.05
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_IsolateAuriga
+			icon = GFX_focus_ORI_EncircleAuriga
+			x = 46
+			y = 3
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = ORS_LookDownSouth
+			}
+			
+			completion_reward = {
+				AUR = {
+					add_ideas = ORS_IsolatedEconomy 
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_RallyTheNationalists
+			icon = GFX_focus_ORI_RallyTheNationalists
+			x = 51
+			y = 2
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = ORS_OrioniteImperialism
+			}
+			
+			completion_reward = {
+				add_ideas = ORS_NationalistRheotic
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_InvadeAuriga
+			icon = GFX_goal_generic_major_war
+			x = 46
+			y = 4
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = ORS_IsolateAuriga
+			}
+			
+			completion_reward = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = AUR
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		
+		focus = {
+			id = ORS_ExpandTheMilitaryIndustry
+			icon = GFX_focus_SOV_merge_plants
+			x = 51
+			y = 3
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = ORS_RallyTheNationalists
+			}
+			
+			completion_reward = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_ExpandLibranPorts
+			icon = GFX_goal_generic_construct_naval_dockyard
+			x = 43
+			y = 2
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = ORS_OrioniteImperialism
+				focus = ORS_OrioniteInterventionism
+			}
+			
+			
+			completion_reward = {
+				add_stability = 0.05
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		
+		focus = {
+			id = ORS_FoundTheMarineCorps
+			icon = GFX_goal_generic_amphibious_assault
+			x = 51
+			y = 4
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = ORS_ExpandTheMilitaryIndustry
+			}
+			
+			completion_reward = {
+				add_ideas = ORS_OMAC
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_RoundTwo
+			icon = GFX_focus_ORI_InvadeUrsa
+			x = 48
+			y = 4
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = ORS_BuildCanisianNavalBases
+			}
+			
+			completion_reward = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = URS
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_BuildCanisianNavalBases
+			icon = GFX_focus_generic_naval_discipline
+			x = 48
+			y = 3
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = ORS_LookUpNorth
+			}
+			
+			completion_reward = {
+				add_building_construction = {
+					type = supply_node
+					is_port = yes
+					level = 1
+					instant_build = yes
+					province = 1384
+				}
+				
+				add_building_construction = {
+					type = supply_node
+					is_port = yes
+					level = 1
+					instant_build = yes
+					province = 2734
+				}
+				
+				add_building_construction = {
+					type = supply_node
+					is_port = yes
+					level = 1
+					instant_build = yes
+					province = 2332
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_LookUpNorth
+			icon = GFX_focus_generic_mediterranean_sea_focus
+			x = 48
+			y = 2
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = ORS_OrioniteImperialism
+			}
+			
+			completion_reward = {
+				add_stability = 0.05
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		
+		focus = {
+			id = ORS_FinishTheLastManStanding
+			icon = GFX_focus_ORI_InvadeHydrus
+			x = 47
+			y = 5
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = ORS_RoundTwo
+			}
+			prerequisite = {
+				focus = ORS_InvadeAuriga
+			}
+			
+			completion_reward = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = HYS
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_TheEasternTitan
+			icon = GFX_focus_ORI_TheEasternTitan
+			x = 47
+			y = 6
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = ORS_FinishTheLastManStanding
+			}
+			
+			completion_reward = {
+				add_ideas = ORS_TheEasternTitan
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_PrepareToStrikeTheBeast
+			icon = GFX_focus_focus_fra_revolution_utmost
+			x = 54
+			y = 2
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = ORS_OrioniteImperialism
+			}
+			
+			completion_reward = {
+				add_stability = 0.05
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_AntiAntareanPropaganda
+			icon = GFX_focus_ORI_AntiAntareanPropaganda
+			x = 54
+			y = 3
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = ORS_PrepareToStrikeTheBeast
+			}
+			
+			completion_reward = {
+				add_ideas = ORS_AntiAntareanPropaganda
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_StrikeTheBoogeymanOfCentaura
+			icon = GFX_focus_generic_total_war
+			x = 54
+			y = 4
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = ORS_AntiAntareanPropaganda
+			}
+			
+			completion_reward = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = ANT
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_TheNorthCentauranExpedition
+			icon = GFX_focus_NOR_hurtigruten
+			x = 56
+			y = 2
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = ORS_OrioniteImperialism
+			}
+			
+			completion_reward = {
+				add_stability = 0.05
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_WarplanRiaa
+			icon = GFX_goal_generic_position_armies
+			x = 56
+			y = 3
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = ORS_TheNorthCentauranExpedition
+			}
+			
+			completion_reward = {
+				add_ideas = ORS_WarPlanRiaa
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_DestroyTheGiantOfTheNorth
+			icon = GFX_focus_ETH_boots_on_the_shore
+			x = 56
+			y = 4
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = ORS_WarplanRiaa
+			}
+			
+			completion_reward = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = RIA
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_FinishOffLibra
+			icon = GFX_focus_SOV_reinforce_northern_naval_bases
+			x = 55
+			y = 5
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = ORS_DestroyTheGiantOfTheNorth
+			}
+			prerequisite = {
+				focus = ORS_StrikeTheBoogeymanOfCentaura
+			}
+			
+			completion_reward = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = LBR
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_TheMasterOfCentaura
+			icon = GFX_focus_ITA_mare_nostrum
+			x = 55
+			y = 6
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = ORS_FinishOffLibra
+			}
+			
+			completion_reward = {
+				add_ideas = ORS_TheMasterOfCentaura
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_TheMasterOfForma
+			icon = GFX_focus_SOV_international_union_of_soviet_republics
+			x = 51
+			y = 8
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = ORS_TheMasterOfCentaura
+			}
+			prerequisite = {
+				focus = ORS_TheEasternTitan
+			}
+			completion_reward = {
+				add_ideas = ORS_MasterOfForma
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_TheHard1900s
+			icon = GFX_focus_ORI_TheHard1900s
+			x = 67
+			y = 0
+			cost = 5
+			available = {
+				always = false
+			}
+			
+			completion_reward = {
+			
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_OurCourseOfAction
+			icon = GFX_
+			x = 67
+			y = 1
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = ORS_TheHard1900s
+			}
+			
+			completion_reward = {
+				country_event  = { id = orion.7 }
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_LowerTaxes
+			icon = GFX_focus_DEN_no_regulations
+			x = 64
+			y = 2
+			cost = 5
+			available = {
+				
+			}
+			
+			mutually_exclusive = { focus = ORS_ProvideSupportToSmallBusinesses}
+			
+			prerequisite = {
+				focus = ORS_OurCourseOfAction
+			}
+			
+			completion_reward = {
+				swap_ideas = {
+					remove_idea = ORS_TheHard1900s
+					add_idea = ORS_TheHard1900s1T
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_ProvideSupportToSmallBusinesses
+			icon = GFX_focus_DEN_limited_regulations
+			x = 70
+			y = 2
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = ORS_OurCourseOfAction
+			}
+			
+			completion_reward = {
+				swap_ideas = {
+						remove_idea = ORS_TheHard1900s
+						add_idea = ORS_TheHard1900s1C
+				}
+				add_political_power = -150
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_TemporarilyCeaseWelfarePayments
+			icon = GFX_focus_DEN_limited_regulations
+			x = 68
+			y = 3
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = ORS_ProvideSupportToSmallBusinesses
+			}
+			
+			completion_reward = {
+				swap_ideas = {
+					remove_idea = ORS_TheHard1900s1C
+					add_idea = ORS_TheHard1900s2C
+				}
+				add_stability = -0.15
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_RedirectGovernmentFunds
+			icon = GFX_focus_DEN_limited_regulations
+			x = 68
+			y = 3
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = ORS_ProvideSupportToSmallBusinesses
+			}
+			
+			completion_reward = {
+				swap_ideas = {
+						remove_idea = ORS_TheHard1900s1C
+						add_idea = ORS_TheHard1900s2C
+				}
+				add_stability = -0.15
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_SeizeCompanyAssets
+			icon = GFX_focus_GER_autarky_ambitions
+			x = 68
+			y = 4
+			cost = 5
+			available = {
+					
+			}
+			
+			prerequisite = {
+				focus = ORS_RedirectGovernmentFunds
+			}
+			completion_reward = {
+				add_timed_idea = {idea = ORS_SeizedCompanyAssets days = 360}
+				add_stability = -0.15
+				139 = {
+					limit = {
+							free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}	
+					add_extra_state_shared_building_slots = 1
+					
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_CompromiseWithWorkers
+			icon = GFX_focus_GER_autarky_ambitions
+			x = 70
+			y = 3
+			cost = 5
+			available = {
+					
+			}
+			
+			prerequisite = {
+				focus = ORS_ProvideSupportToSmallBusinesses
+			}
+			completion_reward = {
+				swap_ideas = {
+					remove_idea = ORS_WorkerStrikes
+					add_idea = ORS_WorkerStrikes1
+				}
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_CompromiseWithWorkers
+			icon = GFX_focus_GER_autarky_ambitions
+			x = 70
+			y = 3
+			cost = 5
+			available = {
+					
+			}
+			
+			prerequisite = {
+				focus = ORS_ProvideSupportToSmallBusinesses
+			}
+			completion_reward = {
+				swap_ideas = {
+					remove_idea = ORS_WorkerStrikes
+					add_idea = ORS_WorkerStrikes1
+				}
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+
+		focus = {
+			id = ORS_InvestInUrbanInfrastructure
+			icon = GFX_focus_GER_autarky_ambitions
+			x = 70
+			y = 4
+			cost = 5
+			available = {
+					
+			}
+			
+			prerequisite = {
+				focus = ORS_CompromiseWithWorkers
+			}
+			completion_reward = {
+				remove_ideas = ORS_WorkerStrikes1
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_BuildMoreSchools
+			icon = GFX_focus_GER_autarky_ambitions
+			x = 72
+			y = 3
+			cost = 5
+			available = {
+					
+			}
+			
+			prerequisite = {
+				focus = ORS_ProvideSupportToSmallBusinesses
+			}
+			completion_reward = {
+				add_ideas =  ORS_ExpandedEducationSector
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+	}
+}
+	
+	
+	
+	
+	
+
+

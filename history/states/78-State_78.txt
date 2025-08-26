@@ -1,0 +1,72 @@
+state={
+	id=78
+	name="STATE_78"
+	history = {
+		owner = CTA
+		add_core_of = CTA
+		add_dynamic_modifier = { 
+		modifier = CTA_defence_line_dynamic_modifier
+		}
+		buildings = {
+			industrial_complex = 1
+			dockyard = 1
+
+			infrastructure = 3
+			3574 = {
+				coastal_bunker = 8
+				bunker = 7
+			}
+			2953 = {
+				coastal_bunker = 8
+				bunker = 7
+			}
+			3576 = {
+				coastal_bunker = 8
+				bunker = 7
+			}
+			186 = {
+				coastal_bunker = 8
+				bunker = 7
+			}
+			1585 = {
+				coastal_bunker = 8
+				bunker = 7
+			}
+			3563 = {
+				bunker = 7
+				coastal_bunker = 8
+			}
+			607 = {
+				bunker = 7
+			}
+			3027 = {
+				bunker = 7
+			}
+			1448 = {
+				bunker = 7
+			}
+			1009 = {
+				bunker = 7
+			}
+			3240 = {
+				bunker = 7
+			}
+			3562 = {
+				bunker = 7
+			}
+			3565 = {
+				bunker = 7
+			}
+		}
+		victory_points = {
+			3576 50
+		}
+	}
+	provinces={
+		186 607 1009 1448 1585 2953 3027 3240 3562 3563 3565 3574 3576 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	manpower=12920216
+        state_category = town
+}

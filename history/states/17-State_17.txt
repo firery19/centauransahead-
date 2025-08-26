@@ -1,0 +1,26 @@
+
+state={
+	id=17
+	name="STATE_17"
+
+	history={
+		owner = LAC
+		add_core_of = LAC
+		victory_points = {
+			1257 35 
+		}
+		1944.1.1.12 = {
+			owner = ANT
+			controller = ANT
+
+}
+	}
+
+	provinces={
+		351 427 841 1257 2371 6507 6508 6989 6990 6991 6992 6993 6994 
+	}
+	manpower=5580000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

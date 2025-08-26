@@ -1,0 +1,28 @@
+capital = 1
+add_ideas = {
+	trench_warfare_idea
+}
+set_research_slots = 10
+
+set_stability = 1
+
+set_war_support = 1
+
+add_political_power = 2000
+
+set_convoys = 10000
+
+set_popularities = {
+	democratic = 0
+	communism = 0
+	fascism = 100 #1984
+	neutrality = 0
+}
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1900.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+

@@ -1,0 +1,22 @@
+state={
+	id=65
+	name="STATE_65"
+	history = {
+		owner = RIA
+		add_core_of = RIA
+		buildings = {
+			dockyard = 0
+			infrastructure = 2
+		}
+		victory_points = {
+			3675 17
+		}
+	}
+	provinces={
+		928 1757 3542 3579 3595 3612 3675 3694 6648 6649 6663 6670 6687 6693 6697 6720 6726 6727 6728 6730 6732 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=2316281
+        state_category = rural
+}

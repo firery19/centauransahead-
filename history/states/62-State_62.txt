@@ -1,0 +1,51 @@
+
+state={
+	id=62
+	name="STATE_62"
+	resources={
+		oil=9.000
+	}
+
+	history={
+		owner = CLB
+		add_core_of = CLB
+		add_core_of = PHA
+		buildings = {
+			arms_factory = 1
+			industrial_complex = 3
+			infrastructure = 4
+			3745 = {
+				naval_base = 8
+			}
+			2945 = {
+			naval_base = 2
+			}
+
+		}
+		victory_points = {
+			3745 50 
+		}
+		victory_points = {
+			2945 5 
+		}
+		victory_points = {
+			173 5 
+		}
+		victory_points = {
+			788 5
+		}
+		1944.1.1.12 = {
+			owner = RIA
+			controller = RIA
+
+}
+	}
+
+	provinces={
+		127 173 514 546 672 788 797 846 1100 1119 1169 1363 1446 1491 1802 1939 1942 1962 2212 2945 3628 3669 3676 3679 3680 3687 3695 3696 3707 3712 3716 3727 3731 3745 3747 3759 3760 3761 3762 3771 3777 3790 3795 3804 3817 3823 3833 3857 6723 
+	}
+	manpower=22092123
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+	local_supplies=0.000
+}

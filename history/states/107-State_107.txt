@@ -1,0 +1,36 @@
+state={
+	id=107
+	name="STATE_107"
+	resources = {
+		tungsten = 6
+	}
+	history = {
+		owner = ANT
+		add_core_of = ANT
+		add_core_of = LUP
+		buildings = {
+			industrial_complex = 1
+			arms_factory = 1 #
+			infrastructure = 2
+		}
+		victory_points = {
+			5399 30
+		}
+		victory_points = {
+			5149 10
+		}
+		victory_points = {
+			5475 5
+		}
+		victory_points = {
+			1345 10
+		}
+	}
+	provinces={
+		190 414 491 757 1318 1345 1656 1679 1878 2082 2102 2567 2758 2842 2847 2878 2879 2935 3084 3255 5044 5057 5095 5102 5118 5130 5145 5149 5150 5172 5185 5191 5195 5196 5235 5243 5264 5278 5293 5310 5326 5353 5359 5381 5399 5425 5436 5475 5477 5492 
+	}
+	manpower=16766748
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

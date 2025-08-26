@@ -1,0 +1,41 @@
+capital = 76
+add_ideas = {
+	trench_warfare_idea
+}
+set_technology = {
+	infantry_weapons = 4
+	tech_support = 1
+	tech_recon = 4
+	tech_engineer = 4
+	gw_artillery = 4
+}
+
+set_research_slots = 7
+
+set_stability = 1
+
+set_war_support = 1
+
+add_political_power = 1000
+
+set_convoys = 9000
+
+recruit_character = BCH_hitori_gotoh
+recruit_character = BCH_kita_ikuyo
+recruit_character = BCH_ryo_yamada
+recruit_character = BCH_nijika_ijichi
+
+set_popularities = {
+	democratic = 100
+	communism = 0
+	fascism = 0
+	neutrality = 0
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1900.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+

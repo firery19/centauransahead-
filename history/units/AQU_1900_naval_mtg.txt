@@ -1,0 +1,27 @@
+﻿units = {
+
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Coastal Defence Fleet"
+		naval_base = 1329
+		task_force = {				
+			name = "First Flotilla"
+			location = 1329
+			ship = { name = "Altair" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AQU version_name = "Marion Class" } } }
+			ship = { name = "Talona" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AQU version_name = "Talons Class" } } }
+			ship = { name = "Alshain" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AQU version_name = "Talons Class" } } }
+			ship = { name = "Denebokab" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AQU version_name = "Talons Class" } } }
+			ship = { name = "Tarazed" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AQU version_name = "Talons Class" } } }
+		}
+		task_force = {				
+			name = "Second Flotilla"
+			location = 1329
+			ship = { name = "Valegny" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AQU version_name = "Talons Class" } } }
+			ship = { name = "Valenmur" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AQU version_name = "Talons Class" } } }
+			ship = { name = "Villeurmeirs" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AQU version_name = "Talons Class" } } }
+			ship = { name = "Okab" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AQU version_name = "Talons Class" } } }
+			ship = { name = "Marinesse" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AQU version_name = "Talons Class" } } }
+		}
+	}
+}
+

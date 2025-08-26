@@ -1,0 +1,33 @@
+
+state={
+	id=72
+	name="STATE_72"
+	resources = {
+		aluminium = 0
+		steel = 65
+		tungsten = 17
+		chromium = 0
+	}
+	history={
+		owner = RIA
+		add_core_of = RIA
+		buildings = {
+			arms_factory = 1
+			industrial_complex = 1
+			infrastructure = 2
+
+		}
+		victory_points = {
+			886 6 
+		}
+
+	}
+
+	provinces={
+		15 39 79 392 400 458 558 585 681 706 763 881 886 936 1000 1053 1111 1267 1279 1628 2401 2488 2659 3385 3393 3394 3399 3406 3408 3418 3424 3428 3432 3447 3451 3459 3464 3469 3482 
+	}
+	manpower=41479496
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

@@ -1,0 +1,15 @@
+characters = {
+    VEG_alina_verda = {
+        name = VEG_alina_verda
+        portraits = {
+            civilian = {
+                large = GFX_portrait_VEG_alina_verda
+            }
+        }
+        country_leader = {
+			ideology = moderatism
+			traits = { }
+			expire = "1912.1.1.1"
+		}
+    }
+}

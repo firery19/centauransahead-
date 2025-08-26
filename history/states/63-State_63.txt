@@ -1,0 +1,29 @@
+
+state={
+	id=63
+	name="STATE_63"
+	history = {
+		owner = RIA
+		add_core_of = RIA
+		buildings = {
+			arms_factory = 0
+			industrial_complex = 0
+			infrastructure = 2
+		}
+		victory_points = {
+			639 11
+		}
+		1944.1.1.12 = {
+			owner = COV
+			controller = COV
+
+}
+	}
+	provinces={
+		639 666 1619 2903 3835 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=6734390
+        state_category = town
+}

@@ -1,0 +1,30 @@
+state={
+	id=45
+	name="STATE_45"
+	resources = {
+		aluminium = 9
+		steel = 7
+	}
+	history = {
+		owner = CET
+		add_core_of = CET
+		buildings = {
+			industrial_complex = 2
+			infrastructure = 2
+		}
+		1944.1.1.12 = {
+			owner = ANT
+			controller = ANT
+}
+		victory_points = {
+			4916 20
+		}
+	}
+	provinces={
+		1087 1205 1567 1651 1760 1903 1975 2142 2173 2206 2541 2559 2962 3133 3275 4784 4827 4838 4847 4864 4878 4916 4961 4967 5000 5009 5012 5081 5089 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=7601461
+        state_category = large_town
+}

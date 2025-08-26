@@ -1,0 +1,41 @@
+
+state={
+	id=69
+	name="STATE_69"
+	resources={
+		oil=23.000
+		tungsten=7.000
+	}
+
+	history={
+		owner = RIA
+		add_core_of = RIA
+		buildings = {
+			arms_factory = 1
+			industrial_complex = 6
+			dockyard = 1
+			infrastructure = 4
+			676 = {
+				naval_base = 5
+				}
+			}
+		victory_points = {
+			2393 50 
+		}
+		victory_points = {
+			3449 5 
+		}
+		victory_points = {
+			676 15 
+		}
+
+	}
+
+	provinces={
+		26 57 76 192 264 325 364 439 463 472 489 617 676 884 927 1070 1175 1826 2393 2424 2622 2965 2978 3151 3433 3442 3449 3457 3473 3475 3481 3494 3495 3504 3505 3512 3513 3519 3529 3539 6609 8208 
+	}
+	manpower=80134733
+	buildings_max_level_factor=1.000
+	state_category=industrialized_metropolis
+	local_supplies=0.000
+}

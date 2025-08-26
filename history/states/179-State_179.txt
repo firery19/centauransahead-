@@ -1,0 +1,24 @@
+state={
+	id=179
+	name="STATE_179"
+	history={
+		owner = URS
+		add_core_of = URS
+		buildings = {
+			infrastructure = 1
+			1200 = {
+				naval_base = 1
+				}
+			}
+			victory_points = {
+			1200 1 
+			}
+		}
+	provinces={
+		1200 3344 6510 6527 
+	}
+	manpower=13882
+	state_category = tiny_island
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

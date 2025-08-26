@@ -1,0 +1,161 @@
+bookmarks = {
+	bookmark = {
+		name = "GREASE_WAR_NAME"
+		desc = "GREASE_WAR_DESC"
+		date = 1900.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = ANT
+		default = yes
+		
+		ANT = {
+			history = ANT_1900_DESC
+			ideology = neutrality
+			focuses = {
+				ANT_consolidate_monarchic_powers
+				ANT_prepare_war_industry
+				ANT_prepare_for_war_with_cetus
+			}
+			ideas = {
+				ANT_ppdebuff
+				ANT_industry_idea
+				ANT_army
+			}
+
+		}
+		ORI = {
+			history = ORI_1900_DESC
+			ideology = democratic
+			ideas = {
+				ORS_RampantGovernmentCorruption
+				ORS_RapidIndustrialization
+				ORS_PrioritizedMilitary
+			}
+			focuses = {
+				ORS_Elections
+				ORS_InvadeCanis
+				ORS_TheHard1900s
+			}
+		}
+		CET = {
+			history = CET_1900_DESC
+			ideology = neutrality
+
+			ideas = {
+				CET_rules_the_waves_idea
+				CET_SC_question_idea
+				CET_independent_armed_forces_idea
+			}
+			focuses = {
+				CET_strengthen_monarch
+				CET_defence_plans
+				CET_sc_core
+			}
+		}
+		COV = {
+			history = COV_1900_DESC
+			ideology = neutrality
+			ideas = {
+				COV_revanchism_idea
+				COV_dysfunctional_economy_idea
+			}
+			focuses = {
+				COV_industry
+				COV_war_with_cetus
+				COV_continue_attack
+			}
+		}
+		URS = {
+			history = URS_1900_DESC
+			ideology = neutrality
+			ideas = {
+				URS_domestic_unrest
+				URS_sluggish_economy
+				URS_navy_spirit
+			}
+			focuses = {
+				URS_counter_resistance_support
+				URS_prelude_grease_war
+				URS_army_tree_start
+			}
+		}
+		HYS = {
+			history = HYS_1900_DESC
+			ideology = neutrality
+		}
+		RIA = {
+			history = RIA_1900_DESC
+			ideology = neutrality
+			ideas = {
+				RIA_rural_countryside
+				RIA_industrialisation
+
+			}
+		}
+		LBR = {
+			history = LBR_1900_DESC
+			ideology = neutrality
+		}
+		AQU = {
+            minor = yes
+			history = AQU_1900_DESC
+			ideology = democratic
+			ideas = {
+				AQU_iron_army_idea
+				AQU_lucas_silva_idea
+			}
+		}
+		GRS = {
+            minor = yes
+			history = GRS_1900_DESC
+			ideology = neutrality
+		}
+		VEG = {
+            minor = yes
+			history = VEG_1900_DESC
+			ideology = neutrality
+		}
+		CLB = {
+            minor = yes
+			history = CLB_1900_DESC
+			ideology = neutrality
+		}
+		TUC = {
+            minor = yes
+			history = TUC_1900_DESC
+			ideology = neutrality
+		}
+		CTA = {
+            minor = yes
+			history = CTA_1900_DESC
+			ideology = neutrality
+			ideas = {
+				CTA_democratic_bastion_idea
+			}
+		}
+		VUL = {
+            minor = yes
+			history = VUL_1900_DESC
+			ideology = neutrality
+		}
+		AUR = {
+            minor = yes
+			history = AUR_1900_DESC
+			ideology = neutrality
+		}
+		LAC = {
+            minor = yes
+			history = LAC_1900_DESC
+			ideology = neutrality
+		}
+		MUS = {
+            minor = yes
+			history = MUS_1900_DESC
+			ideology = neutrality
+		}
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

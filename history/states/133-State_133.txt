@@ -1,0 +1,37 @@
+
+state={
+	id=133
+	name="STATE_133"
+	resources={
+		chromium=12.000
+	}
+
+	history={
+		owner = URS
+		add_core_of = LPS
+		buildings = {
+			infrastructure = 1
+
+		}
+		victory_points = {
+			726 5 
+		}
+		start_resistance = yes
+		set_resistance = 25
+		set_compliance = 45
+		1944.1.1.12 = {
+			owner = HYS
+			controller = HYS
+			add_core_of = HYS
+
+}
+	}
+
+	provinces={
+		75 134 155 168 205 339 500 516 664 726 830 971 1340 1425 1468 1545 1642 1979 2060 2296 2404 2432 2474 2591 2602 2771 3021 3049 3261 4075 4076 4082 4091 4098 4113 4131 4135 4151 4168 4180 4187 4202 4208 4223 4226 4248 4249 4257 4271 4281 4294 4319 4337 4367 4381 4402 4411 4458 
+	}
+	manpower=13037419
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

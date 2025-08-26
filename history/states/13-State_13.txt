@@ -1,0 +1,32 @@
+
+state={
+	id=13
+	name="STATE_13"
+	resources={
+		steel=23.000
+		oil=9.000
+	}
+
+	history={
+		owner = RIA
+		add_core_of = RIA
+		buildings = {
+			arms_factory = 0
+			industrial_complex = 1
+			infrastructure = 2
+
+		}
+		victory_points = {
+			1893 10 
+		}
+
+	}
+
+	provinces={
+		86 91 108 179 195 216 254 294 361 393 396 447 532 563 613 642 647 658 709 730 748 768 837 862 934 989 1093 1436 1488 1676 1789 1893 2015 2070 2218 2287 2584 2596 2692 2975 2997 3036 3209 3250 3291 3345 3350 3367 3368 3369 3370 3375 3392 3416 3419 
+	}
+	manpower=13588624
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

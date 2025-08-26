@@ -1,0 +1,7 @@
+spriteTypes = {
+    spriteType = {
+      name = "GFX_radio_station_cover_the_libran_ocean"
+      textureFile = "gfx/radio_station_cover_the_libran_ocean.dds"
+      noOfFrames = 2
+    }
+}

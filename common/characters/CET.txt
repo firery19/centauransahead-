@@ -1,0 +1,15 @@
+characters = {
+    CET_frederick_scapha = {
+        name = CET_frederick_scapha
+        portraits = {
+            civilian = {
+                large = GFX_portrait_CET_frederick_scapha
+            }
+        }
+        country_leader = {
+			ideology = moderatism
+			traits = { }
+			expire = "1912.1.1.1"
+		}
+    }
+}

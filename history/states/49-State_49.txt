@@ -1,0 +1,37 @@
+state={
+	id=49
+	name="STATE_49"
+	history = {
+		owner = CET
+		add_core_of = CET
+		buildings = {
+			industrial_complex = 1
+			dockyard = 2
+			infrastructure = 3
+			1495 = {
+			naval_base = 2
+			}
+			5190 = {
+			naval_base = 2
+			}
+		}
+		1944.1.1.12 = {
+			owner = ANT
+			controller = ANT
+
+}
+		victory_points = {
+			1495 5
+		}
+		victory_points = {
+			5190 5
+		}
+	}
+	provinces={
+		1014 1495 2745 5063 5083 5120 5121 5167 5169 5170 5190 5290 5347 5414 5415 5454 5455 6785 6786 6788 6790 6791 6793 6794 6795 6803 6807 6812 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=4500100
+        state_category = large_city
+}

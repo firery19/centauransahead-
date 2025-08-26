@@ -1,0 +1,31 @@
+defined_text = {
+    name = CET_loc_SC_resistance
+    text = {
+        trigger = { check_variable = { CET.SC_resistance_level > 10 } }
+        localization_key = SC_loc_resistance_level_5
+    }
+
+    text = {
+        trigger = { check_variable = { CET.SC_resistance_level > 8 } }
+        localization_key = SC_loc_resistance_level_4
+    }
+
+    text = {
+        trigger = { check_variable = { CET.SC_resistance_level > 6 } }
+        localization_key = SC_loc_resistance_level_3
+    }
+
+    text = {
+        trigger = { check_variable = { CET.SC_resistance_level > 4 } }
+        localization_key = SC_loc_resistance_level_2
+    }
+
+    text = {
+        trigger = { check_variable = { CET.SC_resistance_level > 2 } }
+        localization_key = SC_loc_resistance_level_1
+    }
+
+    text = {
+        localization_key = SC_loc_resistance_level_0
+    }
+}

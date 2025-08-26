@@ -1,0 +1,33 @@
+
+state={
+	id=84
+	name="STATE_84"
+	resources={
+		tungsten=4.000
+		oil=32.000
+	}
+
+	history={
+		owner = URS
+		add_core_of = URS
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 0
+			dockyard = 0
+
+		}
+		victory_points = {
+			3465 13 
+		}
+
+	}
+
+	provinces={
+		12 113 194 367 379 502 520 590 662 689 690 720 931 990 1116 1410 1457 1706 2030 2191 2346 2350 3155 3182 3283 3465 3468 3496 3503 3506 3518 3525 3527 3530 3553 3558 3570 3584 3600 
+	}
+	manpower=19098776
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

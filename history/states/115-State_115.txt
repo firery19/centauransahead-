@@ -1,0 +1,51 @@
+
+state={
+	id=115
+	name="STATE_115"
+	resources = {
+		oil = 45
+		steel = 10
+	}
+	history = {
+		owner = URS
+		add_core_of = CNS
+		buildings =  {
+			infrastructure = 2
+			arms_factory = 1
+			1396 = {
+				naval_base = 5
+			}
+			3714 = {
+				naval_base = 3
+			}
+		}
+		victory_points = {
+			1396 10
+		}
+		victory_points = {
+		3643 5
+		}
+		victory_points = {
+		3714 10
+		}
+		victory_points = {
+		3289 10
+		}
+		start_resistance = yes
+		set_resistance = 10
+		set_compliance = 55
+		1944.1.1.12 = {
+			owner = HYS
+			controller = HYS
+			add_core_of = HYS
+
+}
+	}
+	provinces={
+		29 54 136 256 389 440 576 628 667 686 737 752 911 1032 1055 1107 1143 1164 1348 1355 1396 1562 1612 1653 1692 1729 1773 1791 1842 1885 1891 1932 2046 2134 2155 2181 2211 2285 2336 2407 2425 2524 2562 2732 2784 2821 2906 2942 2949 3025 3095 3129 3242 3289 3326 3643 3654 3672 3689 3705 3709 3714 3723 3732 3733 3739 3740 3748 3752 3756 3765 3766 3772 3781 3782 3796 3800 3809 3816 3819 3825 3829 3830 3842 3855 3858 3866 3873 3880 3893 3894 3908 3913 3914 3919 3927 3931 3945 3946 3956 3974 3980 3990 4011 4026 4031 4058 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=10452673
+        state_category = town
+}

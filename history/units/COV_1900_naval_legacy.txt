@@ -1,0 +1,75 @@
+units = {
+
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Southern Fleet"
+		naval_base = 2910
+		task_force = {				
+			name = "Dair Command"
+			location = 2910
+			ship = { name = "CS Khorin" definition = battleship equipment = { battleship_1 = { amount = 1 owner = COV version_name = "Khorin Class" } } }
+			ship = { name = "CS Corvō" definition = battleship equipment = { battleship_1 = { amount = 1 owner = COV version_name = "Khorin Class" } } }
+			ship = { name = "CS Rex" definition = battleship equipment = { battleship_1 = { amount = 1 owner = COV version_name = "Khorin Class" } } }
+			ship = { name = "CS Adsum" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = COV version_name = "Adsum Class" } } }
+			ship = { name = "CS Intrepidus No.1" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = COV version_name = "Intrepidus Class" } } }
+			ship = { name = "CS Intrepidus No.2" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = COV version_name = "Intrepidus Class" } } }
+			ship = { name = "CS Intrepidus No.3" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = COV version_name = "Intrepidus Class" } } }
+			ship = { name = "CS Intrepidus No.4" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = COV version_name = "Intrepidus Class" } } }
+			ship = { name = "CS Intrepidus No.5" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = COV version_name = "Intrepidus Class" } } }
+			ship = { name = "CS Brunus No.1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
+			ship = { name = "CS Brunus No.2" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
+			ship = { name = "CS Brunus No.3" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
+			ship = { name = "CS Brunus No.4" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
+			ship = { name = "CS Brunus No.5" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
+			ship = { name = "CS Brunus No.6" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
+			ship = { name = "CS Brunus No.7" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
+			ship = { name = "CS Brunus No.8" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
+			ship = { name = "CS Brunus No.9" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
+			ship = { name = "CS Brunus No.10" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
+			ship = { name = "CS Brunus No.11" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
+			ship = { name = "CS Brunus No.12" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
+			ship = { name = "CS Brunus No.13" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
+			ship = { name = "CS Brunus No.14" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
+			ship = { name = "CS Brunus No.15" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
+			ship = { name = "CS Brunus No.16" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
+			ship = { name = "CS Brunus No.17" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
+			
+		}
+		task_force = {				
+			name = "Islands Detachment"
+			location = 1096
+			ship = { name = "CS Ixion" definition = battleship equipment = { battleship_1 = { amount = 1 owner = COV version_name = "Khorin Class" } } }
+			ship = { name = "CS Intrepidus No.6" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = COV version_name = "Intrepidus Class" } } }
+			ship = { name = "CS Intrepidus No.7" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = COV version_name = "Intrepidus Class" } } }
+			ship = { name = "CS Brunus No.18" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
+			ship = { name = "CS Brunus No.19" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
+			ship = { name = "CS Brunus No.20" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
+			ship = { name = "CS Brunus No.21" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
+		}
+	}
+	
+	fleet = {
+		name = "Northern Fleet"
+		naval_base = 3890
+		task_force = {				
+			name = "Kraz Command"
+			location = 3890
+			ship = { name = "CS Coronis" definition = battleship equipment = { battleship_1 = { amount = 1 owner = COV version_name = "Khorin Class" } } }
+			ship = { name = "CS Solis" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = COV version_name = "Adsum Class" } } }
+			ship = { name = "CS Fortuna" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = COV version_name = "Adsum Class" } } }
+			ship = { name = "CS Intrepidus 8" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = COV version_name = "Intrepidus Class" } } }
+			ship = { name = "CS Intrepidus 9" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = COV version_name = "Intrepidus Class" } } }
+			ship = { name = "CS Intrepidus 10" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = COV version_name = "Intrepidus Class" } } }
+			ship = { name = "CS Intrepidus 11" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = COV version_name = "Intrepidus Class" } } }
+			ship = { name = "CS Intrepidus 12" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = COV version_name = "Intrepidus Class" } } }
+			ship = { name = "CS Brunus No.22" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
+			ship = { name = "CS Brunus No.23" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
+			ship = { name = "CS Brunus No.24" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
+			ship = { name = "CS Brunus No.25" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
+			ship = { name = "CS Brunus No.26" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
+			ship = { name = "CS Brunus No.27" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
+			ship = { name = "CS Brunus No.28" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
+			ship = { name = "CS Brunus No.29" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
+		}
+	}
+}

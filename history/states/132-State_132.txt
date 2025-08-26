@@ -1,0 +1,40 @@
+
+state={
+	id=132
+	name="STATE_132"
+	resources={
+		steel=9.000
+	}
+
+	history={
+		owner = URS
+		add_core_of = LPS
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+		victory_points = {
+			4250 10 
+		}
+		victory_points = {
+		1422 5
+		}
+		start_resistance = yes
+		set_resistance = 75
+		set_compliance = 10
+		1944.1.1.12 = {
+			owner = HYS
+			controller = HYS
+			add_core_of = HYS
+
+}
+	}
+
+	provinces={
+		44 66 139 211 301 377 460 487 537 555 747 1161 1327 1400 1422 1537 1603 1694 2042 2116 2262 2267 2288 2378 2430 2535 2782 2943 2970 3050 3285 3951 3969 3984 4013 4023 4061 4114 4121 4127 4157 4164 4173 4191 4193 4209 4216 4224 4240 4241 4250 4258 4263 4286 4330 4368 4376 4397 4421 
+	}
+	manpower=10464323
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

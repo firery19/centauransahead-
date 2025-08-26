@@ -1,0 +1,26 @@
+state={
+	id=22
+	name="STATE_22"
+	history = {
+		owner = LBR
+		add_core_of = LBR
+#		add_claim_by = ANT
+		buildings = {
+            infrastructure = 2
+            6923 = {
+                naval_base = 2
+				coastal_bunker = 2
+            }
+        }
+		victory_points = {
+			6923 5
+		}
+	}
+	provinces={
+		6899 6902 6906 6913 6923 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=1106086
+        state_category = tiny_island
+}

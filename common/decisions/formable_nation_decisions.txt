@@ -1,0 +1,385 @@
+form_commonwealthB_category = {
+	
+	form_commonwealthB = {
+
+		icon = decision_cat_generic_hydrus
+
+		allowed = {
+			OR = {
+				original_tag = HYS
+			}
+		}
+
+		available = {
+   		custom_trigger_tooltip = {
+   		     tooltip = form_hydrus_commonwealth_flag
+   		     hidden_trigger = {
+   		         NOT = { has_country_flag = form_hydrus_commonwealth_flag }
+   		     }
+   		}
+    		is_subject = no
+#    		custom_trigger_tooltip = {
+#       		tooltip = form_country_hydrus_required_states_tt
+AND = {
+    115 = {
+        controller = {
+            OR = {
+                tag = ROOT
+                is_in_faction_with = ROOT
+            }
+        }
+    }
+    116 = {
+        controller = {
+            OR = {
+                tag = ROOT
+                is_in_faction_with = ROOT
+            }
+        }
+    }
+    118 = {
+        controller = {
+            OR = {
+                tag = ROOT
+                is_in_faction_with = ROOT
+            }
+        }
+    }
+    119 = {
+        controller = {
+            OR = {
+                tag = ROOT
+                is_in_faction_with = ROOT
+            }
+        }
+    }
+    123 = {
+        controller = {
+            OR = {
+                tag = ROOT
+                is_in_faction_with = ROOT
+            }
+        }
+    }
+    130 = {
+        controller = {
+            OR = {
+                tag = ROOT
+                is_in_faction_with = ROOT
+            }
+        }
+    }
+    131 = {
+        controller = {
+            OR = {
+                tag = ROOT
+                is_in_faction_with = ROOT
+            }
+        }
+    }
+    132 = {
+        controller = {
+            OR = {
+                tag = ROOT
+                is_in_faction_with = ROOT
+            }
+        }
+    }
+    133 = {
+        controller = {
+            OR = {
+                tag = ROOT
+                is_in_faction_with = ROOT
+            }
+        }
+    }
+    134 = {
+        controller = {
+            OR = {
+                tag = ROOT
+                is_in_faction_with = ROOT
+            }
+        }
+    }
+    182 = {
+        controller = {
+            OR = {
+                tag = ROOT
+                is_in_faction_with = ROOT
+            }
+        }
+    }
+}
+#        		115 = { is_controlled_by = { OR = { tag = ROOT is_ally = ROOT }} 
+#        		116 = { is_controlled_by = { OR = { tag = ROOT is_ally = ROOT } } 
+#        		118 = { is_controlled_by = { OR = { tag = ROOT is_ally = ROOT } } 
+#        		119 = { is_controlled_by = { OR = { tag = ROOT is_ally = ROOT } } 
+#        		123 = { is_controlled_by = { OR = { tag = ROOT is_ally = ROOT } } 
+#		        130 = { is_controlled_by = { OR = { tag = ROOT is_ally = ROOT } } 
+#		        131 = { is_controlled_by = { OR = { tag = ROOT is_ally = ROOT } } 
+#		        132 = { is_controlled_by = { OR = { tag = ROOT is_ally = ROOT } } 
+#		        133 = { is_controlled_by = { OR = { tag = ROOT is_ally = ROOT } } 
+#		        134 = { is_controlled_by = { OR = { tag = ROOT is_ally = ROOT } } 
+#			182 = { is_controlled_by = { OR = { tag = ROOT is_ally = ROOT } } 
+#		    }
+		
+		visible = {
+			OR = {
+				original_tag = HYS
+			}
+			NOT = { has_country_flag = form_hydrus_commonwealth_flag }
+		}
+		}
+		complete_effect = {
+			set_cosmetic_tag = HYR
+			annex_country = {
+			    target = CNS
+			    transfer_troops = yes
+			}
+			annex_country = {
+			    target = LPS
+			    transfer_troops = yes
+			}
+
+#			custom_effect_tooltip = form_country_hydrus_coring_states_tt
+#			hidden_effect = {
+				115 = { add_core_of = ROOT }
+				116 = { add_core_of = ROOT }
+				118 = { add_core_of = ROOT }
+				119 = { add_core_of = ROOT }
+				123 = { add_core_of = ROOT }
+				130 = { add_core_of = ROOT }
+				131 = { add_core_of = ROOT }
+				132 = { add_core_of = ROOT }
+				133 = { add_core_of = ROOT }
+				134 = { add_core_of = ROOT }
+				182 = { add_core_of = ROOT }
+#			}
+
+
+
+			hidden_effect = {
+				# news_event = { id = wtt_news.53 hours = 6 }
+				set_country_flag = form_hydrus_commonwealth_flag
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+
+form_united_grusa_category = {
+	
+	form_grusa_again = {
+
+		icon = decision_cat_generic_hydrus
+
+		allowed = {
+			OR = {
+				original_tag = GRS
+				original_tag = VEG
+			}
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = form_hydrus_commonwealth_flag
+				hidden_trigger = {
+					NOT = { has_country_flag = form_hydrus_commonwealth_flag }
+				}
+			}
+			is_subject = no
+			custom_trigger_tooltip = {
+				tooltip = form_country_hydrus_required_states_tt
+				controls_state = 115
+				controls_state = 116
+				controls_state = 118
+				controls_state = 119
+				controls_state = 123
+				controls_state = 130
+				controls_state = 131
+				controls_state = 132
+				controls_state = 133
+				controls_state = 134
+			}
+		}
+
+		visible = {
+			OR = {
+				original_tag = HYS
+			}
+			NOT = { has_country_flag = form_hydrus_commonwealth_flag }
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = form_country_hydrus_coring_states_tt
+			hidden_effect = {
+				115 = { add_core_of = ROOT }
+				116 = { add_core_of = ROOT }
+				118 = { add_core_of = ROOT }
+				119 = { add_core_of = ROOT }
+				123 = { add_core_of = ROOT }
+				130 = { add_core_of = ROOT }
+				131 = { add_core_of = ROOT }
+				132 = { add_core_of = ROOT }
+				133 = { add_core_of = ROOT }
+				134 = { add_core_of = ROOT }
+			}
+			hidden_effect = {
+				# news_event = { id = wtt_news.53 hours = 6 }
+				set_country_flag = united_grusa_flag
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 10
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+
+form_rodinia_category = {
+	
+	form_rodinia = {
+
+		icon = decision_cat_generic_rodinia
+
+		allowed = {
+			OR = {
+				original_tag = URS
+			}
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = form_rodinia_flag
+				hidden_trigger = {
+					NOT = { has_country_flag = form_rodinia_flag }
+				}
+			}
+			is_subject = no
+			custom_trigger_tooltip = {
+				tooltip = form_country_ursa_required_states_tt
+				# ursa
+				controls_state = 84
+				controls_state = 85
+				controls_state = 86
+				controls_state = 87
+				controls_state = 88
+				controls_state = 89
+				controls_state = 90
+				}
+		custom_trigger_tooltip = {
+			tooltip = form_country_riaa_required_states_tt
+				# north riaa
+				controls_state = 64
+				controls_state = 67
+				controls_state = 69
+				controls_state = 70
+				controls_state = 71
+				controls_state = 72
+				controls_state = 73
+				}
+			custom_trigger_tooltip = {
+				tooltip = form_country_tucana_required_states_tt
+				# tucana
+				controls_state = 74
+				controls_state = 75
+				controls_state = 76
+			}
+			custom_trigger_tooltip = {
+				tooltip = form_country_centauri_required_states_tt
+				# centauri
+				controls_state = 77
+				controls_state = 78
+				controls_state = 79
+			}
+			custom_trigger_tooltip = {
+				tooltip = form_country_canis_required_states_tt
+				# north canis
+				controls_state = 112
+				controls_state = 113
+				controls_state = 115
+				controls_state = 116
+				controls_state = 117
+				controls_state = 123
+			}
+			custom_trigger_tooltip = {
+				tooltip = form_country_hydrus_required_states_tt
+				# north canis
+				controls_state = 2
+				controls_state = 124
+				controls_state = 125
+				controls_state = 127
+				controls_state = 128
+			}
+			custom_trigger_tooltip = {
+				tooltip = form_country_columba_required_states_tt
+				# north canis
+				controls_state = 62
+			}
+		}
+
+		visible = {
+			OR = {
+				original_tag = URS
+			}
+			NOT = { has_country_flag = form_rodinia_flag }
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = RDN	
+			custom_effect_tooltip = form_country_rodinia_coring_states_tt
+			hidden_effect = {
+				2 = { add_core_of = ROOT }
+				62 = { add_core_of = ROOT }
+				64 = { add_core_of = ROOT }
+				66 = { add_core_of = ROOT }
+				67 = { add_core_of = ROOT }
+				68 = { add_core_of = ROOT }
+				69 = { add_core_of = ROOT }
+				70 = { add_core_of = ROOT }
+				71 = { add_core_of = ROOT }
+				72 = { add_core_of = ROOT }
+				73 = { add_core_of = ROOT }
+				74 = { add_core_of = ROOT }
+				75 = { add_core_of = ROOT }
+				76 = { add_core_of = ROOT }
+				77 = { add_core_of = ROOT }
+				78 = { add_core_of = ROOT }
+				79 = { add_core_of = ROOT }
+				112 = { add_core_of = ROOT }
+				113 = { add_core_of = ROOT }
+				115 = { add_core_of = ROOT }
+				116 = { add_core_of = ROOT }
+				117 = { add_core_of = ROOT }
+				123 = { add_core_of = ROOT }
+				124 = { add_core_of = ROOT }
+				125 = { add_core_of = ROOT }
+				127 = { add_core_of = ROOT }
+				128 = { add_core_of = ROOT }
+			}
+			hidden_effect = {
+				# news_event = { id = wtt_news.53 hours = 6 }
+				set_country_flag = form_rodinia_flag
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}

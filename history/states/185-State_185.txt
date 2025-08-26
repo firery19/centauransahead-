@@ -1,0 +1,38 @@
+
+state={
+	id=185
+	name="STATE_185"
+	
+	history={
+		owner = CLB
+		add_core_of = CLB
+		add_core_of = NOH
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 3
+
+		}
+		victory_points = {
+		3627 5
+		}
+		victory_points = {
+		248 5
+		}
+		victory_points = {
+		3666 15
+		}
+		1944.1.1.12 = {
+			owner = RIA
+			controller = RIA
+
+}
+	}
+	
+	provinces={
+		3 34 84 138 248 391 490 545 669 703 817 840 848 869 1056 1113 1191 1219 1309 1428 1445 1601 1751 1952 1992 2133 3006 3061 3090 3108 3271 3300 3303 3616 3621 3622 3627 3635 3637 3645 3646 3657 3666 3685 3724 3726 
+	}
+	manpower=14580152
+	state_category=metropolis
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

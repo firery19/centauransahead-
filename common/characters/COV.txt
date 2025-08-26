@@ -1,0 +1,26 @@
+characters = {
+	COV_oliver_khorin = { 
+		name = "Oliver Khorin"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_COV_oliver_khorin
+				small = GFX_portrait_COV_oliver_khorin_small
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { Nationalist_Symbol }
+			expire = "1913.1.1.1"
+			id = -1
+		}
+	}
+	COV_henry_khorin = {
+		name = "Henry Khorin"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_COV_henry_khorin
+				small = GFX_portrait_COV_henry_khorin_small
+			}
+		}
+	}
+}

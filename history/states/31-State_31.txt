@@ -1,0 +1,56 @@
+
+state={
+	id=31
+	name="STATE_31"
+	resources = {
+		oil = 4
+	}
+	history = {
+		owner = AQU
+		add_core_of = AQU
+		add_claim_by = ANT
+		buildings = {
+			infrastructure = 3
+
+			industrial_complex = 1 #instead of dockyards, Aquila navy is not maintained and they instead use the dockyards for building civilian ships to sell to other nations 
+		
+		
+			1329 = {
+				naval_base = 4
+			}
+			3139 = {
+				bunker = 3
+			}
+			4975 = {
+				bunker = 3
+			}
+			335 = {
+				bunker = 3
+			}
+			423 = {
+				bunker = 2
+			}
+			4865 = {
+				bunker = 2
+			}
+			4831 = {
+				bunker = 2
+			}
+		}
+		victory_points = {
+			1329 30
+		}
+		1944.1.1.12 = {
+			owner = ANT
+			controller = ANT
+
+}
+	}
+	provinces={
+		335 423 512 1329 1808 3139 4831 4865 4928 4975
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=6578971
+        state_category = town
+}

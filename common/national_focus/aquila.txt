@@ -1,0 +1,479 @@
+focus_tree = {
+    id = AQU_focus
+    default = no
+    country = {
+        factor = 0
+        modifier = {
+            add = 50
+            tag = AQU
+        }
+    }
+    continuous_focus_position = { x = 25 y = 1080 }
+
+search_filter_prios = {
+	FOCUS_FILTER_POLITICAL = 1010
+	
+	FOCUS_FILTER_RESEARCH = 522
+	
+	FOCUS_FILTER_INDUSTRY = 509
+
+	FOCUS_FILTER_BALANCE_OF_POWER = 200
+	FOCUS_FILTER_SOV_POLITICAL_PARANOIA = 111
+	FOCUS_FILTER_PROPAGANDA = 110
+	FOCUS_FILTER_MISSIOLINI = 110
+	FOCUS_FILTER_ARMY_XP = 103
+	FOCUS_FILTER_NAVY_XP = 102
+	FOCUS_FILTER_AIR_XP = 101
+
+}
+	initial_show_position = {
+		focus = AQU_the_aquilan_spirit
+	}
+	shared_focus = army_effort
+	shared_focus = naval_effort
+	shared_focus = aviation_effort
+	shared_focus = industrial_effort
+	shared_focus = political_effort
+	
+	focus = {
+        id = AQU_the_aquilan_spirit
+        icon = GFX_focus_AFG_fruit_processing
+        x = 36
+        y = 0
+        cost = 10
+        available = {
+            
+        }
+        completion_reward = {
+            add_stability = 0.05
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = AQU_fort_management
+        icon = GFX_focus_BEL_eben_emael_fortress
+        x = -6
+        y = 1
+        cost = 10
+		prerequisite = { focus = AQU_the_aquilan_spirit }
+		relative_position_id = AQU_the_aquilan_spirit
+        available = {
+            
+        }
+        completion_reward = {
+		
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = AQU_north_fort
+        icon = GFX_focus_CHL_departemento_de_las_tropas_nacistas_de_asalto
+        x = -4
+        y = 1
+        cost = 5
+		prerequisite = { focus = AQU_fort_management }
+		relative_position_id = AQU_fort_management
+        available = {
+            
+        }
+        completion_reward = {
+		custom_effect_tooltip = AQU_decision_allow
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = AQU_east_fort
+        icon = GFX_focus_CHL_departemento_de_las_tropas_nacistas_de_asalto
+        x = -2
+        y = 1
+        cost = 5
+		prerequisite = { focus = AQU_fort_management }
+		relative_position_id = AQU_fort_management
+        available = {
+            
+        }
+        completion_reward = {
+		custom_effect_tooltip = AQU_decision_allow
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = AQU_south_fort
+        icon = GFX_focus_CHL_departemento_de_las_tropas_nacistas_de_asalto
+        x = 0
+        y = 1
+        cost = 5
+		prerequisite = { focus = AQU_fort_management }
+		relative_position_id = AQU_fort_management
+        available = {
+            
+        }
+        completion_reward = {
+		custom_effect_tooltip = AQU_decision_allow
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = AQU_west_fort
+        icon = GFX_focus_CHL_departemento_de_las_tropas_nacistas_de_asalto
+        x = 2
+        y = 1
+        cost = 5
+		prerequisite = { focus = AQU_fort_management }
+		relative_position_id = AQU_fort_management
+        available = {
+            
+        }
+        completion_reward = {
+		custom_effect_tooltip = AQU_decision_allow
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = AQU_civil_guard
+        icon = GFX_focus_BUL_bulgarian_administration_of_the_balkans
+        x = 0
+        y = 1
+        cost = 15
+		prerequisite = { focus = AQU_the_aquilan_spirit }
+		relative_position_id = AQU_the_aquilan_spirit
+        available = {
+            
+        }
+        completion_reward = {
+            add_war_support = 0.05
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = AQU_raise_penal_battalions
+        icon = GFX_focus_FIN_parmis_devils
+        x = 0
+        y = 1
+        cost = 10
+		prerequisite = { focus = AQU_civil_guard }
+		relative_position_id = AQU_civil_guard
+        available = {
+           has_war = yes
+        }
+        completion_reward = {
+            add_ideas = AQU_penal_battalions_idea
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = AQU_increase_the_cg
+        icon = GFX_focus_mex_caudillo_private_armies
+        x = -2
+        y = 2
+        cost = 10
+		prerequisite = { focus = AQU_civil_guard }
+		mutually_exclusive = { focus = AQU_standardise_the_cg }
+		relative_position_id = AQU_civil_guard
+        available = {
+            
+        }
+        completion_reward = {
+            add_ideas = AQU_strong_militia_idea
+			hidden_effect = {
+			set_country_flag = AQU_cg_a
+			}
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = AQU_make_more_weapons
+        icon = GFX_goal_generic_construct_mil_factory
+        x = -1
+        y = 1
+        cost = 10
+		prerequisite = { focus = AQU_increase_the_cg }
+		relative_position_id = AQU_increase_the_cg
+        available = {
+            
+        }
+        completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = AQU_improve_cohesiveness
+        icon = GFX_goal_generic_national_unity
+        x = 1
+        y = 1
+        cost = 5
+		prerequisite = { focus = AQU_increase_the_cg }
+		relative_position_id = AQU_increase_the_cg
+        available = {
+            
+        }
+        completion_reward = {
+            add_ideas = AQU_cohesive_militia_idea
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = AQU_strength_in_numbers
+        icon = GFX_focus_HUN_expand_the_army
+        x = 1
+        y = 1
+        cost = 5
+		prerequisite = { focus = AQU_make_more_weapons }
+		prerequisite = { focus = AQU_improve_cohesiveness }
+		relative_position_id = AQU_make_more_weapons
+        available = {
+            
+        }
+        completion_reward = {
+            add_ideas = AQU_rampant_militia_idea
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	##############
+	
+	focus = {
+        id = AQU_standardise_the_cg
+        icon = GFX_focus_generic_commonwealth_build_infantry
+        x = 2
+        y = 2
+        cost = 5
+		prerequisite = { focus = AQU_civil_guard }
+		mutually_exclusive = { focus = AQU_increase_the_cg }
+		relative_position_id = AQU_civil_guard
+        available = {
+            
+        }
+        completion_reward = {
+            add_ideas = AQU_good_civil_guard_idea
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+	
+	focus = {
+        id = AQU_train_the_cg
+        icon = GFX_focus_COG_force_publique_mutiny
+        x = -1
+        y = 1
+        cost = 5
+		prerequisite = { focus = AQU_standardise_the_cg }
+		relative_position_id = AQU_standardise_the_cg
+        available = {
+            
+        }
+        completion_reward = {
+		custom_effect_tooltip = AQU_cg_effective_up
+		add_units_to_division_template = {
+			template_name = "Civil Guard"
+			regiments = {
+				militia = 2
+				militia = 2
+				militia = 2
+				}
+			}
+			hidden_effect = {
+			set_country_flag = AQU_cg_b
+			}
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = AQU_distribute_modern_weapons
+        icon = GFX_focus_GER_support_the_proletarian_uprising
+        x = 1
+        y = 1
+        cost = 10
+		prerequisite = { focus = AQU_standardise_the_cg }
+		relative_position_id = AQU_standardise_the_cg
+        available = {
+            
+        }
+        completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = AQU_transform_the_cg
+        icon = GFX_focus_generic_full_social_mobilization
+        x = 1
+        y = 1
+        cost = 5
+		prerequisite = { focus = AQU_train_the_cg }
+		prerequisite = { focus = AQU_distribute_modern_weapons }
+		relative_position_id = AQU_train_the_cg
+        available = {
+            
+        }
+        completion_reward = {
+            swap_ideas = {
+			add_idea = AQU_good_civil_guard_2_idea
+			remove_idea = AQU_good_civil_guard_idea
+			}
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	
+	focus = {
+        id = AQU_army_modernisation
+        icon = GFX_focus_CZE_german_puppet
+        x = 5
+        y = 1
+        cost = 5
+		prerequisite = { focus = AQU_the_aquilan_spirit }
+		relative_position_id = AQU_the_aquilan_spirit
+        available = {
+            
+        }
+        completion_reward = {
+		custom_effect_tooltip = AQU_decision_allow
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+	
+	focus = {
+        id = AQU_new_thinking
+        icon = GFX_focus_generic_military_academy
+        x = 1
+        y = 1
+        cost = 10
+		prerequisite = { focus = AQU_army_modernisation }
+		relative_position_id = AQU_army_modernisation
+        available = {
+            
+        }
+        completion_reward = {
+            army_experience = 150
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = AQU_observe_the_canis_war
+        icon = GFX_goal_generic_wolf_pack
+        x = -1
+        y = 1
+        cost = 5
+		prerequisite = { focus = AQU_army_modernisation }
+		available = {
+		has_country_flag = grease_wars_start
+		}
+		relative_position_id = AQU_army_modernisation
+        available = {
+            
+        }
+        completion_reward = {
+		army_experience = 50
+            air_experience = 5
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = AQU_innovate
+        icon = GFX_focus_generic_jungle_training
+        x = -1
+        y = 1
+        cost = 5
+		prerequisite = { focus = AQU_new_thinking }
+		prerequisite = { focus = AQU_observe_the_canis_war }
+		relative_position_id = AQU_new_thinking
+        available = {
+            
+        }
+        completion_reward = {
+            remove_ideas = AQU_outdated_technology_idea
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	

@@ -1,0 +1,28 @@
+state={
+	id=156
+	name="STATE_156"
+	history={
+		owner = AQU
+		add_core_of = AQU
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 3
+			4923 = {
+				bunker = 3
+			}
+			1061 = {
+				bunker = 3
+			}
+			3191 = {
+				bunker = 3
+			}
+		}
+	}
+	provinces={
+		98 249 858 1061 1634 2019 2397 2420 3191 4743 4753 4763 4794 4816 4835 4840 4859 4879 4887 4899 4917 4923 
+	}
+	manpower=8122359
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

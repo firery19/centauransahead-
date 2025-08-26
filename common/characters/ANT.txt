@@ -1,0 +1,15 @@
+characters = {
+	ANT_kalvin_tau = { 
+		name = "Kalvin Tau"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ANT_kalvin_tau
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { hawk }
+			expire = "1930.1.1.1"
+			id = -1
+		}
+	}

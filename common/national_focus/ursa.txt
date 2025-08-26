@@ -1,0 +1,956 @@
+focus_tree = {
+    id = URS_focus
+    default = no
+    country = {
+        factor = 0
+        modifier = {
+            add = 50
+            tag = URS
+        }
+    }
+    continuous_focus_position = { x = 2025 y = 1000 } 
+	
+	focus = { 
+        id = URS_aircraft_pro
+        icon = GFX_focus_generic_naval_discipline 
+        x = 28
+        y = 0
+        cost = 1
+        completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				name = bomber_bonus
+				ahead_reduction = 8
+				uses = 1
+				category = light_air
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				name = bomber_bonus
+				ahead_reduction = 7
+				uses = 1
+				category = medium_air
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				name = bomber_bonus
+				ahead_reduction = 6
+				uses = 1
+				category = heavy_air
+			}
+        }
+        ai_will_do = {
+            factor = 20
+        }
+    }
+	
+    focus = { 
+        id = URS_navy_tree_start  
+        icon = GFX_focus_generic_naval_discipline 
+        x = 30
+        y = 0
+        cost = 2
+        completion_reward = {
+            navy_experience = 50
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+
+    focus = {
+        id = URS_army_tree_start  
+        icon = GFX_focus_SWE_varnplikt
+        x = 22
+        y = 0
+        cost = 4.5
+        completion_reward = {
+            country_event = urs.4 
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+    focus = {
+        id = URS_army_tree_side_tree
+        icon = GFX_focus_LAT_suspend_constitution_of_latvia
+        x = 24
+        y = 1
+        cost = 4.5
+        prerequisite = { focus = URS_army_tree_start }
+        completion_reward = {
+            add_command_power = 50
+            army_experience = 25
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+
+    focus = {
+        id = URS_army_tree_centralized  
+        icon = GFX_focus_ETH_ecole_militaire_haile_selassie_1er
+        x = 23
+        y = 2
+        cost = 4.5
+        prerequisite = { focus = URS_army_tree_side_tree }
+        #mutually_exclusive = { focus = URS_army_tree_stay_infantry } 
+        completion_reward = {
+            every_army_leader = {
+				add_planning = 1
+			}
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+
+    focus = {
+        id = URS_army_tree_centralized_planning
+        icon = GFX_focus_POL_beck_ribbentrop
+        x = 24
+        y = 3
+        cost = 4.5
+        prerequisite = { focus = URS_army_tree_centralized }
+        completion_reward = {
+            
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+
+    focus = {
+        id = URS_army_tree_centralized_field
+        icon = GFX_focus_generic_field_hostpital
+        x = 25
+        y = 2
+        cost = 4.5
+        prerequisite = { focus = URS_army_tree_side_tree }
+        completion_reward = {
+            if = {
+				limit = { NOT = { has_tech = tech_field_hospital  } }
+				set_technology = { tech_field_hospital  = 1 }
+				else = {
+					add_tech_bonus = {
+						name = GXC_improved_communications #thank you kr ;)
+						bonus = 1
+						uses = 1
+						category = hospital_tech 
+					}
+				}
+			}
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+    focus = {
+        id = URS_army_tree_stay_cavalry
+        icon = GFX_focus_generic_horse_studs
+        x = 18
+        y = 1
+        cost = 4.5
+        prerequisite = { focus = URS_army_tree_start }
+        mutually_exclusive = { focus = URS_army_tree_stay_artillery }
+        completion_reward = {
+            #add_ideas = proper_heritage_spirit
+            add_ideas = URS_cavalry_idea
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+    focus = {
+        id = URS_army_tree_stay_artillery
+        icon = GFX_goal_generic_army_artillery2
+        x = 21
+        y = 1
+        cost = 4.5
+        prerequisite = { focus = URS_army_tree_start }
+        mutually_exclusive = { focus = URS_army_tree_stay_cavalry }
+        completion_reward = {
+            add_ideas = URS_artillery_idea
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+
+    focus = {
+        id = URS_resistance_policy 
+        icon = GFX_focus_SWE_neither_death_nor_dishonor
+        x = 2
+        y = 0
+        cost = 2
+        mutually_exclusive = { focus = URS_extraction_policy }
+        available = {
+            has_country_flag = grease_wars_not_started
+        }
+        completion_reward = {
+            every_owned_state = {
+				limit = {
+					has_resistance = yes
+				}
+				add_resistance = -5
+			}
+            custom_effect_tooltip = URS_resistance_policy_tooltip
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+    focus = {
+        id = URS_garrison_help 
+        icon = GFX_focus_URG_turmoil_of_paso_morlan
+        x = 1
+        y = 1
+        cost = 4.5
+        prerequisite = { focus = URS_resistance_policy }
+        available = {
+            has_country_flag = grease_wars_not_started
+        }
+        completion_reward = {
+            add_manpower = -15000
+            every_owned_state = {
+				limit = {
+					has_resistance = yes
+                    is_core_of = LPS
+				}
+				add_resistance = -10
+			}
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+    focus = {
+        id = URS_equipment_shipments
+        icon = GFX_focus_generic_treaty
+        x = 4
+        y = 2
+        cost = 4.5
+        prerequisite = { focus = URS_free_repair_focus }
+        available = {
+            has_country_flag = grease_wars_not_started
+        }
+        mutually_exclusive = { focus = URS_garrison_reduction }
+        completion_reward = {
+            add_political_power = -100
+            add_equipment_to_stockpile = {
+                type = infantry_equipment_0
+                amount = 750
+                producer = ANT
+            }
+            add_equipment_to_stockpile = {
+                type = infantry_equipment_0
+                amount = 250
+                producer = CET
+            }
+            add_equipment_to_stockpile = {
+                type = infantry_equipment_0
+                amount = 750
+                producer = RIA
+            }
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+    focus = {
+        id = URS_resistance_sweep_units 
+        icon = GFX_focus_POL_sanation_right
+        x = 0
+        y = 2
+        cost = 4.5
+        prerequisite = { focus = URS_garrison_help }
+        available = {
+            has_country_flag = grease_wars_not_started
+        }
+        completion_reward = {
+            custom_effect_tooltip = URS_resistance_sweep_units_tooltip
+            hidden_effect = {
+                division_template = {
+                    name = "Ursan Milita"
+                    is_locked = yes
+                    regiments = {
+                        irregular_infantry = { x = 0 y = 0 }
+                        irregular_infantry = { x = 0 y = 1 }
+                        irregular_infantry = { x = 0 y = 2 }
+                        irregular_infantry = { x = 1 y = 0 }
+                        irregular_infantry = { x = 1 y = 1 }
+                        irregular_infantry = { x = 1 y = 2 }	
+                    }
+                }
+                117 = {
+                    create_unit = {
+                        division = "name = \"Ursan Milita\" division_template = \"Ursan Milita\" start_experience_factor = 0.25 start_equipment_factor = 0.95 start_manpower_factor = 1"
+                        owner = ROOT
+                        allow_spawning_on_enemy_provs = yes
+                        count = 2
+                        is_locked = yes
+                    }
+                }
+                115 = {
+                    create_unit = {
+                        division = "name = \"Ursan Milita\" division_template = \"Ursan Milita\" start_experience_factor = 0.25 start_equipment_factor = 0.95 start_manpower_factor = 1"
+                        owner = ROOT
+                        allow_spawning_on_enemy_provs = yes
+                        count = 2
+                        is_locked = yes
+                    }
+                }
+                131 = {
+                    create_unit = {
+                        division = "name = \"Ursan Milita\" division_template = \"Ursan Milita\" start_experience_factor = 0.25 start_equipment_factor = 0.95 start_manpower_factor = 1"
+                        owner = ROOT
+                        allow_spawning_on_enemy_provs = yes
+                        count = 2
+                        is_locked = yes
+                    }
+                }
+            }
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+    focus = {
+        id = URS_garrison_reduction
+        icon = GFX_focus_SWE_lottakoren
+        x = 2
+        y = 2
+        cost = 4.5
+        prerequisite = { focus = URS_free_repair_focus }
+        mutually_exclusive = { focus = URS_equipment_shipments }
+        available = {
+            has_country_flag = grease_wars_not_started
+        }
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = URS_suppression_idea
+                add_idea = URS_suppression_idea2
+            }
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+    focus = {
+        id = URS_free_repair_focus 
+        icon = GFX_focus_SWE_landsverk
+        x = 3
+        y = 1
+        cost = 4.5
+        prerequisite = { focus = URS_resistance_policy }
+        available = {
+            has_country_flag = grease_wars_not_started
+        }
+        completion_reward = {
+            add_ideas = URS_suppression_idea
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+    focus = {
+        id = URS_lepus_destruction
+        icon = GFX_focus_FIN_oy_alkoholiliike
+        x = 1
+        y = 3
+        cost = 4.5
+        prerequisite = { focus = URS_garrison_help }
+        prerequisite = { focus = URS_garrison_reduction focus = URS_equipment_shipments }
+        available = {
+            has_country_flag = grease_wars_not_started
+        }
+        completion_reward = {
+            set_country_flag = URS_lepus_got_fucked
+            custom_effect_tooltip = URS_lepus_destruction_tooltip
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+    focus = {
+        id = URS_extraction_policy  
+        icon = GFX_focus_hol_war_on_pacifism
+        x = 12
+        y = 0
+        cost = 2
+        mutually_exclusive = { focus = URS_resistance_policy }
+        available = {
+            has_country_flag = grease_wars_not_started
+        }
+        completion_reward = {
+            add_ideas = URS_extraction_policy_idea
+            add_tech_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = industry
+            }
+            custom_effect_tooltip = URS_extraction_policy_tooltip
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+    focus = {
+        id = URS_war_propaganda  
+        icon = GFX_goal_generic_propaganda
+        x = 13
+        y = 1
+        cost = 4.5
+        prerequisite = { focus = URS_extraction_policy }
+        available = {
+            has_country_flag = grease_wars_not_started
+        }
+        completion_reward = {
+            add_timed_idea = {
+                idea = URS_mobilizing_time
+                days = 365
+            }
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+    focus = {
+        id = URS_factory_enticement 
+        icon = GFX_focus_generic_reorient_production
+        x = 12
+        y = 3
+        cost = 4.5
+        prerequisite = { focus = URS_war_propaganda }
+        available = {
+            has_country_flag = grease_wars_not_started
+        }
+        mutually_exclusive = { focus = URS_factory_moving }
+        completion_reward = {
+            add_timed_idea = {
+                idea = URS_sluggish_economy_aided
+                days = 365
+            }
+            every_owned_state = {
+				limit = {
+					has_resistance = yes
+                    is_owned_by = ROOT
+				}
+				add_resistance = 10
+			}
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+    focus = {
+        id = URS_prevent_economic_collapse
+        icon = GFX_focus_generic_public_works
+        x = 13
+        y = 2
+        cost = 10
+        prerequisite = { focus = URS_war_propaganda }
+        available = {
+            has_country_flag = grease_wars_not_started
+        }
+        completion_reward = {
+            set_country_flag = URS_prevent_economic_collapse_completed
+            custom_effect_tooltip = URS_prevent_economic_collapse_tooltip
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+    focus = {
+        id = URS_factory_moving  
+        icon = GFX_focus_DEN_heavy_regulations
+        x = 14
+        y = 3
+        cost = 4.5
+        prerequisite = { focus = URS_war_propaganda }
+        available = {
+            has_country_flag = grease_wars_not_started
+        }
+        mutually_exclusive = { focus = URS_factory_enticement }
+        completion_reward = {
+			155 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+            115 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = -1
+					instant_build = yes
+				}
+			}
+            130 = {
+				add_building_construction = {
+					type = arms_factory
+					level = -1
+					instant_build = yes
+				}
+			}
+            131 = {
+				add_building_construction = {
+					type = arms_factory
+					level = -1
+					instant_build = yes
+				}
+			}
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+    focus = {
+        id = URS_oil_field_defense  
+        icon = GFX_focus_generic_resource_extraction
+        x = 15
+        y = 1
+        cost = 4.5
+        prerequisite = { focus = URS_extraction_policy }
+        available = {
+            has_country_flag = grease_wars_not_started
+        }
+        completion_reward = {
+            add_fuel = 5000
+            114 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+            swap_ideas = {
+                remove_idea = URS_extraction_policy_idea
+                add_idea = URS_extraction_policy_idea1
+            }
+            custom_effect_tooltip = URS_oil_field_defense_tooltip
+            hidden_effect = {
+                114 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+						}
+					}
+				}
+			}
+		}
+        ai_will_do = {
+            factor = 5
+        }
+    }
+    focus = {
+        id = URS_improve_supply 
+        icon = GFX_focus_generic_supply_line
+        x = 5
+        y = 1
+        cost = 4.5
+        prerequisite = { focus = URS_resistance_policy focus = URS_extraction_policy }
+        available = {
+           # has_country_flag = grease_wars_not_started
+        }
+        completion_reward = {
+            IF = {
+                limit = {
+                    NOT = {
+                        has_tech = { tech_trucks }
+                    }
+                }
+                set_technology = { tech_trucks = 1 }
+            }
+            add_equipment_to_stockpile = {
+                type = motorized_equipment
+                amount = 200
+                producer = URS
+            }
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+    focus = {
+        id = URS_defense_bonus
+        icon = GFX_focus_ARG_banco_central_de_la_republica_argentina
+        x = 5
+        y = 3
+        cost = 4.5
+        prerequisite = { focus = URS_secure_west_canis focus = URS_antiwar_orion }
+        prerequisite = { focus = URS_improve_supply }
+        available = {
+            has_country_flag = grease_wars_not_started
+        }
+        completion_reward = {
+            add_ideas = URS_defense_strategy
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+    focus = {
+        id = URS_eliminate_dissent
+        icon = GFX_focus_generic_national_security
+        x = 10
+        y = 1
+        cost = 4.5
+        prerequisite = { focus = URS_resistance_policy focus = URS_extraction_policy }
+        available = {
+            has_country_flag = grease_wars_not_started
+        }
+        completion_reward = {
+            add_stability = 0.1
+            swap_ideas = {
+                remove_idea = URS_domestic_unrest 
+                add_idea = URS_domestic_unrest1
+            }         
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+    focus = {
+        id = URS_counter_resistance_support
+        icon = GFX_focus_spr_crush_the_revolution
+        x = 7
+        y = 1
+        cost = 4.5
+        prerequisite = { focus = URS_resistance_policy focus = URS_extraction_policy }
+        available = {
+            has_country_flag = grease_wars_not_started
+        }
+        completion_reward = {
+            send_embargo = HYS
+            ORI = {
+                country_event = URS.2
+            }
+            effect_tooltip = {
+                HYS = {
+                    country_event = URS.2
+                    add_timed_idea = {
+                        idea = URS_hydrus_trade_destruction
+                        days = 270
+                    }
+                }
+            }
+            hidden_effect = {
+                HYS = {
+                    country_event = URS.2
+                }
+            }            
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+    focus = {
+        id = URS_cp_resistance_support 
+        icon = GFX_focus_BRA_end_the_state_of_emergency
+        x = 7
+        y = 3
+        cost = 4.5
+        prerequisite = { focus = URS_antiwar_orion focus = URS_secure_west_canis }
+        available = {
+            has_country_flag = grease_wars_not_started
+        }
+        completion_reward = {
+            add_stability = -0.1
+            every_owned_state = {
+				limit = {
+					has_resistance = yes
+                    is_core_of = CNS
+                    OR = {
+                        state = 112
+                        state = 113
+                        state = 117
+                        state = 116
+                    }
+				}
+                remove_dynamic_modifier = {
+                    modifier = URS_colonial_resistance
+                }
+            }      
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+    focus = {
+        id = URS_secure_west_canis  
+        icon = GFX_focus_generic_total_war
+        x = 6
+        y = 2
+        cost = 4.5
+        prerequisite = { focus = URS_counter_resistance_support }
+        available = {
+            has_country_flag = grease_wars_not_started
+        }
+        completion_reward = {
+            add_political_power = 10
+            add_command_power = 30
+            add_manpower = 15000
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+    focus = {
+        id = URS_antiwar_orion   
+        icon = GFX_focus_ARG_balancing_act
+        x = 8
+        y = 2
+        cost = 4.5
+        prerequisite = { focus = URS_counter_resistance_support }
+        available = {
+             has_country_flag = grease_wars_not_started
+        }
+        completion_reward = {
+            effect_tooltip = {
+                ORI = {
+                    country_event = URS.3
+                    add_war_support = -0.15
+                }
+            }
+            hidden_effect = {
+                ORI = {
+                    country_event = URS.3
+                }
+            }
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+    focus = {
+        id = URS_selected_service_act  
+        icon = GFX_focus_generic_manpower 
+        x = 9
+        y = 3
+        cost = 4.5
+        prerequisite = { focus = URS_eliminate_dissent }
+        prerequisite = { focus = URS_secure_west_canis focus = URS_antiwar_orion }
+        available = {
+            has_country_flag = grease_wars_not_started
+            NOT = {
+                has_completed_focus = URS_army_tree_centralized
+            }
+        }
+        completion_reward = {
+            if = {
+                limit = {
+                    has_idea = volunteer_only
+                }
+                add_ideas = limited_conscription
+            }
+            else = {
+                add_political_power = 150
+            }
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+    focus = {
+        id = URS_mobolization_act  
+        icon = GFX_focus_generic_workers
+        x = 11
+        y = 2
+        cost = 4.5
+        prerequisite = { focus = URS_eliminate_dissent }
+        prerequisite = { focus = URS_extraction_policy }
+        #prerequisite = { focus = URS_secure_west_canis focus = URS_antiwar_orion }
+        available = {
+            has_country_flag = grease_wars_not_started
+            has_war_support > 0.149
+        }
+        completion_reward = {
+            IF = {
+                limit = {
+                    has_idea = partial_economic_mobilisation
+                }
+                add_political_power = 150
+            }
+            IF = {
+                limit = {
+                    has_idea = low_economic_mobilisation
+                    has_war_support > 0.24
+                }
+                add_ideas = partial_economic_mobilisation
+            }
+            IF = {
+                limit = {
+                    has_idea = civilian_economy
+                    has_war_support > 0.14
+                }
+                add_ideas = low_economic_mobilisation
+            }
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+    focus = {
+        id = URS_prelude_grease_war   
+        icon = GFX_focus_SWE_organize_a_putsch
+        x = 7
+        y = 5
+        cost = 0
+        available = {
+            always = no
+        }
+        completion_reward = {
+            hidden_effect = {
+                country_event = { id = urs.14 days = 75}
+            }
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+    focus = {
+        id = URS_economy_fixing 
+        icon = GFX_focus_DEN_limited_regulations
+        x = 3
+        y = 6
+        cost = 0
+        available = {
+            always = no
+        }
+        prerequisite = { focus = URS_prelude_grease_war }
+        completion_reward = {
+            
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+    focus = {
+        id = URS_economy_fixing2   
+        icon = GFX_focus_ARG_crackdown_on_corruption
+        x = 5
+        y = 7
+        cost = 6
+        available = {
+            
+        }
+        prerequisite = { focus = URS_economy_fixing }
+        completion_reward = {
+            
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+    focus = {
+        id = URS_economy_fixing3
+        icon = GFX_focus_generic_agricultural_subsidies
+        x = 0
+        y = 8
+        cost = 6
+        available = {
+            
+        }
+        prerequisite = { focus = URS_economy_fixing_kill_peasants }
+        mutually_exclusive = { focus = URS_economy_fixing_trade_partners }
+        completion_reward = {
+            
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+    focus = {
+        id = URS_economy_fixing_wartime_pwa
+        icon = GFX_goal_generic_construct_civilian
+        x = 4
+        y = 8
+        cost = 6
+        available = {
+            
+        }
+        prerequisite = { focus = URS_economy_fixing2 }
+        completion_reward = {
+            
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+    focus = {
+        id = URS_economy_fixing_trade_partners
+        icon = GFX_goal_generic_trade
+        x = 2
+        y = 8
+        cost = 6
+        available = {
+            
+        }
+        mutually_exclusive = { focus = URS_economy_fixing3 }
+        prerequisite = { focus = URS_economy_fixing2 }
+        completion_reward = {
+            
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+    focus = {
+        id = URS_economy_fixing_kill_peasants
+        icon = GFX_focus_generic_workers_and_farmers_rise
+        x = 1
+        y = 7
+        cost = 6
+        available = {
+            has_idea = URS_domestic_unrest_grease_wars
+        }
+        prerequisite = { focus = URS_economy_fixing }
+        completion_reward = {
+            add_stability = 0.1
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+    focus = {
+        id = URS_alcor_trenching 
+        icon = GFX_goal_generic_military_sphere
+        x = 9
+        y = 6
+        cost = 4
+        prerequisite = { focus = URS_prelude_grease_war }
+        completion_reward = {
+            URS = {
+                add_state_core = 117
+            }
+            IF = {
+                limit = {
+                   117 = {
+                        has_dynamic_modifier = {
+                            modifier = URS_colonial_resistance
+                        }
+                    }
+                }
+                117 = {
+                    remove_dynamic_modifier = {
+                        modifier = URS_colonial_resistance
+                    }
+                }
+            }
+            custom_effect_tooltip = URS_alcor_trenching_tooltip
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+}

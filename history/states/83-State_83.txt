@@ -1,0 +1,21 @@
+state={
+	id=83
+	name="STATE_83"
+	history = {
+		owner = VUL
+		add_core_of = VUL
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			6522 11
+		}
+	}
+	provinces={
+		6511 6512 6513 6514 6517 6518 6520 6522 6528 6534 6542 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=345619
+        state_category = small_island
+}

@@ -1,0 +1,37 @@
+
+state={
+	id=145
+	name="STATE_145"
+	resources = {
+		oil = 23
+	}
+	history={
+		owner = ORI
+		add_core_of = ORI
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 0
+			dockyard = 1
+			829 = {
+				naval_base = 1
+			}
+			
+			6052 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			2765 6 
+		}
+
+	}
+
+	provinces={
+		315 475 829 1003 1172 1376 1420 2089 2129 2322 2765 2982 3244 3296 3299 6040 6052 6105 6141 6178 6179 6221 6240 6274 6294 6317 6337 6343 6348 6354 6355 6853 6856 6860 6871 6879 6880 6882 6884 6887 6888 6890 
+	}
+	manpower=7785017
+	buildings_max_level_factor=1.000
+	state_category= town
+	local_supplies=0.000
+}

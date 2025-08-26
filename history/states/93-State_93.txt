@@ -1,0 +1,22 @@
+state={
+	id=93
+	name="STATE_93"
+	resources = {
+		oil = 12
+	}
+	history = {
+		owner = ANT
+		add_core_of = ANT
+		add_core_of = ARA
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	provinces={
+		531 1035 1186 1473 1478 1756 1993 2593 2696 6496 6497 6498 6499 6500 6502 6504 6505 6936 6938 6940 6942 6943 6944 6945 6946 6947 6948 6949 6950 6952 6953 6955 6956 6957 6958 6959 6960 6963 6964 6969 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=8128533
+        state_category = rural
+}

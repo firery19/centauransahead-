@@ -1,0 +1,54 @@
+COV_war_with_cetus = {
+	allowed = {
+		original_tag = COV
+	}
+	enable = {
+		has_completed_focus = COV_prepare_to_take_sc
+		country_exists = COV
+	}
+	abort = {
+		CET = { has_capitulated = yes }
+	}
+
+	ai_strategy = {
+		type = antagonize
+		id = CET
+		value = 200
+	}
+}
+
+COV_war_preparation = {
+	allowed = {
+		original_tag = COV
+	}
+	enable = {
+		focus_progress = {
+			focus = COV_war_with_cetus
+			progress > 0.01
+		}
+		NOT = {
+			has_completed_focus = COV_war_with_cetus
+			owns_state = 48
+			owns_state = 154
+		}
+		country_exists = CET
+	}
+
+	abort = {
+		OR = {
+			NOT = { country_exists = CET }
+			AND = {
+				has_completed_focus = COV_initial_offensive
+				COV = { has_war_with = CET }
+			}
+			owns_state = 48
+			owns_state = 154
+		}
+	}
+
+	ai_strategy = {
+		type = conquer
+		id = CET
+		value = 100
+	}
+}

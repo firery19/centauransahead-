@@ -1,0 +1,22 @@
+state={
+	id=96
+	name="STATE_96"
+	resources = {
+		oil = 19
+	}
+	history = {
+		owner = ANT
+		add_core_of = ANT
+		add_core_of = ARA
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces={
+		388 470 1176 1356 1453 1895 2367 2616 2707 2713 2893 3034 3082 6248 6272 6302 6345 6352 6387 6403 6404 6411 6426 6427 6437 6441 6863 6864 6865 6866 6868 6869 6870 6875 6877 6881 6885 6886 6889 6892 6897 6900 6904 6905 6917 6919 6920 6921 6922 6924 6925 6927 6928 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=7270770
+        state_category = small_island
+}

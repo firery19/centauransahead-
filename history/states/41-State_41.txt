@@ -1,0 +1,27 @@
+
+state={
+	id=41
+	name="STATE_41"
+	history = {
+		owner = CET
+		add_core_of = CET
+		buildings = {
+
+			infrastructure = 1
+		}
+		1944.1.1.12 = {
+			owner = ANT
+			controller = ANT
+}
+		victory_points = {
+			4791 15
+		}
+	}
+	provinces={
+		25 378 638 967 974 996 1159 1170 1443 1718 1781 1846 1981 1987 2096 2123 2550 2628 2643 2778 2875 3086 3210 4513 4530 4536 4551 4605 4642 4650 4651 4691 4723 4747 4751 4761 4791 4792 4833 4834 4882 4947 4974 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=3632343
+        state_category = large_town
+}

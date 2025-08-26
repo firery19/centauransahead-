@@ -1,0 +1,74 @@
+add_namespace = CET
+
+country_event = {
+    id = CET.1
+    title = TCET1
+    desc = DCET1
+    #picture = GFX_evt_
+
+    is_triggered_only = yes #focus
+
+    option = { #Path of integration -> core
+        name = ACET1
+        
+        custom_effect_tooltip = tt_cet_integration
+
+        hidden_effect = {
+            #57 = {
+            #    add_dynamic_modifier = { modifier = sc_resistance_integration }
+            #}
+            #58 = {
+            #    add_dynamic_modifier =  { modifier = sc_resistance_integration }
+            #}
+            complete_national_focus = CET_sc_int1
+        }
+    }
+
+    option = {
+        name = BCET1
+
+        hidden_effect = {
+            complete_national_focus = CET_sc_occupy
+        }
+    }
+}
+
+country_event = {
+	id = cet.3
+	title = cet.3.t
+	desc = cet.3.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = cet.3.a
+		add_war_support = -0.15
+	}
+}
+
+country_event = { # good management of sc
+    id = CET.10
+    title = TCET10
+    desc = DCET10
+    #picture = GFX_evt_
+
+    is_triggered_only = yes
+
+    option = {
+
+    }
+}
+
+country_event = { # bad management of sc
+    id = CET.11
+    title = TCET11
+    desc = DCET11
+    #picture = GFX_evt_
+
+    is_triggered_only = yes
+
+    option = {
+
+    }
+}

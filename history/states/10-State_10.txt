@@ -1,0 +1,41 @@
+
+state={
+	id=10
+	name="STATE_10"
+	resources = {
+		steel = 12
+	}
+	history={
+		owner = VEG
+		add_core_of = VEG
+		add_claim_by = GRS
+		buildings = {
+			arms_factory = 1
+			industrial_complex = 1
+			infrastructure = 4
+			4538 = {
+                supply_node = 1
+				naval_base = 1
+            }
+			
+			
+		
+		}
+		victory_points = {
+			4117 40
+		}
+		1944.1.1.12 = {
+			owner = GRS
+			controller = GRS
+
+}
+	}
+
+	provinces={
+		222 279 323 375 611 716 855 1250 1366 1621 1747 1786 2039 2115 2477 2911 3031 4117 4165 4275 4292 4334 4343 4344 4360 4387 4388 4389 4427 4428 4437 4438 4487 4520 4538 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=14768394
+        state_category = megalopolis 
+}

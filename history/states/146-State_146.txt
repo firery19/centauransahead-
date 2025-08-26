@@ -1,0 +1,25 @@
+
+state={
+	id=146
+	name="STATE_146"
+
+	history={
+		owner = ORI
+		add_core_of = ORI
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			6851 6 
+		}
+
+	}
+
+	provinces={
+		842 6014 6051 6091 6138 6170 6206 6829 6838 6839 6840 6841 6842 6844 6845 6847 6848 6849 6850 6851 6854 6855 6858 6859 6861 
+	}
+	manpower=2312844
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

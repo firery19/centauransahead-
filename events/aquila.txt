@@ -1,0 +1,175 @@
+add_namespace = AQU
+
+country_event = {
+	id = aqu.1
+	title = cg_recruitment_event.1.t	
+	desc = cg_recruitment_event.1.desc
+	picture = GFX_report_event_german_volunteers
+
+
+    is_triggered_only = yes #focus
+
+	option = {
+		name = cg_recruitment_event.1.a #historical
+		ai_chance = {
+			base = 100
+		}
+		if = {
+			limit = {
+				has_country_flag = AQU_cg_a
+			}
+			custom_effect_tooltip = AQU_cg_recruit_many
+			hidden_effect = {
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 9 }
+						create_unit = {
+							division = "name = \"Generic Militia\" division_template = \"Civil Guard\" start_experience_factor = 0 start_equipment_factor = 0.5"
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Generic Militia\" division_template = \"Civil Guard\" start_experience_factor = 0 start_equipment_factor = 0.5"
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Generic Militia\" division_template = \"Civil Guard\" start_experience_factor = 0 start_equipment_factor = 0.5"
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Generic Militia\" division_template = \"Civil Guard\" start_experience_factor = 0 start_equipment_factor = 0.5"
+							owner = PREV
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = AQU_cg_b
+				}
+				custom_effect_tooltip = AQU_cg_recruit_elite
+				hidden_effect = {
+					random_owned_controlled_state = {
+						limit = { ROOT = { has_full_control_of_state = PREV } }
+						prioritize = { 9 }
+						create_unit = {
+							division = "name = \"Trained Militia\" division_template = \"Civil Guard\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Trained Militia\" division_template = \"Civil Guard\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+							owner = PREV
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					not = {
+						has_country_flag = AQU_cg_a
+						has_country_flag = AQU_cg_b
+					}
+				}
+				custom_effect_tooltip = AQU_cg_recruit_normal
+				hidden_effect = {		
+					random_owned_controlled_state = {
+						limit = { ROOT = { has_full_control_of_state = PREV } }
+						prioritize = { 9 }
+						create_unit = {
+							division = "name = \"Generic Militia\" division_template = \"Civil Guard\" start_experience_factor = 0.1 start_equipment_factor = 0.6"
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Generic Militia\" division_template = \"Civil Guard\" start_experience_factor = 0.1 start_equipment_factor = 0.6"
+							owner = PREV
+						}
+					}
+				}
+			}
+		}
+}
+
+country_event = {
+	id = aqu.2
+	title = cg_recruitment_event.1.t	
+	desc = cg_recruitment_event.1.desc
+	picture = GFX_report_event_german_volunteers
+
+
+    is_triggered_only = yes #focus
+
+	option = {
+		name = ss_recruitment_event.1.a #historical
+		ai_chance = {
+			base = 100
+		}
+		if = {
+			limit = {
+				has_country_flag = AQU_increased_cg_a
+			}
+			custom_effect_tooltip = AQU_cg_recruit_many
+			hidden_effect = {
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 9 }
+						create_unit = {
+							division = "name = \" \" division_template = \"Civil Guard\" start_experience_factor = 0 start_equipment_factor = 0.9"
+							owner = PREV
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = AQU_trained_cg_a
+				}
+				custom_effect_tooltip = AQU_cg_recruit_elite
+				hidden_effect = {
+					random_owned_controlled_state = {
+						limit = { ROOT = { has_full_control_of_state = PREV } }
+						prioritize = { 9 }
+						create_unit = {
+							division = "name = \"Inwan testest\" division_template = \"Civil Guard\" start_experience_factor = 0.4 start_equipment_factor = 0.9"
+							owner = PREV
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					not = {
+						has_country_flag = AQU_increased_cg_a
+						has_country_flag = AQU_trained_cg_a
+					}
+				}
+				custom_effect_tooltip = AQU_cg_recruit_normal
+				hidden_effect = {		
+					random_owned_controlled_state = {
+						limit = { ROOT = { has_full_control_of_state = PREV } }
+						prioritize = { 9 }
+						create_unit = {
+							division = "name = \"Generic Militia\" division_template = \"Civil Guard\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Generic Militia\" division_template = \"Civil Guard\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+							owner = PREV
+						}
+					}
+				}
+			}
+		}
+}
+
+country_event = {
+	id = aqu.3
+	title = aqu.3.t
+	desc = aqu.3.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = aqu.3.a
+		add_war_support = -0.15
+	}
+}

@@ -1,0 +1,24 @@
+state={
+	id=54
+	name="STATE_54"
+	history = {
+		owner = COV
+		add_core_of = COV
+		buildings = {
+			infrastructure = 2
+			1096 = {
+			naval_base = 1
+			}
+		}
+		victory_points = {
+			1096 5
+		}
+	}
+	provinces={
+		1096 4242 6758 6761 6763 6764 6766 6767 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=695247
+        state_category = tiny_island
+}

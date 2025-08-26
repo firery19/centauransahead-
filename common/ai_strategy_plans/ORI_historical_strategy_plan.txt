@@ -1,0 +1,60 @@
+BUL_historical_plan = {
+	name = "Bulgaria Historical Plan"
+	desc = "Tsar Boris III will lead the country towards the Axis, relying on German arbitration to expand Bulgarian borders peacefully, eventually signing the Tripartite Pact and delaying Bulgarian participation in the war."
+
+	allowed = {
+		original_tag = ORI
+	}
+	enable = {
+
+		is_historical_focus_on = yes
+
+	}
+	abort = {
+
+	}
+
+	ai_national_focuses = {
+		#ASAP -> Do them as soon as army restrictions get lifted
+		ORS_EndHartTerm
+		ORS_ExpandTheCivilianSector
+		ORS_ExpandBuildingSlots
+		ORS_EconomicBoom
+		ORS_KeepUpTheBoom
+		#PUT GREASE WAR FOCUSES HERE
+		#hart second term focuses here
+		ORS_QuestionOfForeignPolicy
+		ORS_OrioniteIsolationism
+		ORS_EndHartTerm
+		ORS_ExpandTheCivilianSector
+		ORS_ExpandBuildingSlots
+		ORS_EconomicBoom
+		ORS_KeepUpTheBoom
+		#PUT GREASE WAR FOCUSES HERE
+		#hart second term focuses here
+		ORS_QuestionOfForeignPolicy
+		ORS_OrioniteIsolationism
+	}
+
+	focus_factors = {
+		ORS_OrioniteImperialism = 0
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

@@ -1,0 +1,60 @@
+BUL_historical_plan = {
+	name = "Bulgaria Historical Plan"
+	desc = "Tsar Boris III will lead the country towards the Axis, relying on German arbitration to expand Bulgarian borders peacefully, eventually signing the Tripartite Pact and delaying Bulgarian participation in the war."
+
+	allowed = {
+		original_tag = COV
+	}
+	enable = {
+
+		is_historical_focus_on = yes
+
+	}
+	abort = {
+
+	}
+
+	ai_national_focuses = {
+		#ASAP -> Do them as soon as army restrictions get lifted
+		COV_the_confederation
+		COV_take_SC
+		COV_industry
+		COV_region_development
+		COV_dev_northcentral
+		COV_dev_north
+		COV_dev_northwest
+		COV_research
+		COV_navy
+		COV_dockyards
+		COV_railroad
+		COV_dev_central
+		COV_dev_west
+		COV_dev_northeast
+		COV_prepare_to_take_SC
+		COV_army
+		COV_army_2
+		#someone finish this
+	}
+
+	focus_factors = {
+		ORS_OrioniteImperialism = 0
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

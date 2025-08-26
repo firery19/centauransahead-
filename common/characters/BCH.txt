@@ -1,0 +1,81 @@
+characters = {
+	BCH_hitori_gotoh = { 
+		name = "Hitori Gotoh"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_BCH_hitori_gotoh
+				small = GFX_portrait_BCH_hitori_gotoh_small
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = { reluctant_interventionist }
+			expire = "1999.1.1.1"
+			id = -1
+		}
+		field_marshal = {
+			traits = { politically_connected }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 10
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 1
+			visible = {
+				NOT = {
+					has_government = communism
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+		}
+	}
+	BCH_kita_ikuyo = {
+		name= "Kita Ikuyo"
+		portraits={
+			civilian={
+				large = GFX_portrait_BCH_kita_ikuyo
+			}
+		}
+		country_leader={
+			ideology=stalinism
+			expire="1965.1.1.1"
+			id= -1
+		}
+		corps_commander= {
+			traits= { trait_cautious armor_officer }
+			skill = 1
+			attack_skill = 10
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 2
+		}
+	}
+	BCH_ryo_yamada = {
+		name= "Ryo Yamada"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_BCH_ryo_yamada
+			}
+		}
+		country_leader= {
+			ideology=nazism
+			expire="1965.1.1.1"
+			id= -1
+		}
+	}
+	BCH_nijika_ijichi = {
+		name= "Nijika Ijichi"
+		portraits = {
+			civilian = {
+				large=GFX_portrait_BCH_nijika_ijichi
+			}
+		}
+		country_leader= {
+			ideology=moderatism
+			expire="1965.1.1.1"
+			id= -1
+		}
+	}
+}

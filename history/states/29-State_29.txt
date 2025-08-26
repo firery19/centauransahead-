@@ -1,0 +1,30 @@
+
+state={
+	id=29
+	name="STATE_29"
+	resources = {
+		oil = 14
+	}
+	history = {
+		owner = GRS
+		add_core_of = GRS
+		add_claim_by = VEG
+		buildings = {
+            infrastructure = 2
+            industrial_complex = 0
+            1043 = {
+                supply_node = 1
+            }
+        }
+		victory_points = {
+			1043 11
+		}
+	}
+	provinces={
+		123 277 319 438 444 718 902 946 970 1043 1050 1094 1381 1701 2718 2835 2895 3168 3201 3229 3799 3805 3824 3841 3854 3867 3878 3887 3918 3942 3963 3973 3995 4006 4010 4025 4048 4054 4104 4112 4148 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=805979
+        state_category = wasteland
+}

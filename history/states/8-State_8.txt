@@ -1,0 +1,54 @@
+
+state={
+	id=8
+	name="STATE_8"
+	resources={
+		steel=3.000
+		chromium=2.000
+		oil=2.000
+	}
+
+	history={
+		owner = COV
+		add_core_of = COV
+		buildings = {
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 2
+			infrastructure = 4
+			3890 = {
+				naval_base = 6
+
+			}
+			2795 = {
+				naval_base = 2
+
+			}
+
+		}
+		victory_points = {
+			2795 25 
+		}
+		victory_points = {
+			3890 30 
+		}
+		victory_points = {
+			3923 25
+		}
+		victory_points = {
+			3770 5
+			}
+		victory_points = {
+		3883 5
+		}
+
+	}
+
+	provinces={
+		336 428 1179 1271 1298 1433 1688 1691 1768 2011 2014 2043 2108 2314 2566 2795 3254 3329 3770 3801 3803 3826 3834 3864 3883 3888 3890 3923 3928 3960 3985 4002 4014 4020 
+	}
+	manpower=4261673
+	buildings_max_level_factor=1.000
+	state_category=industrialized_metropolis
+	local_supplies=0.000
+}

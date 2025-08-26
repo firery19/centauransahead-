@@ -1,0 +1,19 @@
+
+URS_colonial_resistance = {
+    icon = GFX_modifiers_conscription_exemptions_granted
+    enable = {
+		is_controlled_by = URS
+	}
+	remove_trigger = {
+		NOT = { is_owned_by = URS }
+	}
+
+    #state_resources_factor = 0.25
+	local_factories = 0.25
+	#local_building_slots_factor = 0.5
+	resistance_target = 0.35
+	resistance_activity = 0.2
+	resistance_decay = -0.3
+	compliance_gain = -0.02
+
+}

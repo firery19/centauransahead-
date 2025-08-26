@@ -1,0 +1,24 @@
+state={
+	id=80
+	name="STATE_80"
+	history = {
+		owner = VUL
+		add_core_of = VUL
+		buildings = {
+			arms_factory = 0
+			industrial_complex = 0
+			infrastructure = 3
+			dockyard = 0
+		}
+		victory_points = {
+			3440 17
+		}
+	}
+	provinces={
+		810 1168 1435 3409 3440 3441 3484 6612 6621 6628 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=1149836
+        state_category = rural
+}

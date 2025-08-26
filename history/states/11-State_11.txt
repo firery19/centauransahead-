@@ -1,0 +1,44 @@
+
+state={
+	id=11
+	name="STATE_11"
+	resources={
+		steel=9.000
+		tungsten=4.000
+	}
+
+	history={
+		owner = GRS
+		add_core_of = GRS
+		add_claim_by = VEG
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			dockyard = 1
+			2926 = {
+				naval_base = 7
+
+			}
+
+		}
+		victory_points = {
+			3793 50 
+		}
+		victory_points = {
+			697 5
+		}
+		victory_points = {
+		425 5
+		}
+
+	}
+
+	provinces={
+		49 425 454 619 620 630 684 697 799 854 972 1215 1238 1252 1289 1365 1475 1536 1541 1556 1805 2167 2338 2403 2470 2499 2926 3178 3212 3677 3678 3693 3697 3698 3708 3715 3717 3719 3722 3734 3735 3737 3751 3764 3767 3774 3775 3779 3784 3793 3802 3814 3822 3839 3847 3851 3868 3869 3924 3939 3943 3959 3967 3979 4028 
+	}
+	manpower=31743843
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+	local_supplies=0.000
+}

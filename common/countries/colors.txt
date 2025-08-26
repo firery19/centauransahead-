@@ -1,0 +1,141 @@
+
+CET = {
+	color = rgb { 224 220 131 }
+	color_ui  = rgb { 194 190 101 }
+}
+COV = {
+	color = rgb { 232 173 121 }
+	color_ui  = rgb { 202 143 91 }
+}
+LBR = {
+	color = rgb { 155 126 203 }
+	color_ui  = rgb { 125 96 173 }
+}
+ORI = {
+	color = rgb { 123 183 179 }
+	color_ui  = rgb { 93 153 149 }
+}
+AUR = {
+	color = rgb { 220 218 124 }
+	color_ui  = rgb { 190 188 94 }
+}
+URS = {
+	color = rgb { 186 185 124 }
+	color_ui  = rgb { 156 155 94 }
+}
+ANT = {
+	color = rgb { 236 185 51 }
+	color_ui  = rgb { 206 155 21 }
+}
+AQU = {
+	color = rgb { 237 197 219 }
+	color_ui  = rgb { 207 167 189 }
+}
+VEG = {
+	color = rgb { 172 181 145 }
+	color_ui  = rgb { 142 151 115 }
+}
+GRS = {
+	color = rgb { 177 185 151 }
+	color_ui  = rgb { 147 155 121 }
+}
+CLB = {
+	color = rgb { 149 162 219 }
+	color_ui  = rgb { 119 132 189 }
+}
+RIA = {
+	color = rgb { 201 148 149 }
+	color_ui  = rgb { 171 118 119 }
+}
+VUL = {
+	color = rgb { 147 112 64 }
+	color_ui  = rgb { 117 82 34 }
+}
+TUC = {
+	color = rgb { 126 190 136 }
+	color_ui  = rgb { 96 160 106 }
+}
+CTA = {
+	color = rgb { 231 122 75 }
+	color_ui  = rgb { 201 92 45 }
+}
+LAC = {
+	color = rgb { 238 193 196 }
+	color_ui  = rgb { 208 163 166 }
+}
+MUS = {
+	color = rgb { 180 207 228 }
+	color_ui  = rgb { 150 177 198 }
+}
+HYS = {
+	color = rgb { 237 177 165 }
+	color_ui  = rgb { 207 147 135 }
+}
+BCH = {
+	color = rgb { 255 128 192 }
+	color_ui  = rgb { 225 98 162 }
+}
+CAI = {
+	color = rgb { 192 192 192 }
+	color_ui  = rgb { 162 162 162 }
+}
+LPS = {
+	color = rgb { 237 124 124 }
+	color_ui  = rgb { 207 94 94 }
+}
+CNS = {
+	color = rgb { 166 174 187 }
+	color_ui  = rgb { 136 144 157 }
+}
+HYR = {
+	color = rgb { 237 177 165 }
+	color_ui  = rgb { 207 147 135 }
+}
+RDN = {
+	color = rgb { 204 179 125 }
+	color_ui  = rgb { 174 149 95 }
+}
+LGS = {
+	color = rgb { 0 220 220 }
+	color_ui  = rgb { 0 190 190 }
+}
+SKO = {
+	color = rgb { 255 128 128 }
+	color_ui  = rgb { 225 98 98 }
+}
+ARA = {
+	color = rgb { 128 255 128 }
+	color_ui  = rgb { 98 225 98 }
+}
+LUP = {
+	color = rgb { 232 219 132 }
+	color_ui  = rgb { 202 189 102 }
+}
+NRM = {
+	color = rgb { 218 99 12 }
+	color_ui  = rgb { 188 69 0 }
+}
+CIR = {
+	color = rgb { 143 239 213 }
+	color_ui  = rgb { 113 209 183 }
+}
+GEM = {
+	color = rgb { 128 128 192 }
+	color_ui  = rgb { 98 98 162 }
+}
+QUA = {
+	color = rgb { 128 128 64 }
+	color_ui  = rgb { 98 98 34 }
+}
+EUR = {
+	color = rgb { 0 128 64 }
+	color_ui  = rgb { 0 98 34 }
+}
+PHA = {
+	color = rgb { 128 0 64 }
+	color_ui  = rgb { 98 0 34 }
+}
+NOH = {
+	color = rgb { 124 194 54 }
+	color_ui  = rgb { 94 164 24 }
+}

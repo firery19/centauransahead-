@@ -1,0 +1,31 @@
+state={
+	id=148
+	name="STATE_148"
+	resources = {
+		oil = 12
+	}
+	history = {
+		owner = ORI
+		add_core_of = ORI
+		add_core_of = AUR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 0
+			dockyard = 0
+			2326 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			2326 10
+		}
+	}
+	provinces={
+		288 982 1667 2107 2326 2991 6383 6399 6409 6423 6896 6903 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=2437787
+        state_category = town
+}

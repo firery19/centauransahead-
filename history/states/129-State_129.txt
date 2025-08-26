@@ -1,0 +1,41 @@
+
+state={
+	id=129
+	name="STATE_129"
+	resources={
+		steel=21.000
+		oil=16.000
+		rubber=4
+	}
+
+	history={
+		owner = HYS
+		add_core_of = HYS
+		buildings = {
+			industrial_complex = 1
+			dockyard = 1
+			infrastructure = 2
+
+		}
+		victory_points = {
+			3700 5 
+		}
+		victory_points = {
+		803 5
+		}
+		victory_points = {
+		3560 5
+		}
+		victory_points = {
+		3641 5
+		}
+	}
+
+	provinces={
+		162 174 188 228 233 282 481 493 529 560 595 803 832 937 1158 1212 1347 1368 1424 1431 1483 1515 1568 1674 1698 2024 2223 2320 2547 2599 2723 2733 2816 2829 3119 3160 3198 3227 3531 3545 3555 3560 3567 3569 3572 3582 3586 3592 3594 3603 3604 3605 3614 3617 3618 3630 3631 3638 3641 3655 3661 3674 3686 3688 3700 3713 8209 8210 
+	}
+	manpower=20381231
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

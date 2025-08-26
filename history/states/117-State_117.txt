@@ -1,0 +1,40 @@
+
+state={
+	id=117
+	name="STATE_117"
+	resources = {
+		oil = 65
+	}
+	history = {
+		owner = URS
+		add_core_of = CNS
+		add_claim_by = ORI
+		buildings = {
+			arms_factory = 0
+			industrial_complex = 1
+			dockyard = 1
+			infrastructure = 2
+			1631 = {
+				naval_base = 8
+			}
+		}
+		victory_points = {
+			1631 20
+		}
+		start_resistance = yes
+		set_resistance = 10
+		set_compliance = 60
+		1944.1.1.12 = {
+			owner = ORI
+			controller = ORI
+
+}
+	}
+	provinces={
+		839 948 1022 1185 1352 1360 1384 1477 1631 2281 2502 2767 2927 3078 3087 3298 3922 3925 3950 3955 3988 4044 4130 4149 4150 4152 4178 4215 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=6104219
+        state_category = town
+}

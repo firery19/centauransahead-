@@ -1,0 +1,36 @@
+
+state={
+	id=58
+	name="STATE_58"
+	resources={
+		steel=19.000
+		tungsten=12.000
+	}
+
+	history={
+		owner = CLB
+		add_core_of = CLB
+		add_core_of = QUA
+		buildings = {
+			industrial_complex = 0
+			infrastructure = 2
+
+		}
+		victory_points = {
+			4110 17 
+		}
+		1944.1.1.12 = {
+			owner = ANT
+			controller = ANT
+
+}
+	}
+
+	provinces={
+		124 312 349 435 471 575 653 699 731 753 762 827 897 956 999 1080 1103 1321 1513 1533 1573 1592 1970 1985 1999 2080 2299 2586 2680 2682 2874 2980 3080 3103 3258 3862 3875 3891 3906 3907 3911 3912 3934 3938 3941 3948 3958 3962 3966 3972 3977 3978 3997 4004 4008 4009 4016 4017 4027 4037 4051 4052 4065 4073 4081 4084 4088 4089 4090 4094 4102 4110 4111 4129 4147 4159 4175 
+	}
+	manpower=9015775
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

@@ -1,0 +1,11 @@
+l_english:
+ TANT1:0 "My event title"
+ DANT1:0 "My event description"
+ T.ANT.2:0 "My event title"
+ D.ANT.2:0 "My event description"
+
+ #ideas CANT GET IT TO WORK
+ trench_warfare_idea:0 "1900s Warfare"
+ trench_warfare_idea_desc:0 "haha get stuck in a 4 year stalemate with 2 million casualties and 500k guns lost to atrition"
+ ANT_industry_idea:0 "test"
+ #this file is unnused, use the antares_focus_l_english.yml file instead

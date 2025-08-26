@@ -1,0 +1,40 @@
+add_namespace = hydrus
+
+country_event = {
+	id = hydrus.1
+	title = hydrus.1.t #Hydrus wants help!
+	desc = hydrus.1.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		ORI = has_country_flag = ORI_accept_hys
+		}
+	}
+	
+	option = {
+		name = hydrus.1.a # Yes
+		}
+	}
+		
+	id = hydrus.2
+	title = hydrus.2.t #Hydrus wants help!
+	desc = hydrus.2.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hydrus.2.a # Yes
+		set_country_flag = ORI_accept_hys
+		}
+	}
+	
+	option = {
+		name = hydrus.2.b # NO
+		set_country_flag = ORI_refuse_hys
+		}
+	}

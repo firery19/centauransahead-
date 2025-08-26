@@ -1,0 +1,88 @@
+COV = {
+	submarine = {
+		prefix = "CS"
+		generic = { "Submarine" }
+		unique = {
+			"Ursan License Submarine 1" "Ursan License Submarine 2" "Ursan License Submarine 3" "Ursan License Submarine 4" "Ursan License Submarine 5" "Ursan License Submarine 6" 
+		}
+	}
+	destroyer = {
+		prefix = "CS"
+		generic = { "Destroyer"	}
+		unique = {
+			"Procul"
+		}
+	}
+	light_cruiser = {
+		prefix = "CS"
+		generic = { "Light Cruiser" }
+		unique = {
+			"Aereus" "Argenti" "Aurum" "Ferrum"
+		}
+	}
+	heavy_cruiser = {
+		prefix = "CS"
+		generic = { "Heavy Cruiser" }
+		unique = {
+			"Alchiba"
+        }
+	}
+	battle_cruiser = {
+        prefix = "CS"
+        generic = { "Battlecruiser" }
+        unique = {
+            "Alphacorvi"
+        }
+    }
+    battleship = {
+        prefix = "CS"
+        generic = { "Battleship" }
+        unique = {
+            "Kraz" "Ravo" "Gienah" "Algorab" "Minkar"
+        }
+    }
+	carrier = {
+		prefix = "CS"
+		generic = { "Carrier" }
+		unique = {
+			"Experimentium A"
+			}
+		}
+	air_wing_names_template = AIR_WING_NAME_COV_FALLBACK
+
+	infantry = {
+		prefix = ""
+		generic = { "Infantry Division" }
+		generic_pattern = "UNIT_GENERIC_NAME_COV"
+	}
+	marines = {
+		prefix = ""
+		generic = { "Marines" }
+		generic_pattern = "UNIT_GENERIC_NAME_COV"
+		unique = {}
+	}
+	mountaineers = {
+		prefix = ""
+		generic = { "Mountaineers" }
+		generic_pattern = "UNIT_GENERIC_NAME_COV"
+		unique = {}
+	}
+	cavalry = {
+		prefix = ""
+		generic = { "Horse Division" }
+		generic_pattern = "UNIT_GENERIC_NAME_COV"
+		unique = {}
+	}
+	light_armor = {
+		prefix = ""
+		generic = { "Light Tank Division" }
+		generic_pattern = "UNIT_GENERIC_NAME_COV"
+		unique = {}
+	}
+	medium_armor = {
+		prefix = ""
+		generic = { "Medium Tank Division" }
+		generic_pattern = "UNIT_GENERIC_NAME_COV"
+		unique = {}
+	}
+}

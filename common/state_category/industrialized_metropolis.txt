@@ -1,0 +1,10 @@
+state_categories = {
+	industrialized_metropolis = {
+		local_building_slots = 14
+		
+		color = { 140 206 255 }
+	}
+
+
+
+}

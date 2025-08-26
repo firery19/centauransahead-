@@ -1,0 +1,39 @@
+
+state={
+	id=38
+	name="STATE_38"
+	resources={
+		steel=4.000
+		tungsten=6.000
+	}
+
+	history={
+		owner = AQU
+		add_core_of = AQU
+		buildings = {
+			arms_factory = 1
+			industrial_complex = 3
+			infrastructure = 3
+
+		}
+		victory_points = {
+			4473 4
+		}
+		victory_points = {
+			2748 30
+		}
+		1944.1.1.12 = {
+			owner = ANT
+			controller = ANT
+
+}
+	}
+
+	provinces={
+		74 115 778 1126 1302 1501 1783 2491 2748 2834 2930 4473 4474 4515 4518 4552 4554 4574 4575 4587 4630 4715 4742 
+	}
+	manpower=15836497
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

@@ -1,0 +1,22 @@
+state={
+	id=92
+	name="STATE_92"
+	history = {
+		owner = ANT
+		add_core_of = ANT
+		add_core_of = ARA
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			6965 1
+		}
+	}
+	provinces={
+		1743 6503 6961 6962 6965 6967 6970 6974 6976 6977 6978 6979 6981 6982 6984 6985 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=982448
+        state_category = tiny_island
+}

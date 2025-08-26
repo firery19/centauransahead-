@@ -1,0 +1,261 @@
+add_namespace = orion
+
+country_event = {
+	id = orion.1
+	title = orion.1.t #Hydrus wants help!
+	desc = orion.1.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = orion.1.a # Yes
+		ai_chance = {factor = 90}
+		ORI = {
+			add_to_faction = ROOT = {
+				add_ai_strategy = {
+						type = alliance
+						id = "HYS"
+						value = 200
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = orion.1.b # NO 
+		if = {
+			limit = {
+			has_war = yes
+			}
+		ai_chance = {factor = 10}
+		}
+		else_if = {
+			limit = {
+			has_war = no
+			}
+		ai_chance = {factor = 0}
+		}
+	}
+}
+
+country_event = {
+	id = orion.2
+	title = orion.2.t
+	desc = orion.2.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = orion.2.a # Yes
+		ORI = {
+               country_event = {id = orion.3  days = 1 }
+               }
+		if = {
+		limit = {
+		is_historical_focus_on = yes
+		}
+		ai_chance = { factor = 100 }
+		}
+		else_if = {
+		limit = {
+		is_historical_focus_on = no
+		}
+		ai_chance = { factor = 90 }
+		}
+	}
+	
+	option = {
+		name = orion.2.b # NO
+		ORI = {
+               country_event = {id = orion.4  days = 1 }
+              }
+		if = {
+		limit = {
+		is_historical_focus_on = yes
+		}
+		ai_chance = { factor = 0 }
+		}
+		else_if = {
+		limit = {
+		is_historical_focus_on = no
+		}
+		ai_chance = { factor = 10 }
+		}
+	}
+}
+
+country_event = { #Ursa accepts
+	id = orion.3
+	title = orion.3.t
+	desc = orion.3.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = orion.3.a 
+		set_state_owner = 112
+		set_state_owner = 113
+		set_state_owner = 114
+		set_state_owner = 117
+		set_state_owner = 122
+		
+			CNS = {
+				set_state_owner = 115
+				set_state_owner = 116
+				set_state_owner = 118
+				set_state_owner = 119
+				set_state_owner = 171
+			}
+			hidden_effect = {
+			CNS = {
+				set_state_controller = 115
+				set_state_controller = 116
+				set_state_controller = 118
+				set_state_controller = 119
+				set_state_controller = 171
+			}
+			LPS = {
+			set_state_owner = 133
+			set_state_owner = 130
+			set_state_owner = 131
+			set_state_owner = 132
+			set_state_owner = 134
+			set_state_owner = 182
+			set_state_controller = 133
+			set_state_controller = 130
+			set_state_controller = 131
+			set_state_controller = 132
+			set_state_controller = 134
+			set_state_controller = 182
+			}
+			hidden_effect = {
+			182 = {
+				set_demilitarized_zone = no
+			}
+			134 = {
+				set_demilitarized_zone = no
+			}
+			132 = {
+				set_demilitarized_zone = no
+			}
+			131 = {
+				set_demilitarized_zone = no
+			}
+			133 = {
+				set_demilitarized_zone = no
+			}
+			130 = {
+				set_demilitarized_zone = no
+			}
+		white_peace = URS
+		ai_chance = { factor = 99 }
+	}
+}
+
+country_event = { # Dead end for Orion (they gotta naval invade)
+	id = orion.4
+	title = orion.4.t
+	desc = orion.4.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = orion.4.a
+	}
+}
+
+country_event = {
+	id = orion.5
+	title = orion.5.t
+	desc = orion.5.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = orion.5.a
+		LPS = {
+			set_state_owner = 130
+			set_state_owner = 131
+			set_state_owner = 132
+			set_state_owner = 133
+			set_state_owner = 134
+			set_state_owner = 182
+			set_state_controller = 130
+			set_state_controller = 131
+			set_state_controller = 132
+			set_state_controller = 133
+			set_state_controller = 134
+			set_state_controller = 182
+		}
+	}
+}
+
+country_event = {
+	id = orion.6
+	title = orion.6.t
+	desc = orion.6.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = orion.6.a 
+		ai_chance = {factor = 10}
+		add_ideas = ORS_TheHard1900s 
+		complete_national_focus = ORS_TheHard1900s
+		remove_ideas = {ORS_EconomicBoom ORS_EconomicBoom2}
+		hidden_effect = {
+			ORI = {
+				country_event = {
+					id = orion.8 days = 14
+				}
+			}
+		}
+	}	
+}
+
+country_event = {
+	id = orion.7
+	title = orion.7.t
+	desc = orion.7.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = orion.7.a 
+		ai_chance = {factor = 50}
+		complete_national_focus = ORS_LowerTaxes
+	}
+	
+	option = {
+		name = orion.7.b
+		ai_chance = {factor = 50}
+		complete_national_focus = ORS_ProvideSupportToLocalBusinesses
+	}
+	
+}
+
+country_event = {
+	id = orion.8
+	title = orion.8.t
+	desc = orion.8.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = orion.8.a 
+		ai_chance = {factor = 50}
+		add_ideas = ORS_WorkerStrikes
+	}
+}
+
+
+
+	

@@ -1,0 +1,24 @@
+state={
+	id=157
+	name="STATE_157"
+	history={
+		owner = CTA
+		add_core_of = CTA
+		buildings = {
+			infrastructure = 2
+			6711 = {
+				naval_base = 1
+				}
+			}
+			victory_points = {
+			6711 1 
+			}
+		}
+	provinces={
+		3265 6681 6711 
+	}
+	manpower=10652
+	state_category = tiny_island
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

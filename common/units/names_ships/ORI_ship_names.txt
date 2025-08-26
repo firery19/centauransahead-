@@ -1,0 +1,171 @@
+### REGULAR DESTROYER NAMES###
+ORI_DD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+
+	for_countries = { ORI }
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }		
+
+	can_use = { always = yes }
+
+	prefix = "ORS"								
+	fallback_name = "Destroyer %s"					
+
+	unique = {
+		"Methone"
+	}
+}
+
+### LIGHT CRUISER NAMES###
+ORI_CL_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CL
+
+	for_countries = { ORI }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+	
+	can_use = { always = yes }
+	
+	prefix = "ORS"							
+	fallback_name = "Light Cruiser %s"
+
+	unique = {
+		"Io"
+	}
+}
+
+### A-A LIGHT CRUISER NAMES###
+ORI_CLAA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CLAA
+
+	for_countries = { ORI }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+	
+	can_use = { always = yes }
+	
+	prefix = "ORS"								
+	fallback_name = "Light Cruiser (AA) %s"
+
+	unique = {
+		"Galatea" "Despina"
+	}
+}
+
+### HEAVY CRUISER NAMES###
+ORI_CA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CA
+
+	for_countries = { ORI }
+
+	type = ship
+	ship_types = { ship_hull_cruiser heavy_cruiser }
+	
+	can_use = { always = yes }
+	
+	prefix = "ORS"								
+	fallback_name = "Heavy Cruiser %s"
+
+	unique = {
+		"Kappa"
+	}
+}
+
+### BATTLESHIP NAMES ###
+ORI_BB_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BB
+
+	for_countries = { ORI }
+	
+	can_use = { always = yes }
+
+	type = ship
+	ship_types = { ship_hull_heavy battleship }
+	
+	prefix = "ORS"								
+	fallback_name = "Battleship %s"		
+
+	unique = {
+        "Meissa"
+	}
+}
+
+### BATTLECRUISER NAMES ###
+ORI_BC_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BC
+
+	for_countries = { ORI }
+	
+	can_use = { always = yes }
+
+	type = ship
+	ship_types = { ship_hull_heavy battle_cruiser }
+	
+	prefix = "ORS"								
+	fallback_name = "Battlecruiser %s"		
+
+	unique = {
+           "Meissur"
+ 	}
+}
+
+### AIRCRAFT CARRIER NAMES ###
+ORI_CV_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CARRIERS
+
+	for_countries = { ORI }
+	
+	can_use = { always = yes }
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+	
+	prefix = "ORS"							
+	fallback_name = "Carrier %s"		
+
+	unique = {
+		"Yorktown"
+	}
+}
+
+### LIGHT CARRIER NAMES ###
+ORI_CVL_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CVL
+
+	for_countries = { ORI }
+	
+	can_use = { always = yes }
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+	
+	prefix = "ORS"							
+	fallback_name = "Carrier %s"	
+
+	unique = {
+		# CVL Names
+		"Hatysa"
+	}
+}
+
+### SUBMARINES ###
+ORI_SS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+
+	for_countries = { ORI }
+	
+	can_use = { always = yes }
+	
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	
+	prefix = "ORS"							
+	fallback_name = "S-%s"
+	
+	unique = {
+		"S-I"
+	}
+}

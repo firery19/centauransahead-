@@ -1,0 +1,42 @@
+AQU_ring_of_fire = {
+
+	icon = GFX_decision_category_spr_the_seeds_of_revolution
+
+	picture = GFX_decision_cat_picture_FIN_karelian_forest_guerillas
+
+	allowed = {
+		original_tag = AQU
+	}
+	
+	priority = {
+	base = 1
+	modifier = {
+		add = 10
+		tag = AQU
+		}
+	}
+	visible = {
+	always = yes
+	}
+}
+AQU_army_management = {
+
+	icon = GFX_decision_category_spr_the_seeds_of_revolution
+
+	picture = GFX_decision_cat_picture_FIN_karelian_forest_guerillas
+
+	allowed = {
+		original_tag = AQU
+	}
+	
+	priority = {
+	base = 1
+	modifier = {
+		add = 9
+		tag = AQU
+		}
+	}
+	visible = {
+	always = yes
+	}
+}

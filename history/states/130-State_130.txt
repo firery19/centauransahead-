@@ -1,0 +1,48 @@
+
+state={
+	id=130
+	name="STATE_130"
+	resources = {
+		steel = 16
+	}
+	history = {
+		owner = URS
+		add_core_of = LPS
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 0
+			dockyard = 1
+			1641 = {
+			naval_base = 4
+			}
+			1204 = {
+			naval_base = 6
+			}
+		}
+		victory_points = {
+			1204 10
+		}
+		victory_points = {
+		2545 10
+		}
+		victory_points = {
+		4172 5
+		}
+		start_resistance = yes
+		set_resistance = 20
+		set_compliance = 50
+		1944.1.1.12 = {
+			owner = HYS
+			controller = HYS
+			add_core_of = HYS
+
+}
+	}
+	provinces={
+		31 56 217 243 409 450 486 549 550 600 981 1204 1249 1258 1469 1470 1613 1641 1854 1926 1944 2221 2545 2728 3023 3053 3058 3235 3999 4021 4039 4045 4056 4057 4066 4074 4078 4097 4103 4105 4126 4134 4139 4154 4171 4172 4179 4186 4196 4201 4234 4246 4270 4280 4284 4285 4328 4347 4401 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=12607857
+        state_category = large_town
+}

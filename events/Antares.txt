@@ -1,0 +1,63 @@
+add_namespace = ANT
+#copied from  cetus
+#title (t), option 1 (a), option 2 (b) + event id (example = T+ANT.3 =TANT3)
+country_event = {
+    id = ANT.1
+    title = TANT1
+    desc = DANT1
+    #picture = GFX_evt_
+
+    is_triggered_only = yes #focus
+
+    option = { 
+        name = AANT1
+        
+#        custom_effect_tooltip = tt_cet_integration
+
+#        hidden_effect = {
+
+            complete_national_focus = ANT_consolidate_monarchic_powers
+#        }
+    }
+
+    option = {
+       name = BANT1
+#         hidden_effect = {
+#         complete_national_focus = ANT_strengthen_antarean_democracy
+		complete_national_focus = ANT_consolidate_monarchic_powers
+	custom_effect_tooltip = "Alternate history not implemented, play the historical path."
+       }
+   }
+}
+country_event = {
+    id = ANT.2
+    title = T.ANT.2
+    desc = D.ANT.2
+    #picture = GFX_evt_
+
+    is_triggered_only = yes #focus
+
+    option = { 
+        name = AAN2
+        
+#        custom_effect_tooltip = tt_cet_integration
+
+        hidden_effect = {
+            #57 = {
+            #    add_dynamic_modifier = { modifier = sc_resistance_integration }
+            #}
+            #58 = {
+            #    add_dynamic_modifier =  { modifier = sc_resistance_integration }
+            #}
+            #complete_national_focus = CET_sc_int1
+        }
+    }
+
+    option = {
+        name = BANT2
+
+        hidden_effect = {
+            #complete_national_focus = CET_sc_occupy
+        }
+    }
+}

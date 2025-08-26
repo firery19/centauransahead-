@@ -1,0 +1,10 @@
+state_categories = {
+	industrial_heartland = {
+		local_building_slots = 20
+		
+		color = { 255 0 0 }
+	}
+
+
+
+}

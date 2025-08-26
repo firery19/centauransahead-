@@ -1,0 +1,32 @@
+characters = {
+	AQU_lucas_silva = { 
+		name = "Lucas Silva"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_AQU_lucas_silva
+				small = GFX_portrait_AQU_lucas_silva_small
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = { the_sacred_king stout_defender }
+			expire = "1918.1.1.1"
+			id = -1
+		}
+	}
+	
+	AQU_ewan_fouwler = { 
+		name = "Ewan Fouwler"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_AQU_ewan_fouwler
+				small = GFX_portrait_AQU_ewan_fouwler_small
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = { staunch_constitutionalist stout_defender }
+			expire = "1920.1.1.1"
+			id = -1
+		}
+	}

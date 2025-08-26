@@ -1,0 +1,24 @@
+
+state={
+	id=82
+	name="STATE_82"
+	history = {
+		owner = VUL
+		add_core_of = VUL
+		buildings = {
+			arms_factory = 0
+			industrial_complex = 1
+			infrastructure = 2
+		}
+		victory_points = {
+			1566 3
+		}
+	}
+	provinces={
+		341 821 826 1409 1566 1989 1998 2844 3097 3341 3363 6539 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=2905405
+        state_category = city
+}

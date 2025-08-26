@@ -1,0 +1,22 @@
+state={
+	id=150
+	name="STATE_150"
+	history = {
+		owner = ORI
+		add_core_of = ORI
+		add_core_of = GEM
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			2335 1
+		}
+	}
+	provinces={
+		83 1909 2190 2335 2411 2649 3123 4447 4459 4471 4498 4629 6768 6769 6770 6771 6772 6773 6774 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=2513337
+        state_category = rural
+}

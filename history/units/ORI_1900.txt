@@ -1,0 +1,741 @@
+division_template = {
+	name = "Home Guard Division"
+	division_names_group = ORI_INF_01
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+	}
+	
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = {x = 0 y = 1}
+	}
+}
+
+division_template = {
+	name = "Republican Guard Division"
+	division_names_group = ORI_INF_02
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+	}
+	
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = {x = 0 y = 1}
+		artillery = {x = 0 y = 2}
+	}
+}
+
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5412
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 1201
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 5412
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 2408
+		division_template = "Republican Guard Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 4628
+		division_template = "Republican Guard Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 4757
+		division_template = "Republican Guard Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 4957
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 4932
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 1112
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 4855
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 2057
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 4712
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 2753
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 2897
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 4645
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 4657
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 293
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 4678
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 2450
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 4730
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 1101
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 5003
+		division_template = "Republican Guard Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 4769
+		division_template = "Republican Guard Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 3136
+		division_template = "Republican Guard Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 6447
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 1173
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 4356
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 1669
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 2890
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 1151
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 4311
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 4363
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 4359
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 4348
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 764
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 4480
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 4509
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 4422
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 2736
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 3001
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 2605
+		division_template = "Republican Guard Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 603
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 2169
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 6397
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 6381
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 1578
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 6360
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 1724
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 6309
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 6306
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 2632
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 6287
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 6261
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 6222
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 1253
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 2881
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 6236
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 829
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 6052
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 6423
+		division_template = "Republican Guard Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 5422
+		division_template = "Republican Guard Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 2325
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 657
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 20
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 4692
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 6322
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 4768
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 6232
+		division_template = "Home Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+}

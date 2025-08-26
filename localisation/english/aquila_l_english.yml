@@ -1,0 +1,140 @@
+﻿l_english:
+ # political #
+ AQU_the_aquilan_spirit:0 "The Aquilan Spirit"
+ AQU_the_aquilan_spirit_desc:0 "The southern democracy of Centaura, Aquila will stand strong against the world."
+
+ ##########
+ # industry
+ ##########
+ 
+ ######
+ # army
+ ######
+ AQU_civil_guard:0 "Civil Guard Management"
+ AQU_civil_guard_desc:0 "The Civil Guard supports our troops during wartime in urban areas. Improvements could be made."
+ AQU_raise_penal_battalions:0 "Penal Battalions"
+ AQU_raise_penal_battalions_desc:0 "Our country is at war. Criminals such as murderers and theives will be allowed to enlist in exchange for a small glimmer of hope of freedom."
+ AQU_increase_the_cg:0 "Increasing Civil Guard Numbers"
+ AQU_increase_the_cg_desc:0 "Victory through numbers"
+ AQU_make_more_weapons:0 "Make More Weapons"
+ AQU_make_more_weapons_desc:0 "We need to support our Civil Guard with equipment."
+ AQU_improve_cohesiveness:0 "Improve Cohesiveness"
+ AQU_improve_cohesiveness_desc:0 "A massive militia needs to know how to organise and defend properly. However, an unintended side effect of cohesive communication allows normal army units to organise better."
+ AQU_strength_in_numbers:0 "Strength In Numbers"
+ AQU_strength_in_numbers_desc:0 "The Civil Guard shall be present any and everywhere the enemy attempts to take over through our presence in numbers."
+ ###
+ AQU_standardise_the_cg:0 "Standardising the Civil Guard"
+ AQU_standardise_the_cg_desc:0 "The first step to improving the civil guard is to make them more organised in battle."
+ AQU_train_the_cg:0 "Train Civil Guard"
+ AQU_train_the_cg_desc:0 "The Civil Guard is an irregular militia that holds no training. They cannot be expected to hold their own in battle, we must train them."
+ AQU_distribute_modern_weapons:0 "Distribute Modern Weapons"
+ AQU_distribute_modern_weapons_desc:0 "Modern weapons are required to bring their firepower up to standard."
+ AQU_transform_the_cg:0 "Tranforming The Civil Guard"
+ AQU_transform_the_cg_desc:0 "The Civil Guard is now a fine refined militia force that can effectively support the army."
+ # fort
+ AQU_fort_management:0 "Fort Management"
+ AQU_fort_management_desc:0 "Our fortifications can keep us safe from any invaders. We should keep them up to standard."
+ AQU_south_fort:0 "Southern Management"
+ AQU_south_fort_desc:0 "The southern borders of Antares is vast and important to defend from any future attacks. We should maintain a degree of fortification here."
+ AQU_west_fort:0 "Western Management"
+ AQU_west_fort_desc:0 "The western borders of Cetus is something that we should not worry a great deal."
+ AQU_east_fort:0 "Eastern Management"
+ AQU_east_fort_desc:0 "The eastern borders of Vega should be easy to defend with the natural terrain advantage, however forts should be maintained just in case."
+ AQU_north_fort:0 "Northern Management"
+ AQU_north_fort_desc:0 "The northern border of Columba shouldn't worry us much, since both sides have no reason to attack."
+ ######
+ # navy
+ ######
+ 
+ ##########
+ # research (military)
+ ##########
+ AQU_army_modernisation:0 "Army Modernisation"
+ AQU_army_modernisation_desc:0 "An impossible task to argue with the high command to modernise it!"
+ AQU_new_thinking:0 "Bright New Officers"
+ AQU_new_thinking_desc:0 "The new officers of this generation are the key to keeping our army up to standards."
+ AQU_innovate:0 "Innovating Tactics"
+ AQU_innovate_desc:0 "The officers will work on new tactics to overcome any obstacle."
+ AQU_observe_the_canis_war:0 "Observe The Canis War"
+ AQU_observe_the_canis_war_desc:0 "Across the Libran Ocean, a conflict has broken out in the region of Canis. We should keep an eye on the modern battle tactics both sides use by sending "journalists"."
+ 
+ ########
+ # events
+ ########
+ aqu.1:0 "Civil Guard Recruitment Finished"
+ cg_recruitment_event.1.t:0 "Civil Guard Recruitment Finished"
+ cg_recruitment_event.1.desc:0 "Our organisation of Civil Guard units have finished and turned them into functional units!!"
+ cg_recruitment_event.1.a:0 "Let them fight alongside the army"
+ ###########
+ # decisions
+ ###########
+ AQU_ring_of_fire:0 "The Ring of Fire"
+ AQU_ring_of_fire_desc:0 "Ring of Fire!!"
+ build_n_rof:0 "Build Northern Forts"
+ build_w_rof:0 "Build Western Forts"
+ build_e_rof:0 "Build Eastern Forts"
+ build_s_rof:0 "Build Southern Forts"
+ dismantle_n_rof:0 "Dismantle Northern Forts"
+ dismantle_w_rof:0 "Dismantle Western Forts"
+ dismantle_e_rof:0 "Dismantle Eastern Forts"
+ dismantle_s_rof:0 "Dismantle Southern Forts"
+ 
+ AQU_army_management:0 "Army Management"
+ fix_army_rust_a:0 "Rectify The Rusting Army"
+ fix_army_rust_b:0 "Rectify The Rusting Army"
+ fix_army_rust_c:0 "Smoothen The Army"
+ fix_army_rust_d:0 "Modernize The Army"
+ civil_guard_recruitment:0 "Civil Guard Recruitment"
+ civil_guard_recruitment_desc:0 "Forming militias to support the army in times of war."
+ 
+ #########
+ # spirits
+ #########
+ AQU_iron_army:0 "The Iron Army"
+ AQU_iron_army_desc:0 "The “Iron Army” nickname was given to the Aquilans when in the early 1800’s, they held off a major Antarean assault from the south. In the aftermath of that war, the Aquilans were able to retain their borders with minimal losses."
+ AQU_lucas_silva:0 "King Lucas Silva"
+ AQU_lucas_silva_desc:0 "The King of Aquila, although he does not retain any power, he is a good figurehead for our country."
+ AQU_outdated_technology:0 "Outdated Technology"
+ AQU_outdated_technology_desc:0 "Due to the lack of any major wars, Aquila has neglected its technological department in weapons due to lack of modern combat experiences."
+ AQU_rusting_army:0 "Rusting Army"
+ AQU_rusting_army_desc:0 "The Iron Army of Aquila has started fading away due to its army not catching up to modern warfare."
+ AQU_rusting_army_3_idea:0 "Rusting Army"
+ AQU_rusting_army_3_idea_desc:0 "Recent army improvements have remedied the problems in outdated tactics."
+ AQU_rusting_army_4_idea:0 "Maintained Army"
+ AQU_rusting_army_4_idea_desc:0 "After taking in experience from the Grease Wars, the Aquilan army has learnt new basic combat tactics to be used in any future conflicts."
+ AQU_rusting_army_5_idea:0 "Modern Army"
+ AQU_rusting_army_5_idea_desc:0 "After clever innovations with the combat tactics from the Grease Wars, the brilliant new generation of officers has come up with better defensive planning in any battlefield we may fight in, and new attacking tactics to retake any lost land within our borders."
+ AQU_penal_battalions_idea:0 "Penal Battalions"
+ AQU_penal_battalions_idea_desc:0 "Criminals come"
+ AQU_strong_militia:0 "Organized Militia"
+ AQU_strong_militia_desc:0 "The Civil Guard is an informal organization that cannot be kept tracked of. With this, the Civil Guard is now an official title."
+ AQU_rampant_militia_idea:0 "Militia Everywhere"
+ AQU_rampant_militia_idea_desc:0 "Anywhere the enemy steps onto Aquilan soil; civilians, buildings, trees and grass will be prepared to open fire."
+ AQU_good_civil_guard:0 "Standardised Militia"
+ AQU_good_civil_guard_desc:0 "
+ AQU_cohesive_militia_idea:0 "Cohesiveness"
+ AQU_cohesive_militia_idea_desc:0 "
+ AQU_newgens_idea:0 "New Generation"
+ AQU_newgens_idea_desc:0 "The old generations, stuck with their defensive positions and slow attacks cannot be trusted to lead the changing landscapes of war. Our new officers will handle the innovation and thinking of the new warfare to come."
+
+ ######
+ # misc
+ ######
+ grease_wars_start:0 "Grease Wars has started"
+ decision_cost_CP_20_ArmXP_20:0 "§H20§! £GFX_command_power §H20§! £GFX_army_experience"
+ decision_cost_CP_20_ArmXP_20_blocked:0 "§R20§! £GFX_command_power §R20§! £GFX_army_experience"
+ decision_cost_CP_20_ArmXP_20_tooltip:0 "It costs $cp_10_cost_blocked$  to take the decision
+ cp_10_cost_blocked:0 "§R10§! £GFX_command_power"
+ cp_10_cost_tooltip:0 "It costs $cp_10_cost_blocked$  to take the decision"
+ AQU_cg_recruit_many:0 "4 untrained Civil Guard units will appear in the Aquilan Heartland."
+ AQU_cg_recruit_elite:0 "2 regulars Civil Guard units will appear in Volucris."
+ AQU_cg_recruit_normal:0 "2 normal trained Civil Guard units will appear in Volucris."
+ AQU_cg_effective_up:0 "§YIncreases effectiveness of Civil Guard Recruitment§!."
+ AQU_decision_allow:0 "§YAllows a decision to be taken.§!"
+ 
+ #AQU_increased_cg_a
+ #AQU_trained_cg_a
+ 
+ 
+ 
+ # When faced with everything, you cant do anything.

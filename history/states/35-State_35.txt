@@ -1,0 +1,97 @@
+
+state={
+	id=35
+	name="STATE_35"
+	resources={
+		steel=5.000
+		chromium=3.000
+	}
+
+	history={
+		owner = AQU
+		add_core_of = AQU
+		add_claim_by = ANT
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 3
+			4962 = {
+				bunker = 3
+
+			}
+			2826 = {
+				bunker = 3
+
+			}
+			2869 = {
+				bunker = 3
+
+			}
+			483 = {
+				bunker = 3
+
+			}
+			5075 = {
+				bunker = 3
+
+			}
+			422 = {
+				bunker = 3
+
+			}
+			5084 = {
+				bunker = 3
+
+			}
+			5082 = {
+				bunker = 3
+
+			}
+			5068 = {
+				bunker = 3
+
+			}
+			2810 = {
+				bunker = 3
+
+			}
+			5116 = {
+				bunker = 3
+
+			}
+			362 = {
+				bunker = 3
+
+			}
+			5046 = {
+				bunker = 3
+
+			}
+			5070 = {
+				bunker = 3
+
+			}
+			5076 = {
+				bunker = 3
+
+			}
+
+		}
+		1944.1.1.12 = {
+			owner = ANT
+			controller = ANT
+
+}
+		victory_points = {
+			4917 15 
+		}
+
+	}
+
+	provinces={
+		362 422 483 852 860 863 2084 2122 2250 2772 2810 2826 2869 3211 3259 4940 4953 4962 4980 4990 4996 5004 5010 5022 5023 5028 5038 5046 5068 5069 5070 5075 5076 5082 5084 5116 
+	}
+	manpower=7214346
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

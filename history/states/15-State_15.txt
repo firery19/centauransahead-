@@ -1,0 +1,40 @@
+
+state={
+	id=15
+	name="STATE_15"
+	resources={
+		steel=9.000
+	}
+
+	history={
+		owner = TUC
+		add_core_of = TUC
+		buildings = {
+			arms_factory = 1
+			industrial_complex = 3
+			infrastructure = 3
+			3514 = {
+			naval_base = 6
+			}
+			2828 = {
+			naval_base = 3
+			}
+		}
+		victory_points = {
+			501 45 
+		}
+		1944.1.1.12 = {
+			owner = RIA
+			controller = RIA
+
+}
+	}
+
+	provinces={
+		107 112 208 270 331 501 712 715 779 977 1021 1339 1584 1771 2020 2272 2460 2648 2683 2698 2828 2885 3438 3439 3458 3467 3470 3479 3489 3508 3510 3514 3516 3520 3524 3526 3528 3547 3548 
+	}
+	manpower=16765982
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

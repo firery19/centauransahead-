@@ -1,0 +1,132 @@
+add_namespace = cns
+
+country_event = { #Canis Rebellion
+	id = cns.1
+	title = cns.1.t
+	desc = cns.1.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+
+	option = {
+		name = cns.1.a
+		hidden_effect = {
+		load_oob = CNS_1900
+		}
+		118 = {
+				create_unit = {
+					division = "name = \"Minutemen Militia\" division_template = \"Militia Division\" start_experience_factor = 0 start_equipment_factor = 0.5"
+					owner = CNS
+				}
+				create_unit = {
+					division = "name = \"Minutemen Militia\" division_template = \"Militia Division\" start_experience_factor = 0 start_equipment_factor = 0.5"
+					owner = CNS
+				}
+				create_unit = {
+					division = "name = \"Minutemen Militia\" division_template = \"Militia Division\" start_experience_factor = 0 start_equipment_factor = 0.5"
+					owner = CNS
+				}
+				create_unit = {
+					division = "name = \"Minutemen Militia\" division_template = \"Militia Division\" start_experience_factor = 0 start_equipment_factor = 0.5"
+					owner = CNS
+				}
+				create_unit = {
+					division = "name = \"Minutemen Militia\" division_template = \"Militia Division\" start_experience_factor = 0 start_equipment_factor = 0.5"
+					owner = CNS
+				}
+			}
+			
+			115 = {
+				create_unit = {
+					division = "name = \"Minutemen Militia\" division_template = \"Militia Division\" start_experience_factor = 0 start_equipment_factor = 0.5"
+					owner = CNS
+				}
+				create_unit = {
+					division = "name = \"Minutemen Militia\" division_template = \"Militia Division\" start_experience_factor = 0 start_equipment_factor = 0.5"
+					owner = CNS
+				}
+				create_unit = {
+					division = "name = \"Minutemen Militia\" division_template = \"Militia Division\" start_experience_factor = 0 start_equipment_factor = 0.5"
+					owner = CNS
+				}
+				create_unit = {
+					division = "name = \"Minutemen Militia\" division_template = \"Militia Division\" start_experience_factor = 0 start_equipment_factor = 0.5"
+					owner = CNS
+				}
+				create_unit = {
+					division = "name = \"Minutemen Militia\" division_template = \"Militia Division\" start_experience_factor = 0 start_equipment_factor = 0.5"
+					owner = CNS
+				}
+				create_unit = {
+					division = "name = \"Minutemen Militia\" division_template = \"Militia Division\" start_experience_factor = 0 start_equipment_factor = 0.5"
+					owner = CNS
+				}
+			}
+		}
+	}
+	
+country_event = {
+	id = cns.2
+	title = cns.2.t #Canis joins d.g
+	desc = cns.2.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = cns.2.a # Yes
+		ai_chance = {factor = 100}
+		ORI = {
+			add_to_faction = CNS
+			add_ai_strategy = {
+				type = alliance
+				id = "CNS"
+				value = 200
+			}
+		}
+	}
+	
+	option = {
+		name = cns.2.b # NO 
+		ai_chance = {factor = 0}
+		}
+	}
+	
+country_event = { #
+	id = cns.3
+	title = cns.3.t
+	desc = cns.3.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+
+	option = {
+		name = cns.3.a
+		2 = {
+			create_unit = {
+				division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.1 start_equipment_factor = 0.8"
+				owner = CNS
+			}
+			create_unit = {
+				division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.1 start_equipment_factor = 0.8"
+				owner = CNS
+			}
+			create_unit = {
+				division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.1 start_equipment_factor = 0.8"
+				owner = CNS
+			}
+			create_unit = {
+				division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.1 start_equipment_factor = 0.8"
+				owner = CNS
+			}
+			create_unit = {
+				division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.1 start_equipment_factor = 0.8"
+				owner = CNS
+			}
+			create_unit = {
+				division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.1 start_equipment_factor = 0.8"
+				owner = CNS
+			}
+		}
+	}	
+}

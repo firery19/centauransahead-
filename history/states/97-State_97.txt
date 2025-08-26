@@ -1,0 +1,35 @@
+state={
+	id=97
+	name="STATE_97"
+	resources = {
+		tungsten = 16
+	}
+	history = {
+		owner = ANT
+		add_core_of = ANT
+		add_core_of = NRM
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 3
+			6069 = {
+			naval_base = 4
+			}
+		}
+		victory_points = {
+			6069 11
+		}
+		victory_points = {
+			6220 4
+		}
+		victory_points = {
+			6210 8
+		}
+	}
+	provinces={
+		161 284 356 505 605 717 1216 1452 1498 1953 2037 2063 2077 2412 2742 2777 2896 2902 2941 3115 3218 5920 5955 5973 5991 6020 6044 6069 6074 6075 6086 6087 6090 6104 6109 6126 6131 6140 6149 6168 6169 6173 6177 6181 6196 6200 6205 6210 6220 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	manpower=13987904
+	state_category = city
+}

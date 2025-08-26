@@ -1,0 +1,169 @@
+# Division template historical names system. Is a new method of naming the divisions based on the names-group assigned to it's template.
+# If we run out of all historical names, the names will be assigned in the old way.
+#
+# Each group has a made up tag. Use it if you want to append more, or replace existing names with the extra txt files (modding).
+#
+# for_countries - lists all countries that can use it. If empty, or entire tag is missing, all countries in the world can use it.
+#
+# can_use - is a trigger that locks/unlocks the group under specific circumstances. The trigger is in a country scope.
+#
+# division_types - is a list of tokens to corresponding unit types. A player can in fact use any group of names for a div.template
+#                  however this tag is a helper for an automated choice (for AI, or if the group must switch on it's own, because
+#                  for example the current one is no longer available due to the can_use trigger saying so).
+#                  In automated choice, the division template must have at least 1 of the following types for it to be chosen.
+#
+# fallback_name - Is going to be used if we run out of the scripted historical names. If you want to use the old division naming
+#                 mechanics to be used for fallbacks, then just skip this option.
+#
+# unordered - It's a list of historical division names that did not have a number. Regardless if such names happened in history or not
+#             this option is available here mainly for a mods.
+#
+# ordered - Is a list of all historical names. 
+#           Numbers must start from 1 and up. 
+#           Numbers can't repeat in one scope.
+#           If you script the name for this group, at the same number (for example in a mod in another file), the name will be override.
+#           All arguments between the brackets must be separated by spaces. Each argument is wrapped in "quotas".
+#           1st argument = The name. It must contain either: 
+#                          %d (for decimal number placement)
+#                          %s (for string number placement - ROMAN numbers like XIV).
+#           2nd argument is optional = A localizable text describing this historical division. The text will be visible in the tooltip
+#                                      where you choose the historical division name.
+#           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
+#                                      the current game version.
+
+MUS_INF_01 = {
+	name = "Imperial Guard"
+
+	for_countries = { MUS }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { MUS_INF_01 }
+
+	fallback_name = "%d Imperial Guard"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dst Imperial Guard" }
+		2 = { "%dnd Imperial Guard" }
+		3 = { "%drd Imperial Guard" }
+		4 = { "%dth Imperial Guard" }
+		5 = { "%dth Imperial Guard" }
+		42 = { "%dnd Imperial Guard" }
+		43 = { "%drd Imperial Guard" }
+		44 = { "%dth Imperial Guard" }
+		48 = { "%dth Imperial Guard" }
+		49 = { "%dth Imperial Guard" }
+		50 = { "%dth Imperial Guard" }
+		51 = { "%dst Imperial Guard" }
+		52 = { "%dnd Imperial Guard" }
+		53 = { "%drd Imperial Guard" }
+		54 = { "%dth Imperial Guard" }
+		55 = { "%dth Imperial Guard" }
+		7 = { "%dth Imperial Guard" }
+		8 = { "%dth Imperial Guard" }
+		9 = { "%dth Imperial Guard" }
+		15 = { "%dth Imperial Guard" }
+		18 = { "%dth Imperial Guard" }
+		38 = { "%dth Imperial Guard" }
+		45 = { "%dth Imperial Guard" }
+		59 = { "%dth Imperial Guard" }
+		61 = { "%dst Imperial Guard" }
+		66 = { "%dth Imperial Guard" }
+		12 = { "%dth Imperial Guard" }
+		23 = { "%drd Imperial Guard" }
+		46 = { "%dth Imperial Guard" }
+		6 = { "%dth Imperial Guard" }
+		11 = { "%dth Imperial Guard" }
+		812 = { "%dth Imperial Guard" }
+		47 = { "%dth Imperial Guard" }
+		56 = { "%dth Imperial Guard" }
+		70 = { "%dth Imperial Guard" }
+		76 = { "%dth Imperial Guard" }
+		77 = { "%dth Imperial Guard" }
+		78 = { "%dth Imperial Guard" }
+		80 = { "%dth Imperial Guard" }
+		81 = { "%dst Imperial Guard" }
+		82 = { "%dnd Imperial Guard" }
+		36 = { "%dth Imperial Guard" }
+		801 = { "%dth Imperial Guard" }
+		40 = { "%dth Imperial Guard" }
+		57 = { "%dth Imperial Guard" }
+		58 = { "%dth Imperial Guard" }
+		28 = { "%dth Imperial Guard" }
+		33 = { "%drd Imperial Guard" }
+		34 = { "%dth Imperial Guard" }
+		37 = { "%dth Imperial Guard" }
+		41 = { "%d Imperial Guard" }
+		60 = { "%dth Imperial Guard" }
+		62 = { "%dnd Imperial Guard" }
+		63 = { "%drd Imperial Guard" }
+		67 = { "%dth Imperial Guard" }
+		68 = { "%dth Imperial Guard" }
+		69 = { "%dth Imperial Guard" }
+		71 = { "%dst Imperial Guard" }
+		72 = { "%dnd Imperial Guard" }
+		73 = { "%drd Imperial Guard" }
+		74 = { "%dth Imperial Guard" }
+		75 = { "%dth Imperial Guard" }
+		97 = { "%dth Imperial Guard" }
+		98 = { "%dth Imperial Guard" }
+		99 = { "%dth Imperial Guard" }
+		100 = { "%dth Imperial Guard" }
+		101 = { "%dst Imperial Guard" }
+		102 = { "%dnd Imperial Guard" }
+		103 = { "%drd Imperial Guard" }
+		104 = { "%dth Imperial Guard" }
+		105 = { "%dth Imperial Guard" }
+		106 = { "%dth Imperial Guard" }
+		107 = { "%dth Imperial Guard" }
+		108 = { "%dth Imperial Guard" }
+		109 = { "%dth Imperial Guard" }
+		110 = { "%dth Imperial Guard" }
+		111 = { "%dth Imperial Guard" }
+		112 = { "%dth Imperial Guard" }
+		113 = { "%dth Imperial Guard" }
+		114 = { "%dth Imperial Guard" }
+		115 = { "%dth Imperial Guard" }
+		116 = { "%dth Imperial Guard" }
+		117 = { "%dth Imperial Guard" }
+		118 = { "%dth Imperial Guard" }
+		119 = { "%dth Imperial Guard" }
+		120 = { "%dth Imperial Guard" }
+		121 = { "%dst Imperial Guard" }
+		122 = { "%dnd Imperial Guard" }
+		123 = { "%drd Imperial Guard" }
+		124 = { "%dth Imperial Guard" }
+		125 = { "%dth Imperial Guard" }
+		126 = { "%dth Imperial Guard" }
+		127 = { "%dth Imperial Guard" }
+		128 = { "%dth Imperial Guard" }
+		129 = { "%dth Imperial Guard" }
+		130 = { "%dth Imperial Guard" }
+		131 = { "%dst Imperial Guard" }
+		132 = { "%dnd Imperial Guard" }
+		133 = { "%drd Imperial Guard" }
+		134 = { "%dth Imperial Guard" }
+		135 = { "%dth Imperial Guard" }
+		136 = { "%dth Imperial Guard" }
+		137 = { "%dth Imperial Guard" }
+		138 = { "%dth Imperial Guard" }
+		139 = { "%dth Imperial Guard" }
+		140 = { "%dth Imperial Guard" }
+		141 = { "%dst Imperial Guard" }
+		142 = { "%dnd Imperial Guard" }
+		143 = { "%drd Imperial Guard" }
+		144 = { "%dth Imperial Guard" }
+		145 = { "%dth Imperial Guard" }
+		146 = { "%dth Imperial Guard" }
+		147 = { "%dth Imperial Guard" }
+		148 = { "%dth Imperial Guard" }
+		149 = { "%dth Imperial Guard" }
+		150 = { "%dth Imperial Guard" }
+	}
+}

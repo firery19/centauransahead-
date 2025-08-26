@@ -1,0 +1,23 @@
+state={
+	id=81
+	name="STATE_81"
+	history = {
+		owner = VUL
+		add_core_of = VUL
+		buildings = {
+			arms_factory = 0
+			industrial_complex = 0
+			infrastructure = 1
+		}
+		victory_points = {
+			6566 6
+		}
+	}
+	provinces={
+		403 612 2819 3060 3378 6545 6552 6553 6556 6557 6559 6561 6562 6564 6565 6566 6567 6569 6570 6572 6573 6574 6575 6576 6577 6579 6580 6581 6583 6584 6585 6586 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=2180903
+        state_category = large_town
+}

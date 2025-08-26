@@ -1,0 +1,103 @@
+add_namespace = COV
+
+country_event = {
+    id = cov.1
+    title = cov.1.t
+    desc = cov.1.d
+    #picture = GFX_
+
+    is_triggered_only = yes #focus
+	fire_only_once = yes
+
+    option = {
+        name = cov.1.a
+		trigger = {
+		on_declare_war = {
+		effect = {
+				if = {
+					limit = {
+						tag = COV
+						FROM = { tag = CET }
+						}
+						complete_national_focus = COV_initial_offensive
+					}
+				}
+			}
+		}
+		mean_time_to_happen = {
+        days = 2
+		}	
+        hidden_effect = {
+            complete_national_focus = COV_initial_offensive
+        }
+    }
+}
+
+# End of SCW, Corvus expanded Antares aid - event for ANT
+country_event = {
+	id = cov.2
+	title = cov.2.t
+	desc = cov.2.desc
+	picture = GFX_report_event_generic_parliament
+	
+	is_triggered_only = yes
+	
+	option = { # Ok
+		name = cov.2.a
+		effect_tooltip = {
+			puppet = COV
+		}
+	}
+}
+
+# End of SCW, Corvus expanded Antares aid - event for SPD
+country_event = {
+	id = cov.3
+	title = cov.3.t
+	desc = cov.3.desc
+	picture = GFX_report_event_generic_parliament
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			ANT = { puppet = COV }
+		}
+	}
+	
+	option = { # Ok
+		name = cov.3.a
+		effect_tooltip = {
+			ANT = { puppet = COV }
+		}
+	}
+}
+
+
+country_event = {
+	id = cov.4
+	title = cov.4.t
+	desc = cov.4.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = cov.4.a # Yes
+		ai_chance = {factor = 99}
+		COV = {
+			add_to_faction = ROOT = {
+				add_ai_strategy = {
+						type = alliance
+						id = "ANT"
+						value = 200
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = cov.4.b # NO 
+		ai_chance = {factor = 1}
+	}
+}

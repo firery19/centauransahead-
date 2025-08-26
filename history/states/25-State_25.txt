@@ -1,0 +1,68 @@
+
+state={
+	id=25
+	name="STATE_25"
+	resources = {
+        	steel = 87 #iml they got enough to give half their armour medieval armour
+		tungsten = 19
+		oil = 6
+	}
+	history = {
+		owner = VEG
+		add_core_of = VEG
+		add_claim_by = GRS
+		buildings = {
+            infrastructure = 2
+            industrial_complex = 1
+			stronghold_network = 1
+			4195 = {
+				bunker = 4
+			}
+			2794 = {
+				bunker = 4
+			}
+			4315 = {
+				bunker = 4
+			}
+			925 = {
+				bunker = 4
+			}
+			962 = {
+				bunker = 4
+			}
+            2257 = {
+                bunker = 4
+            }
+			2230 = {
+				bunker = 4
+			}
+			4680 = {
+				bunker = 4
+			}
+			42 = {
+				bunker = 4
+			}
+			4767 = {
+				bunker = 4
+			}
+			2099 = {
+				bunker = 4
+			}
+        }
+		victory_points = {
+			2462 17
+		}
+		1944.1.1.12 = {
+			owner = GRS
+			controller = GRS
+
+}
+	}
+	provinces={
+		42 925 962 979 2085 2099 2230 2257 2462 2794 3262 4195 4254 4315 4378 4436 4655 4680 4718 4755 4767 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=4815964
+        state_category = rural
+}

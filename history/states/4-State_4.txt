@@ -1,0 +1,36 @@
+
+state={
+	id=4
+	name="STATE_4"
+	resources={
+		rubber=9
+	}
+	history={
+		owner = AUR
+		add_core_of = AUR
+		buildings = {
+
+			industrial_complex = 1
+			infrastructure = 2
+		
+		}
+		victory_points = {
+			670 40 
+		}
+		victory_points = {
+			3268 20 
+		}
+		victory_points = {
+			125 15 
+		}
+
+	}
+
+	provinces={
+		125 152 212 436 670 713 800 814 891 1154 1251 1290 1294 1572 1582 1898 2078 2159 2213 2356 2415 2456 2730 2851 2939 3029 3096 3268 6388 6391 6392 6394 6395 6407 6410 6413 6418 6420 6421 6428 6431 6440 6450 6451 6452 6455 6464 6469 6475 6476 6486 6488 6910 6930 8218 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=15287269
+        state_category = city
+}

@@ -1,0 +1,36 @@
+
+state={
+	id=120
+	name="STATE_120"
+
+	history={
+		owner = ORI
+		add_core_of = ORI
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 0
+			dockyard = 1
+#			1383 = {
+#				naval_base = 3
+#
+#			}
+			5200 = {
+				naval_base = 4
+
+			}
+		}
+		victory_points = {
+			4970 4 
+		}
+
+	}
+
+	provinces={
+		177 308 544 728 1112 1315 1383 1454 1597 2040 2057 2094 2185 2636 2700 2946 4810 4845 4855 4884 4925 4932 4956 4957 4970 4987 5003 5014 5033 5049 5052 5058 5098 5103 5140 5200 5226 6792 
+	}
+	manpower=271038
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

@@ -1,0 +1,41 @@
+
+state={
+	id=47
+	name="STATE_47"
+	resources={
+		steel=4.000
+		aluminium=2.000
+		tungsten=6.000
+	}
+
+	history={
+		owner = CET
+		add_core_of = CET
+		buildings = {
+			industrial_complex = 2
+			infrastructure = 2
+			2081 = {
+				bunker = 1
+			}
+		}
+		1944.1.1.12 = {
+			owner = ANT
+			controller = ANT
+
+			}
+		victory_points = {
+			2081 7
+		}
+		victory_points = {
+			2449 8
+		}
+	}
+
+	provinces={
+		273 616 677 957 1123 1788 1816 1839 1901 2081 2151 2234 2449 2775 3144 3163 3172 4460 4507 4511 4512 4561 4562 4570 4612 4613 4663 4664 4698 4728 4780 4821 4822 4826 4844 4870 4871 
+	}
+	manpower=3579490
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

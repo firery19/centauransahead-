@@ -1,0 +1,116 @@
+ORI = {
+	submarine = {
+		prefix = "ORS"
+		generic = { "Submarine" }
+		unique = {
+			"Stolen Ursan Submarine 1" 
+		}
+	}
+	destroyer = {
+		prefix = "ORS"
+		generic = { "Destroyer"	}
+		unique = {
+			"Lambda"
+		}
+	}
+	light_cruiser = {
+		prefix = "ORS"
+		generic = { "Light Cruiser" }
+		unique = {
+			"Callisto"
+		}
+	}
+	heavy_cruiser = {
+		prefix = "ORS"
+		generic = { "Heavy Cruiser" }
+		unique = {
+			"Kappa"
+        }
+	}
+	battle_cruiser = {
+        prefix = "ORS"
+        generic = { "Battlecruiser" }
+        unique = {
+            "Sigmas"
+        }
+    }
+    battleship = {
+        prefix = "ORS"
+        generic = { "Battleship" }
+        unique = {
+            "Meissa"
+        }
+    }
+	carrier = {
+		prefix = "ORS"
+		generic = { "Carrier" }
+		unique = {
+			"Rigel"
+			}
+		}
+	air_wing_names_template = AIR_WING_NAME_ORI_FALLBACK
+
+	#Air wings can only be named through archetype
+
+	cv_small_plane_airframe = {
+		prefix = ""
+		generic = { "Squadron FAA" }
+		generic_pattern = AIR_WING_NAME_ORI_CARRIER
+		unique = { "No. 800 Naval Air Squadron"
+		}	
+	}
+
+	cv_small_plane_cas_airframe = {
+		prefix = ""
+		generic = { "Squadron FAA" }
+		generic_pattern = AIR_WING_NAME_ORI_CARRIER
+		unique = {
+		 "No. 800 Naval Air Squadron"
+		}	
+	}
+	cv_small_plane_naval_bomber_airframe = {
+		prefix = ""
+		generic = { "Squadron FAA" }
+		generic_pattern = AIR_WING_NAME_ORI_CARRIER
+		unique = {
+		 "No. 800 Naval Air Squadron"
+	}
+
+	
+
+	infantry = {
+		prefix = ""
+		generic = { "Infantry Division" }
+		generic_pattern = "UNIT_GENERIC_NAME_ORI"
+	}
+	marines = {
+		prefix = ""
+		generic = { "Marines" }
+		generic_pattern = "UNIT_GENERIC_NAME_ORI"
+		unique = {}
+	}
+	mountaineers = {
+		prefix = ""
+		generic = { "Mountaineers" }
+		generic_pattern = "UNIT_GENERIC_NAME_ORI"
+		unique = {}
+	}
+	cavalry = {
+		prefix = ""
+		generic = { "Horse Division" }
+		generic_pattern = "UNIT_GENERIC_NAME_ORI"
+		unique = {}
+	}
+	light_armor = {
+		prefix = ""
+		generic = { "Light Tank Division" }
+		generic_pattern = "UNIT_GENERIC_NAME_ORI"
+		unique = {}
+	}
+	medium_armor = {
+		prefix = ""
+		generic = { "Medium Tank Division" }
+		generic_pattern = "UNIT_GENERIC_NAME_ORI"
+		unique = {}
+	}
+}

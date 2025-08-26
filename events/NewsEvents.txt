@@ -1,0 +1,217 @@
+﻿add_namespace = news
+
+# The Fall of Nauta (Antares)
+news_event = {
+	id = news.410
+	title = news.410.t
+	desc = news.410.d
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	trigger = {
+		7 = { is_controlled_by = ANT }
+		7 = { is_owned_by = CET }
+		ANT = { has_war_with = CET }
+		NOT = { has_global_flag = fall_of_nauta_ant }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_nauta_ant
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = news.410.a
+		trigger = {
+			NOT = {
+				TAG = ANT
+				TAG = CET
+				TAG = COV
+			}
+		}
+	}
+	option = {
+		name = news.410.b
+		trigger = { TAG = ANT }
+	}
+	option = {
+		name = news.410.c
+		trigger = { TAG = CET }
+	}
+	option = {
+		name = news.410.e
+		trigger = { TAG = COV }
+	}
+}
+
+news_event = {
+	id = news.411
+	title = news.411.t
+	desc = news.411.d
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	trigger = {
+		43 = { is_controlled_by = ANT }
+		43 = { is_owned_by = CET }
+		ANT = { has_war_with = CET }
+		NOT = { has_global_flag = fall_of_mira_ant }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_mira_ant
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = news.411.a
+		trigger = {
+			NOT = {
+				TAG = ANT
+				TAG = CET
+				TAG = COV
+			}
+		}
+	}
+	option = {
+		name = news.411.b
+		trigger = { TAG = ANT }
+	}
+	option = {
+		name = news.411.c
+		trigger = { TAG = CET }
+	}
+	option = {
+		name = news.411.e
+		trigger = { TAG = COV }
+	}
+}
+
+news_event = {
+	id = news.412
+	title = news.412.t
+	desc = news.412.d
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	trigger = {
+		7 = { is_controlled_by = COV }
+		7 = { is_owned_by = CET }
+		ANT = { has_war_with = CET }
+		NOT = { has_global_flag = fall_of_nauta_ant }
+		NOT = { has_global_flag = fall_of_nauta_cov }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_nauta_cov
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = news.412.a
+		trigger = {
+			NOT = {
+				TAG = ANT
+				TAG = CET
+				TAG = COV
+			}
+		}
+	}
+	option = {
+		name = news.412.b
+		trigger = { TAG = ANT }
+	}
+	option = {
+		name = news.412.c
+		trigger = { TAG = CET }
+	}
+	option = {
+		name = news.412.e
+		trigger = { TAG = COV }
+	}
+}
+
+news_event = {
+	id = news.413
+	title = news.413.t
+	desc = news.413.d
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	trigger = {
+		43 = { is_controlled_by = COV }
+		43 = { is_owned_by = CET }
+		ANT = { has_war_with = CET }
+		NOT = { has_global_flag = fall_of_mira_cov }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_mira_cov
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = news.413.a
+		trigger = {
+			NOT = {
+				TAG = ANT
+				TAG = CET
+				TAG = COV
+			}
+		}
+	}
+	option = {
+		name = news.413.b
+		trigger = { TAG = ANT }
+	}
+	option = {
+		name = news.413.c
+		trigger = { TAG = CET }
+	}
+	option = {
+		name = news.413.e
+		trigger = { TAG = COV }
+	}
+}
+news_event = {
+	id = news.414
+	title = news.414.t
+	desc = news.414.d
+	picture = GFX_news_event_ITA_civil_war
+	#picture = GFX_report_event_WW2_news1
+	#fire_only_once = yes
+	
+	#major = yes 
+	is_triggered_only = yes
+	option = {
+		name = news.414.a
+		trigger = {
+			TAG = URS
+		}
+	}
+	option = {
+		name = news.414.b
+		trigger = {
+			OR = {
+				TAG = HYS
+				TAG = ORI
+			}
+		}
+	}
+}

@@ -1,0 +1,28 @@
+state={
+	id=134
+	name="STATE_134"
+	history = {
+		owner = URS
+		add_core_of = LPS
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			6745 12
+		}
+		1944.1.1.12 = {
+			owner = HYS
+			controller = HYS
+			add_core_of = HYS
+
+
+		}
+	}
+	provinces={
+		1528 2091 2528 3776 3844 3874 6741 6745 6748 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=1050949
+        state_category = small_island
+}

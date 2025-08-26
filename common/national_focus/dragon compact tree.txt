@@ -1,0 +1,98 @@
+focus_tree = {
+	id = indochina_focus
+	default = no
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = HYS
+		}
+	}
+
+	joint_focus = dc_focus_start
+
+	continuous_focus_position = {
+		x = 1200
+		y = 600
+	}
+	initial_show_position = {
+		x = 4
+	}	
+}
+
+joint_focus = {
+	id = dc_focus_start 
+	icon = GFX_focus_generic_university_2
+	text_icon = NORDIC_focus_style 
+	allow_branch = {
+		OR = {
+			tag = HYS
+			tag = ORI
+		}
+	}
+	available = {
+		TAG = ORI
+	}
+	completion_reward = {
+		#custom_effect_tooltip = FRA_IND_shared_tree
+	}
+	completion_reward = {
+		give_guarantee  = HYS
+	}
+
+	joint_trigger = {
+		OR = {
+			tag = HYS
+			tag = ORI
+		}
+	  }
+
+	search_filters = {
+		
+	}
+	ai_will_do = {
+		factor = 100
+	}
+	cost = 3
+	x = 4
+	y = 0
+}
+joint_focus = {
+	id = dc_focus_military_access
+	icon = GFX_focus_POL_beck_ribbentrop
+	text_icon = NORDIC_focus_style 
+	allow_branch = {
+		OR = {
+			tag = HYS
+			tag = ORI
+		}
+	}
+	available = {
+		
+	}
+	completion_reward = {
+		#custom_effect_tooltip = FRA_IND_shared_tree
+	}
+	completion_reward = {
+		give_military_access = ORI
+		give_military_access = HYS
+	}
+
+	joint_trigger = {
+		OR = {
+			tag = HYS
+			tag = ORI
+		}
+	  }
+
+	search_filters = {
+		
+	}
+	ai_will_do = {
+		factor = 100
+	}
+	prerequisite = { focus = dc_focus_start }
+	cost = 3
+	x = 2
+	y = 1
+}

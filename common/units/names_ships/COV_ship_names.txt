@@ -1,0 +1,171 @@
+### REGULAR DESTROYER NAMES###
+COV_DD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+
+	for_countries = { COV }
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }		
+
+	can_use = { always = yes }
+
+	prefix = "CS"								
+	fallback_name = "Destroyer %s"					
+
+	unique = {
+		"Methone"
+	}
+}
+
+### LIGHT CRUISER NAMES###
+COV_CL_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CL
+
+	for_countries = { COV }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+	
+	can_use = { always = yes }
+	
+	prefix = "CS"							
+	fallback_name = "Light Cruiser %s"
+
+	unique = {
+		"Io"
+	}
+}
+
+### A-A LIGHT CRUISER NAMES###
+COV_CLAA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CLAA
+
+	for_countries = { COV }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+	
+	can_use = { always = yes }
+	
+	prefix = "CS"								
+	fallback_name = "Light Cruiser (AA) %s"
+
+	unique = {
+		"Galatea" "Despina"
+	}
+}
+
+### HEAVY CRUISER NAMES###
+COV_CA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CA
+
+	for_countries = { COV }
+
+	type = ship
+	ship_types = { ship_hull_cruiser heavy_cruiser }
+	
+	can_use = { always = yes }
+	
+	prefix = "CS"								
+	fallback_name = "Heavy Cruiser %s"
+
+	unique = {
+		"Metal"
+	}
+}
+
+### BATTLESHIP NAMES ###
+COV_BB_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BB
+
+	for_countries = { COV }
+	
+	can_use = { always = yes }
+
+	type = ship
+	ship_types = { ship_hull_heavy battleship }
+	
+	prefix = "CS"								
+	fallback_name = "Battleship %s"		
+
+	unique = {
+        "Ahsabkab" "Vallis" "Aparangi" "Borealis" "Tir" "Stilbon"
+	}
+}
+
+### BATTLECRUISER NAMES ###
+COV_BC_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BC
+
+	for_countries = { COV }
+	
+	can_use = { always = yes }
+
+	type = ship
+	ship_types = { ship_hull_heavy battle_cruiser }
+	
+	prefix = "CS"								
+	fallback_name = "Battlecruiser %s"		
+
+	unique = {
+           "Teu"
+ 	}
+}
+
+### AIRCRAFT CARRIER NAMES ###
+COV_CV_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CARRIERS
+
+	for_countries = { COV }
+	
+	can_use = { always = yes }
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+	
+	prefix = "CS"							
+	fallback_name = "Carrier %s"		
+
+	unique = {
+		"Yorktown"
+	}
+}
+
+### LIGHT CARRIER NAMES ###
+COV_CVL_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CVL
+
+	for_countries = { COV }
+	
+	can_use = { always = yes }
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+	
+	prefix = "CS"							
+	fallback_name = "Carrier %s"	
+
+	unique = {
+		# CVL Names
+		"fireryheart0190"
+	}
+}
+
+### SUBMARINES ###
+COV_SS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+
+	for_countries = { COV }
+	
+	can_use = { always = yes }
+	
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	
+	prefix = "CS"							
+	fallback_name = "S-%s"
+	
+	unique = {
+		"S-I"
+	}
+}

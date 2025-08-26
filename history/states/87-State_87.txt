@@ -1,0 +1,26 @@
+state={
+	id=87
+	name="STATE_87"
+	resources={
+		chromium=21.000
+	}
+	history={
+		owner = URS
+		add_core_of = URS
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 0
+			dockyard = 1
+
+		}
+
+	}
+	provinces={
+		58 191 522 895 942 1033 1195 1663 2427 2437 2604 3357 3362 3377 3400 3413 3426 
+	}
+	manpower=15682409
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

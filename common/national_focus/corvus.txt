@@ -1,0 +1,2005 @@
+focus_tree = {
+	id = corvun_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = COV
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 0 y = 2000 }
+
+#	focus = {
+#		id = COV_
+#		icon = GFX_
+#		prerequisite = { focus = }
+#		mutually_exclusive = { focus =  }
+#		x = -1
+#		y = 0
+#		relative_position_id = 
+#
+#		cost = 10
+#		
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available = {
+#
+#		}
+#		
+#		bypass = {
+#
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#
+#		complete_tooltip = {
+#
+#		}
+#
+#		completion_reward = {
+#
+#		}
+#	}
+
+	focus = {
+		id = COV_the_confederation #political
+		icon = GFX_focus_COV_the_confederation
+		x = 25
+		y = 0
+		cost = 5
+		
+		
+		completion_reward = {
+				add_political_power = 50
+			}
+		}
+	
+	################################################################################################################
+	##################################### POLITICAL PATH: HISTORICAL ###############################################
+	################################################################################################################
+	focus = {
+		id = COV_take_SC
+		icon = GFX_goal_demand_sudetenland # focus_COV_retake_sc
+		prerequisite = { focus = COV_the_confederation }
+		relative_position_id = COV_the_confederation
+		mutually_exclusive = { focus = COV_reapproachment }
+		x = 4
+		y = 1
+		cost = 5
+
+		completion_reward = {
+				custom_effect_tooltip = corvus_does_nothing_tooltip
+			}
+		}
+		
+		focus = {
+		id = COV_prepare_to_take_SC
+		icon = GFX_focus_secret_rearmament
+		prerequisite = { focus = COV_take_SC }
+		relative_position_id = COV_take_SC
+		x = 0
+		y = 1
+		cost = 5
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = COV_revanchism_idea
+				add_idea = COV_revanchism_2_idea
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_coastal_battery
+		icon = GFX_focus_FIN_coastal_defense
+		prerequisite = { focus = COV_prepare_to_take_SC }
+		relative_position_id = COV_prepare_to_take_SC
+		x = -2
+		y = 2
+		cost = 5
+
+		completion_reward = {
+			custom_effect_tooltip = corvus_battery_1_tooltip
+			hidden_effect = {
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = COV
+								is_in_faction_with = COV
+							}
+							has_full_control_of_state = 51
+							has_full_control_of_state = 53
+							has_full_control_of_state = 8
+						}
+					}
+					51 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 1
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+							}
+							53 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 1
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+								}
+								8 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 1
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_expand_coastal_battery
+		icon = GFX_focus_NOR_drobak_coastal_fort
+		prerequisite = { focus = COV_coastal_battery }
+		relative_position_id = COV_coastal_battery
+		x = 0
+		y = 1
+		cost = 15
+
+		completion_reward = {
+			custom_effect_tooltip = corvus_battery_2_tooltip
+			hidden_effect = {
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = COV
+								is_in_faction_with = COV
+							}
+							has_full_control_of_state = 51
+							has_full_control_of_state = 53
+							has_full_control_of_state = 8
+						}
+					}
+					51 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 2
+            	    	    instant_build = yes
+							}
+							53 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 2
+            	    	    instant_build = yes
+								}
+								8 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 2
+            	    	    instant_build = yes
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_invite_antarean_advisors
+		icon = GFX_focus_generic_ant_cap
+		prerequisite = { focus = COV_prepare_to_take_SC }
+		relative_position_id = COV_prepare_to_take_SC
+		x = 2
+		y = 1
+		cost = 10
+		#cost = 100000
+
+		completion_reward = {
+				custom_effect_tooltip = corvus_does_nothing_tooltip
+			}
+		}
+		
+		focus = {
+		id = COV_expand_antarean_support
+		icon = GFX_focus_generic_ant
+		prerequisite = { focus = COV_invite_antarean_advisors }
+		relative_position_id = COV_invite_antarean_advisors
+		x = 0
+		y = 1
+		cost = 10
+
+		completion_reward = {
+				custom_effect_tooltip = corvus_does_nothing_tooltip
+			}
+		}
+		
+#		focus = {
+#		id = COV_purchase_antarean_armor
+	#	icon = GFX_focus_ARG_the_war_machine
+	#	prerequisite = { focus = COV_expand_antarean_support }
+		#relative_position_id = COV_expand_antarean_support
+	#	x = -1
+		#y = 1
+		#cost = 10
+	#	completion_reward = {
+	#			custom_effect_tooltip = corvus_does_nothing_tooltip
+	#		}
+	#	}
+		
+		focus = {
+		id = COV_contact_southern_rebels
+		icon = GFX_focus_generic_workers
+		prerequisite = { focus = COV_prepare_to_take_SC }
+		relative_position_id = COV_prepare_to_take_SC
+	#	available = {
+	#		OR = {
+	#			war_length_with = {
+	#			tag = MUS
+	#			months > 2024
+	#			}
+	#		}
+	#	}
+		x = 4
+		y = 1
+		cost = 5
+	#	cost = 100000
+
+		completion_reward = {
+				custom_effect_tooltip = corvus_allows_sabotage_decision_tooltip
+			}
+		}
+		
+		focus = {
+		id = COV_rebel_sabotage
+		icon = GFX_focus_prc_infiltration
+		prerequisite = { focus = COV_contact_southern_rebels }
+		relative_position_id = COV_contact_southern_rebels
+		x = 0
+		y = 1
+		cost = 5
+
+		completion_reward = {
+				custom_effect_tooltip = corvun_sabotage_infrastructure_tooltip
+			}
+		}
+		
+		focus = {
+		id = COV_sabotage_railway
+		icon = GFX_focus_SOV_organize_wreckers
+		prerequisite = { focus = COV_rebel_sabotage }
+		relative_position_id = COV_rebel_sabotage
+		x = 0
+		y = 1
+		cost = 5
+
+		completion_reward = {
+				custom_effect_tooltip = corvun_sabotage_railway_tooltip
+			}
+		}
+		
+		focus = {
+		id = COV_sabotage_supply
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = COV_rebel_sabotage }
+		relative_position_id = COV_rebel_sabotage
+		x = 2
+		y = 1
+		cost = 5
+
+		completion_reward = {
+				custom_effect_tooltip = corvun_sabotage_supply_tooltip
+			}
+		}
+		
+		focus = {
+		id = COV_sabotage_factory
+		icon = GFX_focus_generic_reorient_production
+		prerequisite = { focus = COV_rebel_sabotage }
+		relative_position_id = COV_rebel_sabotage
+		x = 4
+		y = 1
+		cost = 5
+		
+		completion_reward = {
+				custom_effect_tooltip = corvun_sabotage_factory_tooltip
+			}
+		}
+		
+		focus = {
+		id = COV_sabotage_factory_2
+		icon = GFX_focus_generic_reorient_production
+		prerequisite = { focus = COV_sabotage_factory }
+		relative_position_id = COV_sabotage_factory
+		x = 0
+		y = 1
+		cost = 5
+		
+		completion_reward = {
+				custom_effect_tooltip = corvun_sabotage_factory_2_tooltip
+			}
+		}
+		
+		focus = {
+		id = COV_conscription
+		icon = GFX_focus_generic_manpower
+		prerequisite = { focus = COV_prepare_to_take_SC }
+		relative_position_id = COV_prepare_to_take_SC
+		x = 0
+		y = 1
+		cost = 10
+
+		completion_reward = {
+				add_ideas = extensive_conscription
+			}
+		}
+		
+		focus = {
+		id = COV_ramp_production_up
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = COV_conscription }
+		relative_position_id = COV_conscription
+		x = 0
+		y = 1
+		cost = 10
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+					}
+				}
+			}
+		}
+		
+		# ----
+		
+		focus = {
+		id = COV_war_with_cetus
+		icon = GFX_focus_generic_attack_cetus
+		prerequisite = { focus = COV_ramp_production_up }
+		prerequisite = { focus = COV_coastal_battery }
+		#will_lead_to_war_with = CET	#so that they get war notification #so they DONT get the war notification (they were caught off guard)
+		available = {
+			is_subject = no
+			has_army_manpower = { size > 649000 }
+			#has_army_manpower = { size > 1 }
+		}
+		relative_position_id = COV_ramp_production_up
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 3 }
+		completion_reward = {
+				custom_effect_tooltip = corvus_garrison_coast
+				add_named_threat = { threat = 5 name = COV_war_with_cetus }
+				create_wargoal = {
+					type = take_core_state
+					generator = {48 154}
+					target = CET
+					expire = 0
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_request_antarean_intervention
+		icon = GFX_focus_BRA_reach_out_to_military_dem
+		prerequisite = { focus = COV_expand_antarean_support }
+		prerequisite = { focus = COV_war_with_cetus }
+		available = {
+			OR = {
+				war_length_with = {
+				tag = CET
+				months > 23
+				}
+				AND = {
+				war_length_with = {
+				tag = CET
+				months > 2
+				}
+				surrender_progress > 0.5
+				}	
+			}
+		}
+		relative_position_id = COV_expand_antarean_support
+		x = 0
+		y = 2
+		cost = 10
+		completion_reward = {
+				custom_effect_tooltip = corvus_temp_none_tootlip
+				custom_effect_tooltip = corvun_assimilation_tooltip
+				hidden_effect = {
+				set_rule = { can_create_factions = yes }
+				create_faction = Solstice
+				ANT = {
+					country_event = { 
+						id = cov.4
+						}
+					}
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_wartime_administration
+		icon = GFX_focus_NOR_continue_nygaardsvold_government
+		prerequisite = { focus = COV_war_with_cetus }
+		available = {
+			has_war = yes
+			}
+		relative_position_id = COV_war_with_cetus
+		x = 0
+		y = 2
+		cost = 5
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip
+			}
+		}
+		
+		focus = {
+		id = COV_increase_coal_production
+		icon = GFX_focus_generic_mining_industry
+		prerequisite = { focus = COV_wartime_administration }
+		relative_position_id = COV_wartime_administration
+		x = 0
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = COV_warbonds
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = COV_wartime_administration }
+		relative_position_id = COV_wartime_administration
+		x = 2
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip
+			}
+		}
+		
+		focus = {
+		id = COV_subsidise_industries
+		icon = GFX_focus_generic_monetary_union
+		prerequisite = { focus = COV_warbonds }
+		relative_position_id = COV_warbonds
+		x = 0
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip
+			}
+		}
+		
+		focus = {
+		id = COV_address_the_dysfunctional_economy
+		icon = GFX_focus_NOR_continue_nygaardsvold_government
+		prerequisite = { focus = COV_wartime_administration }
+		relative_position_id = COV_wartime_administration
+		x = -2
+		y = 1
+		cost = 2
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip
+			}
+		}
+		
+		
+		focus = {
+		id = COV_implement_rationing_policy
+		icon = GFX_focus_generic_agricultural_subsidies
+		prerequisite = { focus = COV_address_the_dysfunctional_economy }
+		relative_position_id = COV_address_the_dysfunctional_economy
+		x = 1
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip
+			}
+		}
+		
+		focus = {
+		id = COV_cooperate_the_street_families
+		icon = GFX_focus_BRA_ethical_internationalism
+		prerequisite = { focus = COV_address_the_dysfunctional_economy }
+		mutually_exclusive = { focus = COV_suppress_the_street_families }
+		relative_position_id = COV_address_the_dysfunctional_economy
+		x = -1
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		if = {
+			limit = {
+			has_idea = COV_mafia_cooperation_idea
+			}
+			swap_ideas = {
+				add_idea = COV_mafia_cooperation_2_idea
+				remove_idea = COV_mafia_cooperation_idea
+				}
+			}
+			else_if = {
+				limit = {
+				has_idea = COV_mafia_cooperation_2_idea
+				}
+				swap_ideas = {
+					add_idea = COV_mafia_disbanded_idea
+					remove_idea = COV_mafia_cooperation_2_idea
+					}
+				}
+				else_if = {
+				limit = {
+				has_idea = COV_mafia_rampant_idea
+				}
+				swap_ideas = {
+					add_idea = COV_mafia_cooperation_idea
+					remove_idea = COV_mafia_rampant_idea
+					}
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_food_distribution
+		icon = GFX_focus_generic_reinforcing_the_supply_network
+		prerequisite = { focus = COV_cooperate_the_street_families }
+		prerequisite = { focus = COV_implement_rationing_policy }
+		relative_position_id = COV_cooperate_the_street_families
+		x = 2
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		set_country_flag = corvus_mafia_food_cooperation
+		if = {
+			limit = {
+				has_idea = COV_active_rationing_idea
+				}
+				swap_ideas = {
+					remove_idea = COV_active_rationing_idea
+					add_idea = COV_active_rationing_2_idea
+					}
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_regulate_underground_markets
+		icon = GFX_focus_generic_price_controls
+		prerequisite = { focus = COV_cooperate_the_street_families }
+		relative_position_id = COV_cooperate_the_street_families
+		x = 0
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		if = {
+			limit = {
+			has_idea = COV_mafia_cooperation_idea
+			}
+			swap_ideas = {
+				add_idea = COV_mafia_cooperation_2_idea
+				remove_idea = COV_mafia_cooperation_idea
+				}
+			}
+			else_if = {
+				limit = {
+				has_idea = COV_mafia_cooperation_2_idea
+				}
+				swap_ideas = {
+					add_idea = COV_mafia_disbanded_idea
+					remove_idea = COV_mafia_cooperation_2_idea
+					}
+				}
+				else_if = {
+				limit = {
+				has_idea = COV_mafia_rampant_idea
+				}
+				swap_ideas = {
+					add_idea = COV_mafia_cooperation_idea
+					remove_idea = COV_mafia_rampant_idea
+					}
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_peaceful_dissolution
+		icon = GFX_focus_generic_subjugation
+		prerequisite = { focus = COV_food_distribution }
+		prerequisite = { focus = COV_regulate_underground_markets }
+		relative_position_id = COV_food_distribution
+		x = -2
+		y = 1
+		cost = 15
+
+		completion_reward = {
+		if = {
+			limit = {
+			has_idea = COV_mafia_cooperation_idea
+			}
+			swap_ideas = {
+				add_idea = COV_mafia_cooperation_2_idea
+				remove_idea = COV_mafia_cooperation_idea
+				}
+			}
+			else_if = {
+				limit = {
+				has_idea = COV_mafia_cooperation_2_idea
+				}
+				swap_ideas = {
+					add_idea = COV_mafia_disbanded_idea
+					remove_idea = COV_mafia_cooperation_2_idea
+					}
+				}
+				else_if = {
+				limit = {
+				has_idea = COV_mafia_rampant_idea
+				}
+				swap_ideas = {
+					add_idea = COV_mafia_cooperation_idea
+					remove_idea = COV_mafia_rampant_idea
+					}
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_suppress_the_street_families
+		icon = GFX_focus_generic_industrialists
+		prerequisite = { focus = COV_address_the_dysfunctional_economy }
+		mutually_exclusive = { focus = COV_cooperate_the_street_families }
+		relative_position_id = COV_address_the_dysfunctional_economy
+		x = -3
+		y = 1
+		cost = 10
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = COV_mafia_suppressed_idea
+				remove_idea = COV_mafia_rampant_idea
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_impose_control
+		icon = GFX_focus_AFG_contact_amanullah_loyalists
+		prerequisite = { focus = COV_suppress_the_street_families }
+		relative_position_id = COV_suppress_the_street_families
+		x = -2
+		y = 1
+		cost = 10
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip
+			}
+		}
+		
+		focus = {
+		id = COV_shut_down_black_market
+		icon = GFX_focus_FIN_oy_alkoholiliike
+		prerequisite = { focus = COV_suppress_the_street_families }
+		relative_position_id = COV_suppress_the_street_families
+		x = 0
+		y = 1
+		cost = 10
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip
+			}
+		}
+		
+		focus = {
+		id = COV_the_end_of_war
+		icon = GFX_focus_BEL_v_for_victory
+		prerequisite = { focus = COV_subsidise_industries }
+		prerequisite = { focus = COV_increase_coal_production }
+		available = {
+		NOT = { has_war = yes }
+		}
+		relative_position_id = COV_increase_coal_production
+		x = 0
+		y = 3
+		cost = 2
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_nothing_tooltip
+			}
+		}
+		
+		
+		
+		# offensive
+		
+		focus = {
+		id = COV_initial_offensive
+		icon = GFX_focus_SWE_varnplikt
+		prerequisite = { focus = COV_war_with_cetus }
+		relative_position_id = COV_war_with_cetus
+		x = 4
+		y = 2
+		cost = 10
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_take_initial_offensive_on_war
+			#country_event = {
+					#id = cov.1
+					#random_days = 0
+				#}
+				add_timed_idea = {
+				idea = COV_surprise_attack_idea
+				days = 2
+				}
+				hidden_effect = {
+				activate_mission = corvus_failing_economy_d
+				}
+			}
+		}
+		
+		# defensive route
+		
+		focus = {
+		id = COV_consolidate_gains
+		icon = GFX_focus_FIN_weapon_caches
+		prerequisite = { focus = COV_initial_offensive }
+		mutually_exclusive = { focus = COV_continue_attack }
+		relative_position_id = COV_initial_offensive
+		x = 0
+		y = 1
+		cost = 5
+
+		completion_reward = {
+				add_timed_idea = {
+				idea = COV_consolidate_gains_idea
+				days = 210
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_fortification_focus
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = COV_consolidate_gains }
+		relative_position_id = COV_consolidate_gains
+		x = 0
+		y = 1
+		cost = 10
+
+		completion_reward = {
+				add_timed_idea = {
+				idea = COV_bunker_boost_idea
+				days = 180
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_increase_gun_production
+		icon = GFX_focus_SMB_mountain_guns
+		prerequisite = { focus = COV_consolidate_gains focus = COV_continue_attack }
+		relative_position_id = COV_consolidate_gains
+		x = 2
+		y = 1
+		cost = 10
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_improve_supply_issue
+		icon = GFX_focus_generic_supply_line
+		prerequisite = { focus = COV_increase_gun_production }
+		relative_position_id = COV_increase_gun_production
+		x = 0
+		y = 1
+		cost = 10
+
+		completion_reward = {
+				add_ideas = COV_improve_supply_idea
+			}
+		}
+		
+		#######################
+		# continued offensive # XX
+		#######################
+		
+		focus = {
+		id = COV_continue_attack
+		icon = GFX_focus_SWE_neither_death_nor_dishonor
+		prerequisite = { focus = COV_initial_offensive }
+		mutually_exclusive = { focus = COV_consolidate_gains }
+		relative_position_id = COV_initial_offensive
+		x = 4
+		y = 1
+		cost = 5
+
+		completion_reward = {
+				add_timed_idea = {
+				idea = COV_continued_offensive_idea
+				days = 70
+				}
+			}
+		}
+		
+		
+		focus = {
+		id = COV_mountain_breaker
+		icon = GFX_focus_GRE_a_land_of_mountains
+		prerequisite = { focus = COV_continue_attack }
+		relative_position_id = COV_continue_attack
+		x = 2
+		y = 1
+		cost = 4
+
+		completion_reward = {
+				add_timed_idea = {
+				idea = COV_mountaineering_idea
+				days = 31
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_penal_battalions
+		icon = GFX_focus_GER_strafbataillon
+		prerequisite = { focus = COV_continue_attack }
+		relative_position_id = COV_continue_attack
+		x = 0
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		add_ideas = COV_penal_battalion_idea
+			
+			}
+		}
+		
+		# end of war focus
+		
+		focus = {
+		id = COV_the_start_of_a_new_corvus
+		icon = GFX_focus_generic_election
+		prerequisite = { focus = COV_the_end_of_war }
+		relative_position_id = COV_the_end_of_war
+		x = 0
+		y = 2
+		cost = 3
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_nothing_tooltip
+			}
+		}
+		
+		focus = {
+		id = COV_abdicate
+		icon = GFX_focus_generic_monarchy_1
+		prerequisite = { focus = COV_the_start_of_a_new_corvus }
+		mutually_exclusive = { focus = COV_continue_on }
+		relative_position_id = COV_the_start_of_a_new_corvus
+		x = -4
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_nothing_tooltip
+			}
+		}
+		
+		focus = {
+		id = COV_transition_to_civil_administration
+		icon = GFX_focus_generic_monarchy_1
+		prerequisite = { focus = COV_abdicate }
+		relative_position_id = COV_abdicate
+		x = 0
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_nothing_tooltip
+			}
+		}
+		
+		focus = {
+		id = COV_demobilise
+		icon = GFX_focus_generic_monarchy_1
+		prerequisite = { focus = COV_abdicate }
+		relative_position_id = COV_abdicate
+		x = -2
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_nothing_tooltip
+			}
+		}
+		
+		focus = {
+		id = COV_return_to_factories
+		icon = GFX_focus_generic_monarchy_1
+		prerequisite = { focus = COV_demobilise }
+		relative_position_id = COV_demobilise
+		x = -2
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_nothing_tooltip
+			}
+		}
+		
+		## shared!
+		focus = {
+		id = COV_rebuild_south_corvus
+		icon = GFX_focus_generic_monarchy_1
+		prerequisite = { focus = COV_abdicate focus = COV_continue_on }
+		relative_position_id = COV_abdicate
+		x = 4
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_nothing_tooltip
+			}
+		}
+		
+		# king stays
+		
+		focus = {
+		id = COV_continue_on
+		icon = GFX_focus_generic_military_dictatorship
+		prerequisite = { focus = COV_the_start_of_a_new_corvus }
+		mutually_exclusive = { focus = COV_abdicate }
+		mutually_exclusive = { focus = COV_discontent_with_monarchy }
+		available = {
+		NOT = { is_subject = yes }
+		}
+		relative_position_id = COV_the_start_of_a_new_corvus
+		x = 4
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_nothing_tooltip
+			}
+		}
+		
+		focus = {
+		id = COV_strengthen_army
+		icon = GFX_focus_generic_monarchy_1
+		prerequisite = { focus = COV_continue_on }
+		relative_position_id = COV_continue_on
+		x = 1
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_nothing_tooltip
+			}
+		}
+		
+		# regime change
+		
+		focus = {
+		id = COV_discontent_with_monarchy
+		icon = GFX_focus_ETH_the_patriots
+		prerequisite = { focus = COV_the_start_of_a_new_corvus }
+		mutually_exclusive = { focus = COV_abdicate }
+		mutually_exclusive = { focus = COV_continue_on }
+		available = {
+		NOT = { is_subject = yes }
+		}
+		relative_position_id = COV_the_start_of_a_new_corvus
+		x = 12
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_nothing_tooltip
+			}
+		}
+	################################################################################################################
+	################################# POLITICAL PATH: DEMOCRATIC ###################################################
+	################################################################################################################
+	focus = {
+		id = COV_reapproachment
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = COV_the_confederation }
+		relative_position_id = COV_the_confederation
+		mutually_exclusive = { focus = COV_take_SC }
+		x = -4
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+				custom_effect_tooltip = corvus_path_not_work_tooltip
+			}
+		}
+		
+		focus = {
+		id = COV_contact_cetus
+		icon = GFX_focus_generic_cetus
+		prerequisite = { focus = COV_reapproachment }
+		relative_position_id = COV_reapproachment
+		x = 0
+		y = 1
+		cost = 10
+
+		completion_reward = {
+				custom_effect_tooltip = corvus_not_work_tooltip
+			}
+		}
+		
+		focus = {
+		id = COV_concessions
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		prerequisite = { focus = COV_contact_cetus }
+		relative_position_id = COV_contact_cetus
+		x = 0
+		y = 1
+		cost = 10
+
+		completion_reward = {
+				custom_effect_tooltip = corvus_not_work_tooltip
+			}
+		}
+		
+		focus = {
+		id = COV_iron_and_oil
+		icon = GFX_focus_CHL_silverworking
+		prerequisite = { focus = COV_concessions }
+		relative_position_id = COV_concessions
+		x = 0
+		y = 1
+		cost = 10
+
+		completion_reward = {
+				custom_effect_tooltip = corvus_not_work_tooltip
+			}
+		}
+		
+		focus = {
+		id = COV_nauta_compromise
+		icon = GFX_focus_POL_complete_april_constitution
+		prerequisite = { focus = COV_iron_and_oil }
+		relative_position_id = COV_iron_and_oil
+		x = 0
+		y = 1
+		cost = 10
+
+		completion_reward = {
+				custom_effect_tooltip = corvus_not_work_tooltip
+			}
+		}
+	
+	####################################################################################################
+	################################ INDUSTRY ##########################################################
+	####################################################################################################
+	focus = {
+		id = COV_industry
+		icon = GFX_focus_generic_modernize_industry
+		x = 5
+		y = 0
+		cost = 5
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus_cov
+				bonus = 1.0
+				uses = 1
+				category = industry
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_region_development
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = COV_industry }
+		relative_position_id = COV_industry
+		x = 0
+		y = 1
+		cost = 5
+
+		completion_reward = {
+				add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_railroad
+		icon = GFX_focus_generic_railroad
+		prerequisite = { focus = COV_region_development }
+		relative_position_id = COV_region_development
+		x = 2
+		y = 1
+		cost = 10
+		cost = 5
+
+		completion_reward = {
+				build_railway = { #to centralsouth
+				level = 2
+				path = {
+				4136 2741 4219 4629 4321
+				}
+				build_railway = { #to east
+				level = 2
+					path = {
+						4136 2806 3237 4122 4145
+						}
+						build_railway = { #to southeast
+						level = 2
+							path = {
+								4136 4161 2118 4251 1774 4320 2910 4466 2912
+								}
+							build_railway = { #to southwest
+							level = 2
+								path = {
+									4219 2174 1377
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_dev_north
+		icon = GFX_focus_COV_dev_north
+		prerequisite = { focus = COV_region_development }
+		relative_position_id = COV_region_development
+		x = -4
+		y = 2
+		cost = 10
+
+		completion_reward = {
+				random_state = {
+				limit = { 
+					OR = {
+						state = 8
+					}
+				}
+				add_extra_state_shared_building_slots = 5
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_dev_northcentral
+		icon = GFX_focus_COV_dev_northcentral
+		prerequisite = { focus = COV_region_development }
+		relative_position_id = COV_region_development
+		x = 0
+		y = 2
+		cost = 10
+
+		completion_reward = {
+				random_state = {
+				limit = { 
+					OR = {
+						state = 51
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				}
+			}
+		}
+
+		focus = {
+		id = COV_dev_central
+		icon = GFX_focus_COV_dev_central
+		prerequisite = { focus = COV_railroad }
+		relative_position_id = COV_region_development
+		x = 4
+		y = 2
+		cost = 10
+
+		completion_reward = {
+				random_state = {
+				limit = { 
+					OR = {
+						state = 53
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				}
+			}
+		}
+
+		focus = {
+		id = COV_dev_northeast
+		icon = GFX_focus_COV_dev_northeast
+		prerequisite = { focus = COV_railroad }
+		relative_position_id = COV_region_development
+		x = 8
+		y = 2
+		cost = 10
+
+		completion_reward = {
+				random_state = {
+				limit = { 
+					OR = {
+						state = 52
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					}
+				add_extra_state_shared_building_slots = 3
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_dev_north_2
+		icon = GFX_focus_COV_dev_north_2
+		prerequisite = { focus = COV_dev_north }
+		relative_position_id = COV_dev_north
+		x = 0
+		y = 1
+		cost = 10
+
+		completion_reward = {
+		random_state = {
+				limit = { 
+					OR = {
+						state = 8
+					}
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
+				add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = COV_dev_northcentral_2
+		icon = GFX_focus_COV_dev_northcentral_2
+		prerequisite = { focus = COV_dev_northcentral }
+		relative_position_id = COV_dev_northcentral
+		x = 0
+		y = 1
+		cost = 10
+
+		completion_reward = {
+		random_state = {
+				limit = { 
+					OR = {
+						state = 51
+					}
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
+				add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = COV_dev_central_2
+		icon = GFX_focus_COV_dev_central_2
+		prerequisite = { focus = COV_dev_central }
+		relative_position_id = COV_dev_central
+		x = 0
+		y = 1
+		cost = 10
+
+		completion_reward = {
+		random_state = {
+				limit = { 
+					OR = {
+						state = 53
+					}
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
+				add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = COV_dev_northeast_2
+		icon = GFX_focus_COV_dev_northeast_2
+		prerequisite = { focus = COV_dev_northeast }
+		relative_position_id = COV_dev_northeast
+		x = 0
+		y = 1
+		cost = 10
+
+		completion_reward = {
+		random_state = {
+				limit = { 
+					OR = {
+						state = 53
+					}
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
+				add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = COV_dev_northwest
+		icon = GFX_focus_generic_industry_3
+		prerequisite = { focus = COV_dev_northcentral }
+		prerequisite = { focus = COV_dev_north }
+		relative_position_id = COV_dev_north
+		x = 2
+		y = 1
+		cost = 10
+
+		completion_reward = {
+			random_state = {
+				limit = { 
+					OR = {
+						state = 51
+					}
+				}
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = { 
+					OR = {
+						state = 8
+					}
+				}
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = COV_dev_west
+		icon = GFX_focus_generic_industry_3
+		prerequisite = { focus = COV_dev_central }
+		prerequisite = { focus = COV_dev_northcentral }
+		relative_position_id = COV_dev_central
+		x = -2
+		y = 1
+		cost = 10
+
+		completion_reward = {
+			random_state = {
+				limit = { 
+					OR = {
+						state = 51
+					}
+				}
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = { 
+					OR = {
+						state = 53
+					}
+				}
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	################################################################################################################
+	######################################### RESEARCH #############################################################
+	################################################################################################################
+	focus = {
+		id = COV_research
+		icon = GFX_focus_research2
+		x = 45
+		y = 0
+		cost = 10
+
+		completion_reward = {
+				custom_effect_tooltip = corvus_does_nothing_tooltip # add idea corvus research facility with 1% research speed boost
+			}
+		}
+		
+		focus = {
+		id = COV_research_civilian
+		icon = GFX_focus_NORDIC_dem_research
+		prerequisite = { focus = COV_research }
+		relative_position_id = COV_research
+		x = -3
+		y = 1
+		cost = 10
+
+		completion_reward = {
+				custom_effect_tooltip = corvus_does_nothing_tooltip
+			}
+		}
+		
+		focus = {
+		id = COV_electronic
+		icon = GFX_focus_generic_energy
+		prerequisite = { focus = COV_research_civilian }
+		relative_position_id = COV_research_civilian
+		x = 2
+		y = 1
+		cost = 10
+
+		completion_reward = {
+				custom_effect_tooltip = corvus_does_nothing_tooltip
+			}
+		}
+		
+		focus = {
+		id = COV_research_military
+		icon = GFX_focus_NORDIC_com_research
+		prerequisite = { focus = COV_research }
+		relative_position_id = COV_research
+		x = 3
+		y = 1
+		cost = 10
+
+		completion_reward = {
+				army_experience = 10
+				add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_research_gun
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = COV_research_military }
+		relative_position_id = COV_research_military
+		x = 0
+		y = 1
+		cost = 10
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+		
+		focus = {
+		id = COV_research_artillery
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = COV_research_gun }
+		relative_position_id = COV_research_gun
+		x = 0
+		y = 1
+		cost = 10
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+		
+		focus = {
+		id = COV_research_vehicle
+		icon = GFX_focus_generic_truck
+		prerequisite = { focus = COV_research_military }
+		relative_position_id = COV_research_military
+		x = 2
+		y = 1
+		cost = 10
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 1.0
+				technology = motorised_infantry
+			}
+		}
+	}
+		
+		focus = {
+		id = COV_research_armored_car
+		icon = GFX_focus_SWE_lynx_armored_car
+		prerequisite = { focus = COV_research_vehicle }
+		relative_position_id = COV_research_vehicle
+		x = 0
+		y = 1
+		cost = 10
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				ahead_reduction = 2
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}
+		}
+	}
+		
+		focus = {
+		id = COV_research_tank
+		icon = GFX_focus_NZL_bob_semple_tank
+		prerequisite = { focus = COV_research_artillery }
+		prerequisite = { focus = COV_research_armored_car }
+		relative_position_id = COV_research_armored_car
+		x = 0
+		y = 1
+		cost = 10
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
+		}
+	}
+		
+	################################################################################################################
+	############################################      ARMY      ####################################################
+	################################################################################################################
+	focus = {
+		id = COV_army
+		icon = GFX_goal_generic_army_doctrines
+		x = 57
+		y = 0
+		cost = 5
+
+		completion_reward = {
+				army_experience = 10
+			}
+		}
+		
+		focus = {
+		id = COV_army_2
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = COV_army }
+		relative_position_id = COV_army
+		x = 0
+		y = 1
+		cost = 10
+
+		completion_reward = {
+			random_state = {
+				limit = { 
+					OR = {
+						state = 51
+						state = 52
+						state = 53
+						state = 8
+					}
+				}
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_air
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = COV_army_2 }
+		relative_position_id = COV_army_2
+		x = 2
+		y = 1
+		cost = 10
+		
+		available = {
+		OR = {
+			has_tech = early_fighter
+			has_tech = iw_small_airframe
+			}
+		}
+		
+		completion_reward = {
+			air_experience = 25
+			}
+		}
+		
+		focus = {
+		id = COV_army_3
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = COV_army_2 }
+		relative_position_id = COV_army_2
+		x = 0
+		y = 1
+		cost = 5
+
+		completion_reward = {
+			army_experience = 25
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+				}
+			}
+		}
+	################################################################################################################
+	############################################      NAVY      ####################################################
+	################################################################################################################
+	focus = {
+		id = COV_navy
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 65
+		y = 0
+		cost = 5
+
+		completion_reward = {
+				navy_experience = 10
+			}
+		}
+		
+		focus = {
+		id = COV_dockyards
+		icon = GFX_goal_generic_build_navy
+		prerequisite = { focus = COV_navy }
+		relative_position_id = COV_navy
+		x = 0
+		y = 1
+		cost = 5
+
+		completion_reward = {
+				random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+					}
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_expand_dockyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = COV_dockyards }
+		relative_position_id = COV_dockyards
+		x = 0
+		y = 1
+		cost = 10
+
+		completion_reward = {
+				random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+					}
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_torpedo_navy
+		icon = GFX_focus_generic_naval_discipline
+		mutually_exclusive = { focus = COV_light_navy }
+		mutually_exclusive = { focus = COV_big_navy }
+		prerequisite = { focus = COV_dockyards }
+		relative_position_id = COV_dockyards
+		x = -2
+		y = 3
+		cost = 5
+
+		completion_reward = {
+				custom_effect_tooltip = corvus_does_nothing_tooltip
+			}
+		}
+		
+		focus = {
+		id = COV_light_navy
+		icon = GFX_focus_generic_destroyer
+		mutually_exclusive = { focus = COV_torpedo_navy }
+		mutually_exclusive = { focus = COV_big_navy }
+		prerequisite = { focus = COV_dockyards }
+		relative_position_id = COV_dockyards
+		x = 2
+		y = 3
+		cost = 5
+
+		completion_reward = {
+				custom_effect_tooltip = corvus_does_nothing_tooltip
+			}
+		}
+		
+		focus = {
+		id = COV_big_navy
+		icon = GFX_focus_generic_navy_battleship2
+		mutually_exclusive = { focus = COV_torpedo_navy }
+		mutually_exclusive = { focus = COV_light_navy }
+		prerequisite = { focus = COV_dockyards }
+		relative_position_id = COV_dockyards
+		x = 6
+		y = 3
+		cost = 5
+
+		completion_reward = {
+				custom_effect_tooltip = corvus_does_nothing_tooltip
+			}
+		}
+		
+		
+}

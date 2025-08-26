@@ -1,0 +1,7 @@
+spriteTypes = {
+    spriteType = {
+      name = "GFX_radio_station_cover_the_centauran_front"
+      textureFile = "gfx/GFX_radio_station_cover_the_centauran_front.dds"
+      noOfFrames = 2
+    }
+}

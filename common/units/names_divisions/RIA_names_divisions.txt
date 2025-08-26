@@ -1,0 +1,306 @@
+# Division template historical names system. Is a new method of naming the divisions based on the names-group assigned to it's template.
+# If we run out of all historical names, the names will be assigned in the old way.
+#
+# Each group has a made up tag. Use it if you want to append more, or replace existing names with the extra txt files (modding).
+#
+# for_countries - lists all countries that can use it. If empty, or entire tag is missing, all countries in the world can use it.
+#
+# can_use - is a trigger that locks/unlocks the group under specific circumstances. The trigger is in a country scope.
+#
+# division_types - is a list of tokens to corresponding unit types. A player can in fact use any group of names for a div.template
+#                  however this tag is a helper for an automated choice (for AI, or if the group must switch on it's own, because
+#                  for example the current one is no longer available due to the can_use trigger saying so).
+#                  In automated choice, the division template must have at least 1 of the following types for it to be chosen.
+#
+# fallback_name - Is going to be used if we run out of the scripted historical names. If you want to use the old division naming
+#                 mechanics to be used for fallbacks, then just skip this option.
+#
+# unordered - It's a list of historical division names that did not have a number. Regardless if such names happened in history or not
+#             this option is available here mainly for a mods.
+#
+# ordered - Is a list of all historical names. 
+#           Numbers must start from 1 and up. 
+#           Numbers can't repeat in one scope.
+#           If you script the name for this group, at the same number (for example in a mod in another file), the name will be override.
+#           All arguments between the brackets must be separated by spaces. Each argument is wrapped in "quotas".
+#           1st argument = The name. It must contain either: 
+#                          %d (for decimal number placement)
+#                          %s (for string number placement - ROMAN numbers like XIV).
+#           2nd argument is optional = A localizable text describing this historical division. The text will be visible in the tooltip
+#                                      where you choose the historical division name.
+#           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
+#                                      the current game version.
+
+RIA_INF_01 = {
+	name = "Infantry Division"
+
+	for_countries = { RIA }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { RIA_INF_01 }
+
+	fallback_name = "%d Infantry Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dst Infantry Division" }
+		2 = { "%dnd Infantry Division" }
+		3 = { "%drd Infantry Division" }
+		4 = { "%dth Infantry Division" }
+		5 = { "%dth Infantry Division" }
+		42 = { "%dnd Infantry Division" }
+		43 = { "%drd Infantry Division" }
+		44 = { "%dth Infantry Division" }
+		48 = { "%dth Infantry Division" }
+		49 = { "%dth Infantry Division" }
+		50 = { "%dth Infantry Division" }
+		51 = { "%dst Infantry Division" }
+		52 = { "%dnd Infantry Division" }
+		53 = { "%drd Infantry Division" }
+		54 = { "%dth Infantry Division" }
+		55 = { "%dth Infantry Division" }
+		7 = { "%dth Infantry Division" }
+		8 = { "%dth Infantry Division" }
+		9 = { "%dth Infantry Division" }
+		15 = { "%dth Infantry Division" }
+		18 = { "%dth Infantry Division" }
+		38 = { "%dth Infantry Division" }
+		45 = { "%dth Infantry Division" }
+		59 = { "%dth Infantry Division" }
+		61 = { "%dst Infantry Division" }
+		66 = { "%dth Infantry Division" }
+		12 = { "%dth Infantry Division" }
+		23 = { "%drd Infantry Division" }
+		46 = { "%dth Infantry Division" }
+		6 = { "%dth Infantry Division" }
+		11 = { "%dth Infantry Division" }
+		812 = { "%dth Infantry Division" }
+		47 = { "%dth Infantry Division" }
+		56 = { "%dth Infantry Division" }
+		70 = { "%dth Infantry Division" }
+		76 = { "%dth Infantry Division" }
+		77 = { "%dth Infantry Division" }
+		78 = { "%dth Infantry Division" }
+		80 = { "%dth Infantry Division" }
+		81 = { "%dst Infantry Division" }
+		82 = { "%dnd Infantry Division" }
+		36 = { "%dth Infantry Division" }
+		801 = { "%dth Infantry Division" }
+		40 = { "%dth Infantry Division" }
+		57 = { "%dth Infantry Division" }
+		58 = { "%dth Infantry Division" }
+		28 = { "%dth Infantry Division" }
+		33 = { "%drd Infantry Division" }
+		34 = { "%dth Infantry Division" }
+		37 = { "%dth Infantry Division" }
+		41 = { "%d Infantry Division" }
+		60 = { "%dth Infantry Division" }
+		62 = { "%dnd Infantry Division" }
+		63 = { "%drd Infantry Division" }
+		67 = { "%dth Infantry Division" }
+		68 = { "%dth Infantry Division" }
+		69 = { "%dth Infantry Division" }
+		71 = { "%dst Infantry Division" }
+		72 = { "%dnd Infantry Division" }
+		73 = { "%drd Infantry Division" }
+		74 = { "%dth Infantry Division" }
+		75 = { "%dth Infantry Division" }
+		97 = { "%dth Infantry Division" }
+		98 = { "%dth Infantry Division" }
+		99 = { "%dth Infantry Division" }
+		100 = { "%dth Infantry Division" }
+		101 = { "%dst Infantry Division" }
+		102 = { "%dnd Infantry Division" }
+		103 = { "%drd Infantry Division" }
+		104 = { "%dth Infantry Division" }
+		105 = { "%dth Infantry Division" }
+		106 = { "%dth Infantry Division" }
+		107 = { "%dth Infantry Division" }
+		108 = { "%dth Infantry Division" }
+		109 = { "%dth Infantry Division" }
+		110 = { "%dth Infantry Division" }
+		111 = { "%dth Infantry Division" }
+		112 = { "%dth Infantry Division" }
+		113 = { "%dth Infantry Division" }
+		114 = { "%dth Infantry Division" }
+		115 = { "%dth Infantry Division" }
+		116 = { "%dth Infantry Division" }
+		117 = { "%dth Infantry Division" }
+		118 = { "%dth Infantry Division" }
+		119 = { "%dth Infantry Division" }
+		120 = { "%dth Infantry Division" }
+		121 = { "%dst Infantry Division" }
+		122 = { "%dnd Infantry Division" }
+		123 = { "%drd Infantry Division" }
+		124 = { "%dth Infantry Division" }
+		125 = { "%dth Infantry Division" }
+		126 = { "%dth Infantry Division" }
+		127 = { "%dth Infantry Division" }
+		128 = { "%dth Infantry Division" }
+		129 = { "%dth Infantry Division" }
+		130 = { "%dth Infantry Division" }
+		131 = { "%dst Infantry Division" }
+		132 = { "%dnd Infantry Division" }
+		133 = { "%drd Infantry Division" }
+		134 = { "%dth Infantry Division" }
+		135 = { "%dth Infantry Division" }
+		136 = { "%dth Infantry Division" }
+		137 = { "%dth Infantry Division" }
+		138 = { "%dth Infantry Division" }
+		139 = { "%dth Infantry Division" }
+		140 = { "%dth Infantry Division" }
+		141 = { "%dst Infantry Division" }
+		142 = { "%dnd Infantry Division" }
+		143 = { "%drd Infantry Division" }
+		144 = { "%dth Infantry Division" }
+		145 = { "%dth Infantry Division" }
+		146 = { "%dth Infantry Division" }
+		147 = { "%dth Infantry Division" }
+		148 = { "%dth Infantry Division" }
+		149 = { "%dth Infantry Division" }
+		150 = { "%dth Infantry Division" }
+	}
+}
+
+RIA_INF_02 = {
+	name = "Riaan Republican Guard"
+
+	for_countries = { RIA }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { RIA_INF_01 }
+
+	fallback_name = "%d Riaan Republican Guard"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dst Riaan Republican Guard" }
+		2 = { "%dnd Riaan Republican Guard" }
+		3 = { "%drd Riaan Republican Guard" }
+		4 = { "%dth Riaan Republican Guard" }
+		5 = { "%dth Riaan Republican Guard" }
+		42 = { "%dnd Riaan Republican Guard" }
+		43 = { "%drd Riaan Republican Guard" }
+		44 = { "%dth Riaan Republican Guard" }
+		48 = { "%dth Riaan Republican Guard" }
+		49 = { "%dth Riaan Republican Guard" }
+		50 = { "%dth Riaan Republican Guard" }
+		51 = { "%dst Riaan Republican Guard" }
+		52 = { "%dnd Riaan Republican Guard" }
+		53 = { "%drd Riaan Republican Guard" }
+		54 = { "%dth Riaan Republican Guard" }
+		55 = { "%dth Riaan Republican Guard" }
+		7 = { "%dth Riaan Republican Guard" }
+		8 = { "%dth Riaan Republican Guard" }
+		9 = { "%dth Riaan Republican Guard" }
+		15 = { "%dth Riaan Republican Guard" }
+		18 = { "%dth Riaan Republican Guard" }
+		38 = { "%dth Riaan Republican Guard" }
+		45 = { "%dth Riaan Republican Guard" }
+		59 = { "%dth Riaan Republican Guard" }
+		61 = { "%dst Riaan Republican Guard" }
+		66 = { "%dth Riaan Republican Guard" }
+		12 = { "%dth Riaan Republican Guard" }
+		23 = { "%drd Riaan Republican Guard" }
+		46 = { "%dth Riaan Republican Guard" }
+		6 = { "%dth Riaan Republican Guard" }
+		11 = { "%dth Riaan Republican Guard" }
+		812 = { "%dth Riaan Republican Guard" }
+		47 = { "%dth Riaan Republican Guard" }
+		56 = { "%dth Riaan Republican Guard" }
+		70 = { "%dth Riaan Republican Guard" }
+		76 = { "%dth Riaan Republican Guard" }
+		77 = { "%dth Riaan Republican Guard" }
+		78 = { "%dth Riaan Republican Guard" }
+		80 = { "%dth Riaan Republican Guard" }
+		81 = { "%dst Riaan Republican Guard" }
+		82 = { "%dnd Riaan Republican Guard" }
+		36 = { "%dth Riaan Republican Guard" }
+		801 = { "%dth Riaan Republican Guard" }
+		40 = { "%dth Riaan Republican Guard" }
+		57 = { "%dth Riaan Republican Guard" }
+		58 = { "%dth Riaan Republican Guard" }
+		28 = { "%dth Riaan Republican Guard" }
+		33 = { "%drd Riaan Republican Guard" }
+		34 = { "%dth Riaan Republican Guard" }
+		37 = { "%dth Riaan Republican Guard" }
+		41 = { "%d Riaan Republican Guard" }
+		60 = { "%dth Riaan Republican Guard" }
+		62 = { "%dnd Riaan Republican Guard" }
+		63 = { "%drd Riaan Republican Guard" }
+		67 = { "%dth Riaan Republican Guard" }
+		68 = { "%dth Riaan Republican Guard" }
+		69 = { "%dth Riaan Republican Guard" }
+		71 = { "%dst Riaan Republican Guard" }
+		72 = { "%dnd Riaan Republican Guard" }
+		73 = { "%drd Riaan Republican Guard" }
+		74 = { "%dth Riaan Republican Guard" }
+		75 = { "%dth Riaan Republican Guard" }
+		97 = { "%dth Riaan Republican Guard" }
+		98 = { "%dth Riaan Republican Guard" }
+		99 = { "%dth Riaan Republican Guard" }
+		100 = { "%dth Riaan Republican Guard" }
+		101 = { "%dst Riaan Republican Guard" }
+		102 = { "%dnd Riaan Republican Guard" }
+		103 = { "%drd Riaan Republican Guard" }
+		104 = { "%dth Riaan Republican Guard" }
+		105 = { "%dth Riaan Republican Guard" }
+		106 = { "%dth Riaan Republican Guard" }
+		107 = { "%dth Riaan Republican Guard" }
+		108 = { "%dth Riaan Republican Guard" }
+		109 = { "%dth Riaan Republican Guard" }
+		110 = { "%dth Riaan Republican Guard" }
+		111 = { "%dth Riaan Republican Guard" }
+		112 = { "%dth Riaan Republican Guard" }
+		113 = { "%dth Riaan Republican Guard" }
+		114 = { "%dth Riaan Republican Guard" }
+		115 = { "%dth Riaan Republican Guard" }
+		116 = { "%dth Riaan Republican Guard" }
+		117 = { "%dth Riaan Republican Guard" }
+		118 = { "%dth Riaan Republican Guard" }
+		119 = { "%dth Riaan Republican Guard" }
+		120 = { "%dth Riaan Republican Guard" }
+		121 = { "%dst Riaan Republican Guard" }
+		122 = { "%dnd Riaan Republican Guard" }
+		123 = { "%drd Riaan Republican Guard" }
+		124 = { "%dth Riaan Republican Guard" }
+		125 = { "%dth Riaan Republican Guard" }
+		126 = { "%dth Riaan Republican Guard" }
+		127 = { "%dth Riaan Republican Guard" }
+		128 = { "%dth Riaan Republican Guard" }
+		129 = { "%dth Riaan Republican Guard" }
+		130 = { "%dth Riaan Republican Guard" }
+		131 = { "%dst Riaan Republican Guard" }
+		132 = { "%dnd Riaan Republican Guard" }
+		133 = { "%drd Riaan Republican Guard" }
+		134 = { "%dth Riaan Republican Guard" }
+		135 = { "%dth Riaan Republican Guard" }
+		136 = { "%dth Riaan Republican Guard" }
+		137 = { "%dth Riaan Republican Guard" }
+		138 = { "%dth Riaan Republican Guard" }
+		139 = { "%dth Riaan Republican Guard" }
+		140 = { "%dth Riaan Republican Guard" }
+		141 = { "%dst Riaan Republican Guard" }
+		142 = { "%dnd Riaan Republican Guard" }
+		143 = { "%drd Riaan Republican Guard" }
+		144 = { "%dth Riaan Republican Guard" }
+		145 = { "%dth Riaan Republican Guard" }
+		146 = { "%dth Riaan Republican Guard" }
+		147 = { "%dth Riaan Republican Guard" }
+		148 = { "%dth Riaan Republican Guard" }
+		149 = { "%dth Riaan Republican Guard" }
+		150 = { "%dth Riaan Republican Guard" }
+	}
+}

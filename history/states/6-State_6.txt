@@ -1,0 +1,29 @@
+state={
+	id=6
+	name="STATE_6"
+	resources = {
+		chromium = 11
+	}
+	history={
+		owner = ANT
+		add_core_of = ANT
+		add_core_of = SKO
+		buildings = {
+			arms_factory = 1 #
+			industrial_complex = 3
+			infrastructure = 3
+		
+		}
+		victory_points = {
+			5654 10
+		}
+
+	}
+	provinces={
+		53 151 246 969 1160 1414 1529 1570 1614 2150 2291 2298 2305 2333 2402 2583 3042 3331 5512 5521 5549 5550 5564 5597 5600 5606 5610 5635 5638 5639 5646 5654 5665 5666 5682 5690 5699 5724 5738 5751 5765 5782 5832 5837 5871 
+	}
+	manpower=19982448
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

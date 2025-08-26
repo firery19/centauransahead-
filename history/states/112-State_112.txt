@@ -1,0 +1,30 @@
+state={
+	id=112
+	name="STATE_112"
+	history = {
+		owner = URS
+		add_core_of = CNS
+		add_claim_by = ORI
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			3653 3
+		}
+		start_resistance = yes
+		set_resistance = 0
+		set_compliance = 85
+		1944.1.1.12 = {
+			owner = ORI
+			controller = ORI
+
+}
+	}
+	provinces={
+		2996 3016 3118 3651 3653 6673 6674 6683 6696 6700 6710 6715 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=510268
+        state_category = tiny_island
+}

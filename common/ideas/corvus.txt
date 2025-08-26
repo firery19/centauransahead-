@@ -1,0 +1,345 @@
+ideas = {
+    country = {
+        COV_revanchism_idea = {
+            name = COV_revanchism
+            
+            picture = idea_COV_revanchism
+            allowed = { original_tag = COV }
+            removal_cost = -1
+
+            modifier = {
+                conscription_factor = 0.1
+                training_time_army_factor = -0.1
+            }
+        }
+		
+		COV_revanchism_2_idea = {
+            name = COV_revanchism_2
+            
+            picture = idea_COV_revanchism
+            allowed = { original_tag = COV }
+            removal_cost = -1
+
+            modifier = {
+				offensive_war_stability_factor = 0.1
+                conscription_factor = 0.1
+                training_time_army_factor = -0.1
+				army_core_attack_factor = 0.05
+            }
+        }
+		
+		COV_bunker_boost_idea = {
+            name = COV_bunker_boost
+            
+            picture = COV_bunker_boost
+            allowed = { original_tag = COV }
+            removal_cost = -1
+
+            modifier = {
+                production_speed_bunker_factor = 0.2
+            }
+        }
+		
+        COV_dysfunctional_economy_idea = {
+            name = COV_dysfunctional_economy
+
+            picture = COV_dysfunctional_economy
+            allowed = { original_tag = COV }
+            removal_cost = -1
+
+            modifier = {
+				consumer_goods_factor = 0.1
+                stability_factor = -0.1
+				production_speed_buildings_factor = -0.2
+            }
+        }
+		
+		COV_failed_economy_1_idea = {
+            name = COV_failed_economy_1
+
+            picture = COV_failed_economy_1
+            allowed = { original_tag = COV }
+            removal_cost = -1
+
+            modifier = {
+                stability_factor = -0.5
+				consumer_goods_factor = 0.8
+				production_speed_buildings_factor = -0.8
+            }
+        }
+		
+		COV_surprise_attack_idea = { #timed idea when corvus invades cetus. should last for a week
+            name = COV_surprise_attack
+
+            picture = COV_surpise_attack
+            allowed = { original_tag = COV }
+            removal_cost = -1
+
+            modifier = {
+                army_speed_factor = 1
+				dig_in_speed_factor = -1
+				army_core_attack_factor = 0.75
+            }
+			
+			targeted_modifier = {
+				tag = CET
+				attack_bonus_against = 0.05
+				defense_bonus_against = -0.25
+				}
+		}
+		
+		COV_consolidate_gains_idea = {
+            name = COV_consolidate_gains
+
+            picture = COV_surpise_attack
+            allowed = { original_tag = COV }
+            removal_cost = -1
+
+            modifier = {
+                army_speed_factor = -0.25
+				army_defence_factor = 0.25
+				dig_in_speed_factor = 0.2
+				land_bunker_effectiveness_factor = 0.2
+            }
+		}
+		
+		COV_renewed_offensive_idea = { # i forgot the 
+            name = COV_renewed_offensive
+
+            picture = COV_surpise_attack
+            allowed = { original_tag = COV }
+            removal_cost = -1
+
+            modifier = {
+                army_speed_factor = 0.5
+				army_defence_factor = -0.125
+				dig_in_speed_factor = -0.5
+				army_core_attack_factor = 0.25
+            }
+		}
+		
+		COV_mountaineering_idea = {
+
+            picture = COV_surpise_attack
+            allowed = { original_tag = COV }
+            removal_cost = -1
+
+            modifier = {
+				terrain_penalty_reduction = 0.25
+            }
+		}
+		
+		COV_continued_offensive_idea = { # difference between these two
+            name = COV_renewed_offensive
+
+            picture = COV_surpise_attack
+            allowed = { original_tag = COV }
+            removal_cost = -1
+
+            modifier = {
+                army_speed_factor = 0.5
+				army_defence_factor = -0.175
+				dig_in_speed_factor = -0.75
+				army_core_attack_factor = 0.35
+            }
+		}
+		
+		COV_improve_supply_idea = {
+		name = COV_improve_supply
+
+            picture = COV_surpise_attack
+            allowed = { original_tag = COV }
+            removal_cost = -1
+
+            modifier = {
+                supply_consumption_factor = -0.2
+				supply_combat_penalties_on_core_factor = -0.4
+            }
+		}
+		
+		COV_active_rationing_idea = { #toggled
+
+            picture = COV_surpise_attack
+            allowed = { original_tag = COV }
+            removal_cost = -1
+
+            modifier = {
+			consumer_goods_factor = -0.1
+			stability_factor -0.1
+            }
+		}
+		
+		COV_active_rationing_2_idea = { #toggled
+
+            picture = COV_surpise_attack
+            allowed = { original_tag = COV }
+            removal_cost = -1
+
+            modifier = {
+			consumer_goods_factor = -0.15
+			stability_factor = -0.05
+            }
+		}
+		
+		COV_heightened_coal_production_idea = { # 
+
+            picture = COV_surpise_attack
+            allowed = { original_tag = COV }
+            removal_cost = -1
+
+            modifier = {
+                industrial_capacity_factory = 0.25
+				industrial_capacity_dockyard = 0.1
+				cic_construction_boost = -0.25
+				consumer_goods_factor = 0.1
+            }
+		}
+		
+		COV_issued_warbonds_idea = {
+
+            picture = COV_surpise_attack
+            allowed = { original_tag = COV }
+            removal_cost = -1
+
+            modifier = {
+			consumer_goods_factor = -0.5
+            }
+		}
+		
+		COV_issued_warbonds_2_idea = { # after repeated uses (triggered by country flag)
+
+            picture = COV_surpise_attack
+            allowed = { original_tag = COV }
+            removal_cost = -1
+
+            modifier = {
+			consumer_goods_factor = -0.25
+			stability_factor = -0.05
+			war_support_factor = -0.1
+			war_support_weekly = -0.02
+            }
+		}
+		
+		COV_shut_down_markets_idea = {
+
+            picture = COV_surpise_attack
+            allowed = { original_tag = COV }
+            removal_cost = -1
+
+            modifier = {
+			stability_factor = 0.2
+			industrial_capacity_factory = -0.05
+			industrial_capacity_dockyard = -0.05
+            }
+		}
+		
+		COV_subsidised_industries_idea = {
+
+            picture = COV_surpise_attack
+            allowed = { original_tag = COV }
+            removal_cost = -1
+
+            modifier = {
+                production_speed_buildings_factor = 0.2
+				consumer_goods_factor = 0.2
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.05
+            }
+		}
+		
+		COV_penal_battalion_idea = {
+
+            picture = COV_surpise_attack
+            allowed = { original_tag = COV }
+            removal_cost = -1
+
+            modifier = {
+			conscription_factor = 0.05
+            }
+		}
+		
+		COV_mafia_rampant_idea = {
+
+            picture = COV_surpise_attack
+            allowed = { original_tag = COV }
+            removal_cost = -1
+
+            modifier = {
+			stability_factor = -0.05
+			conscription_factor = -0.25
+			consumer_goods_factor = 0.1
+            }
+		}
+		
+		COV_mafia_cooperation_idea = {
+
+            picture = COV_surpise_attack
+            allowed = { original_tag = COV }
+            removal_cost = -1
+
+            modifier = {
+			stability_factor = -0.1
+			conscription_factor = -0.05
+			consumer_goods_factor = 0.1
+			production_speed_buildings_factor = 0.1
+            }
+		}
+		
+		COV_mafia_cooperation_2_idea = {
+
+            picture = COV_surpise_attack
+            allowed = { original_tag = COV }
+            removal_cost = -1
+
+            modifier = {
+			stability_factor = -0.1
+			conscription_factor = -0.05
+			consumer_goods_factor = 0.05
+			production_speed_buildings_factor = 0.2
+            }
+		}
+		
+		COV_mafia_disbanded_idea = {
+
+            picture = COV_surpise_attack
+            allowed = { original_tag = COV }
+            removal_cost = -1
+
+            modifier = {
+			production_speed_buildings_factor = 0.1
+			consumer_goods_factor = -0.05
+            }
+		}
+		
+		COV_mafia_suppressed_idea = {
+
+            picture = COV_surpise_attack
+            allowed = { original_tag = COV }
+            removal_cost = -1
+
+            modifier = {
+			conscription_factor = -0.15
+			production_factory_max_efficiency_factor = -0.05
+			consumer_goods_factor = -0.1
+            }
+		}
+		
+		COV_martial_law_imposed_idea = {
+
+            picture = COV_surpise_attack
+            allowed = { original_tag = COV }
+            removal_cost = -1
+
+            modifier = {
+			stability_factor = 0.4
+			conscription_factor = -0.1
+			industrial_capacity_factory = -0.05
+			consumer_goods_factor = 0.05
+			production_factory_max_efficiency_factor = -0.1
+			production_factory_efficiency_gain_factor = -0.1
+            }
+		}
+    }
+}

@@ -1,0 +1,7 @@
+continents = {
+	europe
+	centaura
+	ursa
+	libra
+	hydra
+}

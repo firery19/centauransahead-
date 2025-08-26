@@ -1,0 +1,36 @@
+state={
+	id=104
+	name="STATE_104"
+	resources={
+		steel=12.000
+		tungsten=4.000
+		rubber=4.000
+	}
+	history={
+		owner = ANT
+		add_core_of = ANT
+		add_core_of = ARA
+		buildings = {
+
+			industrial_complex = 2
+			infrastructure = 3
+
+		}
+		victory_points = {
+			6067 30 
+		}
+		victory_points = {
+			951 5 
+		}
+		victory_points = {
+			5845 9
+		}
+	}
+	provinces={
+		24 180 201 568 597 876 901 919 951 1029 1092 1162 1199 1398 1522 1611 1636 1725 1727 1785 1847 1869 1911 1971 1991 2038 2071 2265 2318 2409 2440 2451 2468 2484 2527 2577 2673 2813 2820 2987 3072 3111 5747 5801 5820 5845 5854 5865 5877 5891 5899 5904 5939 5954 5986 5999 6011 6019 6021 6034 6035 6049 6067 6072 6103 6106 6107 6135 6144 6161 6167 6176 6180 6183 6189 6202 6209 6228 6229 6231 6234 6237 6246 
+	}
+	manpower=22015854
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

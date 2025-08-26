@@ -1,0 +1,24 @@
+state={
+	id=168
+	name="STATE_168"
+	history={
+		owner = RIA
+		add_core_of = RIA
+		buildings = {
+			infrastructure = 1
+			6555 = {
+				naval_base = 1
+				}
+			}
+			victory_points = {
+			6555 1 
+			}
+		}
+	provinces={
+		3355 6529 6530 6536 6548 6550 6555 
+	}
+	manpower=15264
+	state_category = tiny_island
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

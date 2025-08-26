@@ -1,0 +1,176 @@
+### REGULAR DESTROYER NAMES###
+URS_DD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+
+	for_countries = { URS }
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }		
+
+	can_use = { always = yes }
+
+	prefix = "FUS"								
+	fallback_name = "Destroyer %s"					
+
+	unique = {											
+		# Starting with G-class ships
+		"Lol"
+	}
+}
+
+### LIGHT CRUISER NAMES###
+URS_CL_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CL
+
+	for_countries = { URS }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+	
+	can_use = { always = yes }
+	
+	prefix = "FUS"							
+	fallback_name = "Light Cruiser %s"
+
+	unique = {
+		"Vildun"
+	}
+}
+
+### A-A LIGHT CRUISER NAMES###
+URS_CLAA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CLAA
+
+	for_countries = { URS }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+	
+	can_use = { always = yes }
+	
+	prefix = "FUS"								
+	fallback_name = "Light Cruiser (AA) %s"
+
+	unique = {
+		# Starting with Dido class
+		"Unternehmen"
+	}
+}
+
+### HEAVY CRUISER NAMES###
+URS_CA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CA
+
+	for_countries = { URS }
+
+	type = ship
+	ship_types = { ship_hull_cruiser heavy_cruiser }
+	
+	can_use = { always = yes }
+	
+	prefix = "FUS"								
+	fallback_name = "Heavy Cruiser %s"
+
+	unique = {
+		"leKPZ m41"
+	}
+}
+
+### BATTLESHIP NAMES ###
+URS_BB_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BB
+
+	for_countries = { URS }
+	
+	can_use = { always = yes }
+
+	type = ship
+	ship_types = { ship_hull_heavy battleship }
+	
+	prefix = "FUS"								
+	fallback_name = "Battleship %s"		
+
+	unique = {
+        "Magor"
+	}
+}
+
+### BATTLECRUISER NAMES ###
+URS_BC_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BC
+
+	for_countries = { URS }
+	
+	can_use = { always = yes }
+
+	type = ship
+	ship_types = { ship_hull_heavy battle_cruiser }
+	
+	prefix = "FUS"								
+	fallback_name = "Battlecruiser %s"		
+
+	unique = {
+           "Bocchi"
+ 	}
+}
+
+### AIRCRAFT CARRIER NAMES ###
+URS_CV_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CARRIERS
+
+	for_countries = { URS }
+	
+	can_use = { always = yes }
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+	
+	prefix = "FUS"							
+	fallback_name = "Carrier %s"		
+
+	unique = {
+		"Alioth"
+	}
+}
+
+### LIGHT CARRIER NAMES ###
+URS_CVL_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CVL
+
+	for_countries = { URS }
+	
+	can_use = { always = yes }
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+	
+	prefix = "FUS"							
+	fallback_name = "Carrier %s"	
+
+	unique = {
+		# CVL Names
+		"fireryheart0190"
+	}
+}
+
+### SUBMARINES ###
+URS_SS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+
+	for_countries = { URS }
+	
+	can_use = { always = yes }
+	
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	
+	prefix = "FUS"							
+	fallback_name = "K-%s"
+	
+	unique = {
+		# Starting with K-class ships 
+		"K-I"
+	}
+}
+
+# "K-II" "K-III" "K-IV" "K-V" "K-VI" "K-VII" "K-VIII" "K-IX" "K-X" "K-XI" "K-XII" "K-XIII" "K-XIV" "K-XV" "K-XVI" "K-XVII "K-XVIII" "K-XIX" "K-XX" "K-XXI" "K-XXII" "K-XXIII" "K-XXIV" "K-XXV" "K-XXVI" "K-XXVII" "K-XXVIII" "K-XXX" "K-XXXI" "K-XXXII" "K-XXXIII" "K-XXXIV" "K-XXXV" "K-XXXVI" "K-XXXVII" "K-XXXVIII" "K-XXXIX" "K-XXXX"

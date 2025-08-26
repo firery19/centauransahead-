@@ -1,0 +1,43 @@
+bookmarks = {
+	bookmark = {
+		name = "FORMAN_WAR_NAME"
+		desc = "FORMAN_WAR_DESC"
+		date = 1944.1.1.12
+		picture = "GFX_select_date_1944"
+		default_country = ORI
+		default = yes
+		
+		ANT = {
+			history = ANT_1944_DESC
+			ideology = fascism
+		}
+		ORI = {
+			history = ORI_1944_DESC
+			ideology = neutrality
+		}
+		COV = {
+			history = COV_1944_DESC
+			ideology = neutrality
+		}
+		URS = {
+			history = URS_1944_DESC
+			ideology = neutrality
+		}
+		HYS = {
+			history = HYS_1944_DESC
+			ideology = neutrality
+		}
+		RIA = {
+			history = RIA_1944_DESC
+			ideology = neutrality
+		}
+		LBR = {
+			history = LBR_1944_DESC
+			ideology = neutrality
+		}
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}

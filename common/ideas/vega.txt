@@ -1,0 +1,30 @@
+ideas = {
+    country = {
+        VEG_queens_blessing = {
+            
+            picture = idea_COV_revanchism
+            allowed = { original_tag = VEG }
+            removal_cost = -1
+
+            modifier = {
+                conscription_factor = 0.1
+                training_time_army_factor = -0.1
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
+            }
+        }
+		VEG_protected_by_murus = {
+            
+            picture = idea_COV_revanchism
+            allowed = { original_tag = VEG }
+            removal_cost = -1
+
+            modifier = {
+                max_planning = 0.2
+				max_dig_in = 0.2
+				terrain_penalty_reduction = 0.1
+				planning_speed = -0.2
+            }
+        }
+    }
+}

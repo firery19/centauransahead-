@@ -1,0 +1,29 @@
+state={
+	id=141
+	name="STATE_141"
+	history={
+		owner = ORI
+		add_core_of = ORI
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 1
+
+		}
+		victory_points = {
+			1439 10 
+		}
+
+	}
+	resources={
+		steel=17.000
+		tungsten=9.000
+	}
+	provinces={
+		96 280 314 322 442 466 622 755 853 997 1138 1167 1178 1226 1407 1440 1590 1594 1652 1777 1918 1994 2175 2368 2400 2508 2608 2615 2630 2688 2956 3007 3057 3059 3279 4892 4908 4920 4935 4936 4943 4946 4981 4982 4988 4994 5031 5035 5064 5079 5086 5087 5124 5125 5126 5135 5165 5176 5202 5219 5227 5239 5240 5253 5254 5266 5292 5303 5307 5334 5337 5342 5354 5363 5374 5378 5391 5396 6362
+	}
+	manpower=22909206
+	buildings_max_level_factor=1.000
+	state_category=industrialized_metropolis
+	local_supplies=0.000
+}

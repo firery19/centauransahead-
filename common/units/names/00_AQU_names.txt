@@ -1,0 +1,203 @@
+AQU = {
+	submarine = {
+		prefix = ""
+		generic = { "Undersea Boat" }
+		unique = {
+		}
+	}
+	destroyer = {
+		prefix = ""
+		generic = { "Light Ship" }
+		unique = {
+		}
+	}
+	light_cruiser = {
+		prefix = ""
+		generic = { "Light Gun Carrier" }
+		unique = {
+		}
+	}
+	heavy_cruiser = {
+		prefix = ""
+		generic = { "Heavy Gun Carrier" }
+		unique = {
+		}
+	}
+	battle_cruiser = {
+        prefix = ""
+        generic = { "Light Battleship" }
+        unique = {
+       }
+    }
+    battleship = {
+        prefix = ""
+        generic = { "Battleship" }
+        unique = {
+       }
+    }
+	carrier = {
+		prefix = ""
+		generic = { "Floating Airfield" }
+		unique = {
+		}
+	}
+
+	air_wing_names_template = AIR_WING_NAME_AQU_FALLBACK
+
+	#Air wings can only be named through archetype
+	small_plane_airframe = {
+		prefix = ""
+		generic = { "Light Air Group" }
+		generic_pattern = AIR_WING_NAME_AQU_GENERIC
+		unique = {
+		}	
+	}
+
+	medium_plane_scout_plane_airframe = {
+		prefix = ""
+		generic = { "Intermediate Reconnaissance Group" }
+		generic_pattern = AIR_WING_NAME_AQU_GENERIC
+		unique = {
+		}	
+	}
+
+	#jet_fighter_equipment = {
+	#	prefix = ""
+	#	generic = { "Quick Response Group" }
+	#	generic_pattern = AIR_WING_NAME_AQU_GENERIC
+	#	unique = {
+	#	}	
+	#}
+
+	medium_plane_fighter_airframe = {
+		prefix = ""
+		generic = { "Medium Air Group" }
+		generic_pattern = AIR_WING_NAME_AQU_GENERIC
+		unique = {
+		}	
+	}
+
+	small_plane_cas_airframe = {
+		prefix = ""
+		generic = { "Light Aerial Bombardment Group" }
+		generic_pattern = AIR_WING_NAME_AQU_GENERIC
+		unique = {
+		}	
+	}
+
+	cv_small_plane_airframe = {
+		prefix = ""
+		generic = { "Light Naval Group" }
+		generic_pattern = AIR_WING_NAME_AQU_CARRIER
+		unique = {
+		}	
+	}
+
+	cv_small_plane_cas_airframe = {
+		prefix = ""
+		generic = { "Light Naval Aerial Bombardment Group" }
+		generic_pattern = AIR_WING_NAME_AQU_CARRIER
+		unique = {
+		}	
+	}
+	cv_small_plane_naval_bomber_airframe = {
+		prefix = ""
+		generic = { "Light Naval Attack Group" }
+		generic_pattern = AIR_WING_NAME_AQU_CARRIER
+		unique = {
+		}	
+	}
+
+	medium_plane_airframe = {
+		prefix = ""
+		generic = { "Medium Air Bombardment Group" }
+		generic_pattern = AIR_WING_NAME_AQU_GENERIC
+		unique = {
+		}	
+	}
+
+	#jet_tac_bomber_equipment = {
+	#	prefix = ""
+	#	generic = { "Quick Air Bombardment Group" }
+	#	generic_pattern = AIR_WING_NAME_AQU_GENERIC
+	#	unique = {
+	#	}	
+	#}
+
+	small_plane_naval_bomber_airframe = {
+		prefix = ""
+		generic = { "Light Naval Strike Group" }
+		generic_pattern = AIR_WING_NAME_AQU_CARRIER
+		unique = {
+		}	
+	}
+
+	large_plane_airframe = {
+		prefix = ""
+		generic = { "Heavy Aerial Bombardment Group" }
+		generic_pattern = AIR_WING_NAME_AQU_GENERIC
+		unique = {
+		}	
+	}
+
+	large_plane_maritime_patrol_plane_airframe = {
+		prefix = ""
+		generic = { "Long Ranged Maritime Patrol" }
+		generic_pattern = AIR_WING_NAME_AQU_CARRIER
+		unique = {
+		}	
+	}
+
+	#jet_strat_bomber_equipment = {
+	#	prefix = ""
+	#	generic = { "Quick Heavy Bombardment Group" }
+	#	generic_pattern = AIR_WING_NAME_AQU_GENERIC
+	#	unique = {
+	#	}	
+	#}
+
+	transport_plane_equipment = {
+		prefix = ""
+		generic = { "Transport Plane" }
+		generic_pattern = AIR_WING_NAME_AQU_GENERIC
+		unique = {
+		}	
+	}
+
+	infantry = {
+		prefix = ""
+		generic = { "Infantry Division" }
+		generic_pattern = "UNIT_GENERIC_NAME_AQU"
+		unique = {}
+	}
+	motorized = {
+		prefix = ""
+		generic = { "Motorised Division" }
+		generic_pattern = "UNIT_GENERIC_NAME_AQU"
+		unique = {}
+	}
+	mountaineers = {
+		prefix = ""
+		generic = { "Mountaineer Division" }
+		generic_pattern = "UNIT_GENERIC_NAME_AQU"
+		unique = {}
+	}
+	cavalry = {
+		prefix = ""
+		generic = { "Horse Division" }
+		generic_pattern = "UNIT_GENERIC_NAME_AQU"
+		unique = {}
+	}
+	light_armor = {
+		prefix = ""
+		generic = { "Light Armored Brigade" }
+		generic_pattern = "UNIT_GENERIC_NAME_AQU"
+		unique = {}
+	}
+	medium_armor = {
+		prefix = ""
+		generic = { "Medium Armored Brigade" }
+		generic_pattern = "UNIT_GENERIC_NAME_AQU"
+		unique = {}
+	}
+}

@@ -1,0 +1,35 @@
+
+state={
+	id=60
+	name="STATE_60"
+	resources={
+		tungsten=13.000
+	}
+
+	history={
+		owner = CLB
+		add_core_of = CLB
+		add_core_of = QUA
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 2
+
+		}
+		victory_points = {
+			2364 7 
+		}
+		1944.1.1.12 = {
+			owner = ANT
+			controller = ANT
+
+}
+	}
+
+	provinces={
+		36 218 321 334 368 1109 1165 1227 1350 1467 1538 1661 1837 1865 1950 2000 2113 2313 2357 2364 2381 2482 2793 3186 3297 3746 3758 3768 3791 3827 3832 3850 3859 3881 3899 3902 3910 3921 3970 
+	}
+	manpower=3940162
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

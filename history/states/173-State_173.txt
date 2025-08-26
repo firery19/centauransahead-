@@ -1,0 +1,24 @@
+state={
+	id=173
+	name="STATE_173"
+	history={
+		owner = HYS
+		add_core_of = HYS
+		buildings = {
+			infrastructure = 1
+			6608 = {
+				naval_base = 1
+				}
+			}
+			victory_points = {
+			6608 1 
+			}
+		}
+	provinces={
+		6608 6620 
+	}
+	manpower=10301
+	state_category = tiny_island
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

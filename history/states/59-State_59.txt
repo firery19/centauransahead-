@@ -1,0 +1,38 @@
+
+state={
+	id=59
+	name="STATE_59"
+	resources={
+		steel=14.000
+	}
+
+	history={
+		owner = CLB
+		add_core_of = CLB
+		add_core_of = QUA
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 2
+
+		}
+		victory_points = {
+			1503 8 
+		}
+		victory_points = {
+			772 3 
+		}
+		1944.1.1.12 = {
+			owner = ANT
+			controller = ANT
+
+}
+	}
+
+	provinces={
+		117 137 189 350 511 578 680 772 782 1236 1240 1286 1408 1476 1503 1588 1604 1607 1624 1666 1677 1680 1877 1928 2055 2120 2214 2270 2306 2448 2514 2652 2701 2724 2757 2783 3140 3142 3243 3325 3879 3882 3884 3901 3905 3916 3929 3933 3953 3961 3971 3976 3986 3987 3992 3993 3994 3996 4003 4015 4024 4032 4033 4036 4043 4046 4047 4050 4063 4064 4068 4080 4083 4087 4093 4095 4101 4116 4119 4137 4141 4142 4146 4155 4158 4174 4176 4182 4188 4205 
+	}
+	manpower=9785809
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

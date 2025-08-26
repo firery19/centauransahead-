@@ -1,0 +1,418 @@
+ideas = {
+    country = {
+        frederick_scapha_idea = { #for democratic path
+            name = frederick_scapha
+
+            picture = generic_production_bonus
+            allowed = {
+                original_tag = CET
+                has_completed_focus = CET_democratic_keep_emperor
+            }
+            removal_cost = -1
+
+            traits = { popular_figurehead }
+        }
+
+        CET_SC_question_idea = {
+            name = CET_SC_question
+            
+            picture = CET_sc_question
+            allowed = { original_tag = CET }
+            removal_cost = -1
+
+            modifier = {
+                stability_factor = -0.2
+                political_power_gain = -0.5
+#                stability_weekly = -0.001 #0.5
+            }
+        }
+
+        CET_independent_armed_forces_idea = {
+            name = CET_independent_armed_forces
+
+            picture = CET_independent_armed_forces
+            allowed = { original_tag = CET }
+            removal_cost = -1
+
+            modifier = {
+                command_power_gain_mult = -0.8
+                land_doctrine_cost_factor = -0.1
+                naval_doctrine_cost_factor = -0.1
+                experience_gain_army_factor = -0.75
+                army_org_factor = -0.3
+                army_morale_factor = -0.1
+                training_time_army_factor = 0.3
+                political_power_gain = -0.2
+                conscription_factor = -0.5
+            }
+        }
+		
+		CET_independent_armed_forces_2_idea = {
+            name = CET_independent_armed_forces_2
+
+            picture = CET_independent_armed_forces
+            allowed = { original_tag = CET }
+            removal_cost = -1
+
+            modifier = {
+                command_power_gain_mult = -0.6
+                land_doctrine_cost_factor = -0.1
+                naval_doctrine_cost_factor = -0.1
+                experience_gain_army_factor = -0.5
+                army_org_factor = -0.15
+                army_morale_factor = -0.05
+                training_time_army_factor = 0.3
+                political_power_gain = -0.2
+                conscription_factor = -0.5
+            }
+        }
+		
+		CET_independent_armed_forces_2_b_idea = {
+            name = CET_independent_armed_forces_2_b
+
+            picture = CET_independent_armed_forces
+            allowed = { original_tag = CET }
+            removal_cost = -1
+
+            modifier = {
+                command_power_gain_mult = -0.8
+                land_doctrine_cost_factor = -0.1
+                naval_doctrine_cost_factor = -0.1
+                experience_gain_army_factor = -0.9
+                army_org_factor = -0.3
+                army_morale_factor = -0.15
+                training_time_army_factor = 0.3
+                political_power_gain = -0.2
+                conscription_factor = -0.5
+				industrial_capacity_arms_factory = -0.1
+            }
+        }
+		
+		CET_independent_armed_forces_3_idea = {
+            name = CET_independent_armed_forces_3
+
+            picture = CET_independent_armed_forces
+            allowed = { original_tag = CET }
+            removal_cost = -1
+
+            modifier = {
+                command_power_gain_mult = -0.6
+                land_doctrine_cost_factor = -0.1
+                naval_doctrine_cost_factor = 0
+                experience_gain_army_factor = -0.5
+                army_org_factor = -0.15
+                army_morale_factor = -0.05
+                training_time_army_factor = 0.3
+                political_power_gain = -0.2
+                conscription_factor = -0.4
+            }
+        }
+		
+		CET_independent_armed_forces_3_b_idea = {
+            name = CET_independent_armed_forces_3_b
+
+            picture = CET_independent_armed_forces
+            allowed = { original_tag = CET }
+            removal_cost = -1
+
+            modifier = {
+                command_power_gain_mult = -0.6
+                land_doctrine_cost_factor = -0.1
+                naval_doctrine_cost_factor = 0
+                experience_gain_army_factor = -0.5
+                army_org_factor = -0.15
+                army_morale_factor = -0.05
+                training_time_army_factor = 0.3
+                political_power_gain = -0.2
+                conscription_factor = -0.4
+            }
+        }
+		
+		CET_military_reorganisation_nf_idea = {
+            name = CET_military_reorganisation_nf
+
+            picture = CET_independent_armed_forces
+            allowed = { original_tag = CET }
+            removal_cost = -1
+
+            modifier = {
+				army_attack_factor = -0.8
+                army_org_factor = -0.1
+                training_time_army_factor = 0.3
+            }
+        }
+		
+		CET_expand_em_idea = {
+            name = CET_expand_em
+
+            picture = CET_independent_armed_forces
+            allowed = { original_tag = CET }
+            removal_cost = -1
+
+            modifier = {
+			special_forces_cap = 0.02
+            }
+        }
+		
+		CET_naval_cut_idea = {
+            name = CET_naval_cut
+
+            picture = CET_independent_armed_forces
+            allowed = { original_tag = CET }
+            removal_cost = -1
+
+            modifier = {
+			naval_doctrine_cost_factor = 0.1
+            }
+        }
+		
+		CET_budget_reviewed_idea = {
+            name = CET_budget_reviewed
+
+            picture = CET_
+            allowed = { original_tag = CET }
+            removal_cost = -1
+
+            modifier = {
+			consumer_goods_factor = -0.1
+            }
+        }
+		
+		CET_army_cut_idea = {
+            name = CET_army_cut
+
+            picture = CET_independent_armed_forces
+            allowed = { original_tag = CET }
+            removal_cost = -1
+
+            modifier = {
+			land_doctrine_cost_factor = 0.1
+            }
+        }
+		
+        CET_rules_the_waves_idea = {
+            name = CET_cetus_rules_the_waves
+
+            picture = cetus_rules_the_waves
+            allowed = { original_tag = CET }
+            removal_cost = -1
+
+            modifier = {
+                industrial_capacity_dockyard = 0.10
+                navy_max_range_factor = 0.20
+                special_forces_cap = 0.02
+                navy_capital_ship_attack_factor = 0.15
+                navy_capital_ship_defence_factor = 0.15
+            }
+        }
+		
+		CET_rules_the_waves_2_idea = {
+            name = CET_cetus_rules_the_waves
+
+            picture = cetus_rules_the_waves
+            allowed = { original_tag = CET }
+            removal_cost = -1
+
+            modifier = {
+                industrial_capacity_dockyard = 0.20
+                navy_max_range_factor = 0.20
+                special_forces_cap = 0.03
+                navy_capital_ship_attack_factor = 0.15
+                navy_capital_ship_defence_factor = 0.15
+            }
+        }
+		
+		CET_rules_the_waves_3_idea = {
+            name = CET_cetus_rules_the_waves
+
+            picture = cetus_rules_the_waves
+            allowed = { original_tag = CET }
+            removal_cost = -1
+
+            modifier = {
+                industrial_capacity_dockyard = 0.25
+                navy_max_range_factor = 0.25
+                special_forces_cap = 0.02
+                navy_capital_ship_attack_factor = 0.15
+                navy_capital_ship_defence_factor = 0.15
+            }
+        }
+		
+		CET_incompetent_naval_command_idea = {
+            name = CET_incompetent_naval_command
+
+            picture = cetus_
+            allowed = { original_tag = CET }
+            removal_cost = -1
+
+            modifier = {
+			naval_retreat_chance_after_initial_combat = 0.8
+			naval_retreat_speed_after_initial_combat = 2
+			naval_torpedo_damage_reduction_factor = -0.1
+            }
+        }
+		
+		CET_desperate_defence_idea = {
+            name = CET_desperate_defence
+
+            picture = cetus_
+            allowed = { original_tag = CET }
+            removal_cost = -1
+
+            modifier = {
+			mobilization_speed = 1
+			army_defence_factor = 0.2
+            }
+        }
+		
+		CET_defence_planning_idea = {
+            name = CET_defence_planning
+
+            picture = cetus_
+            allowed = { original_tag = CET }
+            removal_cost = -1
+
+            modifier = {
+			army_defence_factor = 0.05
+			max_planning_factor = 0.05
+            }
+        }
+		
+		CET_counterattack_idea = {
+            name = CET_counterattack
+            picture = cetus_
+            allowed = { original_tag = CET }
+            removal_cost = -1
+
+            modifier = {
+			army_attack_factor = 0.5
+			army_defence_factor = -0.2
+            }
+        }
+		
+		CET_defence_idea = {
+            name = CET_defence
+
+            picture = cetus_
+            allowed = { original_tag = CET }
+            removal_cost = -1
+
+            modifier = {
+			army_defence_factor = 0.5
+			max_dig_in = 2
+			dig_in_speed_factor = 0.75
+            }
+        }
+		
+		CET_bunker_line_idea = {
+            name = CET_bunker_line
+            
+            picture = CET
+            allowed = { original_tag = CET }
+            removal_cost = -1
+
+            modifier = {
+                production_speed_bunker_factor = 0.4
+            }
+        }
+		
+		CET_towards_greater_cetus_idea = {
+            name = CET_towards_greater_cetus
+            
+            picture = CET_towards_greater_cetus
+            allowed = { original_tag = CET }
+            removal_cost = -1
+
+            modifier = {
+                war_support_factor = 0.1
+                political_power_gain = 0.25
+            }
+        }
+		
+		CET_master_s_centaura_idea = {
+            name = CET_master_s_centaura
+            
+            picture = CET_towards_greater_cetus
+            allowed = { original_tag = CET }
+            removal_cost = -1
+
+            modifier = {
+                war_support_factor = 0.1
+                political_power_gain = 0.25
+            }
+        }
+		
+		CET_strengthened_monarch_idea = {
+            name = CET_strengthened_monarch
+            
+            picture = CET_towards_greater_cetus
+            allowed = { original_tag = CET }
+            removal_cost = -1
+
+            modifier = {
+                neutrality_drift = 0.1
+            }
+        }
+		
+		CET_refurbish_scaphan_line_idea = {
+            name = CET_refurbish_scaphan_line
+            
+            picture = CET_towards_greater_cetus
+            allowed = { original_tag = CET }
+            removal_cost = -1
+
+            modifier = {
+                production_speed_bunker_factor = 0.2
+            }
+        }
+		
+		CET_the_whale_sea_idea = {
+            name = CET_the_whale_sea
+            
+            picture = CET_towards_greater_cetus
+            allowed = { original_tag = CET }
+            removal_cost = -1
+
+            modifier = {
+                industrial_capacity_dockyard = 0.05
+            }
+        }
+		
+		CET_develop_selves_idea = {
+            picture = CET_towards_greater_cetus
+            allowed = { original_tag = CET }
+            removal_cost = -1
+
+            modifier = {
+                production_speed_buildings_factor = 0.5 
+            }
+        }
+		
+		CET_army_works_budget_idea = {
+
+            picture = CET_
+            allowed = { original_tag = CET }
+            removal_cost = -1
+
+            modifier = {
+			consumer_goods_factor = 0.1
+            }
+        }
+		
+		CET_southern_frontier = {
+
+            picture = CET_
+            allowed = { original_tag = CET }
+            removal_cost = -1
+			targeted_modifier = {
+				tag = ANT
+				defense_bonus_against = 0.25
+				}
+				targeted_modifier = {
+				tag = COV
+				defense_bonus_against = -0.1
+				}
+            }
+        }
+    }
+}
