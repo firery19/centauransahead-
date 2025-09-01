@@ -103,6 +103,7 @@ country_event = { #Ursa accepts
 		set_state_owner = 122
 		
 			CNS = {
+				set_state_owner = 123
 				set_state_owner = 115
 				set_state_owner = 116
 				set_state_owner = 118
@@ -111,6 +112,7 @@ country_event = { #Ursa accepts
 			}
 			hidden_effect = {
 			CNS = {
+				set_state_controller = 123
 				set_state_controller = 115
 				set_state_controller = 116
 				set_state_controller = 118

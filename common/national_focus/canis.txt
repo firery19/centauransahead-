@@ -27,7 +27,7 @@ focus_tree = {
         has_war = yes
         }
         completion_reward = {
-			ORI = { country_event = cns.1 }
+			ORI = { country_event = cns.2 }
 		}
 		ai_will_do = {
 		factor = 1000

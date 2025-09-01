@@ -3367,6 +3367,12 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_ANNEXATION  }
 	ai_will_do = { factor = 10 }
+	bypass = {
+	AND = {
+		COV = { has_war_with = CET }
+		COV = { is_in_faction_with = ANT }
+		}
+	}
 
 #	available = {
 #         has_completed_focus = ANT_prepare_for_war_with_cetus }

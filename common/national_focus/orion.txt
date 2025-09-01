@@ -186,9 +186,11 @@ focus_tree = {
 			prerequisite = {focus = ORS_InvestInHydrusiteMilitaryIndustry}
 			prerequisite = {focus = ORS_BattleExperience}
 			completion_reward = {
-				declare_war_on = {
-					target = URS 
+				create_wargoal = {
 					type = annex_everything
+					generator = {114 117}
+					target = URS
+					expire = 0
 				}
 			}
 			ai_will_do = {

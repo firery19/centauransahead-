@@ -1,0 +1,40 @@
+HYD_canis_war = {
+	join_the_canis_war = {
+
+		icon = oil
+
+		available = {
+		CNS = { has_war_with = URS }
+			}
+		
+		visible = {
+			always = yes
+		}
+		
+		fire_only_once = yes
+		
+		days_re_enable = 0
+		
+		days_remove = 7
+		
+		cost = 50
+		
+		complete_effect = {
+		declare_war_on = {
+            target = URS
+            type = annex_everything
+			}
+		add_timed_idea = {
+			idea = HYD_support_canis_idea
+			days = 70
+			}
+		}
+		remove_effect = {
+		
+		}
+		
+		ai_will_do = {
+		factor = 1
+		}
+	}
+}

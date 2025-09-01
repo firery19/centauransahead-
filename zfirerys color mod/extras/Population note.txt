@@ -1,0 +1,230 @@
+POPULATION OF THE WORLD: 1900 (Base numbers)
+CENTAURA: 1,200,000,000
+HYDRA: 500,000,000
+URSA: 147,000,000
+LIBRA: 168,000,000 
+
+# STATE COUNT AT THE START OF THE GAME (1900) # outdated
+
+
+Vulpa: 5
+Riaa: 12
+Tucana: 4
+Centauri: 4
+Columba: 8
+Vega: 5
+Grusa: 3
+Cetus: 13
+Corvus: 6
+Aquila: 9
+Antares: 22
+Lacerta: 1
+
+Ursa: 24 (9, 10, 5) Ursa, Canis, Lepus
+
+Libra: 7
+
+Orion: 17 #(21 After Grease Wars)
+	- Orionite Canis (Circania): 2 #(6 After Grease Wars)
+Hydrusite Commonwealth: 17 #After Grease Wars
+	- Hydrus: 7 
+	- Canis: 5 #Hydrusite part of Canis
+	- Lepus: 5
+Auriga: 4
+Musca: 1
+
+
+# POPULATION DIVIDER, 1900 (OLD)
+# PERCENTAGES TO CONTINENT, NOT ENTIRE WORLD
+
+Centaura:
+	Vulpa: 5,754,587 
+	Riaa: 580,130,320 
+	Tucana: 7,901,679 
+	Centauri: 10,771,380 
+	Columba: 18,787,706 
+	Vega: 19,266,558 
+	Grusa: 33,071,493 
+	Cetus: 124,475,929 
+	Corvus: 82,826,551 
+	Aquila: 104,029,050 
+	Antares: 317,725,282 
+	Lacerta: 3,329,397 
+	
+REESTIMATED COUNT:
+	Vulpa: 6,859,992
+	Riaa: 580,130,320 
+	Tucana: 7,901,679 
+	Centauri: 10,771,380 
+	Columba: 18,787,706 
+	Vega: 19,266,558 
+	Grusa: 33,071,493 
+	Cetus: 124,475,929 
+	Corvus: 82,826,551 
+	Aquila: 104,029,050 
+	Antares: 317,725,282 
+	Lacerta: 3,329,397 
+
+
+Ursa: 
+	Federation of Ursa: 147,532,467 (100%)
+
+Libra: 
+	Libran Federation: 168,387,242 (100%)
+
+Hydra: 
+	Orion: 285,889,513 (57.177902599999996%)
+	Hydrusite Commonwealth: 177,411,723 (35.4823446%)
+		# PERCENT OF THE COMMONWEALTH FIRST AND CONTINENT SECOND
+		- Hydrus: 76,428,294 (43.07961881414116%) (15.285658799999998%)
+		- Lupus: 52,956,846 (29.849688117847773%) (10.5913692%)
+		- Canis (entire): 48,026,583 (27.07069306801107%) (9.6053166%)
+	Auriga: 31,117,452 (6.2234904%)
+	Musca: 5,581,312 (1.1162623999999999%)
+	
+# State populations found in State note v2.txt
+
+All numbers are rough estimates.
+
+1908 (~1.2 BILLION)
+Riaa: ~420,000,000 (35%)
+Antares: ~300,000,000 (25%)
+Columba: ~120,000,000 (10%)
+Aquila: ~108,000,000 (9%)
+Cetus: ~84,000,000 (7%)
+Grusa: ~48,000,000 (4%)
+Vega: ~36,000,000 (3%)
+Centauri: ~36,000,000 (3%)
+Tucana: ~36,000,000 (3%)
+Vulpa: ~12,000,000 (1%)
+where is corvus?
+
+Ursa: ~140,000,000
+
+#############################################
+HANSSOLOS SUPER EPIC POPULATION RECALCULATION
+#############################################
+
+CENTAURA POPULATION STATISTICS
+All numbers are rough estimates.
+
+1900 (~1.07 BILLION)
+Riaa: ~420,000,000 (34%)
+Antares: ~300,000,000 (23%)
+Columba: ~120,000,000 (9%)
+Aquila: ~108,000,000 (8%)
+Cetus: ~84,000,000 (7%) (12 mil in sc)
+Corvus  66 mil	    5%
+Grusa: ~48,000,000 (4%)
+Vega: ~36,000,000 (3%)
+Centauri: ~36,000,000 (3%)
+Tucana: ~36,000,000 (3%)
+Vulpa: ~12,000,000 (1%)
+
+Ursa: ~140,000,000
+
+1944 (~1.92 BILLION)
+Riaa: ~576,000,000 (30%)
+Antares: ~576,000,000 (30%)
+Columba: ~192,000,000 (10%)
+Aquila: ~153,600,000 (8%)
+Cetus: ~153,600,000 (8%)
+Grusa: ~76,800,000 (4%)
+Vega: ~57,600,000 (3%)
+Centauri: ~57,600,000 (3%)
+Tucana: ~57,600,000 (3%)
+Vulpa: ~19,200,000 (1%)
+
+Ursa: ~224,000,000
+
+
+
+
+---------------------------------
+
+# firery 2nd wind
+
+cite note
+The global population of Forma in 1908 was around 2.1 billion.
+
+Because of the given quote:
+The Centauran continent had the most people;
+ about 60% of the world lived in Centaura,
+ 25% lived in Hydra, 
+ 8% lived in Libra,
+ 7% lived in Ursa.
+
+2,100,000,000 spread across:
+CENTAURA: 1,200,000,000
+HYDRA: 525,000,000
+URSA: 147,000,000
+LIBRA: 168,000,000 
+
+However, C + H + U + L = 2,040,000,000. missing 60,000,000 population.
+This is because 60% of 2,100,000,000 is actually 1,260,000,000.
+60 million population can be distributed to Corvus.
+Because Columba having 120 million is absurd, 0.5% to be given to Lacerta. (6 million)
+
+with the statement Ursa: ~140,000,000, using 7% value it should had been 147,000,000, 7 million anomaly.
+
+With this, the 2nd calculated statistics.
+
+1908 (~1.2 BILLION)
+Riaa: ~420,000,000 (35%)
+Antares: ~300,000,000 (25%)
+Columba: ~114,000,000 (9.5%)
+Aquila: ~108,000,000 (9%)
+Cetus: ~84,000,000 (7%)
+Grusa: ~48,000,000 (4%)
+Vega: ~36,000,000 (3%)
+Centauri: ~36,000,000 (3%)
+Tucana: ~36,000,000 (3%)
+Vulpa: ~12,000,000 (1%)
+Corvus: ~60,000,000 (5%)
+Lacerta: ~6,000,000 (0.5%)
+
+Libra: ~168,000,000
+
+Ursa: ~140,000,000 ( 147,000,000 )
+
+Hydra: ~525,000,000
+
+
+1.1 billion in 37 years
+1,100,000,000 / 37 = 29,729,729.7297
+29,729,729.7297 x 8 = 237,837,837.838
+using the above number and rounding it up to 240 million to assume population increase curve,
+2,100,000,000 - 240,000,000 = 1,860,000,000 world population. (1900)
+
+we get 1,860,000,000 x 60% = 1,116,000,000.
+
+Thus, the unofficial
+1900 (~1.116 BILLION)
+Riaa: ~390,600,000 (35%)
+Antares: ~279,000,000 (25%)
+Columba: ~106,020,000 (9.5%)
+Aquila: ~100,440,000 (9%)
+Cetus: ~78,120,000 (7%)
+Corvus: ~55,800,000 (5%)
+Grusa: ~44,640,000 (4%)
+Vega: ~33,480,000 (3%)
+Centauri: ~33,480,000 (3%)
+Tucana: ~33,480,000 (3%)
+Vulpa: ~11,160,000 (1%)
+Lacerta: ~5,580,000 (0.5%)
+
+By 1945, the global population was around 3.2 billion,
+
+1944 (~1.92 BILLION) < because of this number, hydra population can be counted, 800,000,000
+Riaa: ~576,000,000 (30%)
+Antares: ~576,000,000 (30%)
+Columba: ~192,000,000 (10%)
+Aquila: ~153,600,000 (8%)
+Cetus: ~153,600,000 (8%)
+Grusa: ~76,800,000 (4%)
+Vega: ~57,600,000 (3%)
+Centauri: ~57,600,000 (3%)
+Tucana: ~57,600,000 (3%)
+Vulpa: ~19,200,000 (1%)
+
+Ursa: ~224,000,000

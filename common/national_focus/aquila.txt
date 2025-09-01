@@ -442,7 +442,7 @@ search_filter_prios = {
         cost = 5
 		prerequisite = { focus = AQU_army_modernisation }
 		available = {
-		has_country_flag = grease_wars_start
+		has_global_flag = grease_wars_start
 		}
 		relative_position_id = AQU_army_modernisation
         available = {

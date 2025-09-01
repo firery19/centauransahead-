@@ -1,0 +1,262 @@
+STATES 1 to 18
+1 Federation of Libra, LBR (West Libran Island)
+2 Hydrusite Commonwealth, HYD (unused in 1900) (Hydrus South)
+    - HYS 1900 [CAPITAL: 2386]
+	- LPS 1901 (HYDRA)
+	- CNS 1902 
+3 Orion Republic, ORI (Venatia) [CAPITAL: 5559]
+4 Kingdom of Auriga, AUR (South Auriga) [CAPITAL: 6418] 15,287,269
+5 Federation of Ursa, URS (Central Ursa) [CAPITAL: 3196]
+6 Antares Imperium, ANT (Southeastern Skorpius) [FORMER CAPITAL: 919]
+7 Empire of Cetus, CET (Nauta Region) [CAPITAL: 2919]
+8 Corvus Confederation , COV (Northernmost Corvus) [FORMER CAPITAL: 3803]
+9 Kingdom of Aquila, AQU ("The Aquilan Heartland") [CAPITAL: 14]
+10 Vegan Dominion, VEG (North Vega) [CAPITAL: 4538]
+11 Kingdom of Grusa, GRS (North Grusa) [CAPITAL: 2926] 16,762,728
+12 United Columban Territories, CLB (Central Coastal Region) [CAPITAL: 3860] 
+13 Republic of Riaa, RIA (Northwestern Riaa) [FORMER CAPITAL: 2218]
+14 Empire of Vulpa, VUL (Big island) [CAPITAL: 1558]
+15 Tucani Empire, TUC (Tucana East) [CAPITAL: 501]
+16 Kingdom of Centauri, CTA (Centauri Center) [CAPITAL: 95]
+17 Lacerta, LAC [Lacertan Island(s)] [CAPITAL: 1257)
+18 Principality of Musca, MUS (Muscan Islands) [CAPITAL: 1853) 
+
+SEPERATE COUNTRIES (releasables)
+Canis CNS
+Lepus LPS
+Hydrus HYS
+Gemina GEM
+Quara QUA
+Nohae NOH
+Phact PHA
+Euria EUR
+LUP Lupus
+SKO Skorpius
+ARA Ara
+NRM Norma
+
+In order of
+Statenumber Statename Population
++1 is capital state
+
+Total amount of States
+185
+
+Initial States, In numerical order
+19 - 24 Libra (6+1) State_1
+	- 19 Libratum
+	- 20 East Libran Island [CAPITAL: 964]
+	- 21 Western Libran Islands
+	- 22 Westernmost Libran Islands
+	- 23 Middle Libra
+	- 24 Easternmost Libran Islands
+	
+25 - 28 Vega (4+1) State_10
+	- 25 Vegan Murus Plateau
+	- 26 South Vega
+	- 27 Vegan Islands
+	- 28 Lake island (vega)
+	
+29 - 30 Grusa (2+1) State_11
+	- 29 Grusan desert
+	- 30 South Grusa 
+	
+31 - 38 Aquila (8+1) State_9 
+	- 31 Aquilan Coast 
+	- 32 Aquilan Murus Plateau 
+	- 33 The Aquilan North 
+	- 34 The Eastern Heartland 
+	- 35 Aquilan South 
+	- 36 Southern Heartland 
+	- 37 Western Borderlands
+	- 38 Western Heartland 
+	- 152 Northwestern Aquila (repurposed from Auriga)
+	- 156 Southwestern Aquila (repurposed from Columba)
+
+39 - 50, 154 Cetus (11+1) State_7
+	- 39 Cetan Northeast
+	- 40 Cetan North
+	- 41 East Cetus
+	- 42 Central Cetus
+	- 43 Inner South Cetus
+	- 44 Unterost ketus
+	- 45 Central-South Cetus
+	- 46 Whitemouth Region
+	- 47 West Cetus
+	- 48 South Corvus/Northwesternmost Cetus
+	- 49 Cetan Islands (west)
+	- 50 Cetan Islands (lake)
+	- 154 Southernmost Corvus
+	
+51 - 55 Corvus (5+1) State_8
+	- 51 Corvun Center [CAPITAL: 1774] ( North-central )
+	- 52 Southeast North Corvus
+	- 53 North Corvus, Southern part (Central Corvus)
+	- 54 Inanis Islands
+	- 55 Lake Island (inland)
+
+56 - 62 Columba (7+1) State_12
+	- 56 Easternmost Columba
+	- 57 Eastern Columba (coastal)
+	- 58 Eastern Columba (inland)
+	- 59 South Columba
+	- 60 West Columba
+	- 61 Central Columba
+	- 62 North Columba (coastal)
+	- 185 North Columba (inland)
+
+63 - 73 Riaa (11+1) State_13
+	- 63 Southernmost Riaa (Corvus border)
+	- 64 Southwestern Riaa
+	- 65 Southwestern Vulpan Islands (riaa)
+	- 66 West Riaa
+	- 67 Inner Riaa
+	- 68 South Riaa
+	- 69 Central Riaa (SOUTH) [CAPITAL: 2393]
+	- 70 Central Riaa (NORTH)
+	- 71 Northeastern Riaa
+	- 72 Eastern Riaa
+	- 73 Eastern Riaa (coastal)
+
+74 - 76 Tucana (3+1) State_15 
+	- 74 Southwestern Tucana 
+	- 75 Northern Tucana 
+	- 76 Eastern Tucana Islands
+	
+77 - 79 Centauri (3+1) State_16 3,680,584
+	- 77 South Centauri 3,930,868
+	- 78 North Centauri 2,304,022
+	- 79 Offshore Islands 855,906
+	
+80 - 83 Vulpa (4+1) State_14 
+	- 80 Southern Islands 
+	- 81 Norteastern Islands 
+	- 82 South Island (vulpa central)
+	- 83 Western Islands
+	
+84 - 90 Ursa (7+1) State_5 
+	- 84 Southeastern Ursa (mainland) 
+	- 85 South Ursan Islands
+	- 86 Southeastern Islands
+	- 87 Eastern Ursa (mainland) 
+	- 88 Northern Ursa (mainland) 
+	- 89 West Ursa (mainland) 
+	- 90 Westernmost Islands 
+	- 155 South Ursa (mainland) 
+	
+91 - 111 Antares (21+1) State_6 
+	- 91 South Island chain 
+	- 92 South Island collections 
+	- 93 South Island collections (big) 
+	- 94 Southernmost Islands 
+	- 95 Southwestern Islands 
+	- 96 Southeastern Islands 
+	- 97 East Norma
+	- 98 West Norma [CAPITAL: 6073]
+	- 99 Norma Island 
+	- 100 North Lupus 
+	- 101 West Norma
+	- 102 Lupus Island 
+	- 103 South Ara 
+	- 104 Northeastern Ara 
+	- 105 Northwestern Ara 
+	- 106 Northernmost Antares (North Skorpius) 
+	- 107 West Lepus
+	- 108 West Skorpius 
+	- 109 Central Skorpius 
+	- 110 South Skorpius 
+	- 111 Central Lepus 
+	
+112 - 123 Canis (Ursa) (12) URSA: 10	ORION: 2
+	- 112 Northern Islands, ORION CLAIM 
+	- 113 Big North Island, ORION CLAIM 
+	- 114 Western Canis (Central), ORION CLAIM 
+	- 115 Northeastern Canis 
+	- 116 Northwestern Canis (east) 
+	- 117 Northwestern Canis (west), ORION CLAIM 
+	- 118 Eastern Canis 
+	- 119 Central Canis 
+	- 120 Southernmost Canis, East Circinia (Orion) 
+	- 121 Southwestern Canis, West Circinia (Orion) 
+	- 122 Offshore canis island (Libran ocean), ORION CLAIM 
+	- 123 Northwestern Islands 
+	
+124 - 129 Hydrus (6+1) State_2
+	- 124 Northwesternmost Islands 
+	- 125 Western Islands 
+	- 126 Northeastern Island chain 
+	- 127 North Hydrus 
+	- 128 West Hydrus 
+	- 129 East Hydrus 
+
+130 - 134 Lepus, Formerly Hydra Minor (5)
+	- 130 West Lepus 
+	- 131 North Lepus 
+	- 132 East Lepus 
+	- 133 Central Lepus 
+	- 134 Lepus Islands 
+	
+	
+135 - 150 Orion (16+1) State_3
+	- 135 Pisca Department
+	- 136 Auriga Department
+	- 137 Gemina Department
+	- 138 Delphinus Department
+	- 139 Pavos Department
+	- 140 Arca South Department
+	- 141 Arca North Department
+	- 142 Mintaka Department
+	- 143 Lemming Department
+	- 144 Circinian Islands (Canis)
+	- 145 Delphinus Department Islands (west, inner)
+	- 146 Delphinus Department Islands (west, outer)
+	- 147 Delphinus Department Islands (north)
+	- 148 Auriga Department Islands
+	- 149 Mintaka-Geminian Islands (south)
+	- 150 Geminian Islands (east)
+	
+151 - 153 Auriga (3+1) State_4
+	- 151 Aurigan North
+	- 153 Aurigan Island (near orion)
+
+CONTINENTS
+2 3 4 18 112 - 153 HYDRAN CONTINENT
+1, 19 - 24 Libra
+6 7 8 9 10 11 12 13 14 15 16 17, 25 - 83, 91 - 111 CENTAURA
+5, 84 - 90 URSA
+
+Newly added states after the initial states
+
+154 Southernmost Corvus, Cetus (Broke from South Corvus) 48
+155 South Ursa (Broke from Southeastern Ursa) 84
+156 Columban Annulus Island (Broke from North Columba, Wazn) 62 OLD
+> 156 Southwestern Aquila
+157 Centaurian Annulus Islands (Broke from South Centauri) 77
+158 North Grusan Islands (Broke from North Grusa) 11
+159 South Grusan Islands (Broke from North Grusa) 11
+160 North Tucanese Islands (Broke from Northern Tucana) 75
+161 Central Tucanese Islands (Broke from Northern Tucana and Eastern Tucana) 75 and 15
+162 South Tucanese Islands (Broke from Eastern Tucana) 15
+163 North Corvun Island (Broke from Northern Corvus) 8
+164 Grusan Annulus Islands (Broke from North Grusa) 11
+165 Riaan Annulus Islands (Broke from South Riaa, South-Central Riaa and Eastern Riaa) 68 69 73
+166 Northeastern Riaan Islands (Broke from Northeastern Riaa) 71
+167 Isolated North Riaan Islands (Broke from North-Central Riaa) 70
+168 North Riaan Vulpa (Broke from Northwestern Riaa) 13
+169 South Hydrusite Islands (Broke from South Hydrus and East Hydrus) 2 129
+170 Southwestern Hydrus Islands (Broke from South Hydrus) 2
+171 East Canis Island (Broke from Eastern Canis) 118
+172 southernmost canis island (Broke from Eastern Canis) 118
+173 Northeast hydrus island (Broke from North Hydrus) 127
+174 northwest hydrus island (Broke from North Hydrus) 127
+175 random hydrus island (Broke from North Hydrus) 127
+176 southeastern ursa islands (Broke from Southeastern Ursa) 84
+177 centralish ursa islands (Broke from West Ursa) 89
+178 west islands (ursa) (Broke from West Ursa) 89
+179 north island west (ursa) (Broke from West Ursa and North Ursa) 89 88
+180 north island east (ursa) (Broke from Eastern Ursa) 87
+181 south canis islands (orion) (Broke from Southernmost Canis and Southwestern Canis) 120 121
+182 east lepus islands (Broke from East Lepus) 132
+183 north libran islands (west) (Broke from West Libran Island) 1
+184 north libran islands (east) (Broke from East Libran Island) 20
+185 north columba (inland, great plains) (Broke from North Columba ) 62

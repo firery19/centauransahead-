@@ -40,4 +40,5 @@ tags={
 }
 picture="thumbnail.png"
 supported_version="1.16.*"
-path="mod/centauransahead"
+path="C:/Users/firer/Documents/Paradox Interactive/Hearts of Iron IV/mod/centauransahead"
+remote_file_id="3559962856"

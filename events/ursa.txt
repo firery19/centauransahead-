@@ -417,9 +417,14 @@ country_event = { #Canis Rebellion
 			target = CNS
 			type = annex_everything
 		}
+		CNS = { add_timed_idea = { 
+				idea = CNS_defend_everything_idea
+				days = 30}
+				}
 		hidden_effect = {
 		CNS = { country_event = { id = cns.1 days = 0 } }
-		set_country_flag = grease_wars_start
+		set_global_flag = grease_wars_start
+		
 			CNS = {
 				set_province_controller = 3242
 				set_province_controller = 3732

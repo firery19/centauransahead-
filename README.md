@@ -1,1 +1,1 @@
-Copy and put .mod file outside out the centauransahead file
+Put .mod file outside out the centauransahead file
