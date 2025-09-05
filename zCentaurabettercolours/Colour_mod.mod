@@ -1,4 +1,4 @@
-name="Hearts of Forma: Better Country Colours"
+name="Hearts of Forma: Hans's Better Country Colours"
 dependencies = {
 	"centauransahead"
 	}
@@ -7,5 +7,5 @@ tags={
 	"Utilities"
 }
 picture="thumbnail.png"
-supported_version="1.14.*"
+#supported_version="1.*.*"
 path="mod/zCentaurabettercolours"

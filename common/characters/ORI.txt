@@ -1,4 +1,20 @@
 characters = {
+	ORI_Edward_Spencer = {
+		name = "Edward Spencer"
+		
+		portraits = {
+			civilian = {
+			large = GFX_portrait_ORI_Edward_Spencer
+			}
+		}
+		
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			id = -1
+		}
+	}
+	
 	ORI_Kevin_Hart = {
 		name = "Kevin Hart"
 		
@@ -32,6 +48,7 @@ characters = {
 			id = -1
 		}
 	}
+	
 
 
 

@@ -18,6 +18,29 @@ ideas = {
                 consumer_goods_factor = 0.5
             }
         }
+		
+		URS_sluggish_economy_obliterated_1 = {
+            picture = usa_great_depression_2
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.1
+                line_change_production_efficiency_factor = -0.15
+                production_factory_max_efficiency_factor = -0.25
+                production_lack_of_resource_penalty_factor = 0.2
+                consumer_goods_factor = 0.3
+            }
+        }
+		
+		URS_sluggish_economy_obliterated_2 = {
+            picture = usa_great_depression_1
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.05
+                line_change_production_efficiency_factor = -0.07
+                production_factory_max_efficiency_factor = -0.1
+                production_lack_of_resource_penalty_factor = 0.1
+                consumer_goods_factor = 0.15
+            }
+        }
+		
         URS_sluggish_economy_aided = {
             picture = generic_economic_crisis
             modifier = {
@@ -55,6 +78,31 @@ ideas = {
                 war_support_factor = -0.25
                 political_power_factor = -0.25
                 offensive_war_stability_factor = -0.5
+            }
+        }
+		URS_domestic_unrest_grease_wars_1 = {
+            picture = hol_liberation
+            modifier = {
+                democratic_drift = 0.03
+                communism_drift = 0.01
+                stability_weekly = -0.002
+                war_support_factor = -0.15
+                political_power_factor = -0.15
+                offensive_war_stability_factor = -0.3
+            }
+        }
+		URS_domestic_unrest_grease_wars_2 = {
+            picture = hol_liberation
+            modifier = {
+                democratic_drift = 0.03
+                communism_drift = 0.01
+                war_support_factor = -0.10
+            }
+        }
+		URS_domestic_unrest_farmer_subsidies = {
+            picture = hol_liberation
+            modifier = {
+                consumer_goods_factor = 0.1
             }
         }
         URS_navy_spirit = {

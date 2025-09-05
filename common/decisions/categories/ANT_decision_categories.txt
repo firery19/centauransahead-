@@ -37,8 +37,8 @@ ANT_south_centauran_conquest = {
 	}
 	
 	visible = {
-		#always = yes
-		has_completed_focus = ANT_prepare_for_war_with_cetus
+		always = yes
+		#has_completed_focus = ANT_prepare_for_war_with_cetus
 	}
 	priority = {
 		base = 1

@@ -1,0 +1,52 @@
+# Scripted AI desire for peace actions.
+# See documentation.info file for more detailed scripting information.
+
+peace_ai_desires = {
+    # Corvus Wants most cetan territories
+    COV_cripple_cetus = {
+        peace_action_type = take_states
+        enable = {
+            FROM = {
+                tag = ROOT
+            }
+            FROM.FROM.FROM = {
+                OR = {
+                    state = 39
+                    state = 40
+                    state = 41
+                    state = 42
+                    state = 44
+                    state = 45
+                    state = 46
+                    state = 47
+                    state = 48
+					state = 50
+					state = 154
+                }
+            }
+            ROOT = { 
+                original_tag = COV
+            }
+        }
+        ai_desire = 150
+    }
+	COV_leave_cetus = {
+        peace_action_type = take_states
+        enable = {
+            FROM = {
+                tag = ROOT
+            }
+            FROM.FROM.FROM = {
+                OR = {
+                    state = 7
+                    state = 43
+					state = 49
+                }
+            }
+            ROOT = { 
+                original_tag = COV
+            }
+        }
+        ai_desire = -100
+    }
+}

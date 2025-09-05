@@ -53,6 +53,7 @@
  STATE_41:0 "East Cetus"
  STATE_42:0 "Central Cetus"
  STATE_43:0 "Inner South Cetus"
+ ANT_STATE_43:0 "Northwestern Skorpius"
  STATE_44:0 "Southeastern Cetus"
  STATE_45:0 "Central-South Cetus"
  STATE_46:0 "Whitemouth Region"

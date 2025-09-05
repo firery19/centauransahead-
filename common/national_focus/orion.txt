@@ -447,7 +447,7 @@ focus_tree = {
 			y = 1
 			cost = 10
 			available = {
-				ORI_Kevin_Hart = {is_country_leader = yes}
+				ORI_Edward_Spencer = {is_country_leader = yes}
 				date < 1900.12.09
 			}
 			
@@ -485,7 +485,7 @@ focus_tree = {
 			y = 2
 			cost = 10
 			available = {
-				ORI_Kevin_Hart = {is_country_leader = yes}
+				ORI_Edward_Spencer = {is_country_leader = yes}
 				date < 1900.12.09
 			}
 			
@@ -543,7 +543,7 @@ focus_tree = {
 			y = 2
 			cost = 10
 			available = {
-				ORI_Kevin_Hart = {is_country_leader = yes}
+				ORI_Edward_Spencer = {is_country_leader = yes}
 				date < 1900.12.09
 			
 			}
@@ -571,7 +571,7 @@ focus_tree = {
 			y = 1
 			cost = 10
 			available = {
-				ORI_Kevin_Hart = {is_country_leader = yes}
+				ORI_Edward_Spencer = {is_country_leader = yes}
 				date < 1902.12.09
 			
 			}
@@ -596,7 +596,7 @@ focus_tree = {
 			y = 0
 			cost = 5
 			available = {
-				ORI_Kevin_Hart = {is_country_leader = yes}
+				ORI_Edward_Spencer = {is_country_leader = yes}
 				date < 1902.12.09
 			
 			}
@@ -644,7 +644,7 @@ focus_tree = {
 			y = 6
 			cost = 5
 			available = {
-				ORI_Kevin_Hart = {is_country_leader = yes}
+				ORI_Edward_Spencer = {is_country_leader = yes}
 			}
 			
 			prerequisite = {
@@ -672,7 +672,7 @@ focus_tree = {
 			y = 7
 			cost = 5
 			available = {
-				ORI_Kevin_Hart = {is_country_leader = yes}
+				ORI_Edward_Spencer = {is_country_leader = yes}
 			}
 			
 			prerequisite = {
@@ -698,7 +698,7 @@ focus_tree = {
 			y = 7
 			cost = 5
 			available = {
-				ORI_Kevin_Hart = {is_country_leader = yes}
+				ORI_Edward_Spencer = {is_country_leader = yes}
 			}
 			
 			prerequisite = {
@@ -724,7 +724,7 @@ focus_tree = {
 			y = 6
 			cost = 5
 			available = {
-				ORI_Kevin_Hart = {is_country_leader = yes}
+				ORI_Edward_Spencer = {is_country_leader = yes}
 			}
 			
 			prerequisite = {
@@ -767,7 +767,7 @@ focus_tree = {
 			y = 7
 			cost = 5
 			available = {
-				ORI_Kevin_Hart = {is_country_leader = yes}
+				ORI_Edward_Spencer = {is_country_leader = yes}
 			}
 			
 			prerequisite = {
@@ -795,7 +795,7 @@ focus_tree = {
 			y = 8
 			cost = 5
 			available = {
-				ORI_Kevin_Hart = {is_country_leader = yes}
+				ORI_Edward_Spencer = {is_country_leader = yes}
 			}
 			
 			prerequisite = {
@@ -821,7 +821,7 @@ focus_tree = {
 			y = 8
 			cost = 5
 			available = {
-				ORI_Kevin_Hart = {is_country_leader = yes}
+				ORI_Edward_Spencer = {is_country_leader = yes}
 			}
 			
 			prerequisite = {
@@ -847,7 +847,7 @@ focus_tree = {
 			y = 6
 			cost = 5
 			available = {
-				ORI_Kevin_Hart = {is_country_leader = yes}
+				ORI_Edward_Spencer = {is_country_leader = yes}
 			}
 			
 			prerequisite = {
@@ -871,7 +871,7 @@ focus_tree = {
 			y = 7
 			cost = 5
 			available = {
-				ORI_Kevin_Hart = {is_country_leader = yes}
+				ORI_Edward_Spencer = {is_country_leader = yes}
 			}
 			
 			prerequisite = {
@@ -897,7 +897,7 @@ focus_tree = {
 			y = 8
 			cost = 5
 			available = {
-				ORI_Kevin_Hart = {is_country_leader = yes}
+				ORI_Edward_Spencer = {is_country_leader = yes}
 			}
 			
 			prerequisite = {
@@ -923,7 +923,7 @@ focus_tree = {
 			y = 9
 			cost = 5
 			available = {
-				ORI_Kevin_Hart = {is_country_leader = yes}
+				ORI_Edward_Spencer = {is_country_leader = yes}
 			}
 			
 			prerequisite = {

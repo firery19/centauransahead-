@@ -33,6 +33,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_portrait_ORI_Edward_Spencer"
+		texturefile = "gfx/leaders/ORI/portrait_ORI_Edward_Spencer.dds"
+	}
+
+	spriteType = {
 		name = "GFX_portrait_ORI_Simon_Cromwell"
 		texturefile = "gfx/leaders/ORI/portrait_ORI_Simon_Cromwell.dds"
 	}

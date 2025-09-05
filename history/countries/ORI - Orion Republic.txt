@@ -73,8 +73,7 @@ add_political_power = 1
 
 set_convoys = 275
 
-recruit_character = ORI_Kevin_Hart
-recruit_character = ORI_Simon_Cromwell
+recruit_character = ORI_Edward_Spencer
 
 set_popularities = {
 	democratic = 98

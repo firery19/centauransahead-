@@ -30,6 +30,7 @@ autonomy_state = {
 		autonomy_gain_global_factor = -0.3
 		peace_score_ratio_transferred_to_overlord = 0.1
 		lend_lease_tension_with_overlord = -0.20
+		resistance_target = -0.1
 	}
 	
 	ai_subject_wants_higher = {
@@ -57,6 +58,15 @@ autonomy_state = {
 	
 	can_take_level = {
 		#trigger here
+		IF = {
+			limit = {
+				original_tag = COG
+				has_dlc = "Gotterdammerung"			
+			}
+			NOT = {
+				has_completed_focus = CONGO_overseas_department_of_belgium
+			}
+		}
 	}
 
 	can_lose_level = {

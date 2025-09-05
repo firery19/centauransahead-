@@ -1,0 +1,32 @@
+on_actions = {
+	on_war_relation_added = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = COV
+					FROM = {
+						original_tag = CET
+					}
+				}
+				complete_national_focus = COV_initial_offensive
+				activate_decision = COV_dysfunctional_economy_idk
+				#CET = { set_country_flag = cov_attack_cetus_first }
+			}
+		}
+	}
+	on_peace = {
+		effect = {
+			if = { 
+				limit = {
+					original_tag = COV
+					has_country_flag = COV_ant_help
+					FROM = {
+						original_tag = CET
+					}
+				}
+				ANT = { puppet = COV }
+			}
+		}
+	}
+}
+
