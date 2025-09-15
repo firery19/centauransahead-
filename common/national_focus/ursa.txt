@@ -398,7 +398,7 @@ focus_tree = {
     focus = {
         id = URS_war_propaganda  
         icon = GFX_goal_generic_propaganda
-        x = 13
+        x = 11
         y = 1
         cost = 4.5
         prerequisite = { focus = URS_extraction_policy }
@@ -419,9 +419,9 @@ focus_tree = {
         id = URS_factory_enticement 
         icon = GFX_focus_generic_reorient_production
         x = 12
-        y = 3
+        y = 2
         cost = 4.5
-        prerequisite = { focus = URS_war_propaganda }
+        prerequisite = { focus = URS_oil_field_defense }
         available = {
             has_country_flag = grease_wars_not_started
         }
@@ -446,8 +446,8 @@ focus_tree = {
     focus = {
         id = URS_prevent_economic_collapse
         icon = GFX_focus_generic_public_works
-        x = 13
-        y = 2
+        x = 11
+        y = 3
         cost = 10
         prerequisite = { focus = URS_war_propaganda }
         available = {
@@ -465,9 +465,9 @@ focus_tree = {
         id = URS_factory_moving  
         icon = GFX_focus_DEN_heavy_regulations
         x = 14
-        y = 3
+        y = 2
         cost = 4.5
-        prerequisite = { focus = URS_war_propaganda }
+        prerequisite = { focus = URS_oil_field_defense }
         available = {
             has_country_flag = grease_wars_not_started
         }
@@ -514,7 +514,7 @@ focus_tree = {
     focus = {
         id = URS_oil_field_defense  
         icon = GFX_focus_generic_resource_extraction
-        x = 15
+        x = 13
         y = 1
         cost = 4.5
         prerequisite = { focus = URS_extraction_policy }
@@ -602,7 +602,7 @@ focus_tree = {
     focus = {
         id = URS_eliminate_dissent
         icon = GFX_focus_generic_national_security
-        x = 10
+        x = 9
         y = 1
         cost = 4.5
         prerequisite = { focus = URS_resistance_policy focus = URS_extraction_policy }
@@ -764,11 +764,10 @@ focus_tree = {
     focus = {
         id = URS_mobolization_act  
         icon = GFX_focus_generic_workers
-        x = 11
+        x = 10
         y = 2
         cost = 4.5
         prerequisite = { focus = URS_eliminate_dissent }
-        prerequisite = { focus = URS_extraction_policy }
         #prerequisite = { focus = URS_secure_west_canis focus = URS_antiwar_orion }
         available = {
             has_country_flag = grease_wars_not_started
@@ -835,12 +834,17 @@ focus_tree = {
     focus = {
         id = URS_economy_fixing2   
         icon = GFX_focus_ARG_crackdown_on_corruption
-        x = 6
+        x = 5
         y = 7
         cost = 6
         available = {
             
         }
+		bypass = {
+			ROOT = {
+				has_idea = URS_sluggish_economy_obliterated_1
+			}
+		}
         prerequisite = { focus = URS_economy_fixing }
         completion_reward = {
             swap_ideas = {
@@ -863,10 +867,8 @@ focus_tree = {
         }
         prerequisite = { focus = URS_economy_fixing_kill_peasants }
         completion_reward = {
-            swap_ideas = {
-				add_idea = URS_domestic_unrest_grease_wars_2
-				remove_idea = URS_domestic_unrest_grease_wars_1
-			}
+			add_timed_idea = { idea = URS_domestic_unrest_grease_wars_2 days = 365 }
+			remove_ideas = URS_domestic_unrest_grease_wars_1
 			add_ideas = URS_domestic_unrest_farmer_subsidies
         }
         ai_will_do = {
@@ -931,7 +933,7 @@ focus_tree = {
         available = {
             has_idea = URS_domestic_unrest_grease_wars
         }
-        prerequisite = { focus = URS_economy_fixing }
+        prerequisite = { focus = URS_prelude_grease_war }
         completion_reward = {
             add_stability = 0.1
 			swap_ideas = {
@@ -978,7 +980,7 @@ focus_tree = {
 	
 	focus = {
         id = URS_withdraw_from_east_canis
-        icon = GFX_goal_generic_military_sphere
+        icon = GFX_focus_URS_evacuvate_east_canis
         x = 8
         y = 7
         cost = 5
@@ -1003,7 +1005,7 @@ focus_tree = {
                         cavalry = { x = 2 y = 2 }						
                     }
                 }
-                117 = {
+                118 = {
                     create_unit = {
                         division = "name = \"Independent Cavalry Division\" division_template = \"Independent Cavalry Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
                         owner = ROOT
@@ -1028,7 +1030,7 @@ focus_tree = {
 	
 	focus = {
         id = URS_every_inch
-        icon = GFX_goal_generic_military_sphere
+        icon = GFX_focus_URS_every_inch
         x = 10
         y = 7
         cost = 5
@@ -1077,7 +1079,7 @@ focus_tree = {
 	
 	focus = {
         id = URS_the_grease_wars
-        icon = GFX_goal_generic_military_sphere
+        icon = GFX_focus_URS_grease_wars
         x = 9
         y = 8
         cost = 1
@@ -1099,14 +1101,19 @@ focus_tree = {
 	
 	focus = {
         id = URS_the_circinnian_desert_minefield
-        icon = GFX_goal_generic_military_sphere
+        icon = GFX_focus_URS_desert_minefield
         x = 9
         y = 9
         cost = 5
         prerequisite = { focus = URS_the_grease_wars }
 		
         completion_reward = {
-			
+			114 = {
+				add_dynamic_modifier = {
+					modifier = URS_desert_minefield_modifier
+					days = 730
+				}
+			}
         }
         ai_will_do = {
             factor = 5
@@ -1114,15 +1121,23 @@ focus_tree = {
     }
 	
 	focus = {
-        id = URS_chemical_weapons
-        icon = GFX_goal_generic_military_sphere
+        id = URS_recruit_warcriminal_lmao
+        icon = GFX_focus_URS_recruit_retired_warcriminal
         x = 7
         y = 9
         cost = 5
         prerequisite = { focus = URS_the_grease_wars }
 		
         completion_reward = {
-			
+			add_corps_commander_role = {
+				character = URS_gen_warcriminal
+				traits = { harsh_leader desert_fox }
+				skill = 3
+				attack_skill = 1
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 2
+			}
         }
         ai_will_do = {
             factor = 5

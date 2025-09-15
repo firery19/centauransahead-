@@ -173,3 +173,19 @@ country_event = {
 		add_war_support = -0.15
 	}
 }
+country_event = {
+	id = aqu.4
+	title = aqu.4.t
+	desc = aqu.4.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = aqu.4.a
+		add_timed_idea = {
+			idea = AQU_scorch
+			days = 720	
+		}
+	}
+}

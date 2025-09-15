@@ -126,7 +126,7 @@ technologies = {
 		
 		research_cost = 0.5
 
-		start_year = 1900
+		start_year = 1904
 
 		path = {
 			leads_to_tech = improved_light_battery
@@ -187,15 +187,10 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1904
+		start_year = 1914
 
 		path = {
 			leads_to_tech = improved_light_shell
-			research_cost_coeff = 1
-		}
-
-		path = {
-			leads_to_tech = basic_dp_light_battery
 			research_cost_coeff = 1
 		}
 
@@ -298,10 +293,15 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1944
+		start_year = 1934
 
 		enable_equipment_modules = {
 			ship_light_battery_4
+		}
+
+		path = {
+			leads_to_tech = basic_dp_light_battery
+			research_cost_coeff = 1
 		}
 
 		on_research_complete = {
@@ -431,7 +431,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1904
+		start_year = 1914
 
 		path = {
 			leads_to_tech = improved_medium_shell
@@ -482,12 +482,7 @@ technologies = {
 			leads_to_tech = advanced_medium_battery
 			research_cost_coeff = 1
 		}
-
-		path = {
-			leads_to_tech = basic_dp_medium_battery
-			research_cost_coeff = 1
-		}
-
+		
 		light_cruiser = {
 			lg_attack = 0.05
 			lg_armor_piercing = 0.05
@@ -525,7 +520,12 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1944
+		start_year = 1934
+
+		path = {
+			leads_to_tech = basic_dp_medium_battery
+			research_cost_coeff = 1
+		}
 
 		enable_equipment_modules = {
 			ship_medium_battery_4
@@ -591,8 +591,8 @@ technologies = {
 			}
 			modifier = {
 				OR = {
-					tag = GER
-					tag = JAP
+					tag = CET
+					tag = ANT
 				}
 				factor = 2
 			}
@@ -612,7 +612,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1904
+		start_year = 1914
 
 		path = {
 			leads_to_tech = improved_heavy_shell
@@ -640,8 +640,8 @@ technologies = {
 			}
 			modifier = {
 				OR = {
-					tag = GER
-					tag = JAP
+					tag = CET
+					tag = ANT
 				}
 				factor = 2
 			}
@@ -661,7 +661,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1944
+		start_year = 1940
 
 		enable_equipment_modules = {
 			ship_heavy_battery_4
@@ -684,8 +684,8 @@ technologies = {
 			}
 			modifier = {
 				OR = {
-					tag = GER
-					tag = JAP
+					tag = CET
+					tag = ANT
 				}
 				factor = 2
 			}
@@ -705,7 +705,7 @@ technologies = {
 
 		research_cost = 0.5
 
-		start_year = 1900
+		start_year = 1904
 
 		path = {
 			leads_to_tech = improved_heavy_battery
@@ -748,7 +748,7 @@ technologies = {
 
 		research_cost = 0.5
 
-		start_year = 1912
+		start_year = 1932
 
 		path = {
 			leads_to_tech = advanced_heavy_battery
@@ -790,7 +790,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1950
+		start_year = 1946
 
 		enable_equipment_modules = {
 			dp_light_battery_2
@@ -810,16 +810,17 @@ technologies = {
 
 		folder = {
 			name = mtgnavalsupportfolder
-			position = { x = -3 y = 11 }
+#			position = { x = -3 y = 11 }
+			position = { x = -6 y = 21 }
 		}
 
 		ai_will_do = {
 			factor = 2
 			modifier = {
 				OR = {
-					tag = ENG
-					tag = USA
-					tag = JAP
+					tag = ORI
+					tag = ANT
+					tag = HYS
 				}
 				factor = 20
 			}
@@ -860,16 +861,16 @@ technologies = {
 
 		folder = {
 			name = mtgnavalsupportfolder
-			position = { x = -3 y = 13 }
+			position = { x = -6 y = 23 }
 		}
 
 		ai_will_do = {
 			factor = 2
 			modifier = {
 				OR = {
-					tag = ENG
-					tag = USA
-					tag = JAP
+					tag = HYS
+					tag = ORI
+					tag = ANT
 				}
 				factor = 20
 			}
@@ -905,16 +906,16 @@ technologies = {
 
 		folder = {
 			name = mtgnavalsupportfolder
-			position = { x = -3 y = 19 }
+			position = { x = -6 y = 26 }
 		}
 
 		ai_will_do = {
 			factor = 2
 			modifier = {
 				OR = {
-					tag = ENG
-					tag = USA
-					tag = JAP
+					tag = HYS
+					tag = ORI
+					tag = ANT
 				}
 				factor = 20
 			}
@@ -949,16 +950,16 @@ technologies = {
 
 		folder = {
 			name = mtgnavalsupportfolder
-			position = { x = 3 y = 19 }
+			position = { x = 0 y = 23 }
 		}
 
 		ai_will_do = {
 			factor = 2
 			modifier = {
 				OR = {
-					tag = ENG
-					tag = USA
-					tag = JAP
+					tag = HYS
+					tag = ORI
+					tag = ANT
 				}
 				factor = 20
 			}
@@ -1014,9 +1015,9 @@ technologies = {
 			factor = 2
 			modifier = {
 				OR = {
-					tag = JAP
-					tag = USA
-					tag = GER
+					tag = ANT
+					tag = ORI
+					tag = CET
 				}
 				factor = 5
 			}
@@ -1045,7 +1046,7 @@ technologies = {
 		xp_research_bonus = 1.50
 		research_cost = 2.5
 
-		start_year = 1900
+		start_year = 1922
 
 		path = {
 			leads_to_tech = homing_torpedo
@@ -1074,16 +1075,16 @@ technologies = {
 
 		folder = {
 			name = mtgnavalsupportfolder
-			position = { x = 2 y = 7 }
+			position = { x = 2 y = 13 }
 		}
 
 		ai_will_do = {
 			factor = 2
 			modifier = {
 				OR = {
-					tag = JAP
-					tag = USA
-					tag = GER
+					tag = ANT
+					tag = ORI
+					tag = CET
 				}
 				factor = 5
 			}
@@ -1092,7 +1093,7 @@ technologies = {
 				factor = 3
 			}
 			modifier = {
-				tag = JAP #Japan wants torpedoes EXTRA HARD
+				tag = ANT #ANTan wants torpedoes EXTRA HARD
 				factor = 2
 			}
 		}
@@ -1116,7 +1117,7 @@ technologies = {
 		xp_research_bonus = 1.50
 		research_cost = 2.5
 
-		start_year = 1912
+		start_year = 1954
 		destroyer = {
 			naval_torpedo_hit_chance_factor = 0.1
 		}
@@ -1131,16 +1132,16 @@ technologies = {
 		}
 		folder = {
 			name = mtgnavalsupportfolder
-			position = { x = 2 y = 16 }
+			position = { x = 2 y = 23 }
 		}
 
 		ai_will_do = {
 			factor = 2
 			modifier = {
 				OR = {
-					tag = JAP
-					tag = USA
-					tag = GER
+					tag = ANT
+					tag = ORI
+					tag = CET
 				}
 				factor = 5
 			}
@@ -1177,16 +1178,16 @@ technologies = {
 
 		folder = {
 			name = mtgnavalsupportfolder
-			position = { x = 3 y = 13 }
+			position = { x = 3 y = 19 }
 		}
 
 		ai_will_do = {
 			factor = 2
 			modifier = {
 				OR = {
-					tag = JAP
-					tag = USA
-					tag = GER
+					tag = ANT
+					tag = ORI
+					tag = CET
 				}
 				factor = 5
 			}
@@ -1207,7 +1208,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1900
+		start_year = 1904
 
 		path = {
 			leads_to_tech = advanced_ship_torpedo_launcher
@@ -1232,7 +1233,7 @@ technologies = {
 		ai_will_do = {
 			factor = 2
 			modifier = {
-				tag = JAP
+				tag = CAI
 				factor = 5
 			}
 		}
@@ -1251,7 +1252,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1940
+		start_year = 1922
 
 		path = {
 			leads_to_tech = modern_ship_torpedo_launcher
@@ -1276,7 +1277,7 @@ technologies = {
 		ai_will_do = {
 			factor = 2
 			modifier = {
-				tag = JAP
+				tag = ANT
 				factor = 5
 			}
 		}
@@ -1295,7 +1296,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1944
+		start_year = 1946
 
 		enable_equipment_modules = {
 			ship_torpedo_4
@@ -1308,13 +1309,13 @@ technologies = {
 
 		folder = {
 			name = mtgnavalsupportfolder
-			position = { x = 0 y = 19 }
+			position = { x = 0 y = 21 }
 		}
 
 		ai_will_do = {
 			factor = 2
 			modifier = {
-				tag = JAP
+				tag = ANT
 				factor = 5
 			}
 		}
@@ -1363,11 +1364,11 @@ technologies = {
 			}
 			modifier = {
 				is_historical_focus_on = yes
-				tag = JAP
+				tag = ANT
 				factor = 0.25
 			}
 			modifier = {
-				tag = USA
+				tag = ORI
 				factor = 3
 			}
 			modifier = {
@@ -1410,11 +1411,11 @@ technologies = {
 			factor = 3
 			modifier = {
 				is_historical_focus_on = yes
-				tag = JAP
+				tag = ANT
 				factor = 0.25
 			}
 			modifier = {
-				tag = USA
+				tag = ORI
 				factor = 3
 			}
 			modifier = {
@@ -1453,11 +1454,11 @@ technologies = {
 			factor = 3
 			modifier = {
 				is_historical_focus_on = yes
-				tag = JAP
+				tag = ANT
 				factor = 0.25
 			}
 			modifier = {
-				tag = USA
+				tag = ORI
 				factor = 3
 			}
 			modifier = {
@@ -1485,7 +1486,7 @@ technologies = {
 #    #  #  # #       #  # #  # #  #  #  #  # #  # #       #   # #    #  #  # #  # #  #   #
 #   ### #  # ###      ##   ##  #  #  #  #  #  ##  ###     #   # ###  #  #  #  ##  ###  ##
 
-#NOTE: FIRE CONTROL SYSTEMS ARE IN ELECTROMECHANICAL ENGINEERING FOLDER!
+#NOTE: FIRE CONTROL SYSTEMS ARE IN ELECTROMECHANICAL HYSINEERING FOLDER!
 
 	fire_control_methods_1 = {
 
@@ -1521,7 +1522,7 @@ technologies = {
 				factor = 2
 			}
 			modifier = {
-				tag = JAP
+				tag = ANT
 				factor = 5
 			}
 		}
@@ -1571,7 +1572,7 @@ technologies = {
 				factor = 2
 			}
 			modifier = {
-				tag = JAP
+				tag = ANT
 				factor = 5
 			}
 		}
@@ -1625,7 +1626,7 @@ technologies = {
 				factor = 2
 			}
 			modifier = {
-				tag = JAP
+				tag = ANT
 				factor = 5
 			}
 		}
@@ -1681,10 +1682,10 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GER
-					tag = USA
-					tag = ENG
-					tag = SOV
+					tag = CET
+					tag = ORI
+					tag = HYS
+					tag = URS
 				}
 				factor = 6
 			}
@@ -1733,10 +1734,10 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GER
-					tag = USA
-					tag = ENG
-					tag = SOV
+					tag = CET
+					tag = ORI
+					tag = HYS
+					tag = URS
 				}
 				factor = 6
 			}
@@ -1756,7 +1757,7 @@ technologies = {
 
 		research_cost = 2
 
-		start_year = 1940
+		start_year = 1922
 
 		submarine = {
 			mines_planting = 0.2
@@ -1771,10 +1772,10 @@ technologies = {
 			factor = 1.5
 			modifier = {
 				OR = {
-					tag = GER
-					tag = USA
-					tag = ENG
-					tag = SOV
+					tag = CET
+					tag = ORI
+					tag = HYS
+					tag = URS
 				}
 				factor = 6
 			}
@@ -1794,7 +1795,7 @@ technologies = {
 
 		research_cost = 2
 
-		start_year = 1900
+		start_year = 1902
 
 		path = {
 			leads_to_tech = advanced_naval_mines
@@ -1818,10 +1819,10 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GER
-					tag = USA
-					tag = ENG
-					tag = SOV
+					tag = CET
+					tag = ORI
+					tag = HYS
+					tag = URS
 				}
 				factor = 6
 			}
@@ -1874,10 +1875,10 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GER
-					tag = USA
-					tag = ENG
-					tag = SOV
+					tag = CET
+					tag = ORI
+					tag = HYS
+					tag = URS
 				}
 				factor = 5
 			}
@@ -1901,7 +1902,7 @@ technologies = {
 
 		research_cost = 2
 
-		start_year = 1912
+		start_year = 1928
 
 		path = {
 			leads_to_tech = modern_naval_mines
@@ -1927,8 +1928,8 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = USA
-					tag = ENG
+					tag = ORI
+					tag = HYS
 				}
 				factor = 5
 			}
@@ -1952,7 +1953,7 @@ technologies = {
 
 		research_cost = 2
 
-		start_year = 1912
+		start_year = 1928
 
 		category_nav_bomber = {
 			mines_planting = 0.05
@@ -1973,9 +1974,9 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GER
-					tag = USA
-					tag = ENG
+					tag = CET
+					tag = ORI
+					tag = HYS
 				}
 				factor = 7
 			}
@@ -1996,7 +1997,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1912
+		start_year = 1928
 
 		enable_equipment_modules = {
 			airdropped_mines
@@ -2011,9 +2012,9 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GER
-					tag = USA
-					tag = ENG
+					tag = CET
+					tag = ORI
+					tag = HYS
 				}
 				factor = 7
 			}
@@ -2031,7 +2032,7 @@ technologies = {
 
 		research_cost = 2
 
-		start_year = 1945
+		start_year = 1940
 
 		path = {
 			leads_to_tech = airsweep_mines
@@ -2051,7 +2052,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				tag = USA
+				tag = ORI
 				factor = 3
 			}
 		}
@@ -2074,7 +2075,7 @@ technologies = {
 
 		research_cost = 2
 
-		start_year = 1944
+		start_year = 1940
 
 		category_nav_bomber = {
 			mines_sweeping = 0.1
@@ -2108,7 +2109,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1944
+		start_year = 1940
 
 		enable_equipment_modules = {
 			demining_coil
@@ -2164,21 +2165,21 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				tag = USA
+				tag = ORI
 			}
 			modifier = {
-				has_war_with = JAP
+				has_war_with = ANT
 				factor = 2
 			}
 
 			modifier = {
 				factor = 3
-				tag = JAP
+				tag = ANT
 			}
 
 			modifier = {
 				factor = 2
-				tag = ENG
+				tag = HYS
 			}
 		}
 
@@ -2207,11 +2208,11 @@ technologies = {
 		show_equipment_icon = yes
 
 		research_cost = 2
-		start_year = 1940
+		start_year = 1914
 
 		folder = {
 			name = mtgnavalsupportfolder
-			position = { x = 0 y = 13 }
+			position = { x = 0 y = 11 }
 		}
 
 		ai_will_do = {
@@ -2224,40 +2225,22 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				tag = USA
-			}
-			modifier = {
-				has_war_with = JAP
-				factor = 2
+				tag = ORI
 			}
 			modifier = {
 				factor = 50
-				tag = JAP
+				tag = ORI
 				OR = {
-					has_war_with = USA
-					CHI = {
-						OR = {
-							has_capitulated = yes
-							exists = no
-		                    is_subject_of = JAP
-						}
-					}
+					has_war_with = ANT
 				}
-			}
-
-			modifier = {
-				factor = 2
-				tag = ENG
 			}
 
 			modifier = {
 				factor = 10
 				OR = {
-					tag = ENG
-					tag = USA
+					tag = ANT
 				}
-				has_war_with = GER
-				GER = { has_war_with = SOV }
+				has_war_with = VEG
 			}
 		}
 
@@ -2275,7 +2258,7 @@ technologies = {
 		naval_invasion_capacity = 100
 
 		research_cost = 2
-		start_year = 1944
+		start_year = 1940
 		folder = {
 			name = mtgnavalsupportfolder
 			position = { x = 0 y = 19 }
@@ -2291,20 +2274,20 @@ technologies = {
 
 			modifier = {
 				factor = 20
-				tag = USA
+				tag = ORI
 			}
 			modifier = {
 				factor = 2
-				has_war_with = JAP
+				has_war_with = ANT
 			}
 			modifier = {
 				factor = 3
-				tag = JAP
+				tag = ANT
 			}
 
 			modifier = {
 				factor = 2
-				tag = ENG
+				tag = URS
 			}
 		}
 
@@ -2342,7 +2325,7 @@ technologies = {
 		xp_boost_cost = 75
 		xp_research_bonus = 1.75
 		research_cost = 2.0
-		start_year = 1938
+		start_year = 1912
 		folder = {
 			name = mtgnavalsupportfolder
 			position = { x = 1 y = 10 }
@@ -2378,7 +2361,7 @@ technologies = {
 		xp_boost_cost = 75
 		xp_research_bonus = 1.5
 		research_cost = 2.5
-		start_year = 1943
+		start_year = 1936
 		folder = {
 			name = mtgnavalsupportfolder
 			position = { x = 1 y = 17 }

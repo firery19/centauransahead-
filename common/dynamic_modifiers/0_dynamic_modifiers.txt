@@ -23,52 +23,154 @@
 #		}
 #	}
 #
-#	can be added to countries, states or unit leaders
+#	can be added to countries, states, unit leaders or special projects
 #	will only updated daily, unless forced by force_update_dynamic_modifier effect
 
-COV_southern_offensive_modifier = { #STATE MODIFIER
-	enable = { always = yes }
-
-	icon = GFX_modifiers_SOV_armored_battery
-	army_attack_factor = 0.1
-	pocket_penalty = -0.15
+sabotaged_resources = {
+	remove_trigger = { 
+		ROOT = {
+			has_resistance = no
+		}
+	}
+	
+	icon = GFX_modifiers_sabotaged_resource
+	
+	temporary_state_resource_oil = sabotaged_oil
+	temporary_state_resource_aluminium = sabotaged_aluminium
+	temporary_state_resource_rubber = sabotaged_rubber
+	temporary_state_resource_tungsten = sabotaged_tungsten
+	temporary_state_resource_steel = sabotaged_steel
+	temporary_state_resource_chromium = sabotaged_chromium
 }
 
-AQU_defence_line_dynamic_modifier = { #State Modifier
+autonomous_state = {
 	enable = { always = yes }
 
-	icon = GFX_modifiers_generic_defense
-    state_bunker_max_level_terrain_limit = 2
+	icon = GFX_modifiers_sabotaged_resource
+	
+	recruitable_population_factor = -0.5
+	local_building_slots_factor = -0.25
+	state_resources_factor = -0.25
+	state_production_speed_buildings_factor = -0.25
+	remove_trigger = {
+		OWNER = { 
+			OR = {
+				original_tag = CAI 
+			}
+		}
+	}
 }
 
-CTA_battery_line_dynamic_modifier = { #State Modifier
+semi_autonomous_state = {
 	enable = { always = yes }
 
-	icon = GFX_modifiers_generic_defense
-    state_coastal_bunker_max_level_terrain_limit = 4
+	icon = GFX_modifiers_sabotaged_resource
+	
+	local_building_slots_factor = -0.25
+	state_resources_factor = -0.25
+	state_production_speed_buildings_factor = -0.25
+	remove_trigger = {
+		OWNER = { 
+			OR = {
+				original_tag = CAI
+			}
+		}
+	}
 }
 
-CTA_defence_line_dynamic_modifier = { #State Modifier
+dense_rural_infrastructure = { #State Modifier
 	enable = { always = yes }
+	remove_trigger = {
+		ROOT = {
+			infrastructure > 4
+		}
+	}
 
-	icon = GFX_modifiers_generic_defense
-    state_bunker_max_level_terrain_limit = 2
-	state_coastal_bunker_max_level_terrain_limit = 2
+	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+	
+	local_non_core_supply_impact_factor = 0.35
 }
 
-AQU_the_scorch_dynamic_modifier = { #State Modifier
+conscription_exemptions_granted = {
 	enable = { always = yes }
 
-	icon = GFX_modifiers_generic_defense
-    supply_factor = 0.6
-	army_defense_factor = 1.2
+	icon = GFX_modifiers_conscription_exemptions_granted
+	
+	recruitable_population_factor = -0.85
 }
 
-CET_sector_funded = { #State Modifier
+international_city = {
 	enable = { always = yes }
 
-	icon = GFX_modifiers_generic_defense
-    state_production_speed_bunker_factor = 1
-	state_production_speed_land_fort_factor = 1
-	state_production_speed_anti_air_building_factor = 1
+	icon = GFX_modifiers_sabotaged_resource
+	
+	state_resources_factor = -1
+	recruitable_population_factor = -1
+	local_factories = -1
+	disable_strategic_redeployment = yes
+}
+
+international_city_2 = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	state_resources_factor = -0.75
+	recruitable_population_factor = -0.75
+	local_factories = -0.75
+	resistance_growth = 1.2
+	disable_strategic_redeployment = yes
+}
+
+international_city_3 = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	state_resources_factor = -0.5
+	recruitable_population_factor = -0.5
+	local_factories = -0.5
+	resistance_growth = 0.6
+	compliance_gain = 0.1
+	disable_strategic_redeployment = yes
+}
+
+international_city_4 = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	state_resources_factor = -0.25
+	recruitable_population_factor = -0.25
+	local_factories = -0.25
+	resistance_growth = 0.2
+	compliance_gain = 0.4
+	disable_strategic_redeployment = yes
+}
+
+unity_propaganda = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	compliance_gain = 0.7
+}
+
+military_appeasement = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	resistance_growth = -0.5
+}
+
+unplanned_offensive = {
+	icon = GFX_unplanned_offensive
+	attacker_modifier = yes
+
+	air_cas_present_factor = -0.75
+	army_attack_factor = -0.9
+	army_speed_factor = -0.75
+	ground_attack_factor = -0.75
+	local_org_regain = -0.5
 }

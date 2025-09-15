@@ -9,7 +9,7 @@ country_event = {
 
     is_triggered_only = yes #focus
 
-    option = { 
+    option = {
         name = AANT1
         
 #        custom_effect_tooltip = tt_cet_integration

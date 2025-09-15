@@ -9,6 +9,7 @@ state={
 		owner = AQU
 		add_core_of = AQU
 		add_claim_by = ANT
+		add_claim_by = LUP
 		buildings = {
 			infrastructure = 3
 

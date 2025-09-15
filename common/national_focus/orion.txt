@@ -152,9 +152,9 @@ focus_tree = {
 			HYS = {
 				add_ideas=ORS_PrepareMilitaryIdea
 			}
-			ai_will_do = {
-				factor = 5
-			}
+		}
+		ai_will_do = {
+			factor = 5
 		}
 	}
 	
@@ -955,7 +955,7 @@ focus_tree = {
 			y = 0
 			cost = 5
 			available = {
-				
+			has_completed_focus = ORS_TheUrsanQuestion
 			}
 			
 			prerequisite = {
@@ -970,31 +970,6 @@ focus_tree = {
 			}
 		}
 		
-		focus = {
-			id = ORS_OrioniteImperialism
-			icon = GFX_focus_ORI_OrioniteImperialism
-			x = 46
-			y = 1
-			cost = 5
-			available = {
-				
-			}
-			
-			prerequisite = {
-				focus = ORS_QuestionOfForeignPolicy
-			}
-			
-			mutually_exclusive = { focus = ORS_OrioniteInterventionism}
-			mutually_exclusive = { focus = ORS_OrioniteIsolationism }
-			
-			completion_reward = {
-				add_war_support = -0.05 #realistically people would oppose going on offensive wars
-			}
-			
-			ai_will_do = {
-				factor = 5 #ruins historical games; should only be playable path for the player or non hist AI
-			}
-		}
 		
 		focus = {
 			id = ORS_OrioniteInterventionism
@@ -1045,6 +1020,130 @@ focus_tree = {
 			
 			ai_will_do = {
 				factor = 5
+			}
+		}
+		
+		focus = {
+		id = ORI_strong_economy
+		icon = GFX_
+		prerequisite = { focus = ORS_OrioniteIsolationism }
+		relative_position_id = ORS_OrioniteIsolationism
+		x = -4
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = ORI_
+		icon = GFX_
+		prerequisite = { focus = ORS_OrioniteIsolationism }
+		relative_position_id = ORS_OrioniteIsolationism
+		x = -2
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = ORI_
+		icon = GFX_
+		prerequisite = { focus = ORS_OrioniteIsolationism }
+		relative_position_id = ORS_OrioniteIsolationism
+		x = 0
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = ORI_
+		icon = GFX_
+		prerequisite = { focus = ORS_OrioniteIsolationism }
+		relative_position_id = ORS_OrioniteIsolationism
+		x = 0
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = ORI_
+		icon = GFX_
+		prerequisite = { focus = ORS_OrioniteIsolationism }
+		relative_position_id = ORS_OrioniteIsolationism
+		x = 0
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = ORI_
+		icon = GFX_
+		prerequisite = { focus = ORS_OrioniteIsolationism }
+		relative_position_id = ORS_OrioniteIsolationism
+		x = 0
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = ORI_
+		icon = GFX_
+		prerequisite = { focus = ORS_OrioniteIsolationism }
+		relative_position_id = ORS_OrioniteIsolationism
+		x = 0
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+			id = ORS_OrioniteImperialism
+			icon = GFX_focus_ORI_OrioniteImperialism
+			x = 46
+			y = 1
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = ORS_QuestionOfForeignPolicy
+			}
+			
+			mutually_exclusive = { focus = ORS_OrioniteInterventionism}
+			mutually_exclusive = { focus = ORS_OrioniteIsolationism }
+			
+			completion_reward = {
+				add_war_support = -0.05 #realistically people would oppose going on offensive wars
+			}
+			
+			ai_will_do = {
+				factor = 0 #ruins historical games; should only be playable path for the player or non hist AI
 			}
 		}
 		

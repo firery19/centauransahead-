@@ -312,3 +312,8 @@
  # characters
  
  CET_frederick_scapha:0 "Frederick I"
+
+ CET_neutrality_party:0 "House of Scapha"
+ CET_democratic_party:0 "Cetan National Party"
+ CET_fascism_party:0 "Exercitus Maris"
+ CET_communism_party:0 "Cetan Army" #troll

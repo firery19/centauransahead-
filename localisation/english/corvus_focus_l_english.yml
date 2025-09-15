@@ -322,3 +322,8 @@
  COV_pp_50_cp_10:0 "£pol_power  §Y50§!  £command_power  §Y10§!"
  COV_pp_50_cp_10_blocked:0 "£pol_power  §R50§!  £command_power  §R10§!"
  COV_pp_50_cp_10_tooltip:0 "It costs £pol_power  §Y50§! and £command_power  §Y10§! to take the decision"
+ 
+ COV_neutrality_party:0 "House of Khorin"
+ COV_democratic_party:0 "Democratic Dissidents"
+ COV_fascism_party:0 "Imperial Corvun Army"
+ COV_communism_party:0 "Underground Socialist Parties"

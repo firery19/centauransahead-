@@ -1,0 +1,60 @@
+URS_historical_plan = {
+	name = "Ursan Historical Plan"
+	desc = "Defend"
+
+	allowed = {
+		original_tag = URS
+	}
+	enable = {
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = URS_ai_behavior
+					option = DEFAULT
+				}
+			}
+			has_country_flag = URS_AI_RANDOM_HISTORICAL
+			has_game_rule = {
+				rule = URS_ai_behavior
+				option = HISTORICAL
+			}
+		}	
+	}
+	abort = {
+	
+	}
+
+	ai_national_focuses = {
+		#ASAP -> Do them as soon as army restrictions get lifted
+		#BUL_reorganize_the_military_industry
+		#BUL_rebuild_the_army
+		
+		#1936
+		#URS_
+	}
+
+	focus_factors = {
+#		BUL_plot_against_boris = 0
+#		BUL_total_war = 0
+#		BUL_cooperate_with_the_zveno = 0
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

@@ -70,3 +70,49 @@ focus_tree = {
             factor = 5
         }
     }
+	focus = {
+        id = RIA_north_centauran_alliance
+        icon = GFX_goal_generic_territory_or_war
+        x = 35
+        y = 10
+        cost = 5
+        available = {
+		OR = {
+        		ANT = { has_war_with = GRS }
+        		ANT = { has_war_with = CLB }
+        		ANT = { has_war_with = CTA }
+        		ANT = { has_war_with = TUC }
+        		ANT = { has_war_with = RIA }
+		}
+        }
+        completion_reward = {
+        	add_stability = 0.05
+		add_war_support = 0.05
+		create_faction = "North Centauran Alliance"
+				GRS = {
+					country_event = { 
+						id = ria.1
+						}
+					}
+				CLB = {
+					country_event = { 
+						id = ria.1
+						}
+					}
+				CTA = {
+					country_event = { 
+						id = ria.1
+						}
+					}
+				TUC = {
+					country_event = { 
+						id = ria.1
+						}
+					}
+					
+
+        }
+        ai_will_do = {
+            factor = 100
+        }
+    }

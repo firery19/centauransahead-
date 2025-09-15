@@ -3,10 +3,10 @@
 	##### NAVAL UNITS #####
 	fleet = {
 		name = "Northern Fleet"
-		naval_base = 3088
+		naval_base = 3554
 		task_force = {				
 			name = "1st Command"
-			location = 3088
+			location = 3554
 			ship = { name = "HS Thistle" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = HYS version_name = "Thistle Class" } } }
 			ship = { name = "HS Arctium" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = HYS version_name = "Thistle Class" } } }
 			ship = { name = "HS Carduus" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = HYS version_name = "Thistle Class" } } }

@@ -3,10 +3,10 @@ units = {
 	##### NAVAL UNITS #####
 	fleet = {
 		name = "Southern Fleet"
-		naval_base = 2910
+		naval_base = 1774
 		task_force = {				
-			name = "Dair Command"
-			location = 2910
+			name = "Ravo Command"
+			location = 1774
 			ship = { name = "CS Khorin" definition = battleship equipment = { battleship_1 = { amount = 1 owner = COV version_name = "Khorin Class" } } }
 			ship = { name = "CS Corvō" definition = battleship equipment = { battleship_1 = { amount = 1 owner = COV version_name = "Khorin Class" } } }
 			ship = { name = "CS Rex" definition = battleship equipment = { battleship_1 = { amount = 1 owner = COV version_name = "Khorin Class" } } }

@@ -1,32 +1,16 @@
 add_namespace = COV
 
-country_event = {
+country_event = { # on action replaced
     id = cov.1
     title = cov.1.t
     desc = cov.1.d
     #picture = GFX_
 
-    is_triggered_only = yes #focus
+    is_triggered_only = yes #focus 
 	fire_only_once = yes
-
+	
     option = {
         name = cov.1.a
-		trigger = {
-		on_declare_war = {
-		effect = {
-				if = {
-					limit = {
-						tag = COV
-						FROM = { tag = CET }
-						}
-						complete_national_focus = COV_initial_offensive
-					}
-				}
-			}
-		}
-		mean_time_to_happen = {
-        days = 2
-		}	
         hidden_effect = {
             complete_national_focus = COV_initial_offensive
         }
@@ -84,9 +68,10 @@ country_event = {
 	
 	option = {
 		name = cov.4.a # Yes
-		ai_chance = {factor = 99}
+		ai_chance = {base = 99}
+		create_faction = Solstice
+		add_to_faction = COV
 		COV = {
-			add_to_faction = ROOT = {
 				add_ai_strategy = {
 						type = alliance
 						id = "ANT"
@@ -94,10 +79,10 @@ country_event = {
 				}
 			}
 		}
-	}
+	
 	
 	option = {
 		name = cov.4.b # NO 
-		ai_chance = {factor = 1}
+		ai_chance = {base = 1}
 	}
 }

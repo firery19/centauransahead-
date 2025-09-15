@@ -45,10 +45,10 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1920
+		start_year = 1924
 		folder = {
 			name = air_techs_folder
-			position = { x = 1 y = 6 } 
+			position = { x = 1 y = 7 } 
 		}
 		
 		categories = {
@@ -73,7 +73,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1948
+		start_year = 1950
 		folder = {
 			name = air_techs_folder
 			position = { x = 1 y = 12 } 
@@ -154,7 +154,7 @@ technologies = {
 		}
 	
 		research_cost = 1.0 #Carrier Variant
-		start_year = 1912
+		start_year = 1904
 		
 		categories = {
 			naval_air
@@ -1313,7 +1313,7 @@ technologies = {
 		#}
 		
 		research_cost = 2
-		start_year = 1912
+		start_year = 1914
 		folder = {
 			name = air_techs_folder
 			position = { x = 2 y = 2 }
@@ -1343,7 +1343,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1916
+		start_year = 1918
 		folder = {
 			name = air_techs_folder
 			position = { x = -2 y = 4 }
@@ -1374,7 +1374,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1920
+		start_year = 1922
 		folder = {
 			name = air_techs_folder
 			position = { x = -2 y = 6 }
@@ -1405,7 +1405,7 @@ technologies = {
 		#}
 
 		research_cost = 2
-		start_year = 1926
+		start_year = 1928
 		folder = {
 			name = air_techs_folder
 			position = { x = -2 y = 8 }
@@ -1436,7 +1436,7 @@ technologies = {
 		}
 		allow_branch = { has_dlc = "La Resistance" }
 		research_cost = 2
-		start_year = 1916
+		start_year = 1914
 		folder = {
 			name = air_techs_folder
 			position = { x = 10 y = 4 }
@@ -1480,7 +1480,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1920
+		start_year = 1918
 		folder = {
 			name = air_techs_folder
 			position = { x = 10 y = 6 }
@@ -1525,7 +1525,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1916
+		start_year = 1918
 
 		folder = {
 			name = air_techs_folder
@@ -1598,7 +1598,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1920
+		start_year = 1922
 		folder = {
 			name = air_techs_folder
 			position = { x = 2 y = 6 }
@@ -1653,7 +1653,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1926
+		start_year = 1928
 		folder = {
 			name = air_techs_folder
 			position = { x = 2 y = 8 }

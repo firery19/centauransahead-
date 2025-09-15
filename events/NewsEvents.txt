@@ -1,5 +1,111 @@
 ﻿add_namespace = news
 
+news_event = { # fall of alcor
+	id = news.1
+	title = news.1.t
+	desc = news.1.d
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	trigger = {
+	OR = {
+		117 = { is_controlled_by = ORI }
+		117 = { is_controlled_by = HYS }
+		117 = { is_controlled_by = LPS }
+		117 = { is_controlled_by = CNS }
+		}
+		117 = { is_owned_by = URS }
+		URS = { has_war_with = ORI }
+		NOT = { has_global_flag = fall_of_alcor }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_alcor
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = news.1.a
+		trigger = {
+			NOT = {
+				TAG = ORI
+				TAG = HYS
+				TAG = LPS
+				TAG = CNS
+				TAG = URS
+			}
+		}
+	}
+	option = {
+		name = news.1.b
+		trigger = {
+		TAG = ORI 
+		TAG = HYS
+		TAG = LPS
+		TAG = CNS
+		}
+	}
+	option = {
+		name = news.1.c
+		trigger = { TAG = URS }
+	}
+}
+
+news_event = { # end of grease wars
+	id = news.2
+	title = news.2.t
+	desc = news.2.d
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	trigger = {
+	
+	}
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = grease_war_end
+	}
+	
+#	mean_time_to_happen = {
+#		days = 2
+#	}
+	
+	option = {
+		name = news.2.a
+		trigger = {
+			NOT = {
+				TAG = ORI
+				TAG = HYS
+				TAG = LPS
+				TAG = CNS
+				TAG = URS
+			}
+		}
+	}
+	option = {
+		name = news.2.b
+		trigger = {
+		OR = {
+			TAG = ORI 
+			TAG = HYS
+			TAG = LPS
+			TAG = CNS
+			}
+		}
+	}
+	option = {
+		name = news.2.c
+		trigger = { TAG = URS }
+	}
+}
+
 # The Fall of Nauta (Antares)
 news_event = {
 	id = news.410
@@ -213,5 +319,131 @@ news_event = {
 				TAG = ORI
 			}
 		}
+	}
+}
+
+news_event = {
+	id = news.415
+	title = news.415.t
+	desc = news.415.d
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	trigger = {
+		48 = { is_controlled_by = COV }
+		48 = { is_owned_by = CET }
+		COV = { has_war_with = CET }
+		NOT = { has_global_flag = fall_of_multa_corvus }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_multa_corvus
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = news.410.a
+		trigger = {
+			NOT = {
+				TAG = CET
+				TAG = COV
+			}
+		}
+	}
+	option = {
+		name = news.410.b
+		trigger = { TAG = CET }
+	}
+	option = {
+		name = news.410.c
+		trigger = { TAG = COV }
+	}
+}
+
+news_event = {
+	id = news.416
+	title = news.416.t
+	desc = news.416.d
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	trigger = {
+		46 = { is_owned_by = CET }
+		COV = { has_war_with = CET }
+		NOT = { has_global_flag = fall_of_kirk_corvus }
+		COV = { controls_province = 5032 }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_kirk_corvus
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = news.410.a
+		trigger = {
+			NOT = {
+				TAG = CET
+				TAG = COV
+			}
+		}
+	}
+	option = {
+		name = news.410.b
+		trigger = { TAG = CET }
+	}
+	option = {
+		name = news.410.c
+		trigger = { TAG = COV }
+	}
+}
+
+news_event = {
+	id = news.417
+	title = news.417.t
+	desc = news.417.d
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	trigger = {
+		46 = { is_owned_by = CET }
+		COV = { has_war_with = CET }
+		NOT = { has_global_flag = fall_of_carran_corvus }
+		COV = { controls_province = 5136 }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_carran_corvus
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = news.410.a
+		trigger = {
+			NOT = {
+				TAG = CET
+				TAG = COV
+			}
+		}
+	}
+	option = {
+		name = news.410.b
+		trigger = { TAG = CET }
+	}
+	option = {
+		name = news.410.c
+		trigger = { TAG = COV }
 	}
 }

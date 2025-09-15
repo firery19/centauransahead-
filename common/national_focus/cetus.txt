@@ -516,7 +516,7 @@ focus_tree = {
         y = 1
 		icon = GFX_focus_generic_cetus
         relative_position_id = CET_monarchist
-		prerequisite = { focus = CET_monarchist }
+		prerequisite = { focus = CET_monarchist focus = CET_democracy }
         
         #search_filters =
         cost = 5
@@ -1124,7 +1124,7 @@ focus_tree = {
 		prerequisite = { focus = CET_develop_ourselves }
         
         #search_filters =
-        cost = 10
+        cost = 5
 
         completion_reward = {
 		39 = { 
@@ -1151,7 +1151,7 @@ focus_tree = {
 		prerequisite = { focus = CET_our_resources focus = CET_towards_a_greater_cetus }
         
         #search_filters =
-        cost = 10
+        cost = 5
 
         completion_reward = {
 		random_state = {
@@ -1201,7 +1201,7 @@ focus_tree = {
 		}
 		
         #search_filters =
-        cost = 10
+        cost = 5
 
         completion_reward = {
 		48 = { add_resource = {
@@ -1224,7 +1224,7 @@ focus_tree = {
 		}
 		
         #search_filters =
-        cost = 10
+        cost = 5
 
         completion_reward = {
 		49 = { add_resource = {
@@ -1583,6 +1583,7 @@ focus_tree = {
         }
     }
 	
+	
 	###################################################### democratic
 	
 	focus = {
@@ -1601,6 +1602,7 @@ focus_tree = {
         prerequisite = { focus = CET_status_quo }
 
         completion_reward = {
+		custom_effect_tooltip = im_rerouting_you_back
             add_popularity = {
             ideology = democratic
             popularity = 0.1
@@ -1608,167 +1610,11 @@ focus_tree = {
         }
 	}
 	
-	focus = {
-        id = CET_a_changing_landscape
-        x = 0
-        y = 1
-		icon = GFX_focus_hun_elect_a_king
-        relative_position_id = CET_democracy
-		prerequisite = { focus = CET_democracy }
-        
-        #search_filters =
-        cost = 10
-
-        completion_reward = {
-		army_experience = 10
-        }
-    }
-	
-	focus = {
-        id = CET_seek_kings_support
-        x = 0
-        y = 1
-		icon = GFX_focus_NOR_restore_public_trust_in_the_storting
-        relative_position_id = CET_a_changing_landscape
-		prerequisite = { focus = CET_a_changing_landscape }
-        
-        #search_filters =
-        cost = 10
-
-        completion_reward = {
-		army_experience = 10
-        }
-    }
-	
-	focus = {
-        id = CET_allow_voting
-        x = 0
-        y = 1
-		icon = GFX_focus_NOR_restore_public_trust_in_the_storting
-        relative_position_id = CET_seek_kings_support
-		prerequisite = { focus = CET_seek_kings_support }
-        
-        #search_filters =
-        cost = 10
-
-        completion_reward = {
-		army_experience = 10
-        }
-    }
-	
-	focus = {
-        id = CET_a_constitutional_monarchy
-        x = 0
-        y = 1
-		icon = GFX_focus_BRA_constitutional_monarchy
-        relative_position_id = CET_allow_voting
-		mutually_exclusive = { focus = CET_a_full_democracy }
-		prerequisite = { focus = CET_allow_voting }
-        
-        #search_filters =
-        cost = 10
-
-        completion_reward = {
-		army_experience = 10
-        }
-    }
-	
-	focus = {
-        id = CET_a_full_democracy
-        x = 2
-        y = 1
-		icon = GFX_focus_NOR_send_the_king_back_to_denmark
-        relative_position_id = CET_allow_voting
-		mutually_exclusive = { focus = CET_a_constitutional_monarchy }
-		prerequisite = { focus = CET_allow_voting }
-        
-        #search_filters =
-        cost = 10
-
-        completion_reward = {
-		army_experience = 10
-        }
-    }
-	
-	focus = {
-        id = CET_seek_aquilan_gurantee #move this to another part of the tree later
-        x = -1
-        y = 1
-		icon = GFX_focus_ARG_defense_and_democracy
-        relative_position_id = CET_a_full_democracy
-		prerequisite = { focus = CET_a_full_democracy focus = CET_a_constitutional_monarchy }
-        
-        #search_filters =
-        cost = 10
-
-        completion_reward = {
-		army_experience = 10
-        }
-    }
-	
-	focus = {
-        id = CET_aquilan_alliance
-        x = 0
-        y = 1
-		icon = GFX_focus_ARG_defense_and_democracy
-        relative_position_id = CET_seek_aquilan_gurantee
-		prerequisite = { focus = CET_seek_aquilan_gurantee }
-        
-        #search_filters =
-        cost = 10
-
-        completion_reward = {
-		army_experience = 10
-        }
-    }
-	
-	focus = {
-        id = CET_militarism
-        x = 40
-        y = 0
-		icon = GFX_focus_ger_assassinate_mussolini
-		mutually_exclusive = { focus = CET_status_quo }
-        
-        #search_filters =
-        cost = 10
-
-        completion_reward = {
-            add_war_support = 0.05
-            hidden_effect = {
-				if = {
-					limit = {
-						has_game_rule = {
-							rule = obsolete_focus_branches_visibility
-							option = HIDE
-						}
-					}
-					mark_focus_tree_layout_dirty = yes
-				}
-			}
-        }
-    }
-	
-	focus = {
-        id = CET_milw
-        x = 2
-        y = 1
-		icon = GFX_goal_generic_army_doctrines
-        relative_position_id = CET_militarism
-		prerequisite = { focus = CET_militarism }
-        
-        #search_filters =
-        cost = 10
-
-        completion_reward = {
-		army_experience = 10
-        }
-    }
-	
 	################################################################ army ############################################################################################
 	
 	focus = {
         id = CET_armed_forces
-        x = 60
+        x = 50
         y = 0
 		icon = GFX_focus_SWE_neither_death_nor_dishonor
         
@@ -2323,7 +2169,8 @@ focus_tree = {
 	focus = {
         id = CET_defence_plans
 		icon = GFX_goal_generic_defence
-        x = 22
+        #x = 22
+		x = 16
         y = 1
         relative_position_id = CET_army
 		prerequisite = { focus = CET_army }
@@ -3430,7 +3277,8 @@ focus_tree = {
 	focus = {
         id = CET_plan_columba
 		icon = GFX_focus_generic_no_image
-        x = 12
+        #x = 12
+		x = 8
         y = 1
         relative_position_id = CET_defence_plans
 		prerequisite = { focus = CET_defence_plans }

@@ -57,6 +57,7 @@ bookmarks = {
 			ideas = {
 				COV_revanchism_idea
 				COV_dysfunctional_economy_idea
+				COV_mafia_rampant_idea
 			}
 			focuses = {
 				COV_industry
@@ -102,6 +103,12 @@ bookmarks = {
 			ideas = {
 				AQU_iron_army_idea
 				AQU_lucas_silva_idea
+				AQU_rusting_army_idea
+			}
+			focuses = {
+				AQU_fort_management
+				AQU_civil_guard
+				AQU_army_modernisation
 			}
 		}
 		GRS = {

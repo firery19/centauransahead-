@@ -65,6 +65,9 @@
  cg_recruitment_event.1.t:0 "Civil Guard Recruitment Finished"
  cg_recruitment_event.1.desc:0 "Our organisation of Civil Guard units have finished and turned them into functional units!!"
  cg_recruitment_event.1.a:0 "Let them fight alongside the army"
+ aqu.4.t:0 "The Scorch"
+ aqu.4.d:0 "Antares is burning our forests to make it easier to attack!"
+ aqu.4.a:0 "Oh no!"
  ###########
  # decisions
  ###########

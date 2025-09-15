@@ -1,0 +1,1433 @@
+focus_tree = {
+	id = columban_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = CLB
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 1000 }
+	
+	##########################################POLITICS##############################################
+	##MONARCHY##
+	focus = {
+		id = clb_monarchy_1
+		icon = GFX_focus_generic_home_defense
+		x = 40
+		y = 0
+		cost = 10
+		mutually_exclusive = { focus = clb_democratic_1 focus = clb_ally_rooks }
+
+		ai_will_do = {
+			factor = 5
+#			modifier = { #testing
+#				ANT = { surrender_progress < 0.2 }
+#				factor = 0
+#			}
+		}
+
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+            add_popularity = {
+            ideology = neutrality
+            popularity = 0.2
+            add_stability = 0.1
+		    }
+        }
+	
+    }
+	focus = {
+		id = clb_monarchy_constitutional
+		icon = GFX_focus_generic_treaty
+		x = 38
+		y = 1
+		cost = 10
+		prerequisite = { focus = clb_monarchy_1 }
+		mutually_exclusive = { focus = clb_monarchy_unconstitutional }
+
+		ai_will_do = {
+			factor = 5
+#			modifier = { #testing
+#				ANT = { surrender_progress < 0.2 }
+#				factor = 0
+#			}
+		}
+
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+				add_stability = 0.1
+			}
+		}
+	}
+	focus = {
+		id = clb_monarchy_riaan_friendship
+		icon = GFX_goal_continuous_increase_nu
+		x = 36
+		y = 2
+		cost = 10
+		prerequisite = { focus = clb_monarchy_constitutional }
+
+		ai_will_do = {
+			factor = 5
+#			modifier = { #testing
+#				ANT = { surrender_progress < 0.2 }
+#				factor = 0
+#			}
+		}
+
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 1
+		}
+	}
+focus = {
+		id = clb_monarchy_civ
+		icon = GFX_goal_continuous_non_factory_construct
+		x = 38
+		y = 2
+		cost = 10
+		prerequisite = { focus = clb_monarchy_constitutional }
+
+		ai_will_do = {
+			factor = 5
+#			modifier = { #testing
+#				ANT = { surrender_progress < 0.2 }
+#				factor = 0
+#			}
+		}
+
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 1
+		}
+	}
+	focus = {
+		id = clb_monarchy_unconstitutional
+		icon = GFX_focus_generic_monarchy_1
+		x = 42
+		y = 1
+		cost = 10
+		prerequisite = { focus = clb_monarchy_1 }
+		mutually_exclusive = { focus = clb_monarchy_constitutional }
+
+		ai_will_do = {
+			factor = 5
+#			modifier = { #testing
+#				ANT = { surrender_progress < 0.2 }
+#				factor = 0
+#			}
+		}
+
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+            add_popularity = {
+                ideology = neutrality
+                popularity = 0.1
+                add_war_support = 0.1
+			}
+		}
+	}
+focus = {
+		id = clb_monarchy_corvus_friendship
+		icon = GFX_goal_continuous_increase_nu
+		x = 44
+		y = 2
+		cost = 10
+		prerequisite = { focus = clb_monarchy_unconstitutional }
+
+		ai_will_do = {
+			factor = 5
+#			modifier = { #testing
+#				ANT = { surrender_progress < 0.2 }
+#				factor = 0
+#			}
+		}
+
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 1
+		}
+	}
+focus = {
+		id = clb_monarchy_mil
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 42
+		y = 2
+		cost = 10
+		prerequisite = { focus = clb_monarchy_unconstitutional }
+
+		ai_will_do = {
+			factor = 5
+#			modifier = { #testing
+#				ANT = { surrender_progress < 0.2 }
+#				factor = 0
+#			}
+		}
+
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 1
+		}
+	}
+focus = {
+		id = clb_proud_nation
+		icon = GFX_focus_generic_support_the_left_right
+		x = 40
+		y = 3
+		cost = 10
+		prerequisite = {
+		focus = clb_monarchy_unconstitutional
+		focus = clb_monarchy_constitutional
+		}
+
+		ai_will_do = {
+			factor = 5
+#			modifier = { #testing
+#				ANT = { surrender_progress < 0.2 }
+#				factor = 0
+#			}
+		}
+
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 1
+		}
+	}
+focus = {
+		id = clb_north_ally
+		icon = GFX_focus_NORDIC_dem_form_alliance
+		x = 38
+		y = 4
+		cost = 10
+		prerequisite = {
+		focus = clb_proud_nation
+		}
+		mutually_exclusive = { focus = clb_take_all focus = clb_cor_ally }
+		prerequisite = { focus = clb_monarchy_riaan_friendship }
+
+		ai_will_do = {
+			factor = 5
+#			modifier = { #testing
+#				ANT = { surrender_progress < 0.2 }
+#				factor = 0
+#			}
+		}
+
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 1
+		}
+	}	
+focus = {
+		id = clb_cor_ally
+		icon = GFX_focus_NORDIC_mon_form_alliance
+		x = 42
+		y = 4
+		cost = 10
+		prerequisite = {
+		focus = clb_proud_nation
+		}
+		prerequisite = {
+		focus = clb_monarchy_corvus_friendship
+		}
+		mutually_exclusive = { focus = clb_take_all focus = clb_north_ally }
+
+		ai_will_do = {
+			factor = 5
+#			modifier = { #testing
+#				ANT = { surrender_progress < 0.2 }
+#				factor = 0
+#			}
+		}
+
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 1
+		}
+	}		
+##DEMOCRATIC##
+focus = {
+		id = clb_democratic_1
+		icon = GFX_goal_support_democracy
+		x = 34
+		y = 0
+		cost = 10
+		mutually_exclusive = { focus = clb_monarchy_1 focus = clb_democratic_1 }
+
+		ai_will_do = {
+			factor = 5
+#			modifier = { #testing
+#				ANT = { surrender_progress < 0.2 }
+#				factor = 0
+#			}
+		}
+
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+            add_popularity = {
+            ideology = democratic
+            popularity = 0.2
+            add_stability = 0.2
+		    }
+        }
+	
+    }
+focus = {
+		id = clb_democratic_2
+		icon = GFX_focus_ARG_defense_and_democracy
+		x = 34
+		y = 1
+		cost = 10
+		prerequisite = { focus = clb_democratic_1 }
+
+		ai_will_do = {
+			factor = 5
+#			modifier = { #testing
+#				ANT = { surrender_progress < 0.2 }
+#				factor = 0
+#			}
+		}
+
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+            add_popularity = {
+            ideology = democratic
+            popularity = 0.2
+            add_stability = 0.2
+		    }
+        }
+	
+    }
+focus = {
+		id = clb_democratic_3
+		icon = GFX_focus_generic_improve_the_administration
+		x = 34
+		y = 2
+		cost = 10
+		prerequisite = { focus = clb_democratic_2 }
+
+		ai_will_do = {
+			factor = 5
+#			modifier = { #testing
+#				ANT = { surrender_progress < 0.2 }
+#				factor = 0
+#			}
+		}
+
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+            add_political_power = 1
+		    }
+        }
+		
+		focus = {
+		id = clb_democratic_parl
+		icon = GFX_focus_ETH_re-convene_the_parliament
+		x = 32
+		y = 3
+		cost = 10
+		prerequisite = { focus = clb_democratic_3 }
+
+		ai_will_do = {
+			factor = 5
+#			modifier = { #testing
+#				ANT = { surrender_progress < 0.2 }
+#				factor = 0
+#			}
+		}
+
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+            add_political_power = 1
+		    }
+        }
+		focus = {
+		id = clb_democratic_free
+		icon = GFX_focus_generic_self_management
+		x = 35
+		y = 3
+		cost = 10
+		prerequisite = { focus = clb_democratic_3 }
+
+		ai_will_do = {
+			factor = 5
+#			modifier = { #testing
+#				ANT = { surrender_progress < 0.2 }
+#				factor = 0
+#			}
+		}
+
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+            add_political_power = 1
+		    }
+        }
+		focus = {
+		id = clb_democratic_cons
+		icon = GFX_focus_generic_treaty
+		x = 34
+		y = 4
+		cost = 10
+		prerequisite = { focus = clb_democratic_parl focus = clb_democratic_free }
+
+		ai_will_do = {
+			factor = 5
+#			modifier = { #testing
+#				ANT = { surrender_progress < 0.2 }
+#				factor = 0
+#			}
+		}
+
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+            add_political_power = 1
+		    }
+        }
+		focus = {
+		id = clb_hold_vote
+		icon = GFX_goal_support_democracy
+		x = 34
+		y = 4
+		cost = 10
+		prerequisite = { focus = clb_democratic_parl focus = clb_democratic_free }
+
+		ai_will_do = {
+			factor = 5
+#			modifier = { #testing
+#				ANT = { surrender_progress < 0.2 }
+#				factor = 0
+#			}
+		}
+
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+            add_political_power = 1
+		    }
+        }
+	##NEUTRAL##
+focus = {
+		id = clb_neutral_1
+		icon = GFX_goal_generic_neutrality_focus
+		x = 31
+		y = 1
+		cost = 10
+		prerequisite = { focus = clb_democratic_1 }
+		mutually_exclusive = { focus = clb_democratic_2 }
+
+		ai_will_do = {
+			factor = 5
+#			modifier = { #testing
+#				ANT = { surrender_progress < 0.2 }
+#				factor = 0
+#			}
+		}
+
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+            add_ideas = { neutrality_idea }
+        }
+	
+    }
+focus = {
+		id = clb_neutral_2
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = 28
+		y = 2
+		cost = 10
+		prerequisite = { focus = clb_neutral_1 }
+
+		ai_will_do = {
+			factor = 5
+#			modifier = { #testing
+#				ANT = { surrender_progress < 0.2 }
+#				factor = 0
+#			}
+		}
+
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+            add_ideas = { columban_gold_trade }
+		}
+    }
+
+focus = {
+		id = clb_neutral_3
+		icon = GFX_goal_generic_small_arms
+		x = 31
+		y = 2
+		cost = 10
+		prerequisite = { focus = clb_neutral_1 }
+
+		ai_will_do = {
+			factor = 5
+#			modifier = { #testing
+#				ANT = { surrender_progress < 0.2 }
+#				factor = 0
+#			}
+		}
+
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+            add_political_power = 1
+			}
+		}
+focus = {
+		id = clb_neutral_funds
+		icon = GFX_focus_generic_self_management
+		x = 29
+		y = 3
+		cost = 10
+		prerequisite = { focus = clb_neutral_3 }
+		prerequisite = { focus = clb_neutral_2 }
+
+		ai_will_do = {
+			factor = 5
+#			modifier = { #testing
+#				ANT = { surrender_progress < 0.2 }
+#				factor = 0
+#			}
+		}
+
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+            add_political_power = 1
+			}
+		}
+focus = {
+		id = clb_neutral_4
+		icon = GFX_goal_fortify_the_westwall
+		x = 29
+		y = 4
+		cost = 10
+		prerequisite = { focus = clb_neutral_funds }
+
+		ai_will_do = {
+			factor = 5
+#			modifier = { #testing
+#				ANT = { surrender_progress < 0.2 }
+#				factor = 0
+#			}
+		}
+
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+            add_political_power = 1
+			}
+		}
+focus = {
+		id = clb_neutral_5
+		icon = GFX_goal_generic_fortify_city
+		x = 27
+		y = 4
+		cost = 10
+		prerequisite = { focus = clb_neutral_funds }
+
+		ai_will_do = {
+			factor = 5
+#			modifier = { #testing
+#				ANT = { surrender_progress < 0.2 }
+#				factor = 0
+#			}
+		}
+
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+            add_political_power = 1
+			}
+		}
+focus = {
+		id = clb_neutral_6
+		icon = GFX_focus_SWE_hedgehog_defense
+		x = 31
+		y = 4
+		cost = 10
+		prerequisite = { focus = clb_neutral_funds }
+
+		ai_will_do = {
+			factor = 5
+#			modifier = { #testing
+#				ANT = { surrender_progress < 0.2 }
+#				factor = 0
+#			}
+		}
+
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+            add_political_power = 1
+			}
+		}
+		
+focus = {
+		id = clb_path_diplo
+		icon = GFX_focus_NORDIC_dem_institution_1
+		x = 39
+		y = 5
+		
+		cost = 10
+		prerequisite = {
+		focus = clb_take_all
+		}
+
+		mutually_exclusive = { focus = clb_path_war }
+
+		ai_will_do = {
+			factor = 5
+#			modifier = { #testing
+#				ANT = { surrender_progress < 0.2 }
+#				factor = 0
+#			}
+		}
+
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 1
+		}
+	}	
+	#######################PATH ROOKS##################
+	focus = {
+		id = clb_ally_rooks
+		icon = GFX_focus_CLB_Rooks
+		x = 50
+		y = 0
+		
+		cost = 10
+
+		mutually_exclusive = { focus = clb_monarchy_1 focus = clb_democratic_1 }
+
+		ai_will_do = {
+			factor = 5
+#			modifier = { #testing
+#				ANT = { surrender_progress < 0.2 }
+#				factor = 0
+#			}
+		}
+
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 1
+		}
+	}
+	
+	
+	
+	
+		
+
+
+
+
+#############################INDUSTRY#####################################################################
+###CIVILLIAN###
+focus = {
+		id = clb_roads_1
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 10
+		y = 0
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+#			modifier = { #testing
+#				ANT = { surrender_progress < 0.2 }
+#				factor = 0
+#			}
+		}
+
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 1
+		}
+	}
+focus = {
+		id = clb_roads_2
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 10
+		y = 1
+		cost = 10
+		prerequisite = { focus = clb_roads_1 }
+
+		ai_will_do = {
+			factor = 5
+#			modifier = { #testing
+#				ANT = { surrender_progress < 0.2 }
+#				factor = 0
+#			}
+		}
+
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 1
+		}
+	}	
+focus = {
+		id = clb_civ_1
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 10
+		y = 2
+		cost = 10
+		prerequisite = { focus = clb_roads_2 }
+
+		ai_will_do = {
+			factor = 5
+#			modifier = { #testing
+#				ANT = { surrender_progress < 0.2 }
+#				factor = 0
+#			}
+		}
+
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 1
+		}
+	}				
+	###RESOURCES###
+	focus = {
+		id = clb_funds_resource
+		icon = GFX_goal_generic_improve_relations
+		x = 15
+		y = 2
+		cost = 10
+		prerequisite = { focus = clb_roads_2 }
+
+		ai_will_do = {
+			factor = 5
+#			modifier = { #testing
+#				ANT = { surrender_progress < 0.2 }
+#				factor = 0
+#			}
+		}
+
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 1
+		}
+	}	
+focus = {
+		id = clb_tug_1
+		icon = GFX_focus_generic_tungsten
+		x = 17
+		y = 3
+		cost = 10
+		prerequisite = { focus = clb_funds_resource }
+
+		ai_will_do = {
+			factor = 5
+#			modifier = { #testing
+#				ANT = { surrender_progress < 0.2 }
+#				factor = 0
+#			}
+		}
+
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 1
+		}
+	}
+focus = {
+		id = clb_steel_1
+		icon = GFX_focus_generic_steel
+		x = 15
+		y = 3
+		cost = 10
+		prerequisite = { focus = clb_funds_resource }
+
+		ai_will_do = {
+			factor = 5
+#			modifier = { #testing
+#				ANT = { surrender_progress < 0.2 }
+#				factor = 0
+#			}
+		}
+
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 1
+		}
+	}
+focus = {
+		id = clb_alu_1
+		icon = GFX_focus_generic_aluminum
+		x = 13
+		y = 3
+		cost = 10
+		prerequisite = { focus = clb_funds_resource }
+
+		ai_will_do = {
+			factor = 5
+#			modifier = { #testing
+#				ANT = { surrender_progress < 0.2 }
+#				factor = 0
+#			}
+		}
+
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 1
+		}
+	}	
+	###OIL###
+	focus = {
+		id = clb_oil_1
+		icon = GFX_goal_generic_oil_refinery
+		x = 15
+		y = 4
+		cost = 10
+		prerequisite = { focus = clb_tug_1 }
+		prerequisite = { focus = clb_steel_1 }
+		prerequisite = { focus = clb_alu_1 }
+
+		ai_will_do = {
+			factor = 5
+#			modifier = { #testing
+#				ANT = { surrender_progress < 0.2 }
+#				factor = 0
+#			}
+		}
+
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 1
+		}
+	}	
+	###MILITARY###
+	focus = {
+		id = clb_funds_military
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 5
+		y = 2
+		cost = 10
+		prerequisite = { focus = clb_roads_2 }
+
+		ai_will_do = {
+			factor = 5
+#			modifier = { #testing
+#				ANT = { surrender_progress < 0.2 }
+#				factor = 0
+#			}
+		}
+
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 1
+		}
+	}
+	focus = {
+		id = clb_mil_1
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 7
+		y = 3
+		cost = 10
+		prerequisite = { focus = clb_funds_military }
+
+		ai_will_do = {
+			factor = 5
+#			modifier = { #testing
+#				ANT = { surrender_progress < 0.2 }
+#				factor = 0
+#			}
+		}
+
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 1
+		}
+	}
+focus = {
+		id = clb_airbase_1
+		icon = GFX_focus_generic_air_bases
+		x = 5
+		y = 3
+		cost = 10
+		prerequisite = { focus = clb_funds_military }
+
+		ai_will_do = {
+			factor = 5
+#			modifier = { #testing
+#				ANT = { surrender_progress < 0.2 }
+#				factor = 0
+#			}
+		}
+
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 1
+		}
+	}
+focus = {
+		id = clb_docks_1
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 3
+		y = 3
+		cost = 10
+		prerequisite = { focus = clb_funds_military }
+
+		ai_will_do = {
+			factor = 5
+#			modifier = { #testing
+#				ANT = { surrender_progress < 0.2 }
+#				factor = 0
+#			}
+		}
+
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 1
+		}
+	}	
+	#############################################STATE OF EMERGENCY###########################################
+focus = {
+		id = clb_state_emergency
+		icon = GFX_goal_generic_propaganda
+		x = 22
+		y = 0
+		cost = 1
+
+		ai_will_do = {
+			factor = 5
+#			modifier = { #testing
+#				ANT = { surrender_progress < 0.2 }
+#				factor = 0
+#			}
+		}
+
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = { state_of_emergency }
+			add_ideas = { Fight_to_the_last_man }
+		}
+	}	
+	focus = {
+		id = clb_state_emergency_militia
+		icon = GFX_focus_generic_little_entente
+		x = 24
+		y = 2
+		cost = 1
+		prerequisite = { focus = clb_state_emergency }
+
+		ai_will_do = {
+			factor = 5
+#			modifier = { #testing
+#				ANT = { surrender_progress < 0.2 }
+#				factor = 0
+#			}
+		}
+
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 1
+		}
+	}	
+	focus = {
+		id = clb_state_emergency_draft
+		icon = GFX_focus_generic_little_entente
+		x = 20
+		y = 2
+		cost = 1
+		prerequisite = { focus = clb_state_emergency }
+
+		ai_will_do = {
+			factor = 5
+#			modifier = { #testing
+#				ANT = { surrender_progress < 0.2 }
+#				factor = 0
+#			}
+		}
+
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 1
+		}
+	}
+	focus = {
+		id = clb_airframe
+		icon = GFX_focus_research2
+		x = 55
+		y = 0
+		cost = 1
+		available = { date > 1905.01.01 }
+
+		ai_will_do = {
+			factor = 5
+#			modifier = { #testing
+#				ANT = { surrender_progress < 0.2 }
+#				factor = 0
+#			}
+		}
+
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 1
+		}
+	}
+	

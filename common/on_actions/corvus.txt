@@ -16,10 +16,10 @@ on_actions = {
 	}
 	on_peace = {
 		effect = {
-			if = { 
+			if = {
 				limit = {
 					original_tag = COV
-					has_country_flag = COV_ant_help
+					COV = { has_global_flag = COV_ant_help }
 					FROM = {
 						original_tag = CET
 					}

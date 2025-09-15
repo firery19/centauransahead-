@@ -59,12 +59,12 @@ technologies = {
 			electronics
 		}
 
-		on_research_complete = {
-			custom_effect_tooltip = {
-				localization_key = SP_UNLOCK_PROJECT
-				PROJECT = sp_air_radar	
-			}
-		}
+#		on_research_complete = {
+#			custom_effect_tooltip = {
+#				localization_key = SP_UNLOCK_PROJECT
+#				PROJECT = sp_air_radar	
+#			}
+#		}
 
 		special_project_specialization = { specialization_air specialization_nuclear }
 		
@@ -699,6 +699,13 @@ technologies = {
 			modifier = {
 				factor = 3
 				date > "1943.1.1"
+			}
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = {
+				localization_key = SP_UNLOCK_PROJECT
+				PROJECT = sp_air_radar	
 			}
 		}
 		

@@ -3,8 +3,7 @@ COV_war_with_cetus = {
 		original_tag = COV
 	}
 	enable = {
-		has_completed_focus = COV_prepare_to_take_sc
-		country_exists = COV
+		country_exists = CET
 	}
 	abort = {
 		CET = { has_capitulated = yes }

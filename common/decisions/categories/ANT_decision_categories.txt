@@ -30,7 +30,7 @@ ANT_south_centauran_conquest = {
 
 	picture = GFX_decision_cat_generic_south_corvus
 	
-	visible_when_empty = yes
+	visible_when_empty = no
 	
 	allowed = {
 		original_tag = ANT

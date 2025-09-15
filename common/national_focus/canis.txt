@@ -24,7 +24,6 @@ focus_tree = {
         cost = 5
         available = {
 		ORI = { is_in_faction = yes }
-        has_war = yes
         }
         completion_reward = {
 			ORI = { country_event = cns.2 }

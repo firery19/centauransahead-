@@ -6,6 +6,11 @@ state={
 	history={
 		owner = LAC
 		add_core_of = LAC
+		buildings = {
+			1257 = {
+			naval_base = 1
+			}
+		}
 		victory_points = {
 			1257 35 
 		}

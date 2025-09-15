@@ -1,0 +1,15 @@
+spriteTypes = {
+
+	### generic equipment archetypes ###
+	# hoforma tech
+
+	SpriteType = {
+		name = "GFX_archetype_dynamite_equipment_medium"
+		texturefile = "gfx/interface/archetypes/archetype_dynamite_equipment.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_dynamite1_medium"
+		texturefile = "gfx/interface/technologies/dynamite1.dds"
+	}
+}

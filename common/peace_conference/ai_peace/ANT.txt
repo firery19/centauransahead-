@@ -1,0 +1,86 @@
+# Scripted AI desire for peace actions.
+# See documentation.info file for more detailed scripting information.
+
+peace_ai_desires = {
+    # 
+    ANT_take_cetus = {
+        peace_action_type = take_states
+        enable = {
+		COV = { is_in_faction_with = ANT }
+			NOT = { COV = { has_war_with = CET } }
+            FROM = {
+			tag = ROOT
+            }
+            FROM.FROM.FROM = {
+                OR = {
+                    state = 7
+                    state = 39
+                    state = 40
+                    state = 41
+                    state = 42
+                    state = 43
+                    state = 44
+                    state = 45
+                    state = 46
+                    state = 47
+					state = 48
+					state = 49
+					state = 50
+					state = 154
+                }
+            }
+            ROOT = { 
+                original_tag = ANT
+            }
+        }
+        ai_desire = 100
+    }
+	
+	ANT_take_cetus_no_corvus = {
+        peace_action_type = take_states
+        enable = {
+			COV = { has_war_with = CET }
+            FROM = {
+                tag = ROOT
+            }
+            FROM.FROM.FROM = {
+                OR = {
+                    state = 7
+                    state = 39
+                    state = 40
+                    state = 41
+                    state = 42
+                    state = 44
+                    state = 45
+                    state = 46
+                    state = 47
+					state = 50
+                    state = 43
+					state = 49
+                }
+            }
+            ROOT = { 
+                original_tag = ANT
+            }
+        }
+        ai_desire = 100
+    }
+	ANT_dont_south_corvus_takeover = {
+        peace_action_type = take_states
+        enable = {
+            FROM = {
+                tag = ROOT
+            }
+            FROM.FROM.FROM = {
+                OR = {
+                    state = 48
+					state = 154
+                }
+            }
+            ROOT = { 
+                original_tag = ANT
+            }
+        }
+        ai_desire = -100
+    }
+}

@@ -1,16 +1,43 @@
 characters = {
-	URS_kastus_magor = { 
-		name = "Kastus Magor"
+	URS_eduard_magor = { 
+		name = "Eduard Magor"
 		portraits = {
 			civilian = {
-				large = GFX_portrait_URS_kastus_magor
-				small = GFX_portrait_URS_kastus_magor_small
+				large = GFX_portrait_URS_eduard_magor
+#				small = GFX_portrait_URS_eduard_magor_small
 			}
 		}
 		country_leader = {
 			ideology = despotism
-			traits = { hawk } #stalins_puppet
-			expire = "1913.1.1.1"
+			traits = { hawk }
+			expire = "1902.1.1.1"
 			id = -1
 		}
 	}
+	
+	URS_matvei_magor = { 
+		name = "Matvei Magor"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_URS_matvei_magor
+				small = GFX_portrait_URS_matvei_magor_small
+#			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { }
+			expire = "1938.1.1.1"
+			id = -1
+		}
+	}
+	
+	URS_gen_warcriminal = { #empty character to become general via focus
+        name = URS_gen_warcriminal_name
+		gender = male
+		
+        portraits = {
+            army = {
+                large="GFX/leaders/URS/portrait_URS_warcriminal.dds"
+            }
+        }
+    }

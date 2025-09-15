@@ -1,11 +1,31 @@
 on_actions = { 
-
-
-
-
-
-
-
-
+	on_war_relation_added = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = ORI
+					FROM = {
+						original_tag = URS
+					}
+				}
+				URS = { clr_country_flag = grease_wars_not_started }
+				set_global_flag = grease_wars_start
+			}
+		}
+	}
+	on_war_relation_added = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = URS
+					FROM = {
+						original_tag = ORI
+					}
+				}
+				URS = { clr_country_flag = grease_wars_not_started }
+				set_global_flag = grease_wars_start
+			}
+		}
+	}
 
 }

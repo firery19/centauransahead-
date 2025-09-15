@@ -1,0 +1,25 @@
+add_namespace = RIA
+
+country_event = {
+	id = ria.1
+	title = ria.1.t
+	desc = ria.1.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ria.1.a # Yes
+		ai_chance = {factor = 99}
+		RIA = {
+		add_to_faction = ROOT 
+
+			
+		}
+	}
+	
+	option = {
+		name = ria.1.b # NO 
+		ai_chance = {factor = 1}
+	}
+}

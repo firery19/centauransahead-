@@ -61,8 +61,13 @@ spriteTypes = {
 	# ursa
 
 	spriteType = {
-		name = "GFX_portrait_URS_kastus_magor"
-		texturefile = "gfx/leaders/URS/portrait_URS_kastus_magor.dds"
+		name = "GFX_portrait_URS_eduard_magor"
+		texturefile = "gfx/leaders/URS/portrait_URS_eduard_magor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_URS_matvei_magor"
+		texturefile = "gfx/leaders/URS/portrait_URS_matvei_magor.dds"
 	}
 
 	# cetus

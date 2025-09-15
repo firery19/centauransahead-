@@ -1,31 +1,22 @@
-country_event = { #made it submod instead
-	id = colour.1
-	title = colour.4.t
-	desc = colour.4.d
+add_namespace = col
+
+country_event = {
+	id = col.1
+	title = col.1.t
+	desc = col.1.d
 	picture = GFX_report_event_generic_african_unity
 	
-	trigger = {
+    is_triggered_only = yes #focus
 
-	}
-
-#	mean_time_to_happen = {
-
-#	}
-	
 	option = {
-		name = colour.4.a
-#		add_popularity = {
-#			ideology = communism #the people dislike the colours
-#			popularity = 0.005
-#		}
-#		add_stability = -0.001 #the people dislike the colours
+		name = col.1.a
+		ANT = {
+		set_cosmetic_tag = ANTRED
+		}
 	}
 	option = {
-		name = colour.4.b
-#		add_popularity = {
-#			ideology = communism #the people like the colours
-#			popularity = -0.005
-#		}
-#		add_stability = 0.001 #the people like the colours
+		name = col.1.b
+		
 	}
+
 }

@@ -1,4 +1,6 @@
 ﻿l_english:
+#character names
+URS_gen_warcriminal_name:0 "Ivun Melloruh"
 #Decisions
 URS_preGreaseWars_Decisions:0 "Managing the Unruly Colonies"
 URS_preGreaseWars_Decisions_desc:0 "It is not a secret that our influence in Hydra have been slowly decaying over the past few decades. Our federation was humiliated when we were forced to withdrawl from Hydrus in 1899. It is our duty to show the world that we are still the strong proud nation we were destined to be.\n\nEvery month, we will receive reports of damages down by terrorists in Lepus and Canis. These can range from loss of equipment or manpower and damage to infrastructure or factories. The severity of these negative effects can be §Yreduced by expending command power£GFX_command_power §!. However, allowing terrorists to get away too often may give them the confidence to stage an open rebellion!"
@@ -94,10 +96,10 @@ grease_wars_not_started:0 "The Grease Wars has not begun"
 URS_oil_field_defense_tooltip:0 "§YCompleting this focus will add level 1 forts along the Orionite border of Western Canis!§!"
 URS_lepus_destruction_tooltip:0 "§YUpon the start of an open rebellion, Lepus will receive a 75% debuff in repair speeds!§!"
 URS_resistance_sweep_units_tooltip:0 "§Y6 divisions of 12 width irregular infantry divisions will be spawned across Lepus and Canis!§!"
-URS_prevent_economic_collapse_tooltip:0 "§RCompleting this focus is necessary to avoid economic collapse when at war!§!"
+URS_prevent_economic_collapse_tooltip:0 "§RCompleting this focus will delay and soften the impact of economic collapse when at war!§!"
 grease_wars_prelude_tooltip:0 "§RWe are heading towards total war with Hydrus, Lepus, and the Orion Republic.§!"
 URS_alcor_trenching_tooltip:0 "\n§RLosing control of Alcor will result in defeat against our enemies!§!"
-URS_withdraw_from_east_canis_tooltip:0 "§Y12 cavalry divisions will make their long march west to Alcor from Aludra!§!\n\§RWithout these troops, the situation in Aludra will devolve into anarchy!§!"
+URS_withdraw_from_east_canis_tooltip:0 "§Y12 cavalry divisions will make their long march west to Alcor from Aludra!§!\n§RWithout these troops, the situation in Aludra will devolve into anarchy!§!"
 URS_every_inch_tooltip:0 "§Y6 cavalry divisions of the Aludra garrison force will mobilize to deal with the local rebels!§!"
 #Ideas
 URS_domestic_unrest:0 "Domestic Unrest"

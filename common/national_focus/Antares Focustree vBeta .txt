@@ -1702,10 +1702,10 @@ focus = {
 	ai_will_do = { factor = 0  } #CHANGE THIS TO FACTOR = 1#################
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-hidden_effect = {
-country_event = { id = ANT.1 days = 1 random_days = 2 }
-country_event = { id = ANT.2 days = 3 random_days = 10 }
-		}
+#hidden_effect = {
+#country_event = { id = ANT.1 days = 1 random_days = 2 }
+#country_event = { id = ANT.2 days = 3 random_days = 10 }
+#		}
 	}
 }
 
@@ -3445,10 +3445,102 @@ focus = {
     will_lead_to_war_with = AQU
 
     completion_reward = {
+	LUP = {
+		remove_state_claim = 35
+		remove_state_claim = 31
+		add_state_core = 35
+		add_state_core = 31
+		}
         declare_war_on = {
             target = AQU
             type = annex_everything
 }}}
+# Break the Ring of Fire
+focus = {
+	id = ANT_fortress_busting
+	icon = GFX_goal_unknown
+	x =  12
+	y = 22
+	cost = 10
+	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	prerequisite = {focus = ANT_waraquila}
+	mutually_exclusive = { focus = ANT_ }
+	ai_will_do = { factor = 20  } #CHANGE THIS TO FACTOR = 1#################
+	completion_reward = {
+		add_timed_idea = {
+			idea = ANT_fortressbust_aqu
+			days = 210	}
+
+	}
+}
+# the scorch
+focus = {
+	id = ANT_scorch
+	icon = GFX_goal_unknown
+	x = 14
+	y = 22
+	cost = 10
+	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	prerequisite = {focus = ANT_waraquila}
+	mutually_exclusive = { focus = ANT_ }
+	ai_will_do = { factor = 10  } #CHANGE THIS TO FACTOR = 1#################
+	completion_reward = {
+		34 = {
+				add_dynamic_modifier = {
+					modifier = ANT_scorched_state
+#					scope = ITA
+					days = 720
+				}
+			}
+		35 = {
+				add_dynamic_modifier = {
+					modifier = ANT_scorched_state
+#					scope = ITA
+					days = 720
+				}
+			}
+		36 = {
+				add_dynamic_modifier = {
+					modifier = ANT_scorched_state
+#					scope = ITA
+					days = 720
+				}
+			}
+		37 = {
+				add_dynamic_modifier = {
+					modifier = ANT_scorched_state
+#					scope = ITA
+					days = 720
+				}
+			}
+		38 = {
+				add_dynamic_modifier = {
+					modifier = ANT_scorched_state
+#					scope = ITA
+					days = 720
+				}
+			}
+		9 = {
+				add_dynamic_modifier = {
+					modifier = ANT_scorched_state
+#					scope = ITA
+					days = 720
+				}
+			}
+		156 = {
+				add_dynamic_modifier = {
+					modifier = ANT_scorched_state
+#					scope = ITA
+					days = 720
+				}
+			}
+		AQU = {	
+			country_event = { 
+				id = aqu.4
+				}
+			}
+	}
+}
 # when will vega release
 focus = {
 	id = ANT_warvega
@@ -3483,6 +3575,7 @@ focus = {
 will_lead_to_war_with = GRS
 
 	completion_reward = {
+add_ideas = ANT_worldconquest
 declare_war_on = {
     target = GRS
     type = annex_everything

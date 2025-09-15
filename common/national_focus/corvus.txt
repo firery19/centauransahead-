@@ -532,9 +532,9 @@ focus_tree = {
 				custom_effect_tooltip = corvus_temp_none_tootlip
 				custom_effect_tooltip = corvun_assimilation_tooltip
 				hidden_effect = {
-				set_rule = { can_create_factions = yes }
-				create_faction = Solstice
 				ANT = {
+
+				
 					country_event = { 
 						id = cov.4
 						}

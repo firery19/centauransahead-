@@ -26,7 +26,15 @@ form_rodinia_category = {
 	allowed = {
 	}
 }
+form_redantares_category = {
 
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_hydrus
+
+	allowed = {
+	}
+}
 form_scandinavia_category = {
 
 	icon = generic_formable_nations

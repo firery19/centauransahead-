@@ -10,31 +10,36 @@ country_event = {
 	
 	option = {
 		name = orion.1.a # Yes
-		ai_chance = {factor = 90}
+		ai_chance = {
+		base = 1
+		modifier = { is_historical_focus_on = yes add = 89 }
+		modifier = { is_historical_focus_on = no add = 0 }
+		}
 		ORI = {
-			add_to_faction = ROOT = {
+			add_to_faction = ROOT
 				add_ai_strategy = {
 						type = alliance
 						id = "HYS"
 						value = 200
-				}
 			}
 		}
 	}
 	
 	option = {
 		name = orion.1.b # NO 
-		if = {
-			limit = {
-			has_war = yes
-			}
-		ai_chance = {factor = 10}
-		}
-		else_if = {
-			limit = {
-			has_war = no
-			}
-		ai_chance = {factor = 0}
+		ai_chance = {
+		base = 1
+
+		# If historical focus on, set the value to 0,
+		# causing an early end of the evaluation.
+		modifier = { is_historical_focus_on = yes factor = 0 }
+		modifier = { is_historical_focus_on = no add = 9 }
+#		modifier = { is_major = yes add = 1 }
+#		modifier = {
+#			factor = 3
+#			add = 2.5
+#			tag = FRA
+#		}
 		}
 	}
 }
@@ -52,17 +57,10 @@ country_event = {
 		ORI = {
                country_event = {id = orion.3  days = 1 }
                }
-		if = {
-		limit = {
-		is_historical_focus_on = yes
-		}
-		ai_chance = { factor = 100 }
-		}
-		else_if = {
-		limit = {
-		is_historical_focus_on = no
-		}
-		ai_chance = { factor = 90 }
+	ai_chance = {
+		base = 1
+		modifier = { is_historical_focus_on = yes add = 99 }
+		modifier = { is_historical_focus_on = no add = 89 }
 		}
 	}
 	
@@ -71,17 +69,10 @@ country_event = {
 		ORI = {
                country_event = {id = orion.4  days = 1 }
               }
-		if = {
-		limit = {
-		is_historical_focus_on = yes
-		}
-		ai_chance = { factor = 0 }
-		}
-		else_if = {
-		limit = {
-		is_historical_focus_on = no
-		}
-		ai_chance = { factor = 10 }
+		ai_chance = {
+		base = 1
+		modifier = { is_historical_focus_on = yes factor = 0 }
+		modifier = { is_historical_focus_on = no add = 9 }
 		}
 	}
 }
@@ -101,6 +92,7 @@ country_event = { #Ursa accepts
 		set_state_owner = 114
 		set_state_owner = 117
 		set_state_owner = 122
+		set_state_controller = 172
 		
 			CNS = {
 				set_state_owner = 123
@@ -108,16 +100,17 @@ country_event = { #Ursa accepts
 				set_state_owner = 116
 				set_state_owner = 118
 				set_state_owner = 119
-				set_state_owner = 171
 			}
-			hidden_effect = {
+			news_event = {
+			id = news.2
+			days = 2
+			}
 			CNS = {
 				set_state_controller = 123
 				set_state_controller = 115
 				set_state_controller = 116
 				set_state_controller = 118
 				set_state_controller = 119
-				set_state_controller = 171
 			}
 			LPS = {
 			set_state_owner = 133
@@ -153,22 +146,26 @@ country_event = { #Ursa accepts
 				set_demilitarized_zone = no
 			}
 		white_peace = URS
-		ai_chance = { factor = 99 }
+		}
 	}
 }
 
-country_event = { # Dead end for Orion (they gotta naval invade)
+country_event = {
 	id = orion.4
-	title = orion.4.t
+	title = orion.4.t #dead end
 	desc = orion.4.d
 	picture = GFX_
 	
 	is_triggered_only = yes
 	
 	option = {
-	name = orion.4.a
+		name = orion.4.a # Yes
+		ai_chance = {
+		base = 1
+		}
 	}
 }
+
 
 country_event = {
 	id = orion.5
@@ -207,7 +204,7 @@ country_event = {
 	
 	option = {
 		name = orion.6.a 
-		ai_chance = {factor = 10}
+		ai_chance = {base = 10}
 		add_ideas = ORS_TheHard1900s 
 		complete_national_focus = ORS_TheHard1900s
 		remove_ideas = {ORS_EconomicBoom ORS_EconomicBoom2}
@@ -231,13 +228,13 @@ country_event = {
 	
 	option = {
 		name = orion.7.a 
-		ai_chance = {factor = 50}
+		ai_chance = {base = 50}
 		complete_national_focus = ORS_LowerTaxes
 	}
 	
 	option = {
 		name = orion.7.b
-		ai_chance = {factor = 50}
+		ai_chance = {base = 50}
 		complete_national_focus = ORS_ProvideSupportToLocalBusinesses
 	}
 	
@@ -253,7 +250,7 @@ country_event = {
 	
 	option = {
 		name = orion.8.a 
-		ai_chance = {factor = 50}
+		ai_chance = {base = 50}
 		add_ideas = ORS_WorkerStrikes
 	}
 }

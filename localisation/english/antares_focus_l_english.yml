@@ -154,6 +154,8 @@
  ANT_skorpiivus:0 "Establish Skorpii Korvus"
  ANT_corvbad:0 "Shoot Down the Black Crow"
  ANT_waraquila:0 "Slaughter the Forest Falcon"
+ ANT_fortress_busting:0 "Break the Ring of Fire"
+ ANT_scorch:0 "Scorching the Forests"
  ANT_warvega:0 "Break the Olive" # idfk someone find a better name
  ANT_wargrs:0 "Seize the Desert" #idfk someone find a better name
 
@@ -168,6 +170,11 @@
  BANT1:0 "Antares must strengthen its democracy to end war through diplomacy"
  T.ANT.2:0 "My event title"
  D.ANT.2:0 "My event description"
+
+
+ ANT_scorched_state:0 "Scorched State"
+
+
 
  #ideas 
  trench_warfare_idea:0 "1900's Warfare"

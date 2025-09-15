@@ -1,0 +1,4 @@
+ANTRED = { 
+	color = rgb { 170 10 20 }
+	color_ui  = rgb { 170 10 20 }
+}

@@ -3,10 +3,10 @@
 	##### NAVAL UNITS #####
 	fleet = {
 		name = "Southern Fleet"
-		naval_base = 2910
+		naval_base = 1774
 		task_force = {				
-			name = "Dair Command"
-			location = 2910
+			name = "Ravo Command"
+			location = 1774
 			ship = { name = "CS Khorin" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = COV version_name = "Khorin Class" } } }
 			ship = { name = "CS Corvō" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = COV version_name = "Khorin Class" } } }
 			ship = { name = "CS Rex" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = COV version_name = "Khorin Class" } } }
@@ -50,10 +50,10 @@
 	
 	fleet = {
 		name = "Northern Fleet"
-		naval_base = 3803
+		naval_base = 3890
 		task_force = {				
 			name = "Kraz Command"
-			location = 3803
+			location = 3890
 			ship = { name = "CS Coronis" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = COV version_name = "Khorin Class" } } }
 			ship = { name = "CS Solis" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COV version_name = "Adsum Class" } } }
 			ship = { name = "CS Fortuna" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COV version_name = "Adsum Class" } } }

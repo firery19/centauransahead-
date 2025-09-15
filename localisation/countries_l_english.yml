@@ -588,3 +588,18 @@
  NOH:0 "Nohae"
  NOH_DEF:0 "Nohae"
  NOH_ADJ:0 "Nohaean"
+ ANTRED_fascism:0 "Antarean Imperial State"
+ ANTRED_fascism_DEF:0 "the Antarean Imperial Unity State"
+ ANTRED_democratic:0 "State of Antares" #like the japanese constitutional monarchy
+ ANTRED_democratic_DEF:0 "the Democratic State of Antares" 
+ ANTRED_neutrality:0 "Antares Imperium" #JUST USED THIS FOR TESTING, NO LONGER RELEVANT*
+ ANTRED_neutrality_DEF:0 "the Antares Imperium"
+ ANTRED_communism:0 "South Centauran Socialist Federation"
+ ANTRED_communism_DEF:0 "the South Centauran Socialist Democratic People's Federation"
+ ANTRED_fascism_ADJ:0 "Antarean"
+ ANTRED_democratic_ADJ:0 "Antarean"
+ ANTRED_neutrality_ADJ:0 "Antarean"
+ ANTRED_communism_ADJ:0 "South Centauran"
+ ANTRED:0 "Antares"
+ ANTRED_DEF:0 "Antares"
+ ANTRED_ADJ:0 "Antarean"

@@ -90,7 +90,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1904
+		start_year = 1910
 		
 		folder = {
 			name = naval_folder
@@ -123,7 +123,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1908
+		start_year = 1920
 		
 		folder = {
 			name = naval_folder
@@ -271,7 +271,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1904
+		start_year = 1910
 		
 		folder = {
 			name = naval_folder
@@ -315,7 +315,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1908
+		start_year = 1920
 		
 		folder = {
 			name = naval_folder
@@ -442,7 +442,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1904
+		start_year = 1910
 		
 		folder = {
 			name = naval_folder
@@ -476,7 +476,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1908
+		start_year = 1920
 		
 		folder = {
 			name = naval_folder
@@ -546,7 +546,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1904
+		start_year = 1910
 		
 		folder = {
 			name = naval_folder
@@ -581,13 +581,6 @@ technologies = {
 		research_cost = 1.5
 		start_year = 1890
 		
-		on_research_complete = {
-			custom_effect_tooltip = {
-				localization_key = SP_UNLOCK_PROJECT
-				PROJECT = sp_naval_super_heavy_battleship
-			}
-		}
-
 		folder = {
 			name = naval_folder
 			position = { x = 1 y = 1 }
@@ -659,7 +652,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1904
+		start_year = 1910
 		
 		folder = {
 			name = naval_folder
@@ -691,13 +684,20 @@ technologies = {
 		#}
 		
 		research_cost = 2
-		start_year = 1908
+		start_year = 1920
 		
 		folder = {
 			name = naval_folder
 			position = { x = 1 y = 19 }
 		}
 		
+		on_research_complete = {
+			custom_effect_tooltip = {
+				localization_key = SP_UNLOCK_PROJECT
+				PROJECT = sp_naval_super_heavy_battleship
+			}
+		}
+
 		on_research_complete = {
 			if = {
 				limit = { has_dlc = "Gotterdammerung"}
@@ -865,7 +865,7 @@ technologies = {
 		show_equipment_icon = yes
 		
 		research_cost = 2
-		start_year = 1904
+		start_year = 1914
 		
 		folder = {
 			name = naval_folder
@@ -922,7 +922,7 @@ technologies = {
 		naval_invasion_capacity = 100
 
 		research_cost = 2
-		start_year = 1908
+		start_year = 1940
 		folder = {
 			name = naval_folder
 			position = { x = 0 y = 19 }
@@ -981,6 +981,11 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			
+			modifier = {
+				factor = 5
+				tag = URS
+			}
 			
 			modifier = {
 				factor = 5
@@ -1054,7 +1059,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1946
+		start_year = 1945
 
 		on_research_complete = {
 			if = { 
@@ -1102,7 +1107,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1958
+		start_year = 1954
 		
 		on_research_complete = {
 			if = {
@@ -1165,7 +1170,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1950
+		start_year = 1955
 		
 		folder = {
 			name = naval_folder
@@ -1214,7 +1219,7 @@ technologies = {
 		}
 				
 		research_cost = 2
-		start_year = 1956
+		start_year = 1960
 
 		folder = {
 			name = naval_folder
@@ -1251,7 +1256,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1960
+		start_year = 1966
 		
 		folder = {
 			name = naval_folder
@@ -1283,7 +1288,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1980
+		start_year = 1970
 		
 		folder = {
 			name = naval_folder

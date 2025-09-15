@@ -455,19 +455,9 @@ country_event = { #Canis Rebellion
 				set_province_controller = 3278
 			}
 		}
-		IF = {
-			limit = {
-				NOT = {
-					has_completed_focus = URS_prevent_economic_collapse
-				}
-			}
-			hidden_effect = {
-				country_event = { id = urs.15 days = 10 }
-				country_event = { id = urs.16 days = 25 }
-			}
-		}
-		else = {
-			add_political_power = 50
+		hidden_effect = {
+			country_event = { id = urs.15 days = 10 }
+			country_event = { id = urs.16 days = 25 }
 		}
 	}
 }
@@ -481,10 +471,28 @@ country_event = { #bye bye economy
 
 	option = {
 		name = urs.15.a
-		swap_ideas = {
-			remove_idea = URS_sluggish_economy
-			add_idea = URS_sluggish_economy_obliterated
+		IF = {
+			limit = {
+				ROOT = {
+					has_completed_focus = URS_prevent_economic_collapse
+				}
+			}
+			swap_ideas = {
+				remove_idea = URS_sluggish_economy
+				add_idea = URS_sluggish_economy_obliterated_1
+			}
 		}
+		IF = {
+			limit = {
+				ROOT = {
+					NOT = { has_completed_focus = URS_prevent_economic_collapse }
+				}
+			}
+			swap_ideas = {
+				remove_idea = URS_sluggish_economy
+				add_idea = URS_sluggish_economy_obliterated
+			}
+		}	
 		complete_national_focus = URS_economy_fixing
 	}
 }

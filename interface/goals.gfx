@@ -10672,6 +10672,27 @@ spriteTypes = {
 		name = "GFX_focus_ANT_euskorgfx"
 		texturefile = "gfx/interface/goals/focus_ANT_euskorgfx.dds"
 	}
-
+	
+	##URSA##
+	SpriteType = {
+		name = "GFX_focus_URS_every_inch"
+		texturefile = "gfx/interface/goals/URS/focus_URS_every_inch.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_URS_evacuvate_east_canis"
+		texturefile = "gfx/interface/goals/URS/focus_URS_evacuvate_east_canis.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_URS_grease_wars"
+		texturefile = "gfx/interface/goals/URS/focus_URS_grease_wars.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_URS_desert_minefield"
+		texturefile = "gfx/interface/goals/URS/focus_URS_desert_minefield.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_URS_recruit_retired_warcriminal"
+		texturefile = "gfx/interface/goals/URS/focus_URS_recruit_retired_warcriminal.dds"
+	}
 #end
 }
