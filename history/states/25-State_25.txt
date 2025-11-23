@@ -5,7 +5,7 @@ state={
 	resources = {
         	steel = 87 #iml they got enough to give half their armour medieval armour
 		tungsten = 19
-		oil = 6
+		coal = 6
 	}
 	history = {
 		owner = VEG

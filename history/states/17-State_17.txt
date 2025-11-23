@@ -6,25 +6,25 @@ state={
 	history={
 		owner = LAC
 		add_core_of = LAC
-		buildings = {
-			1257 = {
-			naval_base = 1
-			}
-		}
+		
 		victory_points = {
-			1257 35 
+			6992 2
 		}
+		
+		victory_points = {
+			841 2
+		}
+		
 		1944.1.1.12 = {
 			owner = ANT
 			controller = ANT
-
-}
+		}
 	}
 
 	provinces={
-		351 427 841 1257 2371 6507 6508 6989 6990 6991 6992 6993 6994 
+		351 427 841 1257 2371 6507 6508 6989 6990 6991 6992 
 	}
-	manpower=5580000
+	manpower=3580000
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

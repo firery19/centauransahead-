@@ -21,7 +21,7 @@ ideas = {
 
             modifier = {
                 max_planning = 0.2
-				max_dig_in = 0.2
+				max_dig_in = 5 # 0.2 is absolutely nothing
 				terrain_penalty_reduction = 0.1
 				planning_speed = -0.2
             }

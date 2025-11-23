@@ -1,0 +1,62 @@
+# 
+canis = {
+	name = theater_canis
+	regions = { # strategic regions btw
+	8 # S.Canis
+	9 # N.Canis
+	85 # E.Canis
+	86 # G.C.S (W.Canis)
+	}
+	cancel = {
+		has_war = no 
+	}
+	ai_will_do = {
+		base = 0 
+#		modifier = {
+#			add = 1
+#			capital_scope = { is_on_continent = europe }
+#		}
+		modifier = {
+			add = 2
+				owns_any_state_of = {
+						8 # S.Canis
+						9 # N.Canis
+						85 # E.Canis
+						86 # G.C.S (W.Canis)
+				}
+		}
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+			tag = VUL 
+		}
+		modifier = {
+			factor = 0
+			has_war = no 
+		}
+	}
+}
+
+
+canis_desert = {
+	name = theater_canis_desert
+	regions = {
+	86 # Greater Canisian Desert
+	}
+	cancel = {
+		has_war = no 
+	}
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 2
+				owns_any_state_of = {
+					86 # Greater Canisian Desert
+				}
+		}
+		modifier = {
+			factor = 0
+			has_war = no 
+		}
+	}
+}

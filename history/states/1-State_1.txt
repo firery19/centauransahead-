@@ -6,6 +6,7 @@ state={
 		oil=31.000
 		steel=11.000
 		tungsten=7.000
+		coal=10
 	}
 
 	history={

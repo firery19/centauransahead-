@@ -280,11 +280,3 @@
   refit_to_destroyer_nor: "Refit Convoys to Destroyers"
   refit_to_destroyer_mass_nor: "Refit Convoys to Destroyers En-mass"
   nor_building_ship: "Currently Converting Ships"
-  
-  form_rodinia_category:0 "Recreate Rodinia"
-  form_rodinia:0 "Test2"
-  form_commonwealthB_category:0 "Form the Hydrus Commonwealth"
-  form_commonwealthB:0 "Form the Hydrus Commonwealth"
-  form_country_hydrus_required_states_tt:0 "Hydrus or its allies need to controll all states in Canis and Lepus exept states with Orionite Claims."
-  form_redantares_category:0 "Colour Changer"
-  form_redantares:0 "Change the colour of Antares to red"

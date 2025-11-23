@@ -9,7 +9,7 @@ ANT_DD_HISTORICAL = {
 
 	can_use = { always = yes }
 
-	prefix = "AIS  "								
+	prefix = "AIS "								
 	fallback_name = "AIS Type 12 DD - %s"					
 
 	unique = {
@@ -27,7 +27,7 @@ ANT_TD_HISTORICAL = {
 
 	can_use = { always = yes }
 
-	prefix = "AIS  "								
+	prefix = "AIS "								
 	fallback_name = "AIS X%d"					
 
 	unique = {
@@ -47,7 +47,7 @@ ANT_CL_HISTORICAL = {
 	
 	can_use = { always = yes }
 	
-	prefix = "AIS  "							
+	prefix = "AIS "							
 	fallback_name = "AIS Type 18 CL - %s"
 
 	unique = {
@@ -85,7 +85,7 @@ ANT_CA_HISTORICAL = {
 	
 	can_use = { always = yes }
 	
-	prefix = "AIS  "								
+	prefix = "AIS "								
 	fallback_name = "AIS Kalvin Class CA - %s"
 
 	unique = {
@@ -104,7 +104,7 @@ ANT_BB_HISTORICAL = {
 	type = ship
 	ship_types = { ship_hull_heavy battleship }
 	
-	prefix = "AIS  "								
+	prefix = "AIS "								
 	fallback_name = "AIS Antares Class BB - %s"		
 
 	unique = {
@@ -123,8 +123,8 @@ ANT_BC_HISTORICAL = {
 	type = ship
 	ship_types = { ship_hull_heavy battle_cruiser }
 	
-	prefix = "AIS  "								
-	fallback_name = "AIS Skorpius Class BC - %s"		
+	prefix = "AIS "								
+	fallback_name = "AIS Skorpius Class CC - %s"		
 
 	unique = {
            "Kharon" "Lesath" "Villiama" "Aeminiva" "Leto" "Kanar"
@@ -142,7 +142,7 @@ ANT_CV_HISTORICAL = {
 	type = ship
 	ship_types = { ship_hull_carrier carrier }
 	
-	prefix = "AIS  "							
+	prefix = "AIS "							
 	fallback_name = "AIS Type-IE CV nr. %s"		
 
 	unique = {
@@ -161,7 +161,7 @@ ANT_CVL_HISTORICAL = {
 	type = ship
 	ship_types = { ship_hull_carrier carrier }
 	
-	prefix = "AIS  "							
+	prefix = "AIS "							
 	fallback_name = "Carrier %s"	
 
 	unique = {
@@ -181,7 +181,7 @@ ANT_SS_HISTORICAL = {
 	type = ship
 	ship_types = { ship_hull_submarine submarine }
 	
-	prefix = "AIUS  "							
+	prefix = "AIUS "							
 	fallback_name = "AIUS S-%s"
 	
 	unique = {

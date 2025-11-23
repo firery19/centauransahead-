@@ -195,10 +195,6 @@
  COV_research_civilian_desc:0 "Civilian research must not fall behind military research! Civilian industry is important too."
  COV_electronic:0 "Electronic Research"
  COV_electronic_desc:0 "
- ########
- # events
- ########
- 
  ###########
  # decisions
  ###########
@@ -293,9 +289,11 @@
  COV_martial_law_imposed_idea_desc:0 "
  COV_shut_down_markets_idea:0 "Black Markets Crackdown"
  COV_shut_down_markets_idea_desc:0 "ss
+ 
  ##########
  # tooltips
  ##########
+ 
  corvus_path_not_work_tooltip:0 "§RTHIS FOCUS PATH DOES NOT WORK! DO NOT TAKE!§!"
  corvus_not_work_tooltip:0 "§RTHIS FOCUS DOES NOT WORK! DO NOT TAKE!§!"
  corvus_does_nothing_tooltip:0 "§OThis focus does NOTHING!, for now.§!"
@@ -315,6 +313,13 @@
  corvus_garrison_coast:0 "Pro tip: Garrison the coastline."
  corvus_penal_recruitment:0 "Allows recruitment of penal battalions through the decisions tab."
  
+ ########
+ # events
+ ########
+ cov.1:0 "Impending Economic Collapse"
+ cov.1.t:0 "Impending Economic Collapse"
+ cov.1.d:0 "The current state of the Corvun economy is reaching its limits. We need to enact policies to remedy the problem before it spirals out of control!\n\nCheck decisions tab."
+ cov.1.a:0 "Start by rationing"
  ######
  # misc
  ######

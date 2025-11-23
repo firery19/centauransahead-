@@ -1,0 +1,151 @@
+ideas = {
+    country = {
+        HYS_recently_independent_idea = {
+		name = HYS_recently_independent
+            
+            picture = idea_COV_revanchism
+            allowed = { original_tag = HYS }
+            removal_cost = -1
+
+            modifier = {
+			army_core_defence_factor = 0.2
+			political_power_gain = -0.2
+            }
+        }
+		
+        HYS_recently_independent_2_idea = {
+		name = HYS_recently_independent
+            
+            picture = idea_COV_revanchism
+            allowed = { original_tag = HYS }
+            removal_cost = -1
+
+            modifier = {
+			army_core_defence_factor = 0.2
+			political_power_gain = -0.1
+            }
+        }
+		
+		HYS_inexperienced_industry_idea = {
+            
+            picture = idea_COV_revanchism
+            allowed = { always = no }
+            removal_cost = -1
+
+            modifier = {
+			production_speed_buildings_factor  = -0.2
+			consumer_goods_factor = 0.2
+			}
+		}
+		
+		HYS_inexperienced_industry_2_idea = {
+            
+            picture = idea_COV_revanchism
+            allowed = { always = no }
+            removal_cost = -1
+
+            modifier = {
+			production_speed_buildings_factor = -0.1
+			}
+		}
+		
+		HYS_functional_economy_idea = {
+            
+            picture = idea_COV_revanchism
+            allowed = { always = no }
+            removal_cost = -1
+
+            modifier = {
+			production_speed_buildings_factor = 0.2
+			industrial_capacity_factory = 0.1
+			}
+		}
+		
+		HYS_newly_established_factories_idea = {
+            
+            picture = idea_COV_revanchism
+            allowed = { always = no }
+            removal_cost = -1
+
+            modifier = {
+			production_speed_industrial_complex_factor = 1
+			production_speed_arms_factory_factor = 1
+			}
+		}
+		
+		HYS_temporary_boost_idea = {
+            
+            picture = idea_COV_revanchism
+            allowed = { always = no }
+            removal_cost = -1
+
+            modifier = {
+			industrial_capacity_factory = 1
+			}
+		}
+		
+		HYS_new_army_idea = {
+		name = HYS_new_army
+            
+            picture = idea_COV_revanchism
+            allowed = { always = no }
+            removal_cost = -1
+
+            modifier = {
+				conscription_factor = -0.25
+				army_core_defence_factor = 2
+				army_infantry_attack_factor = -0.5
+				experience_gain_army_unit_factor = -0.5
+				max_planning_factor = -0.9
+				experience_loss_factor = -0.1
+            }
+        }
+		
+		HYS_new_army_2_idea = {
+		name = HYS_new_army
+            
+            picture = idea_COV_revanchism
+            allowed = { always = no }
+            removal_cost = -1
+
+            modifier = {
+				army_core_defence_factor = 2
+				army_infantry_attack_factor = -0.5
+				experience_gain_army_unit_factor = -0.5
+				max_planning_factor = -0.9
+				experience_loss_factor = -0.1
+            }
+        }
+
+		lepus_kick_them_out = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_fascism_banned
+			
+			modifier = {
+			join_faction_tension = 1
+			}
+			
+			targeted_modifier = {
+				tag = URS
+				attack_bonus_against = 112
+				defense_bonus_against = 2
+			}
+		}
+		santa_sent = {
+            
+            picture = idea_COV_revanchism
+            allowed = { always = no }
+            removal_cost = -1
+
+            modifier = {
+			industry_free_repair_factor = 999
+            }
+        }
+    }
+}

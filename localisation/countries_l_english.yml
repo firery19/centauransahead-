@@ -1,5 +1,5 @@
 ﻿l_english:
-
+ # cetus
  CET_fascism:0 "Empire of Cetus"
  CET_fascism_DEF:0 "the Empire of Cetus"
  CET_ANT_fascism_autonomy_reichskommissariat:0 "Skorpii Cetus"
@@ -23,6 +23,7 @@
  CET:0 "Cetus"
  CET_DEF:0 "Cetus"
  CET_ADJ:0 "Cetan"
+ # corvus
  COV_fascism:0 "Corvun Confederation"
  COV_fascism_DEF:0 "the Corvun Confederation"
  COV_ANT_fascism_autonomy_reichskommissariat:0 "Skorpii Korvus"
@@ -46,6 +47,7 @@
  COV:0 "Corvus"
  COV_DEF:0 "Corvus"
  COV_ADJ:0 "Corvun"
+ # libra
  LBR_fascism:0 "Libra"
  LBR_fascism_DEF:0 "Libra"
  LBR_democratic:0 "Libran Republic"
@@ -61,14 +63,15 @@
  LBR:0 "Libra"
  LBR_DEF:0 "Libra"
  LBR_ADJ:0 "Libran"
+ # orion
  ORI_fascism:0 "Orion Empire"
- ORI_fascism_DEF:0 "the Orion Empire"
+ ORI_fascism_DEF:0 "the Orionite Empire"
  ORI_ANT_fascism_autonomy_reichskommissariat:0 "Skorpii Orion"
  ORI_ANT_fascism_autonomy_reichskommissariat_DEF:0 "Skorpii Orion"
  ORI_ANT_fascism_autonomy_reichsprotectorate:0 "Skorpii Orion"
  ORI_ANT_fascism_autonomy_reichsprotectorate_DEF:0 "Skorpii Orion"
- ORI_ant_subject_fascism:0 "Skorpii Orion"
- ORI_ant_subject_fascism_DEF:0 "Skorpii Orion"
+ ORI_ant_subject:0 "Skorpii Orion"
+ ORI_ant_subject_DEF:0 "Skorpii Orion"
  ORI_democratic:0 "Orion Republic"
  ORI_democratic_DEF:0 "the Orion Republic"
  ORI_neutrality:0 "Kingdom of Orion"
@@ -86,6 +89,7 @@
  ORI:0 "Orion"
  ORI_DEF:0 "Orion"
  ORI_ADJ:0 "Orionite"
+ # auriga
  AUR_fascism:0 "Aurigan Imperium"
  AUR_fascism_DEF:0 "the Aurigan Imperium"
  AUR_democratic:0 "Kingdom of Auriga"
@@ -116,6 +120,7 @@
  URS:0 "Ursa"
  URS_DEF:0 "Ursa"
  URS_ADJ:0 "Ursan"
+ # everything antares here
  ANT_fascism:0 "Antarean Imperial State"
  ANT_fascism_DEF:0 "the Antarean Imperial Unity State"
  ANT_democratic:0 "State of Antares" #like the japanese constitutional monarchy
@@ -131,6 +136,7 @@
  ANT:0 "Antares"
  ANT_DEF:0 "Antares"
  ANT_ADJ:0 "Antarean"
+ # skorpius
  SKO_fascism:0 "Skorpius"
  SKO_fascism_DEF:0 "Skorpius"
  SKO_democratic:0 "Scorpius Republic"
@@ -146,6 +152,7 @@
  SKO:0 "Skorpius"
  SKO_DEF:0 "Skorpius"
  SKO_ADJ:0 "Skorpian"
+ # ara
  ARA_fascism:0 "Ara"
  ARA_fascism_DEF:0 "Ara"
  ARA_democratic:0 "Ara Republic"
@@ -154,19 +161,20 @@
  ARA_neutrality_DEF:0 "the Kingdom of Ara"
  ARA_communism:0 "Ara"
  ARA_communism_DEF:0 "Ara"
- ARA_fascism_ADJ:0 "Aran"
+ ARA_fascism_ADJ:0 "Aran" #Tau
  ARA_democratic_ADJ:0 "Aran"
  ARA_neutrality_ADJ:0 "Aran"
  ARA_communism_ADJ:0 "Aran"
  ARA:0 "Ara"
  ARA_DEF:0 "Ara"
  ARA_ADJ:0 "Aran"
+ # lupus
  LUP_fascism:0 "Lupus"
  LUP_fascism_DEF:0 "Lupus"
  LUP_democratic:0 "Lupus Republic"
  LUP_democratic_DEF:0 "the Lupus Republic"
- LUP_neutrality:0 "Lupus"
- LUP_neutrality_DEF:0 "Lupus"
+ LUP_neutrality:0 "Kingdom of Lupus"
+ LUP_neutrality_DEF:0 "the Kingdom of Lupus"
  LUP_communism:0 "Lupus"
  LUP_communism_DEF:0 "the its always Lupus"
  LUP_fascism_ADJ:0 "Lupun"
@@ -176,6 +184,7 @@
  LUP:0 "Lupus"
  LUP_DEF:0 "Lupus"
  LUP_ADJ:0 "Lupun"
+ # norma
  NRM_fascism:0 "Norma"
  NRM_fascism_DEF:0 "Norma"
  NRM_democratic:0 "Norman Republic"
@@ -191,6 +200,7 @@
  NRM:0 "Norma"
  NRM_DEF:0 "Norma"
  NRM_ADJ:0 "Norman"
+ # aquila
  AQU_fascism:0 "Empire of Aquila"
  AQU_fascism_DEF:0 "the Empire of Aquila"
  AQU_ANT_fascism_autonomy_reichskommissariat:0 "Skorpii Aquila"
@@ -214,6 +224,7 @@
  AQU:0 "Aquila"
  AQU_DEF:0 "Aquila"
  AQU_ADJ:0 "Aquilan"
+ # vega
  VEG_fascism:0 "Empire of Vega"
  VEG_fascism_DEF:0 "the Empire of Vega"
  VEG_democratic:0 "Republic of Vega"
@@ -229,6 +240,7 @@
  VEG:0 "Vega"
  VEG_DEF:0 "Vega"
  VEG_ADJ:0 "Vegan"
+ # grusa
  GRS_fascism:0 "Grusan Empire"
  GRS_fascism_DEF:0 "Grusan Empire"
  GRS_ANT_fascism_autonomy_reichskommissariat:0 "Skorpii Grusii"
@@ -244,7 +256,7 @@
  GRS_ANT_neutrality_autonomy_puppet:0 "Skorpii Grusii"
  GRS_ANT_neutrality_autonomy_puppet_DEF:0 "Skorpii Grusii"
  GRS_communism:0 "Empire of Crane"
- GRS_communism_DEF:0 "Empire of the Crane"
+ GRS_communism_DEF:0 "the Empire of the Crane"
  GRS_fascism_ADJ:0 "Grusan"
  GRS_democratic_ADJ:0 "Grusan"
  GRS_neutrality_ADJ:0 "Grusan"
@@ -252,14 +264,17 @@
  GRS:0 "Grusa"
  GRS_DEF:0 "Grusa"
  GRS_ADJ:0 "Grusan"
+ # columba
  CLB_fascism:0 "Columban Empire"
  CLB_fascism_DEF:0 "the Columban Empire"
  CLB_ANT_fascism_autonomy_reichskommissariat:0 "Skorpii Kolumba"
  CLB_ANT_fascism_autonomy_reichskommissariat_DEF:0 "Skorpii Kolumba"
  CLB_ANT_fascism_autonomy_reichsprotectorate:0 "Skorpii Kolumba"
  CLB_ANT_fascism_autonomy_reichsprotectorate_DEF:0 "Skorpii Kolumba"
- CLB_democratic:0 "Republic of Columba"
- CLB_democratic_DEF:0 "the Republic of Columba"
+ #CLB_democratic:0 "Republic of Columba"
+ #CLB_democratic_DEF:0 "the Republic of Columba"
+ CLB_democratic:0 "United Columban Territories"
+ CLB_democratic_DEF:0 "the United Columban Territories"
  CLB_neutrality:0 "United Columban Territories"
  CLB_neutrality_DEF:0 "the United Columban Territories"
  CLB_ANT_neutrality_autonomy_integrated_puppet:0 "Skorpii Kolumba"
@@ -275,6 +290,7 @@
  CLB:0 "Columba"
  CLB_DEF:0 "Columba"
  CLB_ADJ:0 "Columban"
+ # riaa
  RIA_fascism:0 "Empire of Riaa"
  RIA_fascism_DEF:0 "the Empire of Riaa"
  RIA_ANT_fascism_autonomy_reichskommissariat:0 "Skorpii Riaa"
@@ -300,6 +316,7 @@
  RIA:0 "Riaa"
  RIA_DEF:0 "Riaa"
  RIA_ADJ:0 "Riaan"
+ # vulpa
  VUL_fascism:0 "Empire of Vulpa"
  VUL_fascism_DEF:0 "the Empire of Vulpa"
  VUL_democratic:0 "Vulpan Republic"
@@ -315,8 +332,9 @@
  VUL:0 "Vulpa"
  VUL_DEF:0 "Vulpa"
  VUL_ADJ:0 "Vulpan"
- TUC_fascism:0 "Tucana"
- TUC_fascism_DEF:0 "Tucana"
+ # tucana
+ TUC_fascism:0 "Tucani Empire"
+ TUC_fascism_DEF:0 "the Tucanani Empire"
  TUC_democratic:0 "Republic of Tucana"
  TUC_democratic_DEF:0 "the Republic of Tucana"
  TUC_neutrality:0 "Tucani Empire"
@@ -330,6 +348,7 @@
  TUC:0 "Tucana"
  TUC_DEF:0 "Tucana"
  TUC_ADJ:0 "Tucanese"
+ # centauri 
  CTA_fascism:0 "Centaurian Empire"
  CTA_fascism_DEF:0 "the Centaurian Empire"
  CTA_democratic:0 "Merchant Republic of Centauri"
@@ -345,6 +364,7 @@
  CTA:0 "Centauri"
  CTA_DEF:0 "Centauri"
  CTA_ADJ:0 "Centaurian"
+ # lacerta
  LAC_fascism:0 "Lacerta"
  LAC_fascism_DEF:0 "Lacerta"
  LAC_democratic:0 "Republic of Lacerta"
@@ -360,6 +380,7 @@
  LAC:0 "Lacerta"
  LAC_DEF:0 "Lacerta"
  LAC_ADJ:0 "Lacertan"
+ # musca
  MUS_fascism:0 "Unism Empire"
  MUS_fascism_DEF:0 "the Unism Empire"
  MUS_democratic:0 "Muscan Republic"
@@ -375,6 +396,7 @@
  MUS:0 "Musca"
  MUS_DEF:0 "Musca"
  MUS_ADJ:0 "Muscan"
+ # hydrus
  HYS_fascism:0 "Hydrusite Empire"
  HYS_fascism_DEF:0 "the Hydrusite Empire"
  HYS_democratic:0 "Hydrus"
@@ -390,6 +412,7 @@
  HYS:0 "Hydrus"
  HYS_DEF:0 "Hydrus"
  HYS_ADJ:0 "Hydrusite"
+ # BOCCHILAND, CA INC TEST NATION
  BCH_fascism:0 "Ryoland"
  BCH_fascism_DEF:0 "Yamadaland"
  BCH_democratic:0 "Bocchiland"
@@ -420,6 +443,7 @@
  CAI:0 "Ca Inc"
  CAI_DEF:0 "Ca Inc"
  CAI_ADJ:0 "Ca Incian"
+ # lepus
  LPS_fascism:0 "Lepus Empire"
  LPS_fascism_DEF:0 "the Lepus Empire"
  LPS_democratic:0 "Lepus"
@@ -435,6 +459,7 @@
  LPS:0 "Lepus"
  LPS_DEF:0 "Lepus"
  LPS_ADJ:0 "Lepun"
+ # canis
  CNS_fascism:0 "Canisian Empire"
  CNS_fascism_DEF:0 "the Canisian Empire"
  CNS_democratic:0 "Canis"
@@ -450,21 +475,41 @@
  CNS:0 "Canis"
  CNS_DEF:0 "Canis"
  CNS_ADJ:0 "Canisian"
+ # HYDRUS COMMONWEALTH
  HYR_fascism:0 "Hydrus Empire"
  HYR_fascism_DEF:0 "the Hydrus Empire"
  HYR_democratic:0 "Hydrus Commonwealth"
  HYR_democratic_DEF:0 "the Hydrus Commonwealth"
- HYR_neutrality:0 "North Hydran States"
- HYR_neutrality_DEF:0 "the North Hydran States"
- HYR_communism:0 "Ursan Hydrus"
- HYR_communism_DEF:0 "the Ursan Hydrus"
+ HYR_neutrality:0 "Hydrus Commonwealth"
+ HYR_neutrality_DEF:0 "the Hydrus Commonwealth"
+# HYR_neutrality:0 "North Hydran States"
+# HYR_neutrality_DEF:0 "the North Hydran States"
+ HYR_communism:0 "Communist Commonwealth"
+ HYR_communism_DEF:0 "the Communist Commonwealth"
  HYR_fascism_ADJ:0 "Hydrusite"
  HYR_democratic_ADJ:0 "Hydrusite"
- HYR_neutrality_ADJ:0 "Hydrans"
+ HYR_neutrality_ADJ:0 "Hydrusite"
  HYR_communism_ADJ:0 "Hydrusite"
- HYR:0 "Hydrus"
- HYR_DEF:0 "Hydrus"
+ HYR:0 "Hydrus Commonwealth"
+ HYR_DEF:0 "the Hydrus Commonwealth"
  HYR_ADJ:0 "Hydrusite"
+ # north hydran states
+ NHS_fascism:0 "North Hydran Empire"
+ NHS_fascism_DEF:0 "the North Hydran Empire"
+ NHS_democratic:0 "North Hydran Republic"
+ NHS_democratic_DEF:0 "the North Hydran Republic"
+ NHS_neutrality:0 "North Hydran States"
+ NHS_neutrality_DEF:0 "the North Hydran States"
+ NHS_communism:0 "Northern Communist States"
+ NHS_communism_DEF:0 "the Northern Communist States"
+ NHS_fascism_ADJ:0 "Hydran"
+ NHS_democratic_ADJ:0 "Hydran"
+ NHS_neutrality_ADJ:0 "Hydran"
+ NHS_communism_ADJ:0 "Hydran"
+ NHS:0 "North Hydra"
+ NHS_DEF:0 "North Hydra"
+ NHS_ADJ:0 "Hydran"
+ # RODINIA
  RDN_fascism:0 "Rodinese Empire"
  RDN_fascism_DEF:0 "the Rodinese Empire"
  RDN_democratic:0 "Rodinese Republic"
@@ -480,6 +525,7 @@
  RDN:0 "Rodinia"
  RDN_DEF:0 "Rodinia"
  RDN_ADJ:0 "Rodinese"
+ # LINGSTONIA
  LGS_fascism:0 "Ligmanian State"
  LGS_fascism_DEF:0 "the Ligmanian State"
  LGS_democratic:0 "Republic of Lingstonia"
@@ -495,6 +541,8 @@
  LGS:0 "Lingstonia"
  LGS_DEF:0 "Lingstonia"
  LGS_ADJ:0 "Linstonian"
+ # ORION STATES
+ # CIRCINIA
  CIR_fascism:0 "Empire of Circinia"
  CIR_fascism_DEF:0 "the Empire of Circinia"
  CIR_democratic:0 "Circinia"
@@ -512,6 +560,7 @@
  CIR_ADJ:0 "Circinian"
  CIR_ORI_subject:0 "Northern Orionite Districts"
  CIR_DEF_ORI_subject:0 "the Northern Orionite Districts"
+ # GEMINA
  GEM_fascism:0 "Gemina"
  GEM_fascism_DEF:0 "Gemina"
  GEM_democratic:0 "Gemina"
@@ -528,6 +577,8 @@
  GEM_DEF:0 "Gemina"
  GEM_ADJ:0 "Geminan"
  GEM_ORI_subject:0 "Geminan District"
+ # COLUMBAN STATES
+ # QUARA
  QUA_fascism:0 "Quara"
  QUA_fascism_DEF:0 "Quara"
  QUA_democratic:0 "Quara"
@@ -543,6 +594,7 @@
  QUA:0 "Quara"
  QUA_DEF:0 "Quara"
  QUA_ADJ:0 "Quarite"
+ # EURIA / NOACHI GUILD
  EUR_fascism:0 "Euria"
  EUR_fascism_DEF:0 "Euria"
  EUR_democratic:0 "Euria"
@@ -558,6 +610,7 @@
  EUR:0 "Euria"
  EUR_DEF:0 "Euria"
  EUR_ADJ:0 "Eurian"
+ # PHACT
  PHA_fascism:0 "Phact"
  PHA_fascism_DEF:0 "Phact"
  PHA_democratic:0 "Phact"
@@ -573,6 +626,7 @@
  PHA:0 "Phact"
  PHA_DEF:0 "Phact"
  PHA_ADJ:0 "Phactite"
+ # NOHAE
  NOH_fascism:0 "Nohae"
  NOH_fascism_DEF:0 "Nohae"
  NOH_democratic:0 "Federation of Nohae"
@@ -588,18 +642,56 @@
  NOH:0 "Nohae"
  NOH_DEF:0 "Nohae"
  NOH_ADJ:0 "Nohaean"
- ANTRED_fascism:0 "Antarean Imperial State"
- ANTRED_fascism_DEF:0 "the Antarean Imperial Unity State"
- ANTRED_democratic:0 "State of Antares" #like the japanese constitutional monarchy
- ANTRED_democratic_DEF:0 "the Democratic State of Antares" 
- ANTRED_neutrality:0 "Antares Imperium" #JUST USED THIS FOR TESTING, NO LONGER RELEVANT*
- ANTRED_neutrality_DEF:0 "the Antares Imperium"
- ANTRED_communism:0 "South Centauran Socialist Federation"
- ANTRED_communism_DEF:0 "the South Centauran Socialist Democratic People's Federation"
- ANTRED_fascism_ADJ:0 "Antarean"
- ANTRED_democratic_ADJ:0 "Antarean"
- ANTRED_neutrality_ADJ:0 "Antarean"
- ANTRED_communism_ADJ:0 "South Centauran"
- ANTRED:0 "Antares"
- ANTRED_DEF:0 "Antares"
- ANTRED_ADJ:0 "Antarean"
+ 
+ 
+ # OTHERS
+ 
+ 
+ # hydrus
+ HYH_fascism:0 "State of Hydrus"
+ HYH_fascism_DEF:0 "the State of Hydrus"
+ HYH_democratic:0 "State of Hydrus"
+ HYH_democratic_DEF:0 "the State of Hydrus"
+ HYH_neutrality:0 "State of Hydrus"
+ HYH_neutrality_DEF:0 "the State of Hydrus"
+ HYH_communism:0 "State of Hydrus"
+ HYH_communism_DEF:0 "the State of Hydrus"
+ HYH_fascism_ADJ:0 "Hydrusite"
+ HYH_democratic_ADJ:0 "Hydrusite"
+ HYH_neutrality_ADJ:0 "Hydrusite"
+ HYH_communism_ADJ:0 "Hydrusite"
+ HYH:0 "State of Hydrus"
+ HYH_DEF:0 "the State of Hydrus"
+ HYH_ADJ:0 "Hydrusite"
+ # lepus
+ LPH_fascism:0 "State of Lepus"
+ LPH_fascism_DEF:0 "the State of Lepus"
+ LPH_democratic:0 "State of Lepus"
+ LPH_democratic_DEF:0 "the State of Lepus"
+ LPH_neutrality:0 "State of Lepus"
+ LPH_neutrality_DEF:0 "the State of Lepus"
+ LPH_communism:0 "State of Lepus"
+ LPH_communism_DEF:0 "the State of Lepus"
+ LPH_fascism_ADJ:0 "Lepun"
+ LPH_democratic_ADJ:0 "Lepun"
+ LPH_neutrality_ADJ:0 "Lepun"
+ LPH_communism_ADJ:0 "Lepun"
+ LPH:0 "State of Lepus"
+ LPH_DEF:0 "the State of Lepus"
+ LPH_ADJ:0 "Lepun"
+ # canis
+ CNH_fascism:0 "State of Canis"
+ CNH_fascism_DEF:0 "the State of Canis"
+ CNH_democratic:0 "State of Canis"
+ CNH_democratic_DEF:0 "the State of Canis"
+ CNH_neutrality:0 "State of Canis"
+ CNH_neutrality_DEF:0 "the State of Canis"
+ CNH_communism:0 "State of Canis"
+ CNH_communism_DEF:0 "the State of Canis"
+ CNH_fascism_ADJ:0 "Canisian"
+ CNH_democratic_ADJ:0 "Canisian"
+ CNH_neutrality_ADJ:0 "Canisian"
+ CNH_communism_ADJ:0 "Canisian"
+ CNH:0 "Canis"
+ CNH_DEF:0 "Canis"
+ CNH_ADJ:0 "Canisian"

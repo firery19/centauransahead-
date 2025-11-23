@@ -49,6 +49,8 @@
  ANT_expand_coal_industry_desc:0 "For our future and current needs we need to massively expand our coal mining operations, both for steel production and power production."
  ANT_new_mines:0 "Develop New Mines"
  ANT_new_mines_desc:0 "Develop New Mines"
+ ANT_island_dockyards:0 "Island Dockyards"
+ ANT_island_dockyards_desc:0 "Island Dockyards"
  ANT_expand_oil_extraction:0 "Expand Oil Extraction"
  ANT_expand_oil_extraction_desc:0 "Expand Oil Extraction"
  ANT_clean_cities:0 "Clean Cities"
@@ -168,8 +170,8 @@
  DANT1:0 "Kalvin Tau stood in the antarean Supreme Kouncil. He had been thinking about this for years, and now he was ready to announce his plans to the world. He would unite Centaura under Antarean rule, and then all of Forma. He would end war forever."
  AANT1:0 "The Emperor must assume absolute power to end war through force"
  BANT1:0 "Antares must strengthen its democracy to end war through diplomacy"
- T.ANT.2:0 "My event title"
- D.ANT.2:0 "My event description"
+ T.ANT.2:0 "Placeholder"
+ D.ANT.2:0 "Placeholder"
 
 
  ANT_scorched_state:0 "Scorched State"
@@ -204,5 +206,5 @@
 
  ANT_neutrality_party:0 "House of Tau"
  ANT_democratic_party:0 "Supreme Kouncil - Democratic Faction"
- ANT_fascism_party:0 "Antares Imperial Army - Ultra-Nationalists"
+ ANT_fascism_party:0 "Antares Imperial Army - Ultranationalists"
  ANT_communism_party:0 "Workers Movement of Antares"

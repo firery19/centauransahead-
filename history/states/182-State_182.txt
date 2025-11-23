@@ -21,7 +21,7 @@ state={
 }
 	}
 	provinces={
-		4001 4007 4092 4118 6754 6757 6765 
+		4007 4092 4118 6754 6757 6765 
 	}
 	manpower=29384
 	state_category = tiny_island

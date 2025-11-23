@@ -20,14 +20,12 @@ state={
 				naval_base = 1
 
 			}
-		
+		}
 		victory_points = {
-
 			1242 5
 		}
 		victory_points = {
 			3763 3
-		}
 		}
 		start_resistance = yes
 		set_resistance = 0
@@ -36,7 +34,7 @@ state={
 			owner = ORI
 			controller = ORI
 
-}
+		}
 	}
 	provinces={
 		144 480 547 1242 1664 1931 2111 2207 2252 2332 2392 2463 2954 2977 3205 3671 3704 3718 3725 3728 3763 3780 3794 3812 3848 3872 3892 3903 6747 

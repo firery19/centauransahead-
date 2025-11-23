@@ -19,7 +19,6 @@ ideas = {
             targeted_modifier = {
 				tag = URS
 				defense_bonus_against = 0.25
-				}
             }
         }
     }

@@ -1,4 +1,10 @@
 spriteTypes = {
+	
+#	spriteType = {
+#		name = "GFX_portrait_"
+#		texturefile = "gfx/leaders/"
+#	}
+	
 	spriteType = {
 		name = "GFX_portrait_BCH_hitori_gotoh"
 		texturefile = "gfx/leaders/BCH/portrait_BCH_hitori_gotoh.dds"
@@ -49,8 +55,11 @@ spriteTypes = {
 
 	# hydrus
 	
-
-
+	spriteType = {
+		name = "GFX_portrait_HYS_parliament_building"
+		texturefile = "gfx/leaders/HYS/portrait_HYS_parliament_building.dds"
+	}
+	
 	# antares
 
 	spriteType = {
@@ -97,5 +106,25 @@ spriteTypes = {
 		name = "GFX_portrait_VEG_alina_verda"
 		texturefile = "gfx/leaders/VEG/portrait_VEG_alina_verda.dds"
 	}
+	
+	# grusa
+	
+#	spriteType = {
+#		name = "GFX_portrait_GRS_
+#		texturefile = "gfx/leaders/GRS
+#	}
 
+	# riaa
+	
+	spriteType = {
+		name = "GFX_portrait_RIA_ivan_riaa"
+		texturefile = "gfx/leaders/RIA/portrait_RIA_ivan_riaa.dds"
+	}
+	
+	# libra
+	
+	spriteType = {
+		name = "GFX_portrait_LBR_generic_leader"
+		texturefile = "gfx/leaders/LBR/portrait_LBR_generic_leader.dds"
+	}
 }

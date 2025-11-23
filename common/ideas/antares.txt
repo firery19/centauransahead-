@@ -385,7 +385,7 @@ initiative_factor = 0.3
             }
         }
 		ANT_navy = {
-            name = "Antares Armada"
+            name = "Antares Imperial Navy" #not the Antares Armada :(
             
             picture = NORDIC_navy_communist
             allowed = { original_tag = ANT }

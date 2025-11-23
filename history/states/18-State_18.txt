@@ -14,7 +14,10 @@ state={
 		
 		}
 		victory_points = {
-			306 50 
+			306 75 # capital of unism deserves the highest value of all victory points
+		}
+		victory_points = {
+			3371 5
 		}
 
 	}

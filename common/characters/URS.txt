@@ -20,8 +20,8 @@ characters = {
 		portraits = {
 			civilian = {
 				large = GFX_portrait_URS_matvei_magor
-				small = GFX_portrait_URS_matvei_magor_small
-#			}
+#				small = GFX_portrait_URS_matvei_magor_small
+			}
 		}
 		country_leader = {
 			ideology = despotism

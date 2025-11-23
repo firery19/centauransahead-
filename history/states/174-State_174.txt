@@ -2,23 +2,20 @@ state={
 	id=174
 	name="STATE_174"
 	history={
-		owner = HYS
-		add_core_of = HYS
+		owner = URS
+		add_core_of = CNS
 		buildings = {
 			infrastructure = 1
-			6643 = {
-				naval_base = 1
-				}
 			}
-			victory_points = {
-			6643 1 
-			}
+		start_resistance = yes
+		set_resistance = 15
+		set_compliance = 55
 		}
 	provinces={
-		6643 6645 
+		576 586 1472 1626 1967 2434 2554 2606 3040 3272 4026 4071 4109 4120 4153 4156 4166 4189 4190 4192 4207 4222 
 	}
-	manpower=9821
-	state_category = tiny_island
+	manpower=1009821
+	state_category = pastoral
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

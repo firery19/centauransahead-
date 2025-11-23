@@ -579,7 +579,7 @@ AQU_army_management = {
 			}
 			hidden_effect = {
 			set_country_flag = fix_2_rust
-			clear_country_flag = fix_1_rust
+			clr_country_flag = fix_1_rust
 			}
 		}
 	}
@@ -621,7 +621,7 @@ AQU_army_management = {
 			}
 			hidden_effect = {
 			set_country_flag = fix_3_rust
-			clear_country_flag = fix_2_rust
+			clr_country_flag = fix_2_rust
 			}
 		}
 	}
@@ -661,7 +661,7 @@ AQU_army_management = {
 			remove_idea = AQU_rusting_army_4_idea
 			}
 			hidden_effect = {
-			clear_country_flag = fix_3_rust
+			clr_country_flag = fix_3_rust
 			}
 		}
 	}
@@ -714,17 +714,22 @@ AQU_army_management = {
 		
 		custom_cost_trigger = {
 			command_power > 19
-			has_army_experience > 19
+			has_army_experience > 39
 		}
 		
-		custom_cost_text = decision_cost_CP_20_ArmXP_20
+		custom_cost_text = decision_cost_CP_20_ArmXP_40
 		available = {
+		OR = {
+			has_war = yes
+			has_war_support > 0.90
+		}
 			has_completed_focus = AQU_civil_guard
-			has_political_power > 49
+			has_political_power > 99
 		}
 
 		visible = {
 			has_completed_focus = AQU_civil_guard
+		#	always = yes
 		}
 
 		modifier = {
@@ -733,31 +738,11 @@ AQU_army_management = {
 
 		complete_effect = {
 			hidden_effect = {
-				add_command_power = -2
-				army_experience = -2
-				add_political_power = -50
+				add_command_power = -20
+				army_experience = -40
+				add_political_power = -100
 			}
 		}
-		#remove_effect = {
-		#if = {
-		#	limit = {
-		#		has_country_flag = AQU_increase_the_cg		can be used for future things usig different events 
-		#		}
-		#		AQU = { country_event = aqu.1 }
-		#		}
-		#		else_if = {
-		#		limit = {
-		#		has_completed_focus = AQU_standardise_the_cg
-		#		}
-		#		AQU = { country_event = aqu.1 }
-		#		}
-		#		else_if = {
-		#		limit = {
-		#		has_completed_focus = AQU_civil_guard
-		#		}
-		#		AQU = { country_event = aqu.1 }
-		#	}
-		#}
 		remove_effect = {
 		AQU = { country_event = aqu.1 }
 		}

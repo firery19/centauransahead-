@@ -213,7 +213,7 @@ HYS_INF_02 = {
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { HYS_INF_01 }
 
-	fallback_name = "%d Milita Division"
+	fallback_name = "%d. Milita Division"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.

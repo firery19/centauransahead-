@@ -2,23 +2,32 @@ state={
 	id=175
 	name="STATE_175"
 	history={
-		owner = HYS
-		add_core_of = HYS
+		owner = URS
+		add_core_of = CNS
 		buildings = {
 			infrastructure = 1
-			6662 = {
-				naval_base = 1
-				}
-			}
-			victory_points = {
-			6662 1 
-			}
 		}
-	provinces={
-		6662 
+		victory_points = {
+			488 5
+		}
+		victory_points = {
+			4709 5
+		}
+		victory_points = {
+			1284 5
+		}
+		victory_points = {
+			4532 5
+		}
+		start_resistance = yes
+		set_resistance = 40
+		set_compliance = 20
 	}
-	manpower=2012
-	state_category = tiny_island
+	provinces={
+		81 488 589 912 939 1084 1284 1353 1388 1389 1696 1917 2002 2149 2232 2282 2337 2422 2438 2558 2560 2617 2684 2763 2833 3219 3318 4489 4514 4532 4566 4572 4585 4615 4618 4635 4658 4683 4696 4709 4734 4770 4856 4919 
+	}
+	manpower=4162012
+	state_category = town
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

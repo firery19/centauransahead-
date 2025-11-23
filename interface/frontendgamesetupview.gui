@@ -21,14 +21,14 @@ guiTypes = {
 			clicksound = click_checkbox
 		}
 
-		iconType = {
+		iconType = { # this is gfx for start date
 			name = "icon"
 			spriteType = "GFX_select_date_1900"
 			position = { x = 27 y = 28 }
 			alwaystransparent = yes
 		}
 
-		instantTextBoxType = {
+		instantTextBoxType = { # this is text for start date
 			name = "date"
 			position = { x = 22 y = 147 }
 			font = "hoi_20b"
@@ -41,7 +41,7 @@ guiTypes = {
 		}
 	}
 
-	containerWindowType = {
+	containerWindowType = { # this is the size for national ideas display
 		name = "spirit_idea_entry"
 		size = { width=60 height=68 }
 		clipping = no
@@ -54,13 +54,13 @@ guiTypes = {
 		}
 	}
 
-	containerWindowType = {
+	containerWindowType = { 
 		name = "spirit_idea_entry_small"
 		size = { width=33 height=37 }
 		clipping = no
 
 		iconType = {
-			name = "icon"
+			name = "icon" # unknown
 			quadTextureSprite ="GFX_idea_unknown"
 			orientation = "CENTER"
 			centerposition = yes
@@ -95,7 +95,7 @@ guiTypes = {
 		clipping = no
 
 		iconType = {
-			name = "icon"
+			name = "icon" # this is for the selection map top right display with less than 3 national ideas
 			quadTextureSprite ="GFX_idea_unknown"
 			orientation = "CENTER"
 			centerPosition = yes
@@ -150,14 +150,14 @@ guiTypes = {
 			clicksound = click_checkbox
 		}
 
-		instantTextBoxType = {
+		instantTextBoxType = { # this one is the names for major countries
 			name = "country_name"
 			position = { x = 8 y = 247 }
 			font = "hoi_20b"
 			borderSize = {x = 0 y = 0}
-			maxWidth = 131
-			maxHeight = 20
-			fixedsize = yes
+			maxWidth = 131 # this dictates the max length of names
+			maxHeight = 20 # this dictates the max height of names
+			fixedsize = yes # this shows if text should be fixed size
 			format = center
 			Orientation = "UPPER_LEFT"
 		}
@@ -191,13 +191,13 @@ guiTypes = {
 		iconType = {
 			name = "country_flag"
 			quadTextureSprite ="GFX_flag_small2"
-			position = { x = 9 y = 8 }
+			position = { x = 9 y = 8 } # this one is for minor countries
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}
 
 		buttonType = {
-			name = "country"
+			name = "country" # this one is the interactable button
 			quadTextureSprite = "GFX_mini_country_selector"
 			position = { x=0 y =0 }
 			clicksound = click_checkbox
@@ -217,7 +217,7 @@ guiTypes = {
 		origo = lower_left
 
 		iconType = {
-			name ="menu"
+			name ="menu" #top background for save
 			spriteType = "GFX_load_save_top_screen"
 			position = { x= 0 y = 60 }
 			Orientation = "UPPER_LEFT"
@@ -600,7 +600,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name ="gamesetup_interesting_countries_window"
-		size = { width=1225 height=717 }
+		size = { width=1225 height=717 } # increasing goes left and up
 		Orientation = center
 		origo = center
 		clipping = no
@@ -608,7 +608,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "title"
-			position = { x = 435 y = 12 }
+			position = { x = 435 y = 12 } # select country
 			textureFile = ""
 			font = "hoi_24header"
 			borderSize = {x = 0 y = 0}
@@ -620,12 +620,12 @@ guiTypes = {
 
 		background = {
 			name = "single_player_country_bg"
-			quadTextureSprite ="GFX_country_selection_bg"
+			quadTextureSprite ="GFX_country_selection_bg" # for the selecting countries 
 		}
 
 		ButtonType = {
 			name = "back_button"
-			position = { x = -158 y = -52 }
+			position = { x = -158 y = -52 } # more right and less up
 			quadTextureSprite ="GFX_button_148x34"
 			buttonText = "BACK"
 			buttonFont = "hoi_18mbs"
@@ -648,15 +648,15 @@ guiTypes = {
 		}
 
 		containerWindowType = {
-			name ="countries"
-			position = { x = 15 y = 45 }
+			name ="countries" 
+			position = { x = 15 y = 45 } # for major countries
 			size = { width = -15 height = 120}
 
 			gridboxType = {
 				name ="countries_grid"
 				position = { x = 0 y = 0 }
 				size = { width = 100% height = 100% }
-				slotsize = { width = 150 height = 0 }
+				slotsize = { width = 150 height = 0 } # governs the distance between countries
 				add_horizontal = yes
 				max_slots_vertical = 1
 				format = "UPPER_LEFT"
@@ -665,7 +665,7 @@ guiTypes = {
 		}
 
 		containerWindowType = {
-			name ="countries_medium"
+			name ="countries_medium" # whats this used for?
 			position = { x = 15 y = 330 }
 			size = { width = -15 height = 120}
 
@@ -681,7 +681,7 @@ guiTypes = {
 		}
 
 		containerWindowType = {
-			name ="countries_mini"
+			name ="countries_mini" # minor countries 
 			position = { x = 15 y = 340 }
 			size = { width = -15 height = 120}
 
@@ -699,7 +699,7 @@ guiTypes = {
 		}
 
 		iconType = {
-			name = "minor_country_leader"
+			name = "minor_country_leader" # country leader gfx
 			quadTextureSprite ="GFX_leader_unknown"
 			position = { x = 289 y = 441 }
 			scale=0.696
@@ -707,7 +707,7 @@ guiTypes = {
 		}
 
 		iconType = {
-				name ="minor_portrait_overlay"
+				name ="minor_portrait_overlay" # the pins to the image
 				spriteType = "GFX_minor_portrait_overlay"
 				position = { x= 280 y = 430 }
 		}
@@ -724,7 +724,7 @@ guiTypes = {
 			format = centre
 		}
 
-		containerWindowType = {
+		containerWindowType = { # country detail
 			name = "info"
 			position = { x = 35 y = 485 }
 
@@ -852,7 +852,7 @@ guiTypes = {
 
 			containerWindowType = {
 				name ="ideas"
-				position = { x = 91 y = -1 }
+				position = { x = 91 y = -1 } # ideas positions
 				size = { width = 100%% height = 70 }
 
 				gridboxType = {
@@ -868,7 +868,7 @@ guiTypes = {
 
 			containerWindowType = {
 				name ="focus"
-				position = { x = 9 y = 85 }
+				position = { x = 9 y = 85 } # focus positions
 				size = { width = 100% height = 100 }
 
 				gridboxType = {
@@ -885,7 +885,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "history_title"
-			position = { x = 830 y = 450 }
+			position = { x = 830 y = 450 } # history title 
 			font = "hoi4_typewriter22"
 			borderSize = {x = 0 y = 0}
 			text = "FE_COUNTRY_HISTORY_TITLE"
@@ -894,7 +894,7 @@ guiTypes = {
 			format = centre
 		}
 
-		instantTextBoxType = {
+		instantTextBoxType = { # ori_desc_1900 thing
 			name = "history"
 			position = { x = 810 y = 490 }
 			font = "hoi4_typewriter16"
@@ -943,7 +943,7 @@ guiTypes = {
 		hide_sound = menu_close_window
 
 		background={
-			name ="background"
+			name ="background" # background for top right country selecting map
 			spriteType = "GFX_lobby_right_sidepanel_bg"
 		}
 

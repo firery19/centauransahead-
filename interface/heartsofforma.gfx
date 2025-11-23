@@ -1,0 +1,71 @@
+spriteTypes = {
+
+	### generic equipment archetypes ###
+	# hoforma tech
+
+	SpriteType = {
+		name = "GFX_archetype_dynamite_equipment_medium"
+		texturefile = "gfx/interface/archetypes/archetype_dynamite_equipment.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_dynamite1_medium"
+		texturefile = "gfx/interface/technologies/dynamite1.dds"
+	}
+	
+	# caromite
+	
+	spriteType = {
+		name = "GFX_news_event_caromite"
+		texturefile = "gfx/event_pictures/news_event_caromite.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_caromite"
+		texturefile = "gfx/event_pictures/report_event_caromite.dds"
+	}
+	# other
+	spriteType = {
+		name = "GFX_decision_cat_generic_hydrus"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_hydrus.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_generic_lepus"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_lepus.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_generic_canis"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_canis.dds"
+	}
+	
+	# menu interface wawawa!!
+	
+	spriteType = {
+		name = "GFX_nijika"
+		texturefile = "gfx/interface/nijika.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_hyderus"
+		texturefile = "gfx/interface/hyderus.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_japan"
+		texturefile = "gfx/interface/japan.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_china"
+		texturefile = "gfx/interface/china.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_long_tile"
+		texturefile = "gfx/interface/border_tiled_menu_screen_a.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_empty_placeholder"
+		texturefile = "gfx/interface/nothing.dds"
+	}
+}

@@ -2,21 +2,19 @@ state={
 	id=94
 	name="STATE_94"
 	history = {
-		owner = ANT
-		add_core_of = ANT
-		add_core_of = ARA
+		owner = CET
+		add_core_of = CET
+		add_claim_by = ANT
+		add_claim_by = SKO
 		buildings = {
 			infrastructure = 1
 		}
-		victory_points = {
-			6988 17
-		}
 	}
 	provinces={
-		6986 6987 6988 
+		5414 5415 5454 5455 6803 6807 6812 
 	}
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
         manpower=367309
-        state_category = tiny_island
+        state_category = rural
 }

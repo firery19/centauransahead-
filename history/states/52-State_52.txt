@@ -4,7 +4,7 @@ state={
     resources = {
         steel = 19
 		aluminium = 2
-		oil = 4
+		coal = 5
     }
 	history = {
 		owner = COV

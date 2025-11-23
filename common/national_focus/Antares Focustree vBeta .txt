@@ -398,8 +398,12 @@ focus = {
                 instant_build = yes
             }
             add_resource = {
-                type = steel
+                type = coal
                 amount = 20
+            }
+            add_resource = {
+                type = steel
+                amount = 10
             }
         }
     }
@@ -425,8 +429,12 @@ focus = {
                 instant_build = yes
             }
             add_resource = {
+                type = coal
+                amount = 10
+            }
+            add_resource = {
                 type = steel
-                amount = 20
+                amount = 10
             }
         }
         98 = {
@@ -907,6 +915,10 @@ focus = {
             add_resource = {
                 type = steel
                 amount = 40
+            }
+            add_resource = {
+                type = coal
+                amount = 10
             }
         }
     }
@@ -2390,7 +2402,11 @@ focus = {
         
 	ai_will_do = { factor = 0.01 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.25
+			uses = 1
+			category = land_doctrine
+		}
 
 	}
 }
@@ -2401,13 +2417,13 @@ focus = {
 	icon = GFX_goal_unknown
 	x = 34
 	y = 1
-	cost = 10
+	cost = 5
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_army_reform}
         
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
+		army_experience = 10
 
 	}
 }
@@ -2426,8 +2442,16 @@ focus = {
         
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+		add_equipment_to_stockpile = {
+		    type = infantry_equipment
+		    amount = 10000
+		    producer = ANT
+		}
+		add_equipment_to_stockpile = {
+		    type = artillery_equipment
+		    amount = 1000
+		    producer = ANT
+		}
 	}
 }
 
@@ -2437,14 +2461,14 @@ focus = {
 	icon = GFX_goal_unknown
 	x = 36
 	y = 1
-	cost = 10
+	cost = 5
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_army_reform}
         
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+# +10% shore bombardment bonus
 	}
 }
 
@@ -2454,15 +2478,15 @@ focus = {
 	icon = GFX_goal_unknown
 	x = 35
 	y = 2
-	cost = 10
+	cost = 5
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_analyse_war_games}
 	prerequisite = {focus = ANT_army_navy_coop}
         
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+		army_experience	= 15
+		navy_experience	= 10
 	}
 }
 
@@ -2472,14 +2496,14 @@ focus = {
 	icon = GFX_goal_unknown
 	x = 31
 	y = 2
-	cost = 10
+	cost = 5
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_analyse_war_games}
         
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+# +5% arty soft attack
 	}
 }
 
@@ -2494,8 +2518,10 @@ focus = {
 	prerequisite = {focus = ANT_army_navy_war_game}
 	prerequisite = {focus = ANT_equipment_needs}
 	available = {
-		has_country_flag = grease_wars_start
-	}
+		or = {
+		has_global_flag = grease_wars_start
+		date > 1904.01.01	#incase grease war flag doesn't register or start or smt
+	}}
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2516,7 +2542,7 @@ focus = {
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+# doctrine bonus, waiting for update in case code changes
 	}
 }
 
@@ -2526,13 +2552,13 @@ focus = {
 	icon = GFX_goal_unknown
 	x = 40
 	y = 5
-	cost = 10
+	cost = 5
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_learn_from_grease_war}
         
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
+		navy_experience = 30
 
 	}
 }
@@ -2550,7 +2576,7 @@ focus = {
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+# + 5% initiative
 	}
 }
 
@@ -2560,14 +2586,17 @@ focus = {
 	icon = GFX_goal_unknown
 	x = 38
 	y = 3
-	cost = 10
+	cost = 5
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_solve_coms_isssue}
         
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+		add_tech_bonus = {
+		    bonus = 1
+		    uses = 1
+		    technology = radio
+		}
 	}
 }
 
@@ -2584,7 +2613,7 @@ focus = {
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+# doctrine bonus
 	}
 }
 
@@ -2601,7 +2630,7 @@ focus = {
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+# temp cost reduction
 	}
 }
 
@@ -2617,8 +2646,11 @@ focus = {
         
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+		add_tech_bonus = {
+		    bonus = 1
+		    uses = 2
+		    category = 	naval_equipment
+		}
 	}
 }
 
@@ -2634,8 +2666,11 @@ focus = {
         
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+		add_tech_bonus = {
+		    bonus = 1.5
+		    uses = 1
+		    category = 	dd_tech
+		}
 	}
 }
 
@@ -2686,7 +2721,7 @@ focus = {
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+# temp dd cost reduction
 	}
 }
 

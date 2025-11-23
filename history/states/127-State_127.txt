@@ -3,17 +3,16 @@ state={
 	id=127
 	name="STATE_127"
 	resources={
-		oil=18.000
 		steel=11.000
-		tungsten=8.000
+		tungsten=3.000
 	}
 
 	history={
 		owner = HYS
 		add_core_of = HYS
 		buildings = {
-			industrial_complex = 1
-			infrastructure = 2
+			industrial_complex = 0
+			infrastructure = 1
 			3466 = {
 				naval_base = 2
 
@@ -32,10 +31,10 @@ state={
 	}
 
 	provinces={
-		43 122 343 363 371 506 623 696 849 953 1028 1198 1708 1749 1960 2026 2201 2321 2359 2362 2697 2865 3249 3301 3466 3471 3477 3488 3490 3501 3509 3537 3550 3552 
+		43 122 343 363 371 506 623 696 849 1028 1198 1708 2026 2201 2321 2362 2697 2865 3249 3301 3466 3471 3477 3488 3490 3501 3509 3537 6608 6620 6643
 	}
 	manpower=10032947
 	buildings_max_level_factor=1.000
-	state_category=large_city
+	state_category=city
 	local_supplies=0.000
 }

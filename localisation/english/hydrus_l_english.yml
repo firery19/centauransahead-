@@ -1,0 +1,232 @@
+﻿l_english:
+ # focuses
+ HYS_rebuilding_the_country:0 "Rebuilding The Country"
+ HYS_rebuilding_the_country_desc:0 "The country has been left in disrepair ever since the Ursans left. We have to make efforts to rebuild."
+ HYS_rally_workers:0 "Rally Workers"
+ HYS_rally_workers_desc:0 "We need workers to work in factories. This is no problem, Hydrus has many abled men that is willing to work for the country."
+ HYS_sieze_ursan_weapon_caches:0 "Sieze Ursan Weapon Caches"
+ HYS_sieze_ursan_weapon_caches_desc:0 "The occupying Ursan forces had left hurriedly after we siezed control of the country, leaving behind equipment that we can use, against them."
+ HYS_sieze_abandoned_ursan_factories:0 "Sieze Abandoned Factories"
+ HYS_sieze_abandoned_ursan_factories_desc:0 "The occupying Ursan forces had left many factories within our country. However, said factories have fallen into disrepair. We should take control and refurbish the factories into running condition."
+ HYS_kickstart_production:0 "Kickstart Production"
+ HYS_kickstart_production_desc:0 "Our factories are currently in a lapse. With our preparations, the production can begin."
+ HYS_exploitation_resources:0 "Exploit Resources"
+ HYS_exploitation_resources_desc:0 "
+ HYS_ingram_mountain_mining:0 "Exploit Mount Ingram"
+ HYS_ingram_mountain_mining_desc:0 "Mountain many resources" # rewrite
+ HYS_offshore_oil_drilling:0 "Northern Oil Plaforms"
+ HYS_offshore_oil_drilling_desc:0 "Oil in the ocean seas oil"
+ HYS_establish_local_industries:0 "Establish Local Industries"
+ HYS_establish_local_industries_desc:0 "
+ HYS_finnsberg_shipbuilders:0 "Finnsberg Shipbuilding Company"
+ HYS_finnsberg_shipbuilders_desc:0 "
+ HYS_ingram_industry:0 "Ingram Mining Corporation"
+ HYS_ingram_industry_desc:0 "The Ingram Mountains hold an ambundance of resources. We will establish a company to exploit these resources."
+# HYS_functional_economy:0 "Functional Economy"
+ HYS_functional_economy:0 "Functioning Local Economy"
+ HYS_functional_economy_desc:0 "
+ HYS_restore_infrastructure:0 "Restore Rundown Infrastructure"
+ HYS_restore_infrastructure_desc:0 "
+ 
+ HYS_orionite_aid:0 "Orionite Convoys"
+ HYS_orionite_aid_desc:0 "Borrow some convoys from Orion."
+ HYS_orion_industrial_might:0 "Make Use Of Orionite Industry"
+ HYS_orion_industrial_might_desc:0 "
+ HYS_seek_arms_deal_orion:0 "Seek Arms Deal With Orion"
+ HYS_seek_arms_deal_orion_desc:0 "
+ HYS_subsidise_civ_industry:0 "Subsidise Civil Industry"
+ HYS_subsidise_civ_industry_desc:0 "
+ HYS_subsidise_arms_industry:0 "Subsidise Arms Industry"
+ HYS_subsidise_arms_industry_desc:0 "
+ 
+ HYS_seek_orionite_help:0 "Seek Orionite Help" # i really want to put (Seek Hunter of the Souths Help) but itll be too long
+ HYS_seek_orionite_help_desc:0 "
+ HYS_supply_rebels_hydra:0 "Supply Hydran Rebels"
+ HYS_supply_rebels_hydra_desc:0 "
+ HYS_canis_frontier:0 "Canisian Frontier"
+ HYS_canis_frontier_desc:0 "
+ HYS_smuggle_arms_into_canis:0 "Smuggle Arms Into Canis"
+ HYS_smuggle_arms_into_canis_desc:0 "As Orion has a direct border into Canis, we can smuggle arms through said way."
+ HYS_lepus_frontier:0 "Lepus Frontier"
+ HYS_lepus_frontier_desc:0 "
+ HYS_prepare_for_rebellion:0 "Prepare For War"
+ HYS_prepare_for_rebellion_desc:0 "The rebels in Canis will not have an easy way out like us. Their geographical proximity means they will need to fight more fiercely than us to get independence. We should prepare for the inevitable."
+ 
+ HYS_unification_discussions:0 "Discussions Of Unification"
+ HYS_unification_discussions_desc:0 "
+ 
+ HYS_the_commonwealth_path:0 "Form a Commonwealth"
+ HYS_the_commonwealth_path_desc:0 "
+ 
+ HYS_all_is_united_under_one_banner:0 "Under One Banner"
+ HYS_all_is_united_under_one_banner_desc:0 "The three countries that exist within north Hydra; Hydrus, Lepus and Canis will unite into a commonwealth, the Hydrus Commonwealth."
+ 
+ HYS_unitary_state_negotiation:0 "Form a Unitary State "
+ HYS_unitary_state_negotiation_desc:0 "[Root.Capital.GetName]"
+ 
+ HYS_all_is_united_under_hydrus:0 "United As One"
+ HYS_all_is_united_under_hydrus_desc:0 "The concepts of Hydrus, Lepus and Canis will cease to exist. The three countries will unite into a single nation, the North Hydran States."
+ 
+ # events
+ 
+ hydrus.1:0 "Placeholder"
+ hydrus.1.t:0 "Unaccessable event violation"
+ hydrus.1.d:0 "This is a test event."
+ hydrus.1.a:0 "You aren't supposed to run this event."
+ hydrus.1.b:0 "I won't run random events anymore!!"
+ 
+ hydrus.2.t:0 "Hydrus reaches out"
+ hydrus.2.d:0 "The newly independent state of Hydrus has reached out to us for our help, seeking our aid. What should we do?"
+ hydrus.2.a:0 "Send Aid"
+ hydrus.2.b:0 "Refuse"
+ 
+ hydrus.3.t:0 "Orion accepts"
+ hydrus.3.d:0 "Successful!!"
+ hydrus.3.a:0 "Thats good."
+ 
+ hydrus.4.t:0 "Orion refuses"
+ hydrus.4.d:0 "Why would they do this bruh"
+ hydrus.4.a:0 "Cry about it"
+ 
+ hydrus.5.t:0 "Organised Lepus resistance starts"
+ hydrus.5.d:0 "Lepus civilians seeing the success of Hydrus has started organised resistance within the territory."
+ hydrus.5.a:0 "Nonsense!"
+ 
+ hydrus.6.t:0 "Riots in East Lepus"
+ hydrus.6.d:0 "Riots are happening in East Lepus! What should we do?"
+ hydrus.6.a:0 "Beatdown!"
+ hydrus.6.b:0 "Calm the riots"
+ hydrus.6.c:0 "Do nothing"
+ 
+ hydrus.7.t:0 "Riots in North Lepus"
+ hydrus.7.d:0 "Riots are happening in North Lepus! What should we do?"
+ hydrus.7.a:0 "Suppress the Riots"
+ hydrus.7.b:0 "Calm the riots"
+ hydrus.7.c:0 "Do nothing"
+ 
+ hydrus.8.t:0 "Riots in Central Lepus"
+ hydrus.8.d:0 "Riots are happening in Central Lepus! What should we do?"
+ hydrus.8.a:0 "Suppress the Riots"
+ hydrus.8.b:0 "Calm the riots"
+ hydrus.8.c:0 "Do nothing"
+ 
+ hydrus.9.t:0 "Riots in West Lepus"
+ hydrus.9.d:0 "Riots are happening in West Lepus! What should we do?"
+ hydrus.9.a:0 "Suppress the Riots"
+ hydrus.9.b:0 "Calm the riots"
+ hydrus.9.c:0 "Do nothing"
+ 
+ hydrus.10.t:0 "Imminent Rebellion in Lepus"
+ hydrus.10.d:0 "Our garrison units is currently engaging in rebels in Lepus, but it is clear that we are being overrun by the rebel forces.\n\nStart evacuating to west Lepus, §Ror your divisions will be destroyed§!."
+ hydrus.10.a:0 "Spiralling out of control"
+ 
+ hydrus.11.t:0 "Garrison Units in Lepus Attacked!"
+ hydrus.11.d:0 "Our garrison unit in Lepus was attacked by a group of guerilla fighters. What should we do?"
+ hydrus.11.a:0 "Reinforce the Garrison"
+ hydrus.11.b:0 "Reprisals"
+ hydrus.11.c:0 "Do nothing"
+ 
+ hydrus.12.t:0 "Lepus Infrastructure Attacked!"
+ hydrus.12.d:0 "One of our buildings just exploded! Must be the resistance. What should we do?"
+ hydrus.12.a:0 "Set an example"
+ hydrus.12.b:0 "
+ hydrus.12.c:0 "
+ 
+ hydrus.13.t:0 "Underground Newspapers Discovered!"
+ hydrus.13.d:0 "We found newspapers of the resistance in Lepus. It has to be the resistance printing them. What should we do?"
+ hydrus.13.a:0 "Destroy and stop new printing of the newspapers"
+ hydrus.13.b:0 "Do nothing"
+ 
+ hydrus.q.t:0 "
+ hydrus.q.d:0 "
+ hydrus.q.a:0 "
+ hydrus.q.b:0 "
+ 
+ lps.4.t:0 "Lepus Rebellion"
+ lps.4.d:0 "The consequence of cracking down on civilians have arrived. Was it worth it? No one knows.\n\n§RLosing West Lepus will immediately cause us to lose!§!"
+ lps.4.a:0 "Suppress the Rebellion again!"
+ 
+ lps.5.t:0 "Loss of Lepus"
+ lps.5.d:0 "We have lost the entirety of the region of Lepus. The people of Lepus have asserted control over the territory and kicked us out."
+ lps.5.a:0 "A humiliating loss"
+ 
+ # ideas
+ HYS_recently_independent:0 "Recently Independent"
+ HYS_recently_independent_desc:0 "The nation of Hydrus is a new country, having just recently gained independence from the Federation of Ursa a year ago, a consequence of the weakening hold of Ursa on Hydra."
+ HYS_new_army:0 "Recently Established Army"
+ HYS_new_army_desc:0 "Hydrus did not have much time to create a professional army, only having militias and a handful of trained infantry."
+ HYS_inexperienced_industry_idea:0 "Inexperienced Industry"
+ HYS_inexperienced_industry_idea_desc:0 "Being a newly independent country, Hydrus does not have much experience within managing industrial means within the country."
+ #HYS_sabotaged_factories_idea:0 "Ursan Gift"
+ #HYS_sabotaged_factories_idea_desc:0 "When the Ursans left Hydrus, they had left behind infrastructure rigged with traps and explosives. Thus, many of the buildings that were built here were damaged beyond repair."
+ HYS_newly_established_factories_idea:0 "Establishing New Factories"
+ HYS_newly_established_factories_idea_desc:0 "We build new factories."
+ 
+ # tooltips
+ hys_supplying_rebel_tt:0 "§YSupplying Canisian rebels will lead to their divisions starting with more strength.§!"
+ hydrus_sets_canis_rebellion:0 "Taking the focus will rest the coordination of the uprising on Hydrus"
+ orion_helps_hydrus_economy:0 "Orion has agreed to help us"
+ orion_aid_focus_unlock:0 "§YThis will unlock focuses in the Orionite help branch§!"
+ revolve_hydrus_tt:0 "§YThis focus path uses the revolution risk to declare independence.§!"
+ rebel_hydrus_tt:0 "§YThis focus uses the unrest factor for an open rebellion.§!"
+ independence_builder_orion:0 "When Lepus or Canis gains independence, immediately build 1 civilian factory in their capital city. Free and no costs for both sides."
+ 
+ # misc
+ industrial_heartland:0 "Industrial Heartland"
+ industrialized_metropolis:0 "Industrialized Metropolis"
+ industrialized_megalopolis:0 "Industrialized Megalopolis" # why are they here you ask? because i didnt know where else
+ HYD_canis_war:0 "Debug Tab"
+ filler_focus_tt:0 "Filler Focus For Dummies"
+ 7days_torebellion:0 "§RAfter 7 days, rebels in Lepus will overrun Central and East Lepus.§!"
+ 
+ # Progress to revolution: [?lepus_crack_counter|Y0]/50\n\n Progress to uprising: [?testing_variable|Y0]/100
+ 
+ # lepus Revolution
+ HYS_lepus_revolution:0 "Lepus Revolution"
+ HYS_lepus_revolution_desc:0 "The colony of Lepus is currently occupied by Ursa. For gameplay purposes, Hydrus control Lepus activities.\n\nStatus:  [LepusRebellionProgress] [?lepus_revolution_counter|Y0]\n\nUnrest:  [LepusAngerProgress]  [?lepus_anger_counter|Y0]"
+ lepus_no_revolution:0 "§GNo Revolution Risk§!"
+ lepus_low_revolution:0 "§GLow Revolution Risk§!"
+ lepus_medium_revolution:0 "§YSome Revolution Risk§!"
+ lepus_high_revolution:0 "§OHigh Revolution Risk§!"
+ lepus_total_revolution:0 "§RRevolution Imminent§!"
+ lepus_can_revolution_require_tt:0 "Has status "§RRevolution Imminent§!""
+ hys_start_lepus_revolution:0 "Start The Lepus Spring"
+ hys_start_lepus_revolution_desc:0 "The people of Lepus are waiting for a signal. When the time is right, the nation will declare its independence."
+ 
+ hys_stir_the_masses_east:0 "Stir The Masses In The East"
+ hys_stir_the_masses_north:0 "Stir The Masses In The North"
+ hys_stir_the_masses_central:0 "Stir The Masses In The Center"
+ hys_stir_the_masses_west:0 "Stir The Masses In The West"
+ hys_print_newspapers:0 "Print Underground Newspapers"
+ hys_stir_the_masses:0 "Stir The Masses"
+ hys_spread_rumours:0 "Spread Rumours of Revolution"
+ 
+ add_1_to_revolution_tt:0 "§YAdds 1 unit of revolution§!"
+ add_2_to_revolution_tt:0 "§OAdds 2 unit of revolution§!"
+ add_3_to_revolution_tt:0 "§RAdds 3 unit of revolution§!"
+ lepus_15_r_counter_tt:0 "Has status "§YSome Revolution Risk§!""
+ lepus_25_r_counter_tt:0 "Has status "§OHigh Revolution Risk§!""
+ 
+ # lepus Rebellion - Subdivision of Lepus Revolution
+ lepus_no_unrest:0 "§GNo Unrest§!"
+ lepus_low_unrest:0 "§YLow Unrest§!"
+ lepus_medium_unrest:0 "§OSome Unrest§!"
+ lepus_high_unrest:0 "§RHigh Unrest§!"
+ lepus_imminent_rebellion:0 "§0Imminent Rebellion§!"
+ lepus_can_rebellion_require_tt:0 "Has unrest "§0Imminent Rebellion§!""
+ 
+ add_1_to_anger_tt:0 "§YAdds 1 unit of unrest§!"
+ add_2_to_anger_tt:0 "§OAdds 2 unit of unrest§!"
+ add_3_to_anger_tt:0 "§RAdds 3 unit of unrest§!"
+ lepus_5_counter_r_tt:0 "Has unrest "§OSome Unrest§!""
+ lepus_10_counter_r_tt:0 "Has unrest "§RHigh Unrest§!""
+ 
+ hys_kick_the_lepus_rebellion:0 "Force the Lepus Rebellion"
+ hys_kick_the_lepus_rebellion_desc:0 "The people of Lepus will not stand for any further actions from the Ursan military."
+ hys_armory_raid:0 "Raid Armories"
+ hys_destroy_infrastructure:0 "Destroy Ursan Infrastructure"
+ hys_attack_police_units:0 "Attack Garrison Units"
+ 
+ # canis uprising
+ HYS_canis_uprising:0 "Canis Rebellion"
+ HYS_canis_uprising_desc:0 "The colony of Canis is occupied by Ursa!"

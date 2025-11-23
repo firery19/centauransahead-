@@ -12,7 +12,19 @@ state={
 			}
 		}
 		victory_points = {
-			451 6 
+			4719 5
+		}
+		victory_points = {
+			4660 5
+		}
+		victory_points = {
+			2526 15
+		}
+		victory_points = {
+			2227 5
+		}
+		victory_points = {
+			4255 2
 		}
 		start_resistance = yes
 		set_resistance = 30
@@ -31,6 +43,6 @@ state={
 	}
 	manpower=2641701
 	buildings_max_level_factor=1.000
-	state_category=wasteland
+	state_category=rural
 	local_supplies=0.000
 }

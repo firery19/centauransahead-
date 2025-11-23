@@ -2,16 +2,16 @@ state={
 	id=128
 	name="STATE_128"
 	resources = {
-		oil = 21
-		steel = 13
-		chromium = 13
+		steel = 20
+		chromium = 2
+		coal=7
 	}
 	history = {
 		owner = HYS
 		add_core_of = HYS
 		buildings = {
-			industrial_complex = 1
-			infrastructure = 2
+			industrial_complex = 0
+			infrastructure = 1
 			3554 = {
 			naval_base = 3
 			}
@@ -30,7 +30,7 @@ state={
 		}
 	}
 	provinces={
-		6 237 413 479 536 570 691 794 915 1324 1334 1403 1506 1510 1759 1795 1888 1982 2018 2110 2641 2661 3088 3105 3287 3309 3544 3554 3557 3559 3577 3589 3591 3593 3601 3610 3620 3624 
+		479 536 570 794 915 953 1334 1403 1506 1510 1759 1795 1888 1982 2641 2661 3088 3105 3309 3544 3550 3554 3559 3577 3591 3601 6645 
 	}
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

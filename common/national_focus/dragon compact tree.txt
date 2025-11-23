@@ -3,10 +3,10 @@ focus_tree = {
 	default = no
 	country = {
 		factor = 0
-		modifier = {
-			add = 10
-			tag = HYS
-		}
+#		modifier = {
+#			add = 10
+#			tag = HYS
+#		}
 	}
 
 	joint_focus = dc_focus_start

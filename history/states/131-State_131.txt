@@ -3,7 +3,6 @@ state={
 	name="STATE_131"
 	resources = {
 		steel = 11
-		tungsten = 8
 	}
 	history = {
 		owner = URS
@@ -12,6 +11,7 @@ state={
 			industrial_complex = 0
 			infrastructure = 2
 			arms_factory = 1
+			dockyard = 1
 			116 = {
 				naval_base = 6
 			}

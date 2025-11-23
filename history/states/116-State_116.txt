@@ -4,6 +4,7 @@ state={
 	name="STATE_116"
 	resources = {
 		oil = 43
+		aluminium = 8.000
 	}
 	history = {
 		owner = URS
@@ -12,12 +13,12 @@ state={
 		dockyard = 0
 		infrastructure = 2
 		industrial_complex = 0
-		2226 = {
-			naval_base = 4
+			1396 = {
+				naval_base = 5
 			}
 		}
 		victory_points = {
-			2226 10
+			1396 15
 		}
 		start_resistance = yes
 		set_resistance = 15
@@ -30,10 +31,10 @@ state={
 }
 	}
 	provinces={
-		443 557 644 1104 1306 1371 1615 2062 2226 2375 3076 3220 3944 3989 4018 4029 4030 4055 4070 4108 4133 
+		443 557 644 1055 1104 1306 1355 1371 1396 1615 1692 2062 2181 2211 2226 2375 2407 2425 2784 3025 3076 3220 3893 3927 3944 3980 3989 4018 4029 4030 4055 4070 4108 4133 
 	}
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
         manpower=5276012
-        state_category = town
+        state_category = rural
 }

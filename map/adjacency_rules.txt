@@ -58,9 +58,3 @@ adjacency_rule = {
     icon = 7910
     offset = { 1 0 0 }
 }
-
-
-
-From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
--1;-1;;-1;-1;-1;-1;-1;-1
-2745;6793;sea;75033;-1;-1;-1;-1;;cetan islands

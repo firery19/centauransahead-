@@ -6,7 +6,7 @@ state={
 		steel = 25
 		tungsten = 17
 		chromium = 13
-		oil = 5
+		coal = 5
 	}
 	history = {
 		owner = AQU

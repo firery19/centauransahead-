@@ -40,16 +40,16 @@ state={
 				bunker = 7
 			}
 			3027 = {
-				bunker = 7
+				bunker = 6
 			}
 			1448 = {
-				bunker = 7
+				bunker = 6
 			}
 			1009 = {
 				bunker = 7
 			}
 			3240 = {
-				bunker = 7
+				bunker = 6
 			}
 			3562 = {
 				bunker = 7
@@ -62,11 +62,14 @@ state={
 			3576 50
 		}
 	}
+	resources={
+		coal=5
+	}
 	provinces={
 		186 607 1009 1448 1585 2953 3027 3240 3562 3563 3565 3574 3576 
 	}
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	manpower=12920216
+	manpower=13320216
         state_category = town
 }

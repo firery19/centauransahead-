@@ -1,167 +1,88 @@
 
 CET_power_balance = {
-	initial_value = 0.35
-	left_side = CET_grand_council_side	
-	right_side = CET_mussolini_side	
+	initial_value = -0.35
+	left_side = CET_naval_command
+	right_side = CET_army_command
 	decision_category = CET_balance_of_power_category
 
 	### Neutral status
 	range = {
-		id = CET_balance_range
-		min = -0.10
-		max = 0.10
+		id = CET_government
+		min = -0.1
+		max = 0.1
 		modifier = {
-		}
-		on_activate = {
-
-		}
-		on_deactivate = {
-			
+		
 		}
 	}
-
-	### Grand Council
 	side = {
-		id = CET_total_army_control
-		icon = GFX_bop_CET_grand_council_side
-
+		id = CET_naval_command
+		icon = GFX_idea_generic_degauss_ship_hulls
 		range = {
-			id = CET_grand_council_low_control_range
-			min = 0.9
-			max = 1
-			modifier = {
-				experience_gain_army = 0.05
-				experience_gain_navy = -0.05
-				industrial_capacity_factory = 0.2
-			}
-			on_activate = {
-				
-			}
-			on_deactivate = {
-				
-			}
-		}
-		
-		id = CET_heavy_army_control
-		icon = GFX_bop_CET_grand_council_side
-
-		range = {
-			id = CET_grand_council_low_control_range
-			min = 0.6
-			max = 0.9
-			modifier = {
-				political_advisor_cost_factor = -0.1
-			}
-			on_activate = {
-				
-			}
-			on_deactivate = {
-				
-			}
-		}
-		
-		id = CET_some_army_influence
-		icon = GFX_bop_CET_grand_council_side
-
-		range = {
-			id = CET_grand_council_low_control_range
-			min = 0.3
-			max = 0.6
-			modifier = {
-				political_advisor_cost_factor = -0.1
-			}
-			on_activate = {
-				
-			}
-			on_deactivate = {
-				
-			}
-		}
-		
-		id = CET_low_army_influence
-		icon = GFX_bop_CET_grand_council_side
-
-		range = {
-			id = CET_grand_council_low_control_range
-			min = 0.1
-			max = 0.3
-			modifier = {
-				political_advisor_cost_factor = -0.1
-			}
-			on_activate = {
-				
-			}
-			on_deactivate = {
-				
-			}
-		}
-		
-		id = CET_grand_council_side	
-		icon = GFX_bop_CET_grand_council_side
-
-		range = {
-			id = CET_low_naval_influence
+			id = left_side_range
 			min = -0.3
 			max = -0.1
 			modifier = {
-				political_advisor_cost_factor = -0.1
-			}
-			on_activate = {
-				
-			}
-			on_deactivate = {
-				
+				war_support_weekly = 0.1
 			}
 		}
-
 		range = {
-			id = CET_some_naval_influence
+			id = left_side_range_2
 			min = -0.6
 			max = -0.3
 			modifier = {
-				political_advisor_cost_factor = -0.15
-				offensive_war_stability_factor = -0.1
-				war_support_factor = -0.05
-			}
-			on_activate = {
-			
-			}
-			on_deactivate = {
-				
+				war_support_weekly = 0.1
 			}
 		}
-
 		range = {
-			id = CET_heavy_naval_control
+			id = left_side_range_3
 			min = -0.9
 			max = -0.6
 			modifier = {
-				political_advisor_cost_factor = -0.2
-				offensive_war_stability_factor = -0.15
-				war_support_factor = -0.1
-			}
-			on_activate = {
-			
-			}
-			on_deactivate = {
-				
+				war_support_weekly = 0.1
 			}
 		}
-
 		range = {
-			id = CET_total_naval_control
+			id = left_side_range_4
 			min = -1
 			max = -0.9
 			modifier = {
-				experience_gain_army = -0.05
-				experience_gain_navy = 0.1
-				industrial_capacity_dockyard = 0.05
+				war_support_weekly = 0.1
 			}
-			on_activate = {
-			
+		}
+	}
+	side = {
+		id = CET_army_command
+		icon = GFX_idea_generic_agrarian_society
+		range = {
+			id = right_side_range
+			min = 0.10
+			max = 0.3
+			modifier = {
+				war_support_weekly = 0.9
 			}
-			on_deactivate = {
-				
+		}
+		range = {
+			id = right_side_range_2
+			min = 0.3
+			max = 0.6
+			modifier = {
+				war_support_weekly = 0.9
+			}
+		}
+		range = {
+			id = right_side_range_3
+			min = 0.6
+			max = 0.9
+			modifier = {
+				war_support_weekly = 0.9
+			}
+		}
+		range = {
+			id = right_side_range_4
+			min = 0.9
+			max = 1
+			modifier = {
+				war_support_weekly = 0.9
 			}
 		}
 	}

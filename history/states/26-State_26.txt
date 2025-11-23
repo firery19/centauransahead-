@@ -4,6 +4,7 @@ state={
 	name="STATE_26"
 	resources = {
 		rubber=5
+		oil=8
 	}
 	history = {
 		owner = VEG

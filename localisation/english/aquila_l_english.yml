@@ -126,6 +126,8 @@
  grease_wars_start:0 "Grease Wars has started"
  decision_cost_CP_20_ArmXP_20:0 "§H20§! £GFX_command_power §H20§! £GFX_army_experience"
  decision_cost_CP_20_ArmXP_20_blocked:0 "§R20§! £GFX_command_power §R20§! £GFX_army_experience"
+ decision_cost_CP_20_ArmXP_40:0 "§H20§! £GFX_command_power §H40§! £GFX_army_experience"
+ decision_cost_CP_20_ArmXP_40_blocked:0 "§R20§! £GFX_command_power §R40§! £GFX_army_experience"
  decision_cost_CP_20_ArmXP_20_tooltip:0 "It costs $cp_10_cost_blocked$  to take the decision
  cp_10_cost_blocked:0 "§R10§! £GFX_command_power"
  cp_10_cost_tooltip:0 "It costs $cp_10_cost_blocked$  to take the decision"

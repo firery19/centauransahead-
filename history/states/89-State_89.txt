@@ -2,8 +2,8 @@ state={
 	id=89
 	name="STATE_89"
 	resources={
-		steel=23.000
-		tungsten=13.000
+		steel=3.000
+		tungsten=3.000
 	}
 	history={
 		owner = URS

@@ -2,23 +2,23 @@ state={
 	id=163
 	name="STATE_163"
 	history={
-		owner = COV
-		add_core_of = COV
+		owner = LAC
+		add_core_of = LAC
 		buildings = {
 			infrastructure = 1
-			6744 = {
+			6993 = {
 				naval_base = 1
 				}
 			}
 			victory_points = {
-			6744 1 
+			6993 35 
 			}
 		}
 	provinces={
-		6744 
+		6993 
 	}
-	manpower=4377
-	state_category = tiny_island
+	manpower=2584377
+	state_category = large_town
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

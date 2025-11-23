@@ -13,6 +13,6 @@ ideas = {
 				army_speed_factor = -0.1
 				army_defence_factor = 1
 				dig_in_speed_factor = 1
-				forced_surrender_limit = 0.4
+				forced_surrender_limit = 0.18
             }
         }

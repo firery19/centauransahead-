@@ -1,0 +1,61 @@
+﻿l_english:
+ # formable
+ form_rodinia_category:0 "Recreate Rodinia"
+ form_rodinia:0 "Recreate the Rodinese Mandate"
+ form_rodinia_flag:0 "Rodinia does not exist"
+ form_rodinia_category_desc:0 "The Rodinese Mandate was an ancient superpower that spanned all of Northern Forma, spanning from the North Columban Plain to West Hydrus.\n\nIt was defeated by the emerging Libran Empire from the south. However, we will revive this once ancient empire in the modern day and reclaim its glory."
+ 
+ form_country_ursa_required_states_tt:0 "Fully control and own all core Ursan states"
+ form_country_riaa_required_states_tt:0 "Fully control and own all mainland Riaan states"
+ form_country_tucana_required_states_tt:0 "Fully control and own all core Tucanan states"
+ form_country_centauri_required_states_tt:0 "Fully control and own all core Centaurian states"
+ form_country_canis_required_states_tt:0 "Fully control and own all of North Canis"
+ form_country_hydrus_required_states_tt:0 "Fully control and own West Hydrus"
+ form_country_columba_required_states_tt:0 "Fully control and own all of the North Columban Plain"
+ 
+ form_country_rodinia_coring_states_tt:0 "Cores all listed territories above"
+ 
+ 
+ 
+ 
+ form_commonwealthB_category:0 "Form the Hydrus Commonwealth"
+ form_commonwealthB_category_desc:0 "A proposal stemming from the shared origins of the countries of North Hydra; Hydrus, Lepus and Canis would unite into one commonwealth, becoming a unified nation.\n\nThis would benefit all three nations within diplomatic ties, a stronger economy, and unified military strength."
+ form_commonwealthB:0 "Form the Hydrus Commonwealth"
+ lepus_agrees_join:0 "Lepus has agreed to join"
+ canis_agrees_join:0 "Canis has agreed to join"
+ form_country_hydrus_required_states_tt:0 "Hydrus or its allies needs to control all states in Canis and Lepus except states with Orionite Claims."
+ form_hydrus_commonwealth_flag:0 "Hydrus Commonwealth has not formed"
+ 
+ 
+ form_redantares_category:0 "Colour Changer"
+ form_redantares:0 "Change the colour of Antares to red"
+ 
+ hydrus_film_1:0 "Know The Revolution"
+ hydrus_film_2:0 "With Our Brothers"
+ hydrus_film_3:0 "Standing Strong"
+ orion_film_1:0 "Democratic Stance"
+ orion_film_2:0 "Conqueror Of Hydra"
+ orion_film_3:0 "Cooperation With Others"
+ riaa_film_1:0 "The Cold Tundra"
+ riaa_film_2:0 "The Civil War"
+ riaa_film_3:0 "Our Victory"
+ ursa_film_1:0 "Glorious Victory"
+ ursa_film_2:0 "The Hot Front"
+ ursa_film_3:0 "Sacrifices of Our Forefathers"
+ antares_film_1:0 "Proud Scorpion"
+ antares_film_2:0 "The Four Brothers"
+ antares_film_3:0 "Marching Through"
+ corvus_film_1:0 "Reclaimation Day"
+ corvus_film_2:0 "Seeking The Skies"
+ corvus_film_3:0 "Knowing Ourselves"
+ generic_film_1:0 "Our Nation"
+ generic_film_2:0 "The Soldiers March"
+ generic_film_3:0 "Unknown Heroes"
+ 
+ industrial_heartland:0 "Industrial Heartland"
+ industrialized_metropolis:0 "Industrialized Metropolis"
+ industrialized_megalopolis:0 "Industrialized Megalopolis"
+ 
+ TITLE_CARD:0 "1.1.3AG Update"
+ TOKIDOKI_BOSOTTO_ROSHIA_GO_DE_DEDERU_TONARI_NO_ALYA_SAN:0 "New dlc release forced this mod to update." #In this update, Hydrus gets the newest content!! Now you get to play past the Grease Wars with actual focuses.
+ BOCCHI_THE_ROCK:0 "- Added this side panel\n\n- Added coal into the map\n\n- Changed states and strategic regions\n\n- Update tech according to vanilla"

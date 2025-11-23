@@ -1,0 +1,363 @@
+spriteTypes = {
+
+
+	################
+	##PLACEHOLDER###
+	################
+
+	
+	SpriteType = {
+		name = "GFX_focus_PLACEHOLDER"
+		texturefile = "gfx/interface/goals/focus_PLACEHOLDER.dds"
+	}
+
+
+	################### MOD ICONS ##################
+	## PUT ANY VANILLA FILES BEFORE THE MOD FILES ##
+	
+	###########
+	# generic #
+	###########
+	SpriteType = {
+		name = "GFX_focus_generic_ant_cap"
+		texturefile = "gfx/interface/goals/focus_generic_ant_cap.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_aquila"
+		texturefile = "gfx/interface/goals/focus_generic_aquila.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_ant"
+		texturefile = "gfx/interface/goals/focus_generic_ant.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_cetus"
+		texturefile = "gfx/interface/goals/focus_generic_cetus.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_corvus"
+		texturefile = "gfx/interface/goals/focus_generic_corvus.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_attack_columba"
+		texturefile = "gfx/interface/goals/focus_generic_attack_columba.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_attack_ursa"
+		texturefile = "gfx/interface/goals/focus_generic_attack_ursa.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_attack_antares"
+		texturefile = "gfx/interface/goals/focus_generic_attack_antares.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_attack_cetus"
+		texturefile = "gfx/interface/goals/focus_generic_attack_cetus.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_attack_aquila"
+		texturefile = "gfx/interface/goals/focus_generic_attack_aquila.dds"
+	}
+	
+	
+	SpriteType = {
+		name = "GFX_focus_generic_no_image"
+		texturefile = "gfx/interface/goals/focus_generic_no_image.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_generic_democratic_beam"
+		texturefile = "gfx/interface/goals/focus_generic_democratic_beam.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_generic_attack_cetus"
+		texturefile = "gfx/interface/goals/focus_generic_attack_cetus.dds"
+	}
+
+	## Decision images
+
+	SpriteType = {
+		name = "GFX_decision_cat_generic_south_corvus"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_south_corvus.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_decision_cat_generic_hydrus"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_hydrus.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_decision_cat_generic_rodinia"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_rodinia.dds"
+	}
+	#########
+	# cetus #
+	#########
+	#SpriteType = {
+	#	name = "GFX_focus_CET_"
+	#	texturefile = "gfx/interface/goals/focus_CET_.dds"
+	#}
+
+	SpriteType = {
+		name = "GFX_focus_CET_general_staff"
+		texturefile = "gfx/interface/goals/focus_CET_general_staff.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CET_place_under_stars"
+		texturefile = "gfx/interface/goals/focus_CET_place_under_stars.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CET_fishing_heritage"
+		texturefile = "gfx/interface/goals/focus_CET_fishing_heritage.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CET_economic_boom"
+		texturefile = "gfx/interface/goals/focus_CET_economic_boom.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CET_greater_cetus"
+		texturefile = "gfx/interface/goals/focus_CET_greater_cetus.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CET_peaceful_revolution"
+		texturefile = "gfx/interface/goals/focus_CET_peaceful_revolution.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CET_free_media"
+		texturefile = "gfx/interface/goals/focus_CET_free_media.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CET_every_man_himself"
+		texturefile = "gfx/interface/goals/focus_CET_every_man_himself.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CET_naval_officers"
+		texturefile = "gfx/interface/goals/focus_CET_naval_officers.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_CET_plan_corvus"
+		texturefile = "gfx/interface/goals/focus_CET_plan_corvus.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_CET_north_fort"
+		texturefile = "gfx/interface/goals/focus_CET_north_fort.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_CET_sc_defence"
+		texturefile = "gfx/interface/goals/focus_CET_sc_defence.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_CET_far_eastern_fort"
+		texturefile = "gfx/interface/goals/focus_CET_far_eastern_fort.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_CET_mira_fort"
+		texturefile = "gfx/interface/goals/focus_CET_mira_fort.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_CET_nauta_fort"
+		texturefile = "gfx/interface/goals/focus_CET_nauta_fort.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_CET_whitemouth_defence"
+		texturefile = "gfx/interface/goals/focus_CET_whitemouth_defence.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_CET_stkirk_fort"
+		texturefile = "gfx/interface/goals/focus_CET_stkirk_fort.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_CET_carran_fort"
+		texturefile = "gfx/interface/goals/focus_CET_carran_fort.dds"
+	}
+	#########
+	# orion #
+	#########
+	SpriteType = {
+		name = "GFX_focus_ORI_Hart_Term" # this one being the election gfx
+		texturefile = "gfx/interface/goals/focus_ORI_Hart_Term.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ORI_EndOfHartTerm" # do not confuse this with the election gfx above!!!
+		texturefile = "gfx/interface/goals/focus_ORI_EndOfHartTerm.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_ORI_OrioniteEconomicBoom"
+		texturefile = "gfx/interface/goals/focus_ORI_OrioniteEconomicBoom.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_ORI_KeepUpTheBoom"
+		texturefile = "gfx/interface/goals/focus_ORI_KeepUpTheBoom.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ORI_ExtinguishCorruption"
+		texturefile = "gfx/interface/goals/focus_ORI_ExtinguishCorruption.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_ORI_IncreaseMilitaryBudget"
+		texturefile = "gfx/interface/goals/focus_ORI_IncreaseMilitaryBudget.dds"
+	}	
+	
+	#CareForTheElderlyAct.dds
+	
+	SpriteType = {
+		name = "GFX_focus_ORI_RestrictBusinesses"
+		texturefile = "gfx/interface/goals/focus_ORI_RestrictBusinesses.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_ORI_CareForTheElderlyAct"
+		texturefile = "gfx/interface/goals/focus_ORI_CareForTheElderlyAct.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_ORI_QuestionOfForeignPolicy"
+		texturefile = "gfx/interface/goals/focus_ORI_QuestionOfForeignPolicy.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_ORI_HartsSecondTerm"
+		texturefile = "gfx/interface/goals/focus_ORI_HartsSecondTerm.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_ORI_OrioniteIsolationism"
+		texturefile = "gfx/interface/goals/focus_ORI_OrioniteIsolationism.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_ORI_OrioniteImperialism"
+		texturefile = "gfx/interface/goals/focus_ORI_OrioniteImperialism.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_ORI_OrioniteInterventionism"
+		texturefile = "gfx/interface/goals/focus_ORI_OrioniteInterventionism.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_ORI_EncircleAuriga"
+		texturefile = "gfx/interface/goals/focus_ORI_EncircleAuriga.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_ORI_RallyTheNationalists"
+		texturefile = "gfx/interface/goals/focus_ORI_RallyTheNationalists.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_ORI_TheEasternTitan"
+		texturefile = "gfx/interface/goals/focus_ORI_TheEasternTitan.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_ORI_InvadeUrsa"
+		texturefile = "gfx/interface/goals/focus_ORI_InvadeUrsa.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_ORI_InvadeHydrus"
+		texturefile = "gfx/interface/goals/focus_ORI_InvadeHydrus.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_ORI_AntiAntareanPropaganda"
+		texturefile = "gfx/interface/goals/focus_ORI_AntiAntareanPropaganda.dds"
+	}
+	##########
+	# corvus #
+	##########
+	SpriteType = {
+		name = "GFX_focus_COV_dev_north"
+		texturefile = "gfx/interface/goals/focus_COV_dev_north.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_COV_dev_northcentral"
+		texturefile = "gfx/interface/goals/focus_COV_dev_northcentral.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_COV_dev_northeast"
+		texturefile = "gfx/interface/goals/focus_COV_dev_northeast.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_COV_dev_central"
+		texturefile = "gfx/interface/goals/focus_COV_dev_central.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_COV_dev_north_2"
+		texturefile = "gfx/interface/goals/focus_COV_dev_north_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_COV_dev_northcentral_2"
+		texturefile = "gfx/interface/goals/focus_COV_dev_northcentral_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_COV_dev_northeast_2"
+		texturefile = "gfx/interface/goals/focus_COV_dev_northeast_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_COV_dev_central_2"
+		texturefile = "gfx/interface/goals/focus_COV_dev_central_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_ORI_TheHard1900s"
+		texturefile = "gfx/interface/goals/focus_ORI_TheHard1900s.dds"
+	}
+	##### ANTARES #######
+	SpriteType = {
+		name = "GFX_focus_ANT_efficentagricultur"
+		texturefile = "gfx/interface/goals/focus_ANT_efficentagricultur.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_ANT_euskorgfx"
+		texturefile = "gfx/interface/goals/focus_ANT_euskorgfx.dds"
+	}
+	
+	##URSA##
+	SpriteType = {
+		name = "GFX_focus_URS_every_inch"
+		texturefile = "gfx/interface/goals/URS/focus_URS_every_inch.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_URS_evacuvate_east_canis"
+		texturefile = "gfx/interface/goals/URS/focus_URS_evacuvate_east_canis.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_URS_grease_wars"
+		texturefile = "gfx/interface/goals/URS/focus_URS_grease_wars.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_URS_desert_minefield"
+		texturefile = "gfx/interface/goals/URS/focus_URS_desert_minefield.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_URS_recruit_retired_warcriminal"
+		texturefile = "gfx/interface/goals/URS/focus_URS_recruit_retired_warcriminal.dds"
+	}
+#end
+}
